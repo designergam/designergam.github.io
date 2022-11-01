@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <!-- SEO GERAL -->
+    <title>Capitão Torrent</title>
+    <meta name="description" content="Os melhores jogos para baixar totalmente gratis via utorrent, download de jogos utorrent para computador pc, torrent de jogos para computador, jogos gratis, download via torrent games">
+    <link rel=“canonical” href=”https://capitaotorrent.com.br”/>
+    <meta name="author" content="Capitão Torrent" >
+    <meta name="robots" content="index, follow" >
+    <meta name="google-site-verification" content="8cEwtzY5TZC-QrefrCThf38df3mgfj6MExRdD_dKfeI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="../img/iconepirata.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/preload.css">
+    <link rel="stylesheet" href="css/pesquisa.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/menu_lateral.css">
+    <link rel="stylesheet" href="css/propagandas.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <nav id="navbar">
+                <div id="navbar-container">
+
+                    <!-- menu lateral-->
+                    <input type="checkbox" id="check">
+                    <label id="icone" for="check" ><img id="icone_menu" src="../img/RWHvwPE.png" alt=""></label>
+
+                    <div class="barra"> 
+                        <nav>
+                            <a  href="?modulo=pc"><div class="link">Home</div></a>
+                            <a  href="?modulo=gba" ><div class="link">GBA</div></a>
+                            <a  href="?modulo=snes"><div class="link">Snes</div></a>
+                        </nav>
+                    </div>  
+                     <!-- menu lateral-->
+                    <h1 class="logo"><img id="logo_site" src="img/logopirata.png" alt=""></h1>
+
+                        <!-- Barra de Pesquisa -->
+                    <div  class="header">
+                        <input type="text" id="input" onkeyup="filter()" placeholder="Pesquisar..." value="">
+                    </div>
+
+                    <ul id="navbar-items">
+                        <li id="inicio"><a href="#showcase">Início</a></li>
+                    </ul>
+                </div>
+        </nav>
+    </header>
+
+    <!-- Banner -->
+    <section id="showcase">
+            <div id="showcase-container">
+                <h2 id="Texto_Melhores_Jogos">Os  Melhores Jogos </h2>
+                <p id="Paragrafo_baixe_os_melhores">Baixe os melhores jogos 100% grátis</p>
+            </div>
+    </section>
+
+    <script>   
+        let urlParams = new URLSearchParams(window.location.search);
+        let myParam = urlParams.get('modulo');
+        console.log(myParam)
+
+       if(myParam == "gba"){
+        let h2Texto = document.getElementById("Texto_Melhores_Jogos")
+            h2Texto.innerText = "Gameboy Advance"
+
+        let PTexto = document.getElementById("Paragrafo_baixe_os_melhores")
+        PTexto.innerHTML = `<a href="https://visualboyadvance.softonic.com.br/" target="_blank">Baixe o Emulador</a>`
+       }
+       else if(myParam == "snes"){
+        let h2Texto = document.getElementById("Texto_Melhores_Jogos")
+            h2Texto.innerText = "Super Nitendo"
+
+        let PTexto = document.getElementById("Paragrafo_baixe_os_melhores")
+        PTexto.innerHTML = `<a href="https://snes9x.br.uptodown.com/windows/download" target="_blank">Baixe o Emulador</a>`
+
+       }
+            
+        
+    </script>
+
+     <!-- Conteudo -->
+    <main> 
+        <div class="headline">Recém Adicionados</div>
+            <div id="gallery-container">
+                <ul id="ul" >
+                    <!-- aqui ficara a lista de jogos gerada pelo js -->
+                </ul>
+            </div>  
+    </main>
+
+    <audio  id="audio" src="musicapirata.mp3" autoplay controls >
+        <p>Seu navegante nao suporta musica marujo!</p>
+    </audio>
+
+    <!-- Rodapé -->
+    <footer id="footer"> 
+        <p>Copyright &copy; 2022</p>
+        <br>
+        <p>Importante: Os jogos disponíveis nesse site não são hospedados por nós, apenas indexamos, qualquer denúncia deve ser encaminhada diretamente aos sites responsáveis por hospedar os jogos em seus servidores. O intuito deste site é apenas organizar os links com imagens e textos para fins de busca do usuário.</p>
+    </footer>
+
+
+</body>
+</html>
+
+    <script src="galerias/jogos.js"></script>
+    <script src="galerias/gba.js"></script>
+    <script src="galerias/snes.js"></script>
+
+
+   <!-- criar lista de jogos -->
+   <script>
+    
+//armazena na variavel modulo o resultado de modulo da url(modulo=exemplo)
+    const urlAtual = window.location.href;
+    const urlClass = new URL(urlAtual);
+    let modulo = urlClass.searchParams.get("modulo");
+
+   
+    var acriarLI = document.getElementById('ul')
+
+     if(modulo == "pc"){
+         acriarLI.innerHTML = "";
+         pc.map((val)=>{
+         acriarLI.innerHTML+=`
+         <li>
+             <a href="Download.html?escolhido=`+val.id+`&tipo=pc">
+             <img src="`+val.src+`" alt="`+val.id+val.tit+`" class="gallery-items">
+             </a>
+             <h2>`+val.tit+`</h2>
+         </li>`;
+     })  
+
+     }else if(modulo == "gba"){
+         acriarLI.innerHTML = "";
+         gba.map((val)=>{
+         acriarLI.innerHTML+=`
+         <li>
+             <a href="Download.html?escolhido=`+val.id+`&tipo=emulador&console=gba">
+             <img src="`+val.src+`" alt="`+val.id+val.tit+`" class="gallery-items">
+             </a>
+             <h2>`+val.tit+`</h2>
+         </li>`;
+     })  
+     }else if(modulo == "snes"){
+         acriarLI.innerHTML = "";
+         snes.map((val)=>{
+         acriarLI.innerHTML+=`
+         <li>
+             <a href="Download.html?escolhido=`+val.id+`&tipo=emulador&console=snes">
+             <img src="`+val.src+`" alt="`+val.id+val.tit+`" class="gallery-items">
+             </a>
+             <h2>`+val.tit+`</h2>
+         </li>`;
+     })  
+     }else {
+         acriarLI.innerHTML = "";
+         pc.map((val)=>{
+         acriarLI.innerHTML+=`
+         <li>
+             <a href="Download.html?escolhido=`+val.id+`&tipo=pc">
+             <img src="`+val.src+`" alt="`+val.id+val.tit+`" class="gallery-items">
+             </a>
+             <h2>`+val.tit+`</h2>
+         </li>`;
+     })  
+     }
+     console.log()
+ carregarJogo(1);
+ </script>
+
+
+
+<!-- aaa -->
+<script 
+    src="https://code.jquery.com/jquery-3.4.1.min.js" 
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" 
+    crossorigin="anonymous">
+</script>
+
+<!-- rolagem suave -->
+<script 
+    src="js/Rolagem_Suave.js">
+</script>
+
+<!-- script de pesquisa -->
+<script
+    type="text/javascript" 
+    src="js/sistema_de_busca.js">
+</script>

@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+
+}
+/* ////////////////////////////////////////////////////// Body /////////////////////////////////////////////////////// */
+body {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    background: #222;
+    color: #eee;
+    padding: 15px;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* ////////////////////////////////////////////////////// header /////////////////////////////////////////////////////// */
+#navbar {
+    width: 100%;
+    background: #111;
+    color: #eee;
+    height: 80px;
+    position: fixed;
+    z-index: 1;
+}
+#navbar-container {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+#navbar-items {
+    display: flex;
+    list-style: none;
+    text-transform: uppercase;
+}
+/* links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+a:hover{
+    color: rgb(51, 51, 255);
+}
+.logo img{
+    width: 250px;
+}
+/* ////////////////////////////////////////////////////// Main /////////////////////////////////////////////////////// */
+/* Section - Img, Previa, Titulo */
+.testimonial {
+    display: flex;
+    align-items: center;
+    background-color: #333; 
+    width: 90%; 
+    margin-bottom: 0px; 
+    margin-top: 15px; 
+    padding: 10px; 
+}
+
+#testimonials-container{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+#tit{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 115px;
+    margin-bottom: 20px;
+}
+.testimonial2{
+    align-items: center;
+    background-color: #333; 
+    width: 90%; 
+    margin-top: 20px; 
+    margin-bottom: 20px;
+    padding: 35px; 
+}
+#img_capa{
+    min-width: 150px;
+    height: 190px;
+    border-radius: 3%;
+    margin: 20px;
+    margin-right: 50px;
+    background-color: black;
+    box-sizing: border-box;
+}
+#previa{
+    font-size: 1.3rem;
+    text-align: justify;
+    margin-right: 40px;
+}
+
+/* ////////////////////////////////////////////////////// Requisitos /////////////////////////////////////////////////////// */
+.testimonial3{
+    display: inline-block;
+    align-items: center;
+    background-color: #333; 
+    width: 90%; 
+    margin-top: 20px; 
+    margin-bottom: 20px;
+    padding: 35px; 
+    
+}
+.testimonial3 p{
+    display: inline-block;
+}
+.testimonial3  h3{
+    display: inline-block;
+    margin-bottom: 30px;
+    margin-right: 10px;
+}
+#requisitos{
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* Requisitos icones */
+#icone_requisitos1{/* cpu */
+    width: 50px;    
+    height: 50px;
+    background-color: white;
+    display: inline-block;
+    margin: auto;
+    vertical-align: middle;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-image: url("https://cdn-icons-png.flaticon.com/512/4617/4617522.png" ) ;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#icone_requisitos1:hover{
+    border: 2px solid blue;
+    transform: translate(2px, 2px);
+}
+#icone_requisitos2{/* gpu */
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    display: inline-block;
+    margin: auto;
+    vertical-align: middle;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-image: url("https://cdn-icons-png.flaticon.com/512/1470/1470120.png" ) ;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#icone_requisitos2:hover{
+    border: 2px solid blue;
+    transform: translate(2px, 2px);
+}
+#icone_requisitos3{/* ram */
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    display: inline-block;
+    margin: auto;
+    vertical-align: middle;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-image: url("https://cdn-icons-png.flaticon.com/512/900/900330.png" ) ;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: center center; 
+}
+#icone_requisitos3:hover{
+    border: 2px solid blue;
+    transform: translate(2px, 2px);
+}
+#icone_requisitos4{/* hdd */
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    display: inline-block;
+    margin: auto;
+    vertical-align: middle;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-image: url("https://cdn-icons-png.flaticon.com/512/287/287441.png" ) ;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: center center;   
+}
+#icone_requisitos4:hover{
+    border: 2px solid blue;
+    transform: translate(2px, 2px);
+}
+
+/* //////////////////////////////////////////////// Imagens Gameplay /////////////////////////////////////////////////// */
+#TEXTO_H2{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+.img_gameplay {
+    width: 35vw;
+    height: 20vw;
+    border-radius: 5%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+ 
+}
+
+/* //////////////////////////////////////////////// Descrição do jogo /////////////////////////////////////////////////// */
+#descricao{
+    font-size: 1.2rem;
+    text-align: justify;
+    margin: 50px;
+}
+
+/* //////////////////////////////////////////////// Trailer /////////////////////////////////////////////////// */
+#trailer{
+    margin: auto;
+    width: 50vw;
+    height: 30vw;
+    margin-top: 20px;
+}
+/* //////////////////////////////////////////////// Botão Download/////////////////////////////////////////////////// */
+#download{
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+    background-color: green;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#download:hover{
+    padding: 13PX;
+    background-color: rgb(17, 0, 146);
+    
+}
+
+.download{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    padding: 15px;
+    background-color: green;
+    border-radius: 5px;
+
+    text-decoration: none;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   
+    
+}
+.download:hover{
+    padding: 13PX;
+    background-color: rgb(17, 0, 146);
+}
+/* //////////////////////////////////////////////// Jogos Recomendados /////////////////////////////////////////////////// */
+
+/* //////////////////////////////////////////////// id /////////////////////////////////////////////////// */
+#id{
+    opacity: 0;
+}
+
+/* //////////////////////////////////////////////// Footer /////////////////////////////////////////////////// */
+#footer {
+    align-items: center;
+    background-color: #333;
+    padding: 15px; 
+}
+#footer p{
+    text-align: center;
+    font-size: 1rem;
+    margin-left: 70px;
+    margin-right: 70px;
+}

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <!-- SEO -->
+    <title id="title"></title>
+    <meta name="description" id="descricao_pagina" content="">
+    <meta name="author" content="Capitão Torrent" >
+    <meta name="robots" content="index, follow" >
+    <link rel="canonical" href="https://capitaotorrent.com.br/Download"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="8cEwtzY5TZC-QrefrCThf38df3mgfj6MExRdD_dKfeI" />
+    <!--Icone-->
+    <link rel="shortcut icon" href="../img/iconepirata.png" type="image/x-icon">
+    <!--Estilos-->
+    <link rel="stylesheet" href="css/download.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/download_mobile.css">
+    <link rel="stylesheet" href="css/propagandas.css">
+</head>
+<body>
+
+    <!---galeria de jogos--> 
+    <script src="galerias/jogos.js"></script>
+    <script src="galerias/gba.js"></script> 
+   
+
+    <script>
+        const urlAtual = window.location.href;
+        const urlClass = new URL(urlAtual);
+        let escolhido = urlClass.searchParams.get("escolhido");
+        let tipo = urlClass.searchParams.get("tipo");
+
+
+        let conteudo = [];
+
+        if(tipo == "pc"){
+         conteudo = pc.filter(function(galeria){
+            return galeria.id == escolhido;
+        })
+        }
+
+        if(tipo == "emulador"){
+         conteudo = gba.filter(function(galeria){
+            return galeria.id == escolhido;
+        })
+
+        }
+
+       
+
+
+        let id_A = (conteudo[0].id);
+        let tit_A = (conteudo[0].tit);
+        let src_A = (conteudo[0].src)
+        let previa_A = (conteudo[0].previa)
+        let descricao_A = (conteudo[0].descricao)
+        let trailer_A = (conteudo[0].trailer)
+        let download_A = (conteudo[0].download)
+        let img_gameplay1_A = (conteudo[0].img_gameplay1)
+        let img_gameplay2_A = (conteudo[0].img_gameplay2)
+
+        //Requisitos Minimos
+        let cpu_A = (conteudo[0].cpu);
+        let gpu_A = (conteudo[0].gpu);
+        let ram_A = (conteudo[0].ram);
+        let rom_A = (conteudo[0].rom);
+    </script>
+
+    <header>
+        <nav id="navbar">
+            <div id="navbar-container">
+                <h1 class="logo"><img src="img/logopirata.png" alt="logo do site"></h1>
+                <ul id="navbar-items">
+                    <li><a href="" id="voltar" onclick="voltar()" rel="prev" >Voltar</a></li>
+                </ul>
+
+                <script>
+                    const urlAtual1 = window.location.href;
+                    const urlClass2 = new URL(urlAtual1);
+                    let console2 = urlClass2.searchParams.get("console");
+
+                    
+                    function voltar(){
+                    if(console2 == "gba"){
+                    document.getElementById("voltar").href = "index.html?modulo=gba"
+                    }
+                    else if ( console2 == "snes"){
+                        document.getElementById("voltar").href = "index.html?modulo=snes"
+                    }
+                    else if ( tipo == "pc"){
+                        document.getElementById("voltar").href = "index.html"
+                    }
+                    }
+                </script>
+            </div>
+        </nav>
+    </header>              
+              
+    
+    
+
+    <main>
+
+        <!-- titulo, capa, previa -->
+        <section>
+            <div id="testimonials-container">
+                
+                <!--Titulo -->
+                <div id="tit"></div>
+                
+                <script>
+                    var tit_B =  window.document.getElementById("tit") //liga ao id
+                    tit_B.innerText = tit_A // escreve dentro de tit o que esta escrito em tit_a
+                </script>
+                
+                <div class="testimonial" id="testimonial2">
+
+                <!--img jogo-->
+                <img src="" alt="imagem de capa do jogo" id="img_capa">
+                
+
+                <script>
+                    var src_B =  window.document.getElementById("img_capa") 
+                    src_B.src = src_A
+                </script>
+
+                <!-- PREVIA -->
+                <p id="previa"></p>
+
+                <script>
+                    var previa_B =  window.document.getElementById("previa") 
+                    previa_B.innerText = previa_A
+                </script>
+                
+            </div>
+            <!-- Botao de Download -->
+        
+            <div id="testimonials-container">
+                <div class="testimonial2">
+                    <span>
+                        <a  class="download" href="#download" rel="download do jogo" >Baixar agora</a>
+                    </span> 
+                    
+                </div>
+            </div>
+      
+        </section> 
+
+        <!--Requisitos-->
+        <section id="sectionRequisitos">
+        <div id="testimonials-container" >
+            <div class="testimonial3">
+        
+                <h2 id="requisitos">Requisitos Mínimos</h2>
+                <br>    
+            
+                <div id="icone_requisitos1"></div>
+                <h3 id="chip">Processador:</h3>
+                <p id="cpu"></p>
+                <script>
+                    var cpu_B =  window.document.getElementById("cpu") //liga ao id
+                    cpu_B.innerText = cpu_A // escreve dentro de tit o que esta escrito em tit_a
+                </script>
+                <br>
+            
+                <div id="icone_requisitos2"></div>
+                <h3 id="chip">Placa de Video:</h3>
+                <p id="gpu"></p>
+                <script>
+                    var gpu_B =  window.document.getElementById("gpu") //liga ao id
+                    gpu_B.innerText = gpu_A // escreve dentro de tit o que esta escrito em tit_a
+                </script>
+                <br>
+            
+                <div id="icone_requisitos3"></div>
+                <h3 id="chip">Memória Ram:</h3>
+                <p id="ram"></p>
+                <script>
+                    var ram_B =  window.document.getElementById("ram") //liga ao id
+                    ram_B.innerText = ram_A // escreve dentro de tit o que esta escrito em tit_a
+                </script>
+                <br>
+            
+                <div id="icone_requisitos4"></div>
+                <h3 id="chip">Armazenamento:</h3>
+                <p id="rom"></p>
+                <script>
+                    var rom_B =  window.document.getElementById("rom") //liga ao id
+                    rom_B.innerText = rom_A // escreve dentro de tit o que esta escrito em tit_a
+                </script>
+                <br>
+            </div>
+        </div>
+        </section>
+
+        
+
+        <!-- Imagem e gif da gameplay -->
+        <section>
+            <h2 id="TEXTO_H2">IMAGENS DO JOGO</h2>
+                    
+            <!-- IMAGENS DE GAMEPLAY -->
+            <div id="testimonials-container">
+                <div class="testimonial">
+
+                    <!-- img gameplay 01 -->
+                    <img src="" alt="imagens da gameplay" class="img_gameplay" id="img_gameplay1">
+                    <script>
+                        var img_gameplay1_B =  window.document.getElementById("img_gameplay1") //liga ao id
+                        img_gameplay1_B.src = img_gameplay1_A
+                    </script>
+
+                    <!-- img gameplay 02 -->
+                    <img src="" alt="gif da gameplay" class="img_gameplay" id="img_gameplay2">
+                    <script>
+                        var img_gameplay2_B =  window.document.getElementById("img_gameplay2") //liga ao id
+                        img_gameplay2_B.src = img_gameplay2_A
+                    </script>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sobre o o Jogo -->
+        <section id="sectionSobre">
+            <div id="testimonials-container">
+                <div class="testimonial2">
+                    <h2 id="TEXTO_H2">UM POUCO MAIS SOBRE</h2>
+                        
+                    <!-- DESCRIÇÃO -->
+                    <p id="descricao"></p>
+                    <script>
+                        var descricao_B =  window.document.getElementById("descricao") //liga ao id
+                        descricao_B.innerText = descricao_A // escreve dentro de tit o que esta escrito em tit_a
+                    </script>
+                
+                </div>
+            </div>
+        </section>
+
+        <!-- Trailer do jogo -->
+        <section id="sectionTrailer">
+            <h2 id="TEXTO_H2">ASSISTA O TRAILER</h2>
+            <div id="testimonials-container">   
+                <!-- Trailer -->
+                <iframe  id="trailer" width="560" height="315" src="" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+                <script>
+                    var trailer_B =  window.document.getElementById("trailer") //liga ao id
+                    trailer_B.src = trailer_A
+                </script>
+            </div>
+        </section>         
+
+        <!-- Botao de Download -->
+        <section>
+            <div id="testimonials-container">
+                <div class="testimonial2">
+                    <span>
+                        <a  id="download" href="" rel="download do jogo" target="_blank">DOWNLOAD</a>
+                    </span> 
+                    <script>
+                        var download_B =  window.document.getElementById("download") //liga ao id
+                        download_B.href = download_A
+                    </script>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="overlay"> <div class="loader"></div>  </div>
+    </main>
+
+
+    <!--TAG-->
+    <h3 id="id"></h3>
+
+    <!--footer-->
+    <footer id="footer">
+        <p>Copyright &copy; 2022</p>
+        <br>
+        <p>Importante: Os jogos disponíveis nesse site não são hospedados por nós, apenas indexamos, qualquer denúncia deve ser encaminhada diretamente aos sites responsáveis por hospedar os jogos em seus servidores. O intuito deste site é apenas organizar os links com imagens e textos para fins de busca do usuário.</p>
+    </footer>
+
+    <audio  id="audio" src="musicapirata.mp3" autoplay controls >
+        <p>Seu navegante nao suporta musica marujo!</p>
+    </audio>
+    
+</body>
+</html>
+
+<!--SCRIPTS DA PAGINA-->
+
+<!-- Font Awesome -->
+<script src="https://kit.fontawesome.com/f9e19193d6.js" crossorigin="anonymous"></script>
+
+ <!-- jQuery CDN -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+
+<script>
+    if(tipo == "emulador"){
+        let requisitos = document.getElementById("sectionRequisitos")
+        requisitos.style.display = 'none'
+
+        let sobre = document.getElementById("sectionSobre")
+        sobre.style.display = "none"
+
+        let trailer = document.getElementById("sectionTrailer")
+        trailer.style.display = "none"
+
+    }
+</script>

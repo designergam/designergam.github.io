@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0; 
+}
+
+html{
+    width: 100vw;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+}
+/*//////////////////////////////////// Header /////////////////////////////////////////////*/
+#navbar {
+    width: 100%;
+    background: #111;
+    color: #eee;
+    height: 80px;
+    position: fixed;
+    display: inline-block;
+    z-index: 1;
+}
+@media (max-width: 768px) {
+    #navbar {
+        position: relative;
+        top: 0px;
+        height: 150px;
+    }
+}
+#navbar-items li {
+    padding: 10px;
+}
+#navbar-container {
+    width: 100vw;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* link */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+a:hover{
+    color: rgb(0, 220, 254);
+}
+#logo_site{
+    width: 200px;
+    margin: 0px;
+    margin-left: 70px;
+}
+@media (max-width: 768px) {
+    #logo_site{
+        position: absolute;
+        left: 50%;
+        top: 5%;
+        margin: 0px;
+        float: left;
+        transform: translate(-50%);
+    }
+}
+#navbar-items {
+    margin-right: 30px;
+    display: flex;
+    list-style: none;
+    text-transform: uppercase;
+}
+@media (max-width: 768px) {
+    #navbar-items {
+        margin-right: 0px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    a{
+        text-align: center;
+        padding: 0px;
+    }
+}
+#inicio{
+    margin-right: 50px;
+}
+@media (max-width: 768px) {
+    #inicio{
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+}
+
+/* /////////////////////////// section - showcase /////////////////////////////////// */
+#showcase {
+    position: relative;
+    margin-top: 80px;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #eee;
+    background: url('https://cdn.wallpapersafari.com/59/5/eQWfUX.jpg') no-repeat center center/cover;
+    display: inline-block;
+    /* Overlay */
+    background-color: rgba(0,0,0,0.5);
+    background-blend-mode: color;
+    /* border:2px solid rgb(0, 182, 39); */
+}
+#showcase-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 95%;
+    width: 95%;
+    margin:auto;
+    text-align: center;
+    /* border:1px solid yellow; */
+    padding-top: 80px;
+    padding-bottom: 80px;
+   
+}
+@media (max-width: 768px) {
+    #showcase {
+        margin-top: 0px;
+        height: 30vh;
+    }
+}
+#Texto_Melhores_Jogos {
+    font-size: 2rem;
+    width: 100%;
+    text-shadow: 4px 4px 4px black;
+    /* border: 1px solid red;  */
+    display: block;
+    color: rgb(255, 255, 255);
+   
+}
+#Paragrafo_baixe_os_melhores{
+    font-size: 1rem;
+    width: 100%;
+    text-shadow: 4px 4px 4px black;
+    /* border: 1px solid red; */
+    padding-top: 10px;
+    display: block;
+    
+}
+/* /////////////////////////////// Main ////////////////////////// */
+main{
+    width: 100%;
+}
+
+/* Section gallery */
+#gallery{
+    float: left;
+    width: 75%;
+    background-color: rgb(255, 255, 255);
+    margin-top: 0px; 
+}
+@media (max-width: 768px) {
+    #gallery{
+        width: 100%;
+    }
+}
+#gallery-container li {
+    list-style: none;
+}
+#gallery-container li h2{
+    max-width: 160px;
+    width: 12vw;
+    font-size: 1rem;
+    text-align: center;
+    margin: auto;
+    padding: 0;
+}
+@media (max-width: 768px) {
+    #gallery-container li h2{
+        max-width: 160px;
+        width: 100%;
+        height: 60px;
+    }
+}
+.gallery-items{
+    display: inline-block;
+    max-width: 160px;
+    width: 12vw;
+    max-height: 190px;
+    height: 15vw;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px black;
+}
+.gallery-Recomendados{
+    display: inline-block;
+    max-width: 160px;
+    width: 100%;
+    max-height: 190px;
+    height: 25vw;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px black;
+}
+#ulRecomendados li{
+    list-style: none;
+
+}
+@media (max-width: 768px) {
+    .gallery-items{
+        width: 160px;
+        max-height: 190px;
+        height: 200px; 
+    }
+}
+.headline {
+    font-size: 1.5rem;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 2px;
+    margin: auto;
+    /* background-color: red; */
+
+}
+@media (max-width: 768px) {
+    .headline {
+        margin-top: 0pxpx;
+    }
+}
+#ul{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin: auto;
+    width: 100%;
+    grid-gap: 8px; /*espaço*/
+    justify-content: center;
+    justify-items: center;
+    padding-top:20px ;
+    padding-bottom: 50px;
+}
+@media (max-width: 768px) {
+   #ul{
+    grid-template-columns: repeat(2, 1fr);
+   }
+}
+/* /////////////////////////////// Aside ////////////////////////////// */
+
+aside{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+@media (max-width: 768px) {
+    aside{
+        display: none;
+        width: 0px;
+    }
+}
+
+#LiContainer{
+    position: relative;
+}
+#h2Nome{
+    color: #eee;
+    position: absolute;
+    bottom: 5%; 
+    left: 5%;
+    text-align: left;
+    text-shadow: 4px 4px 4px black;
+
+}
+#LiContainer{
+    position: relative;
+}
+#testimonial_aside {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.2rem;
+    background-color: rgb(112, 112, 112); 
+    padding: 15px;
+}
+#contailer_recomendados{
+    position: relative;
+    width: 95%;
+}
+.img_gameplay{
+    max-width: 100%;
+    min-width: 100%;
+    width: 600px;
+    height: auto;
+    border-radius: 15px;
+}
+.jogos{
+    min-width: 20px;
+    height: 15vw;
+    width: 100%;
+    border-radius: 15px;
+    background-color: blue;
+}
+.jogos:hover{
+    border:  4px solid blue;
+}
+/* /////////////////////////////// footer ////////////////////////////// */
+#footer{
+    width: 100%;
+    background:#222;
+    color: #eee;
+    padding: 20px;
+    text-align: center;
+}

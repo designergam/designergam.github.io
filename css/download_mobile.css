@@ -1,0 +1,185 @@
+#navbar {
+    height: 120px;
+    z-index: 1;
+    
+}
+/* //////////////////////////////////////////////////////// */
+
+.logo img{
+    width: 200px;
+    margin: 0;
+    float: left;
+}
+/* //////////////////////////////////////////////////////// */
+
+/* titulo */
+#tit{
+    margin-top: 150px;
+    font-size:1.3rem;
+}
+/* //////////////////////////////////////////////////////// */
+
+/* capa do jogo */
+#img_capa{
+    height: 180px;
+    width: 150px;
+    border-radius: 3%;
+    margin: 10px;
+}
+/* //////////////////////////////////////////////////////// */
+
+#previa{
+    font-size:1rem;
+    text-align:justify;
+    margin-right: 0px;
+}
+/* //////////////////////////////////////////////////////// */
+
+#TEXTO_H2{
+font-size: 1.5rem;
+color: rgb(255, 255, 255);
+margin-bottom: 15px;
+
+
+}
+/* //////////////////////////////////////////////////////// */
+
+/* container de imagens do jogo e gif  e texto*/
+.testimonial {
+    width:95%;
+    font-size: 1.2rem;
+    flex-direction: column;
+    text-align: center;
+    padding:30px;
+    margin-bottom: 25px;
+    margin-top: 0px;
+
+    
+}
+
+.testimonial2{
+    width: 95%;
+    margin-bottom: 20px;
+    
+}
+
+.testimonial3{
+    width: 95%;
+    
+    
+}
+
+/* itens do conteiner imagens do jogo e gif */
+.img_gameplay {
+    height: 170px;
+    width: 280px;
+    border-radius: 3%;
+    margin: 15px;
+}
+@media (max-width: 768px) {
+    .img_gameplay {
+        height: auto;
+        width: 90%;
+    }
+ 
+}
+/* //////////////////////////////////////////////////////// */
+
+#descricao{
+    font-size: 1rem;
+    text-align:justify;
+    margin: 0px;
+    
+}
+/* //////////////////////////////////////////////////////// */
+
+#trailer{
+    margin: auto;
+    width: 95%;
+    height: 60vw;
+    
+}
+/* //////////////////////////////////////////////////////// */
+
+/*botão de download */
+#download {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    padding: 10PX;
+    background-color: green;
+    z-index: 0;
+}
+  
+#download:hover{
+    background-color: rgb(17, 0, 146);
+    
+}
+/* //////////////////////////////////////////////////////// */
+
+/*Jogos recomendados */
+#gallery{
+    width: 95%;
+}
+
+#gallery-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px; /*espaço*/
+    justify-content: center;
+}
+
+/* items Jogos recomendados */
+.gallery-items{
+    display: inline-block;
+    width: 150px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.galerry-items h2{
+    font-size:1.2rem;
+}
+
+.gallery-items:hover{
+    display: inline-block;
+    width: 150px;
+    height: 200px;
+    border-radius: 5px;
+    border: 3px solid blue;
+}
+/* //////////////////////////////////////////////////////// */
+
+#footer p{
+    text-align: center;
+    font-size: 1rem;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+/* //////////////////////////////////////////////////////// */
+
+.testimonial3 p{
+    text-align: center;
+    margin-bottom: 10px;
+    display: block;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 5px;
+}
+
+.testimonial3 h3{
+    /* border: 2px solid rgb(228, 0, 0); */
+    text-align: center;
+    margin: auto;
+    margin-bottom: 30px;
+    margin-right: 0px; 
+}
+
+#container_requisitos{
+    border: 2px solid black;
+    position: relative;
+    height: 80px;
+}
+
+
+
+
