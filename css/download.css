@@ -26,6 +26,7 @@ body {
     color: #eee;
     height: 80px;
     position: fixed;
+    top: 0;
     z-index: 1;
 }
 #navbar-container {
@@ -54,14 +55,63 @@ a:hover{
 }
 /* ////////////////////////////////////////////////////// Main /////////////////////////////////////////////////////// */
 /* Section - Img, Previa, Titulo */
-.testimonial {
-    display: flex;
+
+
+#container{
     align-items: center;
-   
-    width: 90%; 
-    margin-bottom: 0px; 
-    margin-top: 15px; 
+    display: grid;
+    border-radius: 10px;
+    width: 90%;
     padding: 10px; 
+    margin-top: 200px; 
+    margin-bottom: 40px;  
+    background-color: #263241;
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    grid-template-columns: 50% 50%;  
+}
+#container2{
+    align-items: center;
+    display: grid;
+    border-radius: 10px;
+    width: 90%;
+    padding: 10px; 
+    margin-top: 200px; 
+    margin-bottom: 40px;  
+    background-color: #263241;
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    grid-template-columns: 25% 75%;  
+}
+#container3{
+    align-items: center;
+    display: grid;
+    border-radius: 10px;
+    width: 90%;
+    padding: 10px; 
+    margin-top: 200px; 
+    margin-bottom: 40px;  
+    background-color: #263241;
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: 10px;
+   
+}
+#container4{
+    align-items: center;
+    display: grid;
+    border-radius: 10px;
+    width: 90%;
+    padding: 20px; 
+    margin-top: 200px; 
+    margin-bottom: 40px;  
+    background-color: #263241;
+    margin: auto;
+    margin-bottom: 35px;
+    margin-top: 10px;
+    grid-template-columns: 60% 40%;  
 }
 
 #testimonials-container{
@@ -80,17 +130,10 @@ a:hover{
     margin-top: 115px;
    
 }
-.testimonial2{
-    align-items: center;
-    width: 90%; 
-    margin-top: 20px; 
-    margin-bottom: 40px; 
-    
-}
 
 #img_capa{
-    min-width: 150px;
-    height: 190px;
+    height: 300px;
+    width: 210px;
     border-radius: 3%;
     margin: 20px;
     margin-right: 50px;
@@ -103,27 +146,15 @@ a:hover{
     margin-right: 40px;
 }
 
-
-
-
 /* ////////////////////////////////////////////////////// Requisitos /////////////////////////////////////////////////////// */
 .testimonial3{
     display: inline-block;
     align-items: center;
       /* border: 1px solid rgb(7, 116, 61);   */
-    width: 65%; 
+    width: 100%; 
     padding: 30px; 
-    
-    
 }
-#containerRT{
-    /* border: 2px solid red;  */
-    display: flex;
-    position: relative;
-    width: 90%;
-    margin-top: 150px;
-    margin: auto;
-}
+
 .testimonial3 p{
     display: inline-block;
 }
@@ -214,15 +245,15 @@ a:hover{
     font-size: 1.5rem;
     font-weight: bold;
     text-align: center;
+    
 }
 .img_gameplay {
     width: 35vw;
     height: 20vw;
     border-radius: 5%;
-    margin: auto;
+    margin:auto;
     margin-top: 20px;
     margin-bottom: 20px;
- 
 }
 
 /* //////////////////////////////////////////////// Descrição do jogo /////////////////////////////////////////////////// */
@@ -234,13 +265,11 @@ a:hover{
 
 /* //////////////////////////////////////////////// Trailer /////////////////////////////////////////////////// */
 #trailer{
-    
     margin: auto;
-    width: 38%;
+    width: 90%;
     height: 300px;
-    
-   
 }
+
 /* //////////////////////////////////////////////// Botão Download/////////////////////////////////////////////////// */
 #download{
     color: white;
@@ -253,6 +282,7 @@ a:hover{
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
+    margin-top: 20px;
 }
 
 #download:hover{
@@ -279,29 +309,6 @@ a:hover{
     background-color: rgb(17, 0, 146);
 }
 
-#baixaragora{
-    /* background-color: #385d8b; */
-    width: 90%;
-    height: 50px;
-    margin: auto;
-    padding-left: 45px;
-}
-
-.downloadd{
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    padding: 15px;
-    background-color: green;
-    border-radius: 5px;
-    text-decoration: none;
-    position: absolute;
-    
-}
-.downloadd:hover{
-    padding: 13PX;
-    background-color: rgb(17, 0, 146);
-    color: white;
-}
 /* //////////////////////////////////////////////// Jogos Recomendados /////////////////////////////////////////////////// */
 
 /* //////////////////////////////////////////////// id /////////////////////////////////////////////////// */

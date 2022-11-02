@@ -23,7 +23,6 @@
     <script src="galerias/jogos.js"></script>
     <script src="galerias/gba.js"></script> 
    
-
     <script>
         const urlAtual = window.location.href;
         const urlClass = new URL(urlAtual);
@@ -95,82 +94,61 @@
             </div>
         </nav>
     </header>              
-              
-    
-    
 
     <main>
+        <!--Titulo -->
+        <div id="tit"></div>
 
         <!-- titulo, capa, previa -->
-        <section>
-            <div id="testimonials-container">
-                
-                <!--Titulo -->
-                <div id="tit"></div>
-                
-                <script>
-                    var tit_B =  window.document.getElementById("tit") //liga ao id
-                    tit_B.innerText = tit_A // escreve dentro de tit o que esta escrito em tit_a
-                </script>
-                
-                <div class="testimonial" id="testimonial2">
+        <section id="container2">
+            
+            <script>
+                var tit_B =  window.document.getElementById("tit") //liga ao id
+                tit_B.innerText = tit_A // escreve dentro de tit o que esta escrito em tit_a
+            </script>
 
-                <!--img jogo-->
-                <img src="" alt="imagem de capa do jogo" id="img_capa">
+            <!--img jogo-->
+            <img src="" alt="imagem de capa do jogo" id="img_capa">
+            
+            <script>
+                var src_B =  window.document.getElementById("img_capa") 
+                src_B.src = src_A
+            </script>
+
+            <!-- PREVIA -->
+            <p id="previa"></p>
+
+            <script>
+                var previa_B =  window.document.getElementById("previa") 
+                previa_B.innerText = previa_A
+            </script>
                 
-
-                <script>
-                    var src_B =  window.document.getElementById("img_capa") 
-                    src_B.src = src_A
-                </script>
-
-                <!-- PREVIA -->
-                <p id="previa"></p>
-
-                <script>
-                    var previa_B =  window.document.getElementById("previa") 
-                    previa_B.innerText = previa_A
-                </script>
-                
-            </div>
-            <!-- Botao de Download -->
-      
         </section> 
         
-        <section id="baixaragora">
-            <span>
-                <a  class="downloadd" href="#download" rel="download do jogo" >DOWNLOAD</a>
-            </span> 
-        </section>
-        
         <!-- Imagem e gif da gameplay -->
-        <section>
             <h2 id="TEXTO_H2">IMAGENS DO JOGO</h2>
-                    
+
+        <section id="container">         
             <!-- IMAGENS DE GAMEPLAY -->
-            <div id="testimonials-container">
-                <div class="testimonial">
+            
+            <!-- img gameplay 01 -->
+            <img src="" alt="imagens da gameplay" class="img_gameplay" id="img_gameplay1">
+            <script>
+                var img_gameplay1_B =  window.document.getElementById("img_gameplay1") //liga ao id
+                img_gameplay1_B.src = img_gameplay1_A
+            </script>
 
-                    <!-- img gameplay 01 -->
-                    <img src="" alt="imagens da gameplay" class="img_gameplay" id="img_gameplay1">
-                    <script>
-                        var img_gameplay1_B =  window.document.getElementById("img_gameplay1") //liga ao id
-                        img_gameplay1_B.src = img_gameplay1_A
-                    </script>
-
-                    <!-- img gameplay 02 -->
-                    <img src="" alt="gif da gameplay" class="img_gameplay" id="img_gameplay2">
-                    <script>
-                        var img_gameplay2_B =  window.document.getElementById("img_gameplay2") //liga ao id
-                        img_gameplay2_B.src = img_gameplay2_A
-                    </script>
-                </div>
-            </div>
+            <!-- img gameplay 02 -->
+            <img src="" alt="gif da gameplay" class="img_gameplay" id="img_gameplay2">
+            <script>
+                var img_gameplay2_B =  window.document.getElementById("img_gameplay2") //liga ao id
+                img_gameplay2_B.src = img_gameplay2_A
+            </script>
+            
         </section>
 
         <!--Requisitos-->
-        
-        <section id="containerRT">
+        <section id="container4">
             <div class="testimonial3">
         
                 <h2 id="requisitos">Requisitos Mínimos</h2>
@@ -213,41 +191,21 @@
                 <br>
             </div>
            
-        
-
-           
-        <iframe  id="trailer"  src="" frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-        </iframe>   
+            <iframe  id="trailer"  src="" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>   
                
-        <script>
-            var trailer_B =  window.document.getElementById("trailer") //liga ao id
-            trailer_B.src = trailer_A
-        </script>
-       
-    </section>
-
-        
-
-        <!-- Sobre o o Jogo -->
-        <section id="sectionSobre">
-            <div id="testimonials-container">
-                <div class="testimonial2">
-                    <h2 id="TEXTO_H2">UM POUCO MAIS SOBRE</h2>
-                        
-                    <!-- DESCRIÇÃO -->
-                    <p id="descricao"></p>
-                    <script>
-                        var descricao_B =  window.document.getElementById("descricao") //liga ao id
-                        descricao_B.innerText = descricao_A // escreve dentro de tit o que esta escrito em tit_a
-                    </script>
-                
-                </div>
-            </div>
+            <script>
+                var trailer_B =  window.document.getElementById("trailer") //liga ao id
+                trailer_B.src = trailer_A
+            </script>
         </section>
-
-              
-
+    
+        <script>
+            var descricao_B =  window.document.getElementById("descricao") //liga ao id
+            descricao_B.innerText = descricao_A // escreve dentro de tit o que esta escrito em tit_a
+        </script>
+                
         <!-- Botao de Download -->
         <section>
             <div id="testimonials-container">
@@ -262,9 +220,6 @@
                 </div>
             </div>
         </section>
-
-         
-
 
         <div class="overlay"> <div class="loader"></div>  </div>
     </main>
