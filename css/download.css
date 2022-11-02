@@ -12,7 +12,7 @@ html{
 body {
     font-family: 'Roboto', sans-serif;
     width: 100%;
-    background: #222;
+    background-color: #151d27;
     color: #eee;
     padding: 15px;
     box-sizing: border-box;
@@ -57,7 +57,7 @@ a:hover{
 .testimonial {
     display: flex;
     align-items: center;
-    background-color: #333; 
+   
     width: 90%; 
     margin-bottom: 0px; 
     margin-top: 15px; 
@@ -78,16 +78,16 @@ a:hover{
     font-weight: bold;
     text-align: center;
     margin-top: 115px;
-    margin-bottom: 20px;
+   
 }
 .testimonial2{
     align-items: center;
-    background-color: #333; 
     width: 90%; 
     margin-top: 20px; 
-    margin-bottom: 20px;
-    padding: 35px; 
+    margin-bottom: 40px; 
+    
 }
+
 #img_capa{
     min-width: 150px;
     height: 190px;
@@ -103,24 +103,33 @@ a:hover{
     margin-right: 40px;
 }
 
+
+
+
 /* ////////////////////////////////////////////////////// Requisitos /////////////////////////////////////////////////////// */
 .testimonial3{
     display: inline-block;
     align-items: center;
-    background-color: #333; 
-    width: 90%; 
-    margin-top: 20px; 
-    margin-bottom: 20px;
-    padding: 35px; 
+      /* border: 1px solid rgb(7, 116, 61);   */
+    width: 65%; 
+    padding: 30px; 
     
+    
+}
+#containerRT{
+    /* border: 2px solid red;  */
+    display: flex;
+    position: relative;
+    width: 90%;
+    margin-top: 150px;
+    margin: auto;
 }
 .testimonial3 p{
     display: inline-block;
 }
 .testimonial3  h3{
     display: inline-block;
-    margin-bottom: 30px;
-    margin-right: 10px;
+    
 }
 #requisitos{
     text-align: center;
@@ -132,7 +141,7 @@ a:hover{
     height: 50px;
     background-color: white;
     display: inline-block;
-    margin: auto;
+    margin: 10px;
     vertical-align: middle;
     border-radius: 50%;
     margin-right: 10px;
@@ -142,15 +151,15 @@ a:hover{
     background-position: center center;
 }
 #icone_requisitos1:hover{
-    border: 2px solid blue;
-    transform: translate(2px, 2px);
+    border: 2px solid #48648b;
+    transform: translate(1px, 1px);
 }
 #icone_requisitos2{/* gpu */
     width: 50px;
     height: 50px;
     background-color: white;
     display: inline-block;
-    margin: auto;
+    margin: 10px;
     vertical-align: middle;
     border-radius: 50%;
     margin-right: 10px;
@@ -160,15 +169,15 @@ a:hover{
     background-position: center center;
 }
 #icone_requisitos2:hover{
-    border: 2px solid blue;
-    transform: translate(2px, 2px);
+    border: 2px solid #48648b;
+    transform: translate(1px, 1px);
 }
 #icone_requisitos3{/* ram */
     width: 50px;
     height: 50px;
     background-color: white;
     display: inline-block;
-    margin: auto;
+    margin: 10px;
     vertical-align: middle;
     border-radius: 50%;
     margin-right: 10px;
@@ -178,15 +187,15 @@ a:hover{
     background-position: center center; 
 }
 #icone_requisitos3:hover{
-    border: 2px solid blue;
-    transform: translate(2px, 2px);
+    border: 2px solid #48648b;
+    transform: translate(1px, 1px);
 }
 #icone_requisitos4{/* hdd */
     width: 50px;
     height: 50px;
     background-color: white;
     display: inline-block;
-    margin: auto;
+    margin: 10px;
     vertical-align: middle;
     border-radius: 50%;
     margin-right: 10px;
@@ -196,8 +205,8 @@ a:hover{
     background-position: center center;   
 }
 #icone_requisitos4:hover{
-    border: 2px solid blue;
-    transform: translate(2px, 2px);
+    border: 2px solid #48648b;
+    transform: translate(1px, 1px);
 }
 
 /* //////////////////////////////////////////////// Imagens Gameplay /////////////////////////////////////////////////// */
@@ -225,10 +234,12 @@ a:hover{
 
 /* //////////////////////////////////////////////// Trailer /////////////////////////////////////////////////// */
 #trailer{
+    
     margin: auto;
-    width: 50vw;
-    height: 30vw;
-    margin-top: 20px;
+    width: 38%;
+    height: 300px;
+    
+   
 }
 /* //////////////////////////////////////////////// Botão Download/////////////////////////////////////////////////// */
 #download{
@@ -243,6 +254,7 @@ a:hover{
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 #download:hover{
     padding: 13PX;
     background-color: rgb(17, 0, 146);
@@ -255,7 +267,6 @@ a:hover{
     padding: 15px;
     background-color: green;
     border-radius: 5px;
-
     text-decoration: none;
     position: absolute;
     left: 50%;
@@ -267,6 +278,30 @@ a:hover{
     padding: 13PX;
     background-color: rgb(17, 0, 146);
 }
+
+#baixaragora{
+    /* background-color: #385d8b; */
+    width: 90%;
+    height: 50px;
+    margin: auto;
+    padding-left: 45px;
+}
+
+.downloadd{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    padding: 15px;
+    background-color: green;
+    border-radius: 5px;
+    text-decoration: none;
+    position: absolute;
+    
+}
+.downloadd:hover{
+    padding: 13PX;
+    background-color: rgb(17, 0, 146);
+    color: white;
+}
 /* //////////////////////////////////////////////// Jogos Recomendados /////////////////////////////////////////////////// */
 
 /* //////////////////////////////////////////////// id /////////////////////////////////////////////////// */
@@ -277,12 +312,13 @@ a:hover{
 /* //////////////////////////////////////////////// Footer /////////////////////////////////////////////////// */
 #footer {
     align-items: center;
-    background-color: #333;
     padding: 15px; 
+    margin-top: 100px;
 }
 #footer p{
     text-align: center;
     font-size: 1rem;
     margin-left: 70px;
     margin-right: 70px;
+    color: gray;
 }

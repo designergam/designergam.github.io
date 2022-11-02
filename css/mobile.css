@@ -157,14 +157,9 @@
     background-color: transparent;
     /* border: 2px solid red; */ 
 }
-#trailer{
-    margin: 30px;
-    width: 350px;
-    height: 200px;
-    /* border: 2px solid red; */
-}
+
 .header #input{
-    width: 100%;
+    width: 95%;
     /* border: 2px solid red; */
 }
     /* Showcase */

@@ -134,21 +134,43 @@
                 
             </div>
             <!-- Botao de Download -->
-        
-            <div id="testimonials-container">
-                <div class="testimonial2">
-                    <span>
-                        <a  class="download" href="#download" rel="download do jogo" >Baixar agora</a>
-                    </span> 
-                    
-                </div>
-            </div>
       
         </section> 
+        
+        <section id="baixaragora">
+            <span>
+                <a  class="downloadd" href="#download" rel="download do jogo" >DOWNLOAD</a>
+            </span> 
+        </section>
+        
+        <!-- Imagem e gif da gameplay -->
+        <section>
+            <h2 id="TEXTO_H2">IMAGENS DO JOGO</h2>
+                    
+            <!-- IMAGENS DE GAMEPLAY -->
+            <div id="testimonials-container">
+                <div class="testimonial">
+
+                    <!-- img gameplay 01 -->
+                    <img src="" alt="imagens da gameplay" class="img_gameplay" id="img_gameplay1">
+                    <script>
+                        var img_gameplay1_B =  window.document.getElementById("img_gameplay1") //liga ao id
+                        img_gameplay1_B.src = img_gameplay1_A
+                    </script>
+
+                    <!-- img gameplay 02 -->
+                    <img src="" alt="gif da gameplay" class="img_gameplay" id="img_gameplay2">
+                    <script>
+                        var img_gameplay2_B =  window.document.getElementById("img_gameplay2") //liga ao id
+                        img_gameplay2_B.src = img_gameplay2_A
+                    </script>
+                </div>
+            </div>
+        </section>
 
         <!--Requisitos-->
-        <section id="sectionRequisitos">
-        <div id="testimonials-container" >
+        
+        <section id="containerRT">
             <div class="testimonial3">
         
                 <h2 id="requisitos">Requisitos Mínimos</h2>
@@ -190,35 +212,22 @@
                 </script>
                 <br>
             </div>
-        </div>
-        </section>
-
+           
         
 
-        <!-- Imagem e gif da gameplay -->
-        <section>
-            <h2 id="TEXTO_H2">IMAGENS DO JOGO</h2>
-                    
-            <!-- IMAGENS DE GAMEPLAY -->
-            <div id="testimonials-container">
-                <div class="testimonial">
+           
+        <iframe  id="trailer"  src="" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>   
+               
+        <script>
+            var trailer_B =  window.document.getElementById("trailer") //liga ao id
+            trailer_B.src = trailer_A
+        </script>
+       
+    </section>
 
-                    <!-- img gameplay 01 -->
-                    <img src="" alt="imagens da gameplay" class="img_gameplay" id="img_gameplay1">
-                    <script>
-                        var img_gameplay1_B =  window.document.getElementById("img_gameplay1") //liga ao id
-                        img_gameplay1_B.src = img_gameplay1_A
-                    </script>
-
-                    <!-- img gameplay 02 -->
-                    <img src="" alt="gif da gameplay" class="img_gameplay" id="img_gameplay2">
-                    <script>
-                        var img_gameplay2_B =  window.document.getElementById("img_gameplay2") //liga ao id
-                        img_gameplay2_B.src = img_gameplay2_A
-                    </script>
-                </div>
-            </div>
-        </section>
+        
 
         <!-- Sobre o o Jogo -->
         <section id="sectionSobre">
@@ -237,27 +246,14 @@
             </div>
         </section>
 
-        <!-- Trailer do jogo -->
-        <section id="sectionTrailer">
-            <h2 id="TEXTO_H2">ASSISTA O TRAILER</h2>
-            <div id="testimonials-container">   
-                <!-- Trailer -->
-                <iframe  id="trailer" width="560" height="315" src="" frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                </iframe>
-                <script>
-                    var trailer_B =  window.document.getElementById("trailer") //liga ao id
-                    trailer_B.src = trailer_A
-                </script>
-            </div>
-        </section>         
+              
 
         <!-- Botao de Download -->
         <section>
             <div id="testimonials-container">
                 <div class="testimonial2">
                     <span>
-                        <a  id="download" href="" rel="download do jogo" target="_blank">DOWNLOAD</a>
+                        <a  id="download" href="" rel="download do jogo" target="_blank">BAIXAR AGORA</a>
                     </span> 
                     <script>
                         var download_B =  window.document.getElementById("download") //liga ao id
@@ -266,6 +262,8 @@
                 </div>
             </div>
         </section>
+
+         
 
 
         <div class="overlay"> <div class="loader"></div>  </div>
@@ -282,9 +280,7 @@
         <p>Importante: Os jogos disponíveis nesse site não são hospedados por nós, apenas indexamos, qualquer denúncia deve ser encaminhada diretamente aos sites responsáveis por hospedar os jogos em seus servidores. O intuito deste site é apenas organizar os links com imagens e textos para fins de busca do usuário.</p>
     </footer>
 
-    <audio  id="audio" src="musicapirata.mp3" autoplay controls >
-        <p>Seu navegante nao suporta musica marujo!</p>
-    </audio>
+   
     
 </body>
 </html>

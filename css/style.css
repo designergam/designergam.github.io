@@ -3,14 +3,16 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0; 
+    
 }
 
 html{
-    width: 100vw;
+    width: 100%;
 }
 body {
     font-family: 'Roboto', sans-serif;
     width: 100%;
+    background-color: #151d27;
 }
 /*//////////////////////////////////// Header /////////////////////////////////////////////*/
 #navbar {
@@ -33,12 +35,13 @@ body {
     padding: 10px;
 }
 #navbar-container {
-    width: 100vw;
+    width: 95%;
     height: 100%;
     margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 /* link */
@@ -165,6 +168,11 @@ main{
         width: 100%;
     }
 }
+#gallery-container{
+    /* border: 2px solid blue; */
+    width: 95%;
+    margin: auto;
+}
 #gallery-container li {
     list-style: none;
 }
@@ -179,7 +187,7 @@ main{
 @media (max-width: 768px) {
     #gallery-container li h2{
         max-width: 160px;
-        width: 100%;
+        width: 95%;
         height: 60px;
     }
 }
@@ -190,12 +198,12 @@ main{
     max-height: 190px;
     height: 15vw;
     border-radius: 5px;
-    box-shadow: 3px 3px 5px black;
+    
 }
 .gallery-Recomendados{
     display: inline-block;
     max-width: 160px;
-    width: 100%;
+    width: 95%;
     max-height: 190px;
     height: 25vw;
     border-radius: 5px;
@@ -220,6 +228,7 @@ main{
     text-align: center;
     letter-spacing: 2px;
     margin: auto;
+    color: #eee;
     /* background-color: red; */
 
 }
@@ -231,14 +240,32 @@ main{
 #ul{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    margin: auto;
-    width: 100%;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+    width: 95%;
     grid-gap: 8px; /*espaço*/
     justify-content: center;
     justify-items: center;
     padding-top:20px ;
     padding-bottom: 50px;
 }
+
+#ul li{
+    
+    padding: 7px;
+    border-radius: 7px;
+    background-color: #263241;
+    color: white;
+}
+
+#ul li:hover{
+    box-shadow: 2px 5px 20px 5px black;
+}
+
+#ul li h2{
+    margin-top: 10px;
+}
+
 @media (max-width: 768px) {
    #ul{
     grid-template-columns: repeat(2, 1fr);
@@ -305,8 +332,39 @@ aside{
 /* /////////////////////////////// footer ////////////////////////////// */
 #footer{
     width: 100%;
-    background:#222;
-    color: #eee;
+    color: gray;
     padding: 20px;
     text-align: center;
+}
+
+#pgs{
+    /* border: 2px solid red;  */
+    display: flex;
+    width: 140px;
+    margin: auto;
+    margin-bottom: 30px;
+    
+    
+}
+
+#pgs a{
+    background-color:#222;
+    color: #eee;
+    width: 35px;
+    height: 35px;
+    margin: 5px;
+    border-radius: 5px;
+    position: relative;
+    margin-left: 5px;
+    margin-right: 5px;
+   
+ 
+}
+
+#pgs a p{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
