@@ -32,9 +32,9 @@
 
                     <div class="barra"> 
                         <nav>
-                            <a  href="?modulo=pc"><div class="link">Home</div></a>
-                            <a  href="?modulo=gba" ><div class="link">GBA</div></a>
-                            <a  href="?modulo=snes"><div class="link">Snes</div></a>
+                            <a  href="index.html"><div class="link">Home</div></a>
+                            <a  href="index.html?pagina=programas"><div class="link">Programas</div></a>
+                           
                         </nav>
                     </div>  
                      <!-- Logo Pirata-->
@@ -46,9 +46,15 @@
                     </div>
 
                     <ul id="navbar-items">
-                        <li id="inicio"><a href="#showcase">Início</a></li>
+                        <li id="inicio"><a onclick="goBack()">Voltar</a></li>
                     </ul>
                 </div>
+
+                <script>
+                    function goBack() {
+                        window.history.back()
+                    }
+                </script>
         </nav>
     </header>
 
@@ -68,6 +74,7 @@
                     <!-- aqui ficara a lista de jogos gerada pelo js -->
                 </ul>
             </div>  
+            
     </main>
 
     <section id="pgs">
@@ -75,10 +82,6 @@
         <a href="?pagina=2"><p>2</p></a>
         <a href="?pagina=3"><p>3</p></a>
     </section>
-
-
-
- 
 
     <!-- Rodapé -->
     <footer id="footer"> 
@@ -96,8 +99,7 @@
 
 <!-- Bibliotecas -->
 <script src="galerias/jogos.js"></script>
-<script src="galerias/gba.js"></script>
-<script src="galerias/snes.js"></script>
+<script src="galerias/programas.js"></script>
 
 <!-- Gerar Galeria -->
 <script src="js/GerarGaleria.js"></script>
@@ -113,3 +115,4 @@
         
     }
 </script>
+

@@ -21,42 +21,30 @@
 
     <!---galeria de jogos--> 
     <script src="galerias/jogos.js"></script>
-    <script src="galerias/gba.js"></script> 
-   
+    <script src="galerias/programas.js"></script>
+
+    <h2></h2>
     <script>
         const urlAtual = window.location.href;
         const urlClass = new URL(urlAtual);
-        let escolhido = urlClass.searchParams.get("escolhido");
-        let tipo = urlClass.searchParams.get("tipo");
 
+        let EscolhidoURL = urlClass.searchParams.get("id");
+        
 
         let conteudo = [];
 
-        if(tipo == "pc"){
-         conteudo = pc.filter(function(galeria){
-            return galeria.id == escolhido;
+         conteudo = Jogos.filter(function(item){
+            return item.id == EscolhidoURL;
         })
-        }
-
-        if(tipo == "emulador"){
-         conteudo = gba.filter(function(galeria){
-            return galeria.id == escolhido;
-        })
-
-        }
 
        
-
-
-        let id_A = (conteudo[0].id);
-        let tit_A = (conteudo[0].tit);
-        let src_A = (conteudo[0].src)
-        let previa_A = (conteudo[0].previa)
-        let descricao_A = (conteudo[0].descricao)
-        let trailer_A = (conteudo[0].trailer)
-        let download_A = (conteudo[0].download)
-        let img_gameplay1_A = (conteudo[0].img_gameplay1)
-        let img_gameplay2_A = (conteudo[0].img_gameplay2)
+        let Nome = (conteudo[0].Nome);
+        let Capa = (conteudo[0].Capa)
+        let Descricao = (conteudo[0].Descricao)
+        let Trailer = (conteudo[0].Trailer)
+        
+        let Imagem= (conteudo[0].Imagem)
+        let Gif = (conteudo[0].Gif)
 
         //Requisitos Minimos
         let cpu_A = (conteudo[0].cpu);
@@ -70,30 +58,17 @@
             <div id="navbar-container">
                 <h1 class="logo"><img src="img/logopirata.png" alt="logo do site"></h1>
                 <ul id="navbar-items">
-                    <li><a href="" id="voltar" onclick="voltar()" rel="prev" >Voltar</a></li>
+                    <li onclick="goBack()" id="voltar" ><a rel="prev" >Voltar</a></li>
                 </ul>
-
-                <script>
-                    const urlAtual1 = window.location.href;
-                    const urlClass2 = new URL(urlAtual1);
-                    let console2 = urlClass2.searchParams.get("console");
-
-                    
-                    function voltar(){
-                    if(console2 == "gba"){
-                    document.getElementById("voltar").href = "index.html?modulo=gba"
-                    }
-                    else if ( console2 == "snes"){
-                        document.getElementById("voltar").href = "index.html?modulo=snes"
-                    }
-                    else if ( tipo == "pc"){
-                        document.getElementById("voltar").href = "index.html"
-                    }
-                    }
-                </script>
             </div>
         </nav>
-    </header>              
+    </header>      
+    
+    <script>
+        function goBack() {
+            window.history.back()
+        }
+    </script>
 
     <main>
         <!--Titulo -->
@@ -104,7 +79,7 @@
             
             <script>
                 var tit_B =  window.document.getElementById("tit") //liga ao id
-                tit_B.innerText = tit_A // escreve dentro de tit o que esta escrito em tit_a
+                tit_B.innerText = Nome// escreve dentro de tit o que esta escrito em tit_a
             </script>
 
             <!--img jogo-->
@@ -112,7 +87,7 @@
             
             <script>
                 var src_B =  window.document.getElementById("img_capa") 
-                src_B.src = src_A
+                src_B.src = Capa
             </script>
 
             <!-- PREVIA -->
@@ -120,7 +95,7 @@
 
             <script>
                 var previa_B =  window.document.getElementById("previa") 
-                previa_B.innerText = previa_A
+                previa_B.innerText = Descricao
             </script>
                 
         </section> 
@@ -135,14 +110,14 @@
             <img src="" alt="imagens da gameplay" class="img_gameplay" id="img_gameplay1">
             <script>
                 var img_gameplay1_B =  window.document.getElementById("img_gameplay1") //liga ao id
-                img_gameplay1_B.src = img_gameplay1_A
+                img_gameplay1_B.src = Imagem
             </script>
 
             <!-- img gameplay 02 -->
             <img src="" alt="gif da gameplay" class="img_gameplay" id="img_gameplay2">
             <script>
                 var img_gameplay2_B =  window.document.getElementById("img_gameplay2") //liga ao id
-                img_gameplay2_B.src = img_gameplay2_A
+                img_gameplay2_B.src = Gif
             </script>
             
         </section>
@@ -197,29 +172,34 @@
                
             <script>
                 var trailer_B =  window.document.getElementById("trailer") //liga ao id
-                trailer_B.src = trailer_A
+                trailer_B.src = Trailer
             </script>
         </section>
+
     
-        <script>
-            var descricao_B =  window.document.getElementById("descricao") //liga ao id
-            descricao_B.innerText = descricao_A // escreve dentro de tit o que esta escrito em tit_a
-        </script>
+        
                 
         <!-- Botao de Download -->
         <section>
-            <div id="testimonials-container">
-                <div class="testimonial2">
-                    <span>
-                        <a  id="download" href="" rel="download do jogo" target="_blank">BAIXAR AGORA</a>
-                    </span> 
-                    <script>
-                        var download_B =  window.document.getElementById("download") //liga ao id
-                        download_B.href = download_A
-                    </script>
+                <div class="testimonial2" id="btnDownloadArea">
+                    
                 </div>
-            </div>
         </section>
+
+        <script>
+            let baixarbtn = document.getElementById("btnDownloadArea")
+
+
+
+            Jogos.map((val)=>{
+                if(val.id == EscolhidoURL){
+                    baixarbtn.innerHTML=`
+                    <a href="Redirect.html?id=`+val.id+`" id="download">DOWNLOAD</a>`
+                }
+            })
+
+                
+        </script>
 
         <div class="overlay"> <div class="loader"></div>  </div>
     </main>
@@ -248,17 +228,3 @@
  <!-- jQuery CDN -->
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
-
-<script>
-    if(tipo == "emulador"){
-        let requisitos = document.getElementById("sectionRequisitos")
-        requisitos.style.display = 'none'
-
-        let sobre = document.getElementById("sectionSobre")
-        sobre.style.display = "none"
-
-        let trailer = document.getElementById("sectionTrailer")
-        trailer.style.display = "none"
-
-    }
-</script>
