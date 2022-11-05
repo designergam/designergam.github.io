@@ -71,6 +71,11 @@ a:hover{
     margin-top: 10px;
     grid-template-columns: 50% 50%;  
 }
+@media (max-width: 768px) {
+    #container{
+        grid-template-columns: none;  
+    }
+}
 #container2{
     align-items: center;
     display: grid;
@@ -84,6 +89,15 @@ a:hover{
     margin-bottom: 30px;
     margin-top: 10px;
     grid-template-columns: 25% 75%;  
+}
+@media (max-width: 768px) {
+    #container2{
+        height: auto;
+        grid-template-columns: none;  
+        grid-template-rows: 50% 50%;
+        align-items: center;
+        position: relative;
+    }
 }
 #container3{
     align-items: center;
@@ -113,6 +127,11 @@ a:hover{
     margin-top: 10px;
     grid-template-columns: 55% 45%;  
 }
+@media (max-width: 768px) {
+    #container4{
+        grid-template-columns: none;  
+    }
+}
 
 #testimonials-container{
     width: 100%;
@@ -140,11 +159,31 @@ a:hover{
     background-color: black;
     box-sizing: border-box;
 }
+@media (max-width: 768px) {
+    #img_capa{
+        height: 360px;
+        width: 270px;
+        margin-right: 0px;
+        margin: 0 auto;
+       
+    }
+}
 #previa{
     font-size: 1.3rem;
     text-align: justify;
     margin-right: 40px;
 }
+@media (max-width: 768px) {
+
+    #previa{
+        margin-top: 10px;
+        font-size:1rem;
+        text-align:justify;
+        margin-right: 0px;
+        padding: 10px;
+    }
+}
+
 
 /* ////////////////////////////////////////////////////// Requisitos /////////////////////////////////////////////////////// */
 .testimonial3{
@@ -266,6 +305,11 @@ a:hover{
     height: 295px;
     border-radius:  15px;
 }
+@media (max-width: 768px) {
+    #trailer{
+        height: 200px;
+    }
+}
 
 /* //////////////////////////////////////////////// Botão Download/////////////////////////////////////////////////// */
 #download{
@@ -280,6 +324,12 @@ a:hover{
     left: 50%;
     transform: translate(-50%, -50%);
     margin-top: 20px;
+}
+@media (max-width: 768px) {
+    #download{
+        position: absolute;
+        left: 10%;
+    }
 }
 
 #download:hover{

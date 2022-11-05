@@ -215,7 +215,7 @@ main{
 }
 @media (max-width: 768px) {
     .gallery-items{
-        width: 160px;
+        width: 150px;
         max-height: 190px;
         height: 200px; 
     }

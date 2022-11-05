@@ -325,7 +325,22 @@ const Jogos = [
     "Plataforma": "pc", 
     "Formato": "Iso", 
 },
-
+{ 
+    "id": 21,
+    "Nome": "Warcraft III: The Frozen Throne", 
+    "Capa": "https://upload.wikimedia.org/wikipedia/en/8/87/Warcraftiii-frozen-throne-boxcover.jpg", 
+    "Imagem": "https://img.informer.com/pb/warcraft-iii-frozen-throne-v1.5-warcraft-3-frozen-throne-1.png", 
+    "Gif": "https://thumbs.gfycat.com/OptimisticJoyfulAvocet-max-1mb.gif", 
+    "Trailer": "https://www.youtube.com/embed/UgTmcnR3iaY", 
+    "Download": "https://drive.google.com/file/d/1qmmq81HYS7_UNtQ5dSkgF_Al1c08JGos/view?usp=share_link", 
+    "Descricao": "O Warcraft III apresentou uma mudança importante com relação às versões anteriores do jogo: unidades únicas, mais poderosas, chamadas "Heroes" (heróis). Um herói no jogo pode achar ou trocar itens mágicos para melhorar suas características e atributos, ao género dos RPGs. Os heróis podem também adquirir auras de proteção através de habilidades, que beneficiam unidades aliadas que estão próximas dele. Tal como nos RPGs, os heróis ganham experiência através de combate, subindo de nível, e desbloqueando novas habilidades ou melhorando aquelas que já possui.   Outra inovação são os creeps: criaturas controladas pelo computador, presentes mesmo em jogos multijogador. Eles guardam certas áreas do mapa. Estes são usados ​​para aumentar o nível do herói no início do jogo à medida que ele ganha experiência e tesouros.", 
+    "cpu": "Intel Core i3-530", 
+    "gpu": "AMD Radeon HD 5750", 
+    "ram": "4 GB", 
+    "rom": "30 GB", 
+    "Plataforma": "pc", 
+    "Formato": "Iso", 
+},
 
       
 ]
