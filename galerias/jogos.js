@@ -145,7 +145,7 @@ const Jogos = [
     "ram": "8 GB", 
     "rom": "70 GB", 
     "Plataforma": "pc", 
-    "Tipo": "jogo", 
+    
 },
 
 { 
@@ -162,7 +162,7 @@ const Jogos = [
     "ram": "8 GB", 
     "rom": "70 GB", 
     "Plataforma": "pc", 
-    "Tipo": "jogo", 
+    
 },
 
 { 
@@ -179,7 +179,7 @@ const Jogos = [
     "ram": "4 GB ", 
     "rom": "90 GB", 
     "Plataforma": "pc", 
-    "Tipo": "jogo", 
+    
 },
 { 
     "id": 12,
@@ -195,7 +195,7 @@ const Jogos = [
     "ram": "8 GB", 
     "rom": "80 Gb", 
     "Plataforma": "pc", 
-    "Tipo": "jogo", 
+    
 },
 { 
     "id": 13,
@@ -211,7 +211,7 @@ const Jogos = [
     "ram": "8 GB", 
     "rom": "50 GB", 
     "Plataforma": "pc", 
-    "Tipo": "jogo", 
+    
 },
 { 
     "id": 14,
@@ -227,7 +227,7 @@ const Jogos = [
     "ram": "8 GB", 
     "rom": "70 GB", 
     "Plataforma": "pc", 
-    "Tipo": "jogo", 
+    
 },
 { 
     "id": 15,
@@ -243,7 +243,7 @@ const Jogos = [
     "ram": "4 GB", 
     "rom": " 36 GB", 
     "Plataforma": "pc", 
-    "Tipo": "jogo", 
+    
 },
 { 
     "id": 16,
@@ -259,7 +259,7 @@ const Jogos = [
     "ram": "8GB", 
     "rom": "150GB", 
     "Plataforma": "pc", 
-    "Tipo": "jogo", 
+    
 },
 { 
     "id": 17,
@@ -275,7 +275,7 @@ const Jogos = [
     "ram": "8 GB", 
     "rom": "25 GB", 
     "Plataforma": "pc", 
-    "Tipo": "jogo", 
+    
 },
 { 
     "id": 18,
@@ -291,7 +291,7 @@ const Jogos = [
     "ram": "8 GB", 
     "rom": "150 GB", 
     "Plataforma": "pc", 
-    "Tipo": "jogo", 
+    
 },
 { 
     "id": 19,
@@ -307,7 +307,7 @@ const Jogos = [
     "ram": "8 GB", 
     "rom": "80 GB", 
     "Plataforma": "pc", 
-    "Tipo": "jogo", 
+    
 },
 { 
     "id": 21,
@@ -323,7 +323,7 @@ const Jogos = [
     "ram": "4 GB", 
     "rom": "30 GB", 
     "Plataforma": "pc", 
-    "Tipo": "jogo", 
+    
 },
 { 
     "id": 22,
@@ -339,7 +339,7 @@ const Jogos = [
     "ram": "4 GB", 
     "rom": "18 GB", 
     "Plataforma": "pc", 
-    "Tipo": "jogo", 
+    
 },
 { 
     "id": 23,
@@ -355,7 +355,7 @@ const Jogos = [
     "ram": "6 GB ", 
     "rom": " 40 GB", 
     "Plataforma": "pc", 
-    "Tipo": "jogo", 
+    
 },
 { 
     "id": 24,
@@ -371,7 +371,7 @@ const Jogos = [
     "ram": "8 GB", 
     "rom": "60 GB", 
     "Plataforma": "pc", 
-    "Tipo": "jogo", 
+    
 },
 { 
     "id": 25,
@@ -387,7 +387,7 @@ const Jogos = [
     "ram": "8 GB", 
     "rom": "60 GB", 
     "Plataforma": "pc", 
-    "Tipo": "jogo", 
+    
 },
 { 
     "id": 26,
@@ -403,7 +403,7 @@ const Jogos = [
     "ram": "8 GB", 
     "rom": "40 GB", 
     "Plataforma": "pc", 
-    "Tipo": "jogo", 
+    
 },
 
       

@@ -23,7 +23,7 @@ if(paginaAtual == null){
 else if(paginaAtual == 2){
     var acriarLI = document.getElementById('ul')
     acriarLI.innerHTML = "";
-    for(let i=19; i<37; i++){
+    for(let i=18; i<37; i++){
         
         acriarLI.innerHTML+=`
         <li>
