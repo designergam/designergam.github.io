@@ -93,6 +93,7 @@ a:hover{
 @media (max-width: 768px) {
     #container2{
         height: auto;
+        padding-bottom: 50px;
         grid-template-columns: none;  
         grid-template-rows: 50% 50%;
         align-items: center;
@@ -325,12 +326,7 @@ a:hover{
     transform: translate(-50%, -50%);
     margin-top: 20px;
 }
-@media (max-width: 768px) {
-    #download{
-        position: absolute;
-        left: 10%;
-    }
-}
+
 
 #download:hover{
     padding: 13PX;
