@@ -13,9 +13,12 @@ if(paginaAtual == null){
         acriarLI.innerHTML+=`
         <li>
             <a href="Download.html?id=`+Jogos[i].id+`">
-            <img src="`+Jogos[i].Capa+`" alt="`+Jogos[i].Nome+Jogos[i].Descricao+`" class="gallery-items">
+                <img src="`+Jogos[i].Capa+`" alt="`+Jogos[i].Nome+`" class="gallery-items">
             </a>
-            <h2>`+Jogos[i].Nome+`</h2>
+
+            <a href="Download.html?id=`+Jogos[i].id+`">
+                <h2>`+Jogos[i].Nome+`</h2>
+            </a>
         </li>`;
         
     }
@@ -28,9 +31,12 @@ else if(paginaAtual == 2){
         acriarLI.innerHTML+=`
         <li>
             <a href="Download.html?id=`+Jogos[i].id+`">
-            <img src="`+Jogos[i].Capa+`" alt="`+Jogos[i].Nome+Jogos[i].Descricao+`" class="gallery-items">
+                <img src="`+Jogos[i].Capa+`" alt="`+Jogos[i].Nome+`" class="gallery-items">
             </a>
-            <h2>`+Jogos[i].Nome+`</h2>
+
+            <a href="Download.html?id=`+Jogos[i].id+`">
+                <h2>`+Jogos[i].Nome+`</h2>
+            </a>
         </li>`;
         
     }
@@ -47,9 +53,13 @@ else if(paginaAtual == "programas"){
             acriarLI.innerHTML+=`
             <li>
                 <a href="Download.html?id=`+Programas[i].id+`">
-                <img src="`+Programas[i].Capa+`" alt="`+Programas[i].Nome+Programas[i].Descricao+`" class="gallery-items">
+                  <img src="`+Programas[i].Capa+`" alt="`+Programas[i].Nome+`" class="gallery-items">
                 </a>
-                <h2>`+Programas[i].Nome+`</h2>
+
+
+                <a href="Download.html?id=`+Programas[i].id+`">
+                    <h2>`+Programas[i].Nome+`</h2>
+                <a>
             </li>`;
         }
     }
