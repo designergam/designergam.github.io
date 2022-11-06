@@ -11,7 +11,7 @@ if(paginaAtual == null){
     for(let i=0; i<18; i++){
 
         acriarLI.innerHTML+=`
-        <li>
+        
             <a href="Download.html?id=`+Jogos[i].id+`">
                 <img src="`+Jogos[i].Capa+`" alt="`+Jogos[i].Nome+`" class="gallery-items">
             </a>
@@ -19,7 +19,7 @@ if(paginaAtual == null){
             <a href="Download.html?id=`+Jogos[i].id+`">
                 <h2>`+Jogos[i].Nome+`</h2>
             </a>
-        </li>`;
+        `;
         
     }
 }
@@ -29,7 +29,7 @@ else if(paginaAtual == 2){
     for(let i=18; i<37; i++){
         
         acriarLI.innerHTML+=`
-        <li>
+        
             <a href="Download.html?id=`+Jogos[i].id+`">
                 <img src="`+Jogos[i].Capa+`" alt="`+Jogos[i].Nome+`" class="gallery-items">
             </a>
@@ -37,7 +37,7 @@ else if(paginaAtual == 2){
             <a href="Download.html?id=`+Jogos[i].id+`">
                 <h2>`+Jogos[i].Nome+`</h2>
             </a>
-        </li>`;
+        `;
         
     }
 }
