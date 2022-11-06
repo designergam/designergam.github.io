@@ -18,7 +18,7 @@ const Jogos = [
     "ram": "8 GB",
     "rom": "126 GB de espaço disponível.",
     "Plataforma": "pc",
-    "Formato": "Iso",
+    "Tipo": "jogo",
 },
 { 
     "id":2,
@@ -38,7 +38,7 @@ const Jogos = [
     "ram":"8 GB",
     "rom":"75 GB",
     "Plataforma":"pc",
-    "Formato":"Iso",
+    
 },
 { 
     "id":3,
@@ -56,7 +56,7 @@ const Jogos = [
     "ram":"16 GB",
     "rom":"60 GB",
     "Plataforma":"pc",
-    "Formato":"Iso",
+    
 },
 { 
     "id":4,
@@ -76,7 +76,7 @@ const Jogos = [
     "ram":"8 GB",
     "rom":"10 GB",
     "Plataforma":"pc",
-    "Formato":"Iso",
+    
 },
 { 
     "id":5,
@@ -93,7 +93,7 @@ const Jogos = [
     "ram":"8 GB",
     "rom":"80 GB",
     "Plataforma":"pc",
-    "Formato":"Iso",
+    
 },
 { 
     "id":6,
@@ -110,23 +110,7 @@ const Jogos = [
     "ram":"8 GB",
     "rom":"60 GB",
     "Plataforma":"pc",
-    "Formato":"Iso",
-},
-{ 
-    "id":7,
-    "Nome": "Corel Draw x22",
-    "Capa": "https://img.olx.com.br/images/94/949252938133259.jpg",
-    "Imagem":"https://img.informer.com/screenshots/8034/8034740_2.jpg",
-    "Gif":"https://thumbs.gfycat.com/VeneratedObviousFly-size_restricted.gif",
-    "Trailer": "https://www.youtube.com/embed/459FjmLx-XM",
-    "Download": "https://drive.google.com/u/0/uc?id=1fHJbqZMeQEtd2OiYe-4ktUl8g7Kufcwg&export=download",
-    "Descricao":`O CorelDRAW® Graphics Suite é o seu kit completo de ferramentas de design profissional para entregar projetos fantásticos de ilustração vetorial, layout de página, edição de fotos e tipografia com total eficiência. Uma assinatura acessível oferece uma incrível relação custo/benefício contínua, com acesso instantâneo e garantido a novos recursos e conteúdos exclusivos, desempenho máximo e compatibilidade com as tecnologias mais recentes. `,
-    "cpu":" Intel Core i3/5/7 ou AMD Athlon 64",
-    "gpu":"Compatível com OpenCL 1.2 com mais de 3 GB",
-    "ram":"2 GB",
-    "rom":"1.2 GB",
-    "Plataforma":"pc",
-    "Formato":"programa",
+    
 },
 { 
     
@@ -145,7 +129,7 @@ const Jogos = [
     "ram":"12 GB",
     "rom":"60 GB",
     "Plataforma":"pc",
-    "Formato":"Iso",
+    
 },
 { 
     "id": 9,
@@ -161,7 +145,7 @@ const Jogos = [
     "ram": "8 GB", 
     "rom": "70 GB", 
     "Plataforma": "pc", 
-    "Formato": "Iso", 
+    "Tipo": "jogo", 
 },
 
 { 
@@ -178,7 +162,7 @@ const Jogos = [
     "ram": "8 GB", 
     "rom": "70 GB", 
     "Plataforma": "pc", 
-    "Formato": "Iso", 
+    "Tipo": "jogo", 
 },
 
 { 
@@ -195,7 +179,7 @@ const Jogos = [
     "ram": "4 GB ", 
     "rom": "90 GB", 
     "Plataforma": "pc", 
-    "Formato": "Iso", 
+    "Tipo": "jogo", 
 },
 { 
     "id": 12,
@@ -211,7 +195,7 @@ const Jogos = [
     "ram": "8 GB", 
     "rom": "80 Gb", 
     "Plataforma": "pc", 
-    "Formato": "Iso", 
+    "Tipo": "jogo", 
 },
 { 
     "id": 13,
@@ -227,7 +211,7 @@ const Jogos = [
     "ram": "8 GB", 
     "rom": "50 GB", 
     "Plataforma": "pc", 
-    "Formato": "Iso", 
+    "Tipo": "jogo", 
 },
 { 
     "id": 14,
@@ -243,7 +227,7 @@ const Jogos = [
     "ram": "8 GB", 
     "rom": "70 GB", 
     "Plataforma": "pc", 
-    "Formato": "Iso", 
+    "Tipo": "jogo", 
 },
 { 
     "id": 15,
@@ -259,7 +243,7 @@ const Jogos = [
     "ram": "4 GB", 
     "rom": " 36 GB", 
     "Plataforma": "pc", 
-    "Formato": "Iso", 
+    "Tipo": "jogo", 
 },
 { 
     "id": 16,
@@ -275,7 +259,7 @@ const Jogos = [
     "ram": "8GB", 
     "rom": "150GB", 
     "Plataforma": "pc", 
-    "Formato": "Iso", 
+    "Tipo": "jogo", 
 },
 { 
     "id": 17,
@@ -291,7 +275,7 @@ const Jogos = [
     "ram": "8 GB", 
     "rom": "25 GB", 
     "Plataforma": "pc", 
-    "Formato": "Iso", 
+    "Tipo": "jogo", 
 },
 { 
     "id": 18,
@@ -307,7 +291,7 @@ const Jogos = [
     "ram": "8 GB", 
     "rom": "150 GB", 
     "Plataforma": "pc", 
-    "Formato": "Iso", 
+    "Tipo": "jogo", 
 },
 { 
     "id": 19,
@@ -323,7 +307,7 @@ const Jogos = [
     "ram": "8 GB", 
     "rom": "80 GB", 
     "Plataforma": "pc", 
-    "Formato": "Iso", 
+    "Tipo": "jogo", 
 },
 { 
     "id": 21,
@@ -339,7 +323,87 @@ const Jogos = [
     "ram": "4 GB", 
     "rom": "30 GB", 
     "Plataforma": "pc", 
-    "Formato": "Iso", 
+    "Tipo": "jogo", 
+},
+{ 
+    "id": 22,
+    "Nome": "The Sims 4 Deluxe Edition", 
+    "Capa": "https://i2.wp.com/torrentjogos.net/imagem/the-sims-4-deluxe-edition-torrent.jpg", 
+    "Imagem": "https://cdn.cloudflare.steamstatic.com/steam/apps/1235765/ss_6a22fda926a224ed6ff6243f0919c824bf921a71.1920x1080.jpg?t=1666909174", 
+    "Gif": "https://cdn.cloudflare.steamstatic.com/steam/apps/1222670/extras/TS4_01_610x343_EN.gif?t=1666819875", 
+    "Trailer": "https://www.youtube.com/embed/DL2hlOIf-PM", 
+    "Download": "magnet:?xt=urn:btih:dd670edc556b8fb0ce860d66c2e8dd4b7fdf2a8b&dn=The.Sims.4.Digital.Deluxe.Edition.v1.92.145.elamigos-games.com", 
+    "Descricao": "The Sims   se concentra na criação de personagens e ferramentas aprimoradas de construção de casas, bem como  uma simulação de jogabilidade mais profunda dos Sims com  novos emotes e sistemas de personagens. The Sims   recebeu vários pacotes de DLC pagos desde seu lançamento. Onze pacotes de expansão, onze pacotes de jogos, dezoito pacotes de recursos e dez pacotes de ferramentas foram lançados; O pacote de expansão mais recente é o Cottage Living em 22 de julho de 2021. Várias atualizações gratuitas também foram lançadas ao longo da vida útil do jogo, incluindo os principais recursos e adições ao jogo, como grupos adicionados, personalização de personagens e ferramentas de campo", 
+    "cpu": "Intel core i5", 
+    "gpu": "NVIDIA GTX 650", 
+    "ram": "4 GB", 
+    "rom": "18 GB", 
+    "Plataforma": "pc", 
+    "Tipo": "jogo", 
+},
+{ 
+    "id": 23,
+    "Nome": "The Witcher 3 Wild Hunt GOTY", 
+    "Capa": "https://i2.wp.com/torrentjogos.net/imagem/the-witcher-3-wild-hunt-goty-torrent.jpg", 
+    "Imagem": "https://s2.glbimg.com/VFlfTKm551LqpfFf2IUFgUGlf2U=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2021/r/t/BEGAJcTdOS5G6VJIhkOw/2016-07-06-the-witcher-3-wild-hunt-game-of-the-year-edition-dlc.jpg", 
+    "Gif": "https://media.giphy.com/media/xTk9ZvNF0KCBF9FhKM/giphy.gif", 
+    "Trailer": "https://www.youtube.com/embed/qIAne6xZs6c", 
+    "Download": "magnet:?xt=urn:btih:97eb2078fafd7b75717a33da5408655df83cbed9&dn=The+Witcher+3+Wild+Hunt+1.31", 
+    "Descricao": "The Witcher 3: Wild Hunt é um jogo de aventura em mundo aberto ambientado em um mundo de fantasia sombrio. Você é Geralt de Rivia, contratando caçadores de monstros. Todas as ferramentas do comércio estão à sua disposição: espadas afiadas, equipamentos mortais, arcos invisíveis e poderosa magia de luta. Explore o conteúdo do seu coração antes de enfrentar o continente infestado de monstros. Seu contrato atual? Caçando o filho da profecia, uma arma viva que pode mudar a forma do mundo. A versão completa   contém todo o conteúdo para download do jogo, incluindo duas grandes expansões de história: Hearts of Stone e Blood and Wine. Esta é a oportunidade perfeita para entrar no mundo pela primeira vez ou ter uma aventura, em qualquer lugar!   Recursos:   Um enorme mundo aberto para explorar.   Visite a opulenta e corrupta cidade de Novigrad, enfrente os ventos frios que varrem as Ilhas Skellig e desafie as forças das trevas que vagam pela terra desolada e devastada. ", 
+    "cpu": "Intel CPU Core i5-2500K 3.3GHz", 
+    "gpu": "Nvidia GeForce GTX 660", 
+    "ram": "6 GB ", 
+    "rom": " 40 GB", 
+    "Plataforma": "pc", 
+    "Tipo": "jogo", 
+},
+{ 
+    "id": 24,
+    "Nome": "Horizon Zero Dawn", 
+    "Capa": "https://i2.wp.com/torrentjogos.net/imagem/horizon-zero-dawn-torrent.jpg", 
+    "Imagem": "https://files.tecnoblog.net/wp-content/uploads/2020/08/dez-dicas-para-dominar-horizon-zero-dawn005.png", 
+    "Gif": "https://i.pinimg.com/originals/8d/29/1f/8d291fd7264554a051ea113af15e725d.gif", 
+    "Trailer": "https://www.youtube.com/embed/9axpikOIHEo", 
+    "Download": "magnet:?xt=urn:btih:2032bdc4d6e86791b0a57cad855094d97c5e1ea8&dn=Horizon+Zero+Dawn+Complete+Edition+ElAmigos", 
+    "Descricao": "Orizon Zero Dawn é um emocionante jogo de RPG de ação desenvolvido exclusivamente para PlayStation   pela Guerrilla Games, criadores da popular série Killzone. Jogue como Aloy, uma caçadora habilidosa, e explore um mundo vibrante e rico cheio de misteriosas criaturas mecânicas. Embarque em uma jornada imersiva e emocional para descobrir os segredos das sociedades tribais, artefatos antigos e tecnologias avançadas que determinarão o destino deste planeta e da própria vida. Um mundo fértil após o Apocalipse: como as máquinas dominam o mundo e o que elas fazem? O que aconteceu com a civilização que viveu aqui? Explore cada canto do reino cheio de ruínas antigas e edifícios misteriosos, descubra o passado e revele os muitos segredos desta terra esquecida. Clash of Nature and Machines: Horizon Zero Dawn combina dois elementos contrastantes, reunindo um mundo vibrante cheio de beleza natural e impressionante tecnologia de ponta. Essa fusão cria uma combinação dinâmica de exploração e jogabilidade. ", 
+    "cpu": "Intel Core i5-2500K@3.3GHz", 
+    "gpu": "Nvidia GeForce GTX 780 (3 GB)", 
+    "ram": "8 GB", 
+    "rom": "60 GB", 
+    "Plataforma": "pc", 
+    "Tipo": "jogo", 
+},
+{ 
+    "id": 25,
+    "Nome": "Assassins Creed Valhalla", 
+    "Capa": "https://i2.wp.com/torrentjogos.net/imagem/assassins-creed-valhalla-torrent.jpg", 
+    "Imagem": "https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3JD0LQCvyzh3s2Vc2qIMfo/89f81c515c7947fb55b30731f35ca9ee/ACK_189_Season06_Niflheim_OpeningSequenceFINAL.jpg", 
+    "Gif": "https://media.tenor.com/EJJs8PPj6-0AAAAd/war-izuniy.gif", 
+    "Trailer": "https://www.youtube.com/embed/TUbgBVTD7VI", 
+    "Download": "magnet:?xt=urn:btih:a9e52a80c37610b058d5633d05c3a0ec3253bee2&dn=Assassins+Creed+Valhalla+ElAmigos", 
+    "Descricao": "A história se passa em Assassin's Creed Valhalla no final do século IX, no ano de 873, durante a invasão viking da Inglaterra. Os jogadores assumem o papel de Ivor, os vikings que, juntamente com outros clãs nórdicos, formaram o chamado Grande Exército Pagão, durante a Idade Média com Wessex, Northumbria, East Anglia e Mercia durante ataques e batalhas em Anglo -Reino saxão, governado pelo rei Alfredo. Neste ponto, Ivor encontrou o Oculto e se juntou a eles em sua batalha contra a Ordem dos Anciões.  Winchester, Londres, York e outras cidades estão incluídas no jogo para os jogadores explorarem livremente.  Partes da Noruega também estão incluídas. ", 
+    "cpu": "Intel i5-4460", 
+    "gpu": "NVIDIA GeForce GTX 960 (4 GB)", 
+    "ram": "8 GB", 
+    "rom": "60 GB", 
+    "Plataforma": "pc", 
+    "Tipo": "jogo", 
+},
+{ 
+    "id": 26,
+    "Nome": "eFootball PES 2021", 
+    "Capa": "https://i2.wp.com/torrentjogos.net/imagem/efootball-pes-2021-torrent.jpg", 
+    "Imagem": "https://www.konami.com/wepes/mobile/s/img/pes2021_ogp.png", 
+    "Gif": "https://1.bp.blogspot.com/-kgsjyGtQVAA/X3O-MrWX-CI/AAAAAAAAFnM/wtdDiVBoS2Mp76291ekt6WY-dBpIaSKxACNcBGAsYHQ/s1600/comemoracao.gif", 
+    "Trailer": "https://www.youtube.com/embed/GSXViWOyEO4", 
+    "Download": "magnet:?xt=urn:btih:da532319adf8cd1757b65200e6b5931abfd0a4b5&dn=E.Football.PES.2021-CPY&tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce&tr=udp%3A%2F%2F9.rarbg.me%3A2980&tr=udp%3A%2F%2F9.rarbg.to%3A2860", 
+    "Descricao": "A atualização da temporada do eFootball PES 2021 oferece todos os recursos populares para ganhar o título de Melhor Jogo de Esportes na E3 2019 e além!   Neste quarto de século desde o lançamento da franquia PES em 1995, convidamos você a se juntar a nós em campo para uma emocionante nova temporada de futebol.   Com os dados mais recentes de jogadores e equipas, o jogo também apresenta o modo exclusivo UEFA EURO 2020™, permitindo-te a ti e aos teus amigos simular algumas das maiores competições do desporto.", 
+    "cpu": "Intel Core i5-3470", 
+    "gpu": "NVIDIA GTX 670", 
+    "ram": "8 GB", 
+    "rom": "40 GB", 
+    "Plataforma": "pc", 
+    "Tipo": "jogo", 
 },
 
       
