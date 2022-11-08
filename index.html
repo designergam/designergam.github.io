@@ -33,7 +33,7 @@
                     <div class="barra"> 
                         <nav>
                             <a  href="index.html"><div class="link">Home</div></a>
-                            <a  href="index.html?pagina=programas"><div class="link">Programas</div></a>
+                            <a  href="index.html?t=programa&p=1"><div class="link">Programas</div></a>
                            
                         </nav>
                     </div>  
@@ -50,11 +50,6 @@
                     </ul>
                 </div>
 
-                <script>
-                    function goBack() {
-                        window.history.back()
-                    }
-                </script>
         </nav>
     </header>
 
@@ -77,10 +72,10 @@
             
     </main>
 
-    <section id="pgs">
-        <a href="index.html" class="item1"><p>1</p></a>
-        <a href="?pagina=2"><p>2</p></a>
-    </section>
+    <!--  Paginas-->
+    <div class="ls-pagination-filter">
+        
+    </div>
 
     <!-- Rodapé -->
     <footer id="footer"> 
@@ -89,29 +84,14 @@
         <p>Importante: Os jogos disponíveis nesse site não são hospedados por nós, apenas indexamos, qualquer denúncia deve ser encaminhada diretamente aos sites responsáveis por hospedar os jogos em seus servidores. O intuito deste site é apenas organizar os links com imagens e textos para fins de busca do usuário.</p>
     </footer>
 
-
 </body>
 </html>
 
 <!-- Pesquisa -->
 <script src="js/sistema_de_busca.js"></script>
 
-<!-- Bibliotecas -->
-<script src="galerias/jogos.js"></script>
-<script src="galerias/programas.js"></script>
+<!-- Banco de dados -->
+<script src="js/BD.js"></script>
 
 <!-- Gerar Galeria -->
 <script src="js/GerarGaleria.js"></script>
-
-
-<script>
-    if(paginaAtual == null ){
-        item1 = document.querySelector(".item1")
-        item1.style.display = "none"
-
-        init = document.getElementById("inicio")
-        init.style.display = "none"
-        
-    }
-</script>
-

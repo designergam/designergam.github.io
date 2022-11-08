@@ -16,42 +16,12 @@
     <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/download_mobile.css">
     <link rel="stylesheet" href="css/propagandas.css">
 </head>
+
+<!---Banco de Dados--> 
+<script src="js/BD.js"></script>
+
+
 <body>
-
-    <!---galeria de jogos--> 
-    <script src="galerias/jogos.js"></script>
-    <script src="galerias/programas.js"></script>
-
-    <h2></h2>
-    <script>
-        const urlAtual = window.location.href;
-        const urlClass = new URL(urlAtual);
-
-        let EscolhidoURL = urlClass.searchParams.get("id");
-        
-
-        let conteudo = [];
-
-         conteudo = Jogos.filter(function(item){
-            return item.id == EscolhidoURL;
-        })
-
-       
-        let Nome = (conteudo[0].Nome);
-        let Capa = (conteudo[0].Capa)
-        let Descricao = (conteudo[0].Descricao)
-        let Trailer = (conteudo[0].Trailer)
-        
-        let Imagem= (conteudo[0].Imagem)
-        let Gif = (conteudo[0].Gif)
-
-        //Requisitos Minimos
-        let cpu_A = (conteudo[0].cpu);
-        let gpu_A = (conteudo[0].gpu);
-        let ram_A = (conteudo[0].ram);
-        let rom_A = (conteudo[0].rom);
-    </script>
-
     <header>
         <nav id="navbar">
             <div id="navbar-container">
@@ -62,63 +32,28 @@
             </div>
         </nav>
     </header>      
-    
-    <script>
-        function goBack() {
-            window.history.back()
-        }
-    </script>
 
     <main>
         <!--Titulo -->
         <div id="tit"></div>
 
-        <!-- titulo, capa, previa -->
         <section id="container2">
-            
-            <script>
-                var tit_B =  window.document.getElementById("tit") //liga ao id
-                tit_B.innerText = Nome// escreve dentro de tit o que esta escrito em tit_a
-            </script>
-
-            <!--img jogo-->
+            <!--Imagem-->
             <img src="" alt="imagem de capa do jogo" id="img_capa">
             
-            <script>
-                var src_B =  window.document.getElementById("img_capa") 
-                src_B.src = Capa
-            </script>
-
-            <!-- PREVIA -->
-            <p id="previa"></p>
-
-            <script>
-                var previa_B =  window.document.getElementById("previa") 
-                previa_B.innerText = Descricao
-            </script>
-                
+            <!-- Texto -->
+            <p id="previa"></p>       
         </section> 
         
-        <!-- Imagem e gif da gameplay -->
             <h2 id="TEXTO_H2">IMAGENS DO JOGO</h2>
 
+        <!-- Imagem e Gif -->
         <section id="container">         
-            <!-- IMAGENS DE GAMEPLAY -->
-            
-            <!-- img gameplay 01 -->
+            <!-- Imagem -->
             <img src="" alt="imagens da gameplay" class="img_gameplay" id="img_gameplay1">
-            <script>
-                var img_gameplay1_B =  window.document.getElementById("img_gameplay1") //liga ao id
-                img_gameplay1_B.src = Imagem
-            </script>
 
-            <!-- img gameplay 02 -->
+            <!-- Gif -->
             <img src="" alt="gif da gameplay" class="img_gameplay" id="img_gameplay2">
-            <script>
-                var img_gameplay2_B =  window.document.getElementById("img_gameplay2") //liga ao id
-                img_gameplay2_B.src = Gif
-            </script>
-            
         </section>
 
         <!--Requisitos-->
@@ -131,95 +66,47 @@
                 <div id="icone_requisitos1"></div>
                 <h3 id="chip">Processador:</h3>
                 <p id="cpu"></p>
-                <script>
-                    var cpu_B =  window.document.getElementById("cpu") //liga ao id
-                    cpu_B.innerText = cpu_A // escreve dentro de tit o que esta escrito em tit_a
-                </script>
                 <br>
             
                 <div id="icone_requisitos2"></div>
                 <h3 id="chip">Placa de Video:</h3>
                 <p id="gpu"></p>
-                <script>
-                    var gpu_B =  window.document.getElementById("gpu") //liga ao id
-                    gpu_B.innerText = gpu_A // escreve dentro de tit o que esta escrito em tit_a
-                </script>
                 <br>
             
                 <div id="icone_requisitos3"></div>
                 <h3 id="chip">Memória Ram:</h3>
                 <p id="ram"></p>
-                <script>
-                    var ram_B =  window.document.getElementById("ram") //liga ao id
-                    ram_B.innerText = ram_A // escreve dentro de tit o que esta escrito em tit_a
-                </script>
                 <br>
             
                 <div id="icone_requisitos4"></div>
                 <h3 id="chip">Armazenamento:</h3>
                 <p id="rom"></p>
-                <script>
-                    var rom_B =  window.document.getElementById("rom") //liga ao id
-                    rom_B.innerText = rom_A // escreve dentro de tit o que esta escrito em tit_a
-                </script>
                 <br>
             </div>
-           
+
+           <!-- Trailer -->
             <iframe  id="trailer"  src="" frameborder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
             </iframe>   
-               
-            <script>
-                var trailer_B =  window.document.getElementById("trailer") //liga ao id
-                trailer_B.src = Trailer
-            </script>
         </section>
 
-    
-        
-                
-        <!-- Botao de Download -->
+        <!-- Download -->
         <section>
                 <div class="testimonial2" id="btnDownloadArea">
                     
                 </div>
         </section>
 
-        <script>
-            let baixarbtn = document.getElementById("btnDownloadArea")
-
-
-
-            Jogos.map((val)=>{
-                if(val.id == EscolhidoURL){
-                    baixarbtn.innerHTML=`
-                    <a href="Redirect.html?id=`+val.id+`" id="download">DOWNLOAD</a>`
-                }
-            })
-
-                
-        </script>
-
-        <div class="overlay"> <div class="loader"></div>  </div>
     </main>
 
-
-    <!--TAG-->
-    <h3 id="id"></h3>
-
-    <!--footer-->
+    <!--Rodapé-->
     <footer id="footer">
         <p>Copyright &copy; 2022</p>
         <br>
         <p>Importante: Os jogos disponíveis nesse site não são hospedados por nós, apenas indexamos, qualquer denúncia deve ser encaminhada diretamente aos sites responsáveis por hospedar os jogos em seus servidores. O intuito deste site é apenas organizar os links com imagens e textos para fins de busca do usuário.</p>
     </footer>
-
-   
-    
 </body>
 </html>
-
-<!--SCRIPTS DA PAGINA-->
 
 <!-- Font Awesome -->
 <script src="https://kit.fontawesome.com/f9e19193d6.js" crossorigin="anonymous"></script>
@@ -227,3 +114,4 @@
  <!-- jQuery CDN -->
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
+<script src="js/Download.js"></script>

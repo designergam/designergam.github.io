@@ -337,34 +337,52 @@ aside{
     text-align: center;
 }
 
-#pgs{
-    /* border: 2px solid red;  */
-    display: flex;
-    width: 140px;
+
+.ls-pagination-filter{
+    width: 100%;
     margin: auto;
-    margin-bottom: 30px;
-    
+
+}
+
+.ls-pagination{
+    display: flex;
+    width: 400px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
     
 }
 
-#pgs a{
-    background-color:#222;
-    color: #eee;
-    width: 35px;
-    height: 35px;
-    margin: 5px;
-    border-radius: 5px;
-    position: relative;
+.ls-pagination li{
+    list-style: none;
+    margin: 0;
     margin-left: 5px;
     margin-right: 5px;
-   
- 
+    background-color: #eee;
+    min-width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+
 }
 
-#pgs a p{
-    color: rgb(255, 255, 255);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.ls-pagination li:hover{
+    background-color: #3e5269;
+    color: white;
 }
+
+#textPaginas{
+    color: white;
+    margin-right: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-decoration: none;
+   
+}
+
