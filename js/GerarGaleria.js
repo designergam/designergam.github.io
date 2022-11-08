@@ -109,18 +109,6 @@ else if(PaginaURL == 2){
     itempagina.style.color = "white"
 }
 
-
-
-
-
-
-
-
-
-
 function goBack() {
     window.history.back()
 }
-
-
-

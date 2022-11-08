@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
+<head id="headtags">
     <meta charset="UTF-8">
     <!-- SEO -->
     <title id="title"></title>
@@ -16,6 +16,20 @@
     <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/download_mobile.css">
     <link rel="stylesheet" href="css/propagandas.css">
 </head>
+
+
+<script>
+    
+//indexação criação da tag canonical dinamica
+var url_atual = window.location.href;
+let TagCanonical = document.getElementById("headtags")
+TagCanonical.innerHTML +=`
+<link rel=“canonical” href=”`+url_atual+`”/>
+`
+
+
+
+</script>
 
 <!---Banco de Dados--> 
 <script src="js/BD.js"></script>
