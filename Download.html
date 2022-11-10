@@ -18,17 +18,7 @@
 </head>
 
 
-<script>
-    
-//indexação criação da tag canonical dinamica
-var url_atual = window.location.href;
-let TagCanonical = document.getElementById("headtags")
 
-TagCanonical.innerHTML +=`
-<link rel="canonical" href="`+url_atual+`" />
-`
-
-</script>
 
 <!---Banco de Dados--> 
 <script src="js/BD.js"></script>
@@ -128,3 +118,16 @@ TagCanonical.innerHTML +=`
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
 <script src="js/Download.js"></script>
+<script>
+    
+    //indexação criação da tag canonical dinamica
+    var url_atual = window.location.href;
+    let TagCanonical = document.getElementById("headtags")
+    TagCanonical.innerHTML +=`
+    <link rel="canonical" href="`+url_atual+`" />
+    
+    `
+    
+    
+    
+    </script>

@@ -22,7 +22,7 @@
 </head>
 <body>
 
-    <script src="galerias/jogos.js"></script>
+    <script src="js/BD.js"></script>
 
     <div id="Containerinput">
         <div id="idC1">
@@ -192,7 +192,7 @@
         
 
         //Ultimo adicionado
-        let UltimoId = Jogos[Jogos.length - 1].id
+        let UltimoId = BD[BD.length - 1].id
         UltimoId++
 
         let resultCopy = `
@@ -210,6 +210,7 @@
             "ram": "`+localStorage.ram+`", 
             "rom": "`+localStorage.rom+`", 
             "Plataforma": "pc", 
+            "Tipo": "jogo",
              
         },`
         
