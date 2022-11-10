@@ -54,12 +54,14 @@ a:hover{
     color: rgb(51, 51, 255);
 }
 .logo img{
-    width: 250px;
-    margin: 0 auto;
+    width: 200px;
+    margin: 0 ;
+   
     display: block;
     position: absolute;
     top: 50%;
-    left: 15%;
+    left: 13%;
+    
     transform: translate(-50%, -50%);
 }
 
