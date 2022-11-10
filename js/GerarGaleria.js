@@ -48,7 +48,7 @@ function pesquisar(){
             acriarLI.innerHTML+=`
             <li>
                 <a href="Download.html?id=`+jogo.id+`&s=`+jogo.Nome+`">
-                    <img src="`+jogo.Capa+`" alt="`+jogo.Nome+`" class="gallery-items">
+                    <img src="`+jogo.Capa+`" alt="`+jogo.Nome+`" class="gallery-items" rel="nofollow" >
                 </a>
                 <a href="Download.html?id=`+jogo.id+`" rel="stylesheet">
                     <h2>`+jogo.Nome+`</h2>
@@ -72,7 +72,7 @@ if(TipoURL == null & PaginaURL == null || TipoURL == "jogo" & PaginaURL == 1){
         acriarLI.innerHTML+=`
         <li>
             <a href="Download.html?id=`+jogosPC[i].id+`&s=`+jogosPC[i].Nome+`" rel="stylesheet">
-                <img src="`+jogosPC[i].Capa+`" alt="`+jogosPC[i].Nome+`" class="gallery-items">
+                <img src="`+jogosPC[i].Capa+`" alt="`+jogosPC[i].Nome+`" class="gallery-items" rel="nofollow">
             </a>
             <a href="Download.html?id=`+jogosPC[i].id+`" rel="stylesheet">
                 <h2>`+jogosPC[i].Nome+`</h2>
@@ -106,7 +106,7 @@ else if(TipoURL == "jogo" & PaginaURL == 2){
         acriarLI.innerHTML+=`
         <li>
             <a href="Download.html?id=`+jogosPC[i].id+`&s=`+jogosPC[i].Nome+`" rel="stylesheet">
-                <img src="`+jogosPC[i].Capa+`" alt="`+jogosPC[i].Nome+`" class="gallery-items">
+                <img src="`+jogosPC[i].Capa+`" alt="`+jogosPC[i].Nome+`" class="gallery-items" rel="nofollow">
             </a>
             <a href="Download.html?id=`+jogosPC[i].id+`" rel="stylesheet">
                 <h2>`+jogosPC[i].Nome+`</h2>
@@ -141,7 +141,7 @@ else if(TipoURL == "jogo" & PaginaURL == 3){
         acriarLI.innerHTML+=`
         <li>
             <a href="Download.html?id=`+jogosPC[i].id+`&s=`+jogosPC[i].Nome+`" rel="stylesheet">
-                <img src="`+jogosPC[i].Capa+`" alt="`+jogosPC[i].Nome+`" class="gallery-items">
+                <img src="`+jogosPC[i].Capa+`" alt="`+jogosPC[i].Nome+`" class="gallery-items" rel="nofollow">
             </a>
             <a href="Download.html?id=`+jogosPC[i].id+`" rel="stylesheet">
                 <h2>`+jogosPC[i].Nome+`</h2>
@@ -175,8 +175,8 @@ else if(TipoURL == "jogo" & PaginaURL == 4){
 
         acriarLI.innerHTML+=`
         <li>
-            <a href="Download.html?id=`+jogosPC[i].id+`&s=`+jogosPC[i].Nome+`" rel="stylesheet">
-                <img src="`+jogosPC[i].Capa+`" alt="`+jogosPC[i].Nome+`" class="gallery-items">
+            <a href="Download.html?id=`+jogosPC[i].id+`&s=`+jogosPC[i].Nome+`" rel="stylesheet" >
+                <img src="`+jogosPC[i].Capa+`" alt="`+jogosPC[i].Nome+`" class="gallery-items" rel="nofollow">
             </a>
             <a href="Download.html?id=`+jogosPC[i].id+`" rel="stylesheet">
                 <h2>`+jogosPC[i].Nome+`</h2>
@@ -210,8 +210,8 @@ else if(TipoURL == "jogo" & PaginaURL == 5){
 
         acriarLI.innerHTML+=`
         <li>
-            <a href="Download.html?id=`+jogosPC[i].id+`&s=`+jogosPC[i].Nome+`" rel="stylesheet">
-                <img src="`+jogosPC[i].Capa+`" alt="`+jogosPC[i].Nome+`" class="gallery-items">
+            <a href="Download.html?id=`+jogosPC[i].id+`&s=`+jogosPC[i].Nome+`" rel="stylesheet" >
+                <img src="`+jogosPC[i].Capa+`" alt="`+jogosPC[i].Nome+`" class="gallery-items" rel="nofollow">
             </a>
             <a href="Download.html?id=`+jogosPC[i].id+`" rel="stylesheet">
                 <h2>`+jogosPC[i].Nome+`</h2>
@@ -245,8 +245,8 @@ else if(TipoURL == "jogo" & PaginaURL == 6){
 
         acriarLI.innerHTML+=`
         <li>
-            <a href="Download.html?id=`+jogosPC[i].id+`&s=`+jogosPC[i].Nome+`" rel="stylesheet">
-                <img src="`+jogosPC[i].Capa+`" alt="`+jogosPC[i].Nome+`" class="gallery-items">
+            <a href="Download.html?id=`+jogosPC[i].id+`&s=`+jogosPC[i].Nome+`" rel="stylesheet" >
+                <img src="`+jogosPC[i].Capa+`" alt="`+jogosPC[i].Nome+`" class="gallery-items" rel="nofollow">
             </a>
             <a href="Download.html?id=`+jogosPC[i].id+`" rel="stylesheet">
                 <h2>`+jogosPC[i].Nome+`</h2>
@@ -280,8 +280,8 @@ else if(TipoURL == "jogo" & PaginaURL == 7){
 
         acriarLI.innerHTML+=`
         <li>
-            <a href="Download.html?id=`+jogosPC[i].id+`&s=`+jogosPC[i].Nome+`" rel="stylesheet">
-                <img src="`+jogosPC[i].Capa+`" alt="`+jogosPC[i].Nome+`" class="gallery-items">
+            <a href="Download.html?id=`+jogosPC[i].id+`&s=`+jogosPC[i].Nome+`" rel="stylesheet" >
+                <img src="`+jogosPC[i].Capa+`" alt="`+jogosPC[i].Nome+`" class="gallery-items" rel="nofollow">
             </a>
             <a href="Download.html?id=`+jogosPC[i].id+`" rel="stylesheet">
                 <h2>`+jogosPC[i].Nome+`</h2>
@@ -314,8 +314,8 @@ else if(TipoURL == "jogo" & PaginaURL == 8){
 
         acriarLI.innerHTML+=`
         <li>
-            <a href="Download.html?id=`+jogosPC[i].id+`&s=`+jogosPC[i].Nome+`" rel="stylesheet">
-                <img src="`+jogosPC[i].Capa+`" alt="`+jogosPC[i].Nome+`" class="gallery-items">
+            <a href="Download.html?id=`+jogosPC[i].id+`&s=`+jogosPC[i].Nome+`" rel="stylesheet" >
+                <img src="`+jogosPC[i].Capa+`" alt="`+jogosPC[i].Nome+`" class="gallery-items" rel="nofollow">
             </a>
             <a href="Download.html?id=`+jogosPC[i].id+`" rel="stylesheet">
                 <h2>`+jogosPC[i].Nome+`</h2>
@@ -349,8 +349,8 @@ else if(TipoURL == "jogo" & PaginaURL == 9){
 
         acriarLI.innerHTML+=`
         <li>
-            <a href="Download.html?id=`+jogosPC[i].id+`&s=`+jogosPC[i].Nome+`" rel="stylesheet">
-                <img src="`+jogosPC[i].Capa+`" alt="`+jogosPC[i].Nome+`" class="gallery-items">
+            <a href="Download.html?id=`+jogosPC[i].id+`&s=`+jogosPC[i].Nome+`" rel="stylesheet" >
+                <img src="`+jogosPC[i].Capa+`" alt="`+jogosPC[i].Nome+`" class="gallery-items" rel="nofollow">
             </a>
             <a href="Download.html?id=`+jogosPC[i].id+`" rel="stylesheet">
                 <h2>`+jogosPC[i].Nome+`</h2>
@@ -387,7 +387,7 @@ else if(TipoURL == "programa" & PaginaURL == 1){
         acriarLI.innerHTML+=`
         <li>
             <a href="Download.html?id=`+Programas[i].id+`&s=`+Programas[i].Nome+`" rel="stylesheet">
-                <img src="`+Programas[i].Capa+`" alt="`+Programas[i].Nome+`" class="gallery-items">
+                <img src="`+Programas[i].Capa+`" alt="`+Programas[i].Nome+`" class="gallery-items" rel="nofollow">
             </a>
             <a href="Download.html?id=`+Programas[i].id+`" rel="stylesheet">
                 <h2>`+Programas[i].Nome+`</h2>

@@ -93,3 +93,15 @@ if(conteudo[0].Imagem == "undefined"){
     IdJ.style.display = "none"
 
 }
+
+
+// Titulo da pagina
+let titulo = document.getElementById("title")
+titulo.innerText = conteudo[0].Nome+" Torrent"
+
+//Meta Tags
+let description = document.getElementById("description")
+description.content="download jogo x utorrent, baixar jogo x em capitaotorrent.com, baixar o jogo x via torrent "
+
+let keywords = document.getElementById("keywords")
+keywords.content=`download `+conteudo[0].Nome+`, baixar `+conteudo[0].Nome+`, `+conteudo[0].Nome+` torrent, `+conteudo[0].Nome+` utorrent, `+conteudo[0].Nome+` gratis, download gratis `+conteudo[0].Nome+`, `+conteudo[0].Nome+`, torrent jogos, utorrent download, games torrent, download game`
