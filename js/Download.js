@@ -28,11 +28,19 @@ const ID0 = window.location.href;
             window.history.back()
         }
 
+        if(conteudo[0].Descricao == "undefined"){
+            console.log("ok")
+            Descricao = `A descrição deste jogo não está disponível no momento porem fique à vontade para baixar o jogo normalmente. Em breve novas atualizações na página obrigado!`
+        }
+        
+
         let src_B =  window.document.getElementById("img_capa") 
                 src_B.src = Capa
 
         let previa_B =  window.document.getElementById("previa") 
         previa_B.innerText = Descricao
+
+       
 
         let tit_B =  window.document.getElementById("tit") 
                 tit_B.innerText = Nome
@@ -69,3 +77,19 @@ const ID0 = window.location.href;
                 <a href="Redirect.html?id=`+val.id+`" id="download">DOWNLOAD</a>`
             }
         })
+
+//Requisitos e Trailer, fecha o container se nao tiver nada
+if(conteudo[0].cpu == "undefined"){
+        let ReT = document.getElementById("container4")
+        ReT.style.display = "none"
+   
+}
+
+//Imagem e Gid, fecha o container se nao tiver nada
+if(conteudo[0].Imagem == "undefined"){
+    let IeG = document.getElementById("container")
+    let IdJ = document.getElementById("TEXTO_H2")
+    IeG.style.display = "none"
+    IdJ.style.display = "none"
+
+}
