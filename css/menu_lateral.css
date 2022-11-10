@@ -9,7 +9,9 @@
 }
 @media (max-width: 768px) { 
 #icone{
-    top: 0%;
+    top: 50%;
+    margin-left: 15px;
+    transform: translate(-50%, -50%);
 }
 }
 nav{

@@ -30,12 +30,15 @@ body {
     z-index: 1;
 }
 #navbar-container {
-    width: 80%;
+    width: 100%;
     height: 100%;
     margin: auto;
     display: flex;
+    padding-left: 20px;
+    padding-right: 50px;
     justify-content: space-between;
     align-items: center; 
+    
 }
 #navbar-items {
     display: flex;
@@ -52,7 +55,15 @@ a:hover{
 }
 .logo img{
     width: 250px;
+    margin: 0 auto;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translate(-50%, -50%);
 }
+
+
 /* ////////////////////////////////////////////////////// Main /////////////////////////////////////////////////////// */
 /* Section - Img, Previa, Titulo */
 

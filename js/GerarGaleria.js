@@ -60,7 +60,14 @@ function pesquisar(){
         )
 
         PassarPagina.style.display = "none"
-   
+
+        // loading
+        let loading = document.getElementById("loading").style.display="block"
+        
+        //PARAR LOADING
+        setTimeout(function() {
+            let loading = document.getElementById("loading").style.display="none"
+        }, 500)
 }
 
 
@@ -387,15 +394,16 @@ else if(TipoURL == "jogo" & PaginaURL == 9){
 
 // Tipo: Programas - Pagina: 1
 else if(TipoURL == "programa" & PaginaURL == 1){
-    for(let i=0; i<1; i++){ 
-        let RemoverEspacos = jogosPC[i].Nome.replace(/\s/g, '+');
+    for(let i=0; i<5; i++){ 
+
+        let RemoverEspacos = Programas[i].Nome.replace(/\s/g, '+');
         acriarLI.innerHTML+=`
         <li>
-            <a href="Download.html?id=`+jogosPC[i].id+`&s=`+RemoverEspacos+`">
-                <img src="`+jogosPC[i].Capa+`" alt="`+jogosPC[i].Nome+`" class="gallery-items" rel="nofollow">
+            <a href="Download.html?id=`+Programas[i].id+`&s=`+RemoverEspacos+`">
+                <img src="`+Programas[i].Capa+`" alt="`+Programas[i].Nome+`" class="gallery-items" rel="nofollow">
             </a>
-            <a href="Download.html?id=`+jogosPC[i].id+`&s=`+RemoverEspacos+`">
-                <h2>`+jogosPC[i].Nome+`</h2>
+            <a href="Download.html?id=`+Programas[i].id+`&s=`+RemoverEspacos+`">
+                <h2>`+Programas[i].Nome+`</h2>
             </a>
         </li>`;
     }
@@ -480,3 +488,7 @@ function goBack() {
 }
 
 
+//Ocultar o voltar na pagina inicial
+if(PaginaURL == null){
+    let voltar = document.getElementById("inicio").style.display="none"
+}

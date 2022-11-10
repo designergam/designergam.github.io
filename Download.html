@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="css/download.css">
     <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/download_mobile.css">
     <link rel="stylesheet" href="css/propagandas.css">
+    <link rel="stylesheet" href="css/menu_lateral.css">
 
     
 </head>
@@ -38,6 +39,19 @@
     <header>
         <nav id="navbar">
             <div id="navbar-container">
+
+                <!-- menu lateral-->
+                <input type="checkbox" id="check">
+                <label id="icone" for="check" ><img id="icone_menu" src="../img/RWHvwPE.png" alt=""></label>
+
+                <div class="barra"> 
+                    <nav>
+                        <a  href="index.html"><div class="link">Home</div></a>
+                        <a  href="index.html?t=programa&p=1"><div class="link">Programas</div></a>
+                       
+                    </nav>
+                </div>  
+
                 <h1 class="logo"><img src="img/logopirata.png" alt="logo do site"></h1>
                 <ul id="navbar-items">
                     <li onclick="goBack()" id="voltar" ><a rel="prev" >Voltar</a></li>
