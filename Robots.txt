@@ -3,4 +3,4 @@ Sitemap: https://capitaotorrent.com.br/sitemap.xml
 User-agent: *
 Disallow: /css/
 Disallow: /img/
-Disallow: /js/
+Disallow: /js/q

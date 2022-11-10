@@ -44,13 +44,15 @@ function pesquisar(){
     BD.map((jogo) => {
         let novonome = jogo.Nome.toLowerCase()
         let novadesc = jogo.Descricao.toLocaleLowerCase()
+        let RemoverEspacos = jogo.Nome.replace(/\s/g, '+');
         if(novonome.indexOf(pesquisa.toLowerCase()) > -1 || novadesc.indexOf(pesquisa.toLowerCase()) > -1){
+            
             acriarLI.innerHTML+=`
             <li>
-                <a href="Download.html?id=`+jogo.id+`&s=`+jogo.Nome+`">
+                <a href="Download.html?id=`+jogo.id+`&s=`+RemoverEspacos+`">
                     <img src="`+jogo.Capa+`" alt="`+jogo.Nome+`" class="gallery-items" rel="nofollow" >
                 </a>
-                <a href="Download.html?id=`+jogo.id+`" rel="stylesheet">
+                <a href="Download.html?id=`+jogo.id+`&s=`+RemoverEspacos+`">
                     <h2>`+jogo.Nome+`</h2>
                 </a>
             </li>`;
@@ -69,12 +71,14 @@ if(TipoURL == null & PaginaURL == null || TipoURL == "jogo" & PaginaURL == 1){
    
     for(let i=0; i<30; i++){
 
+        let RemoverEspacos = jogosPC[i].Nome.replace(/\s/g, '+');
+
         acriarLI.innerHTML+=`
         <li>
-            <a href="Download.html?id=`+jogosPC[i].id+`&s=`+jogosPC[i].Nome+`" rel="stylesheet">
+            <a href="Download.html?id=`+jogosPC[i].id+`&s=`+RemoverEspacos+`">
                 <img src="`+jogosPC[i].Capa+`" alt="`+jogosPC[i].Nome+`" class="gallery-items" rel="nofollow">
             </a>
-            <a href="Download.html?id=`+jogosPC[i].id+`" rel="stylesheet">
+            <a href="Download.html?id=`+jogosPC[i].id+`&s=`+RemoverEspacos+`">
                 <h2>`+jogosPC[i].Nome+`</h2>
             </a>
         </li>`;
@@ -102,13 +106,14 @@ if(TipoURL == null & PaginaURL == null || TipoURL == "jogo" & PaginaURL == 1){
 else if(TipoURL == "jogo" & PaginaURL == 2){
    
     for(let i=30; i<60; i++){
+        let RemoverEspacos = jogosPC[i].Nome.replace(/\s/g, '+');
 
         acriarLI.innerHTML+=`
         <li>
-            <a href="Download.html?id=`+jogosPC[i].id+`&s=`+jogosPC[i].Nome+`" rel="stylesheet">
+            <a href="Download.html?id=`+jogosPC[i].id+`&s=`+RemoverEspacos+`">
                 <img src="`+jogosPC[i].Capa+`" alt="`+jogosPC[i].Nome+`" class="gallery-items" rel="nofollow">
             </a>
-            <a href="Download.html?id=`+jogosPC[i].id+`" rel="stylesheet">
+            <a href="Download.html?id=`+jogosPC[i].id+`&s=`+RemoverEspacos+`">
                 <h2>`+jogosPC[i].Nome+`</h2>
             </a>
         </li>`;
@@ -137,13 +142,13 @@ else if(TipoURL == "jogo" & PaginaURL == 2){
 else if(TipoURL == "jogo" & PaginaURL == 3){
    
     for(let i=60; i<90; i++){
-
+        let RemoverEspacos = jogosPC[i].Nome.replace(/\s/g, '+');
         acriarLI.innerHTML+=`
         <li>
-            <a href="Download.html?id=`+jogosPC[i].id+`&s=`+jogosPC[i].Nome+`" rel="stylesheet">
+            <a href="Download.html?id=`+jogosPC[i].id+`&s=`+RemoverEspacos+`">
                 <img src="`+jogosPC[i].Capa+`" alt="`+jogosPC[i].Nome+`" class="gallery-items" rel="nofollow">
             </a>
-            <a href="Download.html?id=`+jogosPC[i].id+`" rel="stylesheet">
+            <a href="Download.html?id=`+jogosPC[i].id+`&s=`+RemoverEspacos+`">
                 <h2>`+jogosPC[i].Nome+`</h2>
             </a>
         </li>`;
@@ -172,13 +177,13 @@ else if(TipoURL == "jogo" & PaginaURL == 3){
 else if(TipoURL == "jogo" & PaginaURL == 4){
    
     for(let i=90; i<120; i++){
-
+        let RemoverEspacos = jogosPC[i].Nome.replace(/\s/g, '+');
         acriarLI.innerHTML+=`
         <li>
-            <a href="Download.html?id=`+jogosPC[i].id+`&s=`+jogosPC[i].Nome+`" rel="stylesheet" >
+            <a href="Download.html?id=`+jogosPC[i].id+`&s=`+RemoverEspacos+`">
                 <img src="`+jogosPC[i].Capa+`" alt="`+jogosPC[i].Nome+`" class="gallery-items" rel="nofollow">
             </a>
-            <a href="Download.html?id=`+jogosPC[i].id+`" rel="stylesheet">
+            <a href="Download.html?id=`+jogosPC[i].id+`&s=`+RemoverEspacos+`">
                 <h2>`+jogosPC[i].Nome+`</h2>
             </a>
         </li>`;
@@ -207,13 +212,13 @@ else if(TipoURL == "jogo" & PaginaURL == 4){
 else if(TipoURL == "jogo" & PaginaURL == 5){
    
     for(let i=120; i<150; i++){
-
+        let RemoverEspacos = jogosPC[i].Nome.replace(/\s/g, '+');
         acriarLI.innerHTML+=`
         <li>
-            <a href="Download.html?id=`+jogosPC[i].id+`&s=`+jogosPC[i].Nome+`" rel="stylesheet" >
+            <a href="Download.html?id=`+jogosPC[i].id+`&s=`+RemoverEspacos+`">
                 <img src="`+jogosPC[i].Capa+`" alt="`+jogosPC[i].Nome+`" class="gallery-items" rel="nofollow">
             </a>
-            <a href="Download.html?id=`+jogosPC[i].id+`" rel="stylesheet">
+            <a href="Download.html?id=`+jogosPC[i].id+`&s=`+RemoverEspacos+`">
                 <h2>`+jogosPC[i].Nome+`</h2>
             </a>
         </li>`;
@@ -242,13 +247,13 @@ else if(TipoURL == "jogo" & PaginaURL == 5){
 else if(TipoURL == "jogo" & PaginaURL == 6){
    
     for(let i=150; i<180; i++){
-
+        let RemoverEspacos = jogosPC[i].Nome.replace(/\s/g, '+');
         acriarLI.innerHTML+=`
         <li>
-            <a href="Download.html?id=`+jogosPC[i].id+`&s=`+jogosPC[i].Nome+`" rel="stylesheet" >
+            <a href="Download.html?id=`+jogosPC[i].id+`&s=`+RemoverEspacos+`">
                 <img src="`+jogosPC[i].Capa+`" alt="`+jogosPC[i].Nome+`" class="gallery-items" rel="nofollow">
             </a>
-            <a href="Download.html?id=`+jogosPC[i].id+`" rel="stylesheet">
+            <a href="Download.html?id=`+jogosPC[i].id+`&s=`+RemoverEspacos+`">
                 <h2>`+jogosPC[i].Nome+`</h2>
             </a>
         </li>`;
@@ -277,13 +282,13 @@ else if(TipoURL == "jogo" & PaginaURL == 6){
 else if(TipoURL == "jogo" & PaginaURL == 7){
    
     for(let i=180; i<210; i++){
-
+        let RemoverEspacos = jogosPC[i].Nome.replace(/\s/g, '+');
         acriarLI.innerHTML+=`
         <li>
-            <a href="Download.html?id=`+jogosPC[i].id+`&s=`+jogosPC[i].Nome+`" rel="stylesheet" >
+            <a href="Download.html?id=`+jogosPC[i].id+`&s=`+RemoverEspacos+`">
                 <img src="`+jogosPC[i].Capa+`" alt="`+jogosPC[i].Nome+`" class="gallery-items" rel="nofollow">
             </a>
-            <a href="Download.html?id=`+jogosPC[i].id+`" rel="stylesheet">
+            <a href="Download.html?id=`+jogosPC[i].id+`&s=`+RemoverEspacos+`">
                 <h2>`+jogosPC[i].Nome+`</h2>
             </a>
         </li>`;
@@ -311,13 +316,13 @@ else if(TipoURL == "jogo" & PaginaURL == 7){
 else if(TipoURL == "jogo" & PaginaURL == 8){
    
     for(let i=240; i<270; i++){
-
+        let RemoverEspacos = jogosPC[i].Nome.replace(/\s/g, '+');
         acriarLI.innerHTML+=`
         <li>
-            <a href="Download.html?id=`+jogosPC[i].id+`&s=`+jogosPC[i].Nome+`" rel="stylesheet" >
+            <a href="Download.html?id=`+jogosPC[i].id+`&s=`+RemoverEspacos+`">
                 <img src="`+jogosPC[i].Capa+`" alt="`+jogosPC[i].Nome+`" class="gallery-items" rel="nofollow">
             </a>
-            <a href="Download.html?id=`+jogosPC[i].id+`" rel="stylesheet">
+            <a href="Download.html?id=`+jogosPC[i].id+`&s=`+RemoverEspacos+`">
                 <h2>`+jogosPC[i].Nome+`</h2>
             </a>
         </li>`;
@@ -346,13 +351,13 @@ else if(TipoURL == "jogo" & PaginaURL == 8){
 else if(TipoURL == "jogo" & PaginaURL == 9){
    
     for(let i=270; i<300; i++){
-
+        let RemoverEspacos = jogosPC[i].Nome.replace(/\s/g, '+');
         acriarLI.innerHTML+=`
         <li>
-            <a href="Download.html?id=`+jogosPC[i].id+`&s=`+jogosPC[i].Nome+`" rel="stylesheet" >
+            <a href="Download.html?id=`+jogosPC[i].id+`&s=`+RemoverEspacos+`">
                 <img src="`+jogosPC[i].Capa+`" alt="`+jogosPC[i].Nome+`" class="gallery-items" rel="nofollow">
             </a>
-            <a href="Download.html?id=`+jogosPC[i].id+`" rel="stylesheet">
+            <a href="Download.html?id=`+jogosPC[i].id+`&s=`+RemoverEspacos+`">
                 <h2>`+jogosPC[i].Nome+`</h2>
             </a>
         </li>`;
@@ -383,14 +388,14 @@ else if(TipoURL == "jogo" & PaginaURL == 9){
 // Tipo: Programas - Pagina: 1
 else if(TipoURL == "programa" & PaginaURL == 1){
     for(let i=0; i<1; i++){ 
-
+        let RemoverEspacos = jogosPC[i].Nome.replace(/\s/g, '+');
         acriarLI.innerHTML+=`
         <li>
-            <a href="Download.html?id=`+Programas[i].id+`&s=`+Programas[i].Nome+`" rel="stylesheet">
-                <img src="`+Programas[i].Capa+`" alt="`+Programas[i].Nome+`" class="gallery-items" rel="nofollow">
+            <a href="Download.html?id=`+jogosPC[i].id+`&s=`+RemoverEspacos+`">
+                <img src="`+jogosPC[i].Capa+`" alt="`+jogosPC[i].Nome+`" class="gallery-items" rel="nofollow">
             </a>
-            <a href="Download.html?id=`+Programas[i].id+`" rel="stylesheet">
-                <h2>`+Programas[i].Nome+`</h2>
+            <a href="Download.html?id=`+jogosPC[i].id+`&s=`+RemoverEspacos+`">
+                <h2>`+jogosPC[i].Nome+`</h2>
             </a>
         </li>`;
     }
