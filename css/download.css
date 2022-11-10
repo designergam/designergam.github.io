@@ -372,3 +372,9 @@ a:hover{
     margin-right: 70px;
     color: gray;
 }
+
+#comentarios{
+    width: 90%;
+    margin: auto;
+    margin-top: 130px;
+}
