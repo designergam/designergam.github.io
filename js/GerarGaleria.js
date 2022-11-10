@@ -49,10 +49,10 @@ function pesquisar(){
             
             acriarLI.innerHTML+=`
             <li>
-                <a href="Download.html?id=`+jogo.id+`&s=`+RemoverEspacos+`">
+                <a href="Download.html?id=`+jogo.id+`&amp;s=`+RemoverEspacos+`">
                     <img src="`+jogo.Capa+`" alt="`+jogo.Nome+`" class="gallery-items" rel="nofollow" >
                 </a>
-                <a href="Download.html?id=`+jogo.id+`&s=`+RemoverEspacos+`">
+                <a href="Download.html?id=`+jogo.id+`&amp;s=`+RemoverEspacos+`">
                     <h2>`+jogo.Nome+`</h2>
                 </a>
             </li>`;
@@ -82,7 +82,7 @@ if(TipoURL == null & PaginaURL == null || TipoURL == "jogo" & PaginaURL == 1){
 
         acriarLI.innerHTML+=`
         <li>
-            <a href="Download.html?id=`+jogosPC[i].id+`&s=`+RemoverEspacos+`">
+            <a href="Download.html?id=`+jogosPC[i].id+`&amp;s=`+RemoverEspacos+`">
                 <img src="`+jogosPC[i].Capa+`" alt="`+jogosPC[i].Nome+`" class="gallery-items" rel="nofollow">
             </a>
             <a href="Download.html?id=`+jogosPC[i].id+`&s=`+RemoverEspacos+`">
@@ -95,15 +95,15 @@ if(TipoURL == null & PaginaURL == null || TipoURL == "jogo" & PaginaURL == 1){
 
     <ul class="ls-pagination">
     <p id="textPaginas">Paginas >>></p>
-          <a href="?t=jogo&p=1"><li id="pg1">1</li></a>
-          <a href="?t=jogo&p=2"><li id="pg2">2</li></a>
-          <a href="?t=jogo&p=3"><li id="pg3">3</li></a>
-          <a href="?t=jogo&p=4"><li id="pg4">4</li></a>
-          <a href="?t=jogo&p=5"><li id="pg5">5</li></a>
-          <a href="?t=jogo&p=6"><li id="pg6">6</li></a>
-          <a href="?t=jogo&p=7"><li id="pg7">7</li></a>
-          <a href="?t=jogo&p=8"><li id="pg8">8</li></a>
-          <a href="?t=jogo&p=9"><li id="pg9">9</li></a>
+          <a href="?t=jogo&amp;p=1"><li id="pg1">1</li></a>
+          <a href="?t=jogo&amp;p=2"><li id="pg2">2</li></a>
+          <a href="?t=jogo&amp;p=3"><li id="pg3">3</li></a>
+          <a href="?t=jogo&amp;p=4"><li id="pg4">4</li></a>
+          <a href="?t=jogo&amp;p=5"><li id="pg5">5</li></a>
+          <a href="?t=jogo&amp;p=6"><li id="pg6">6</li></a>
+          <a href="?t=jogo&amp;p=7"><li id="pg7">7</li></a>
+          <a href="?t=jogo&amp;p=8"><li id="pg8">8</li></a>
+          <a href="?t=jogo&amp;p=9"><li id="pg9">9</li></a>
           
           
     </ul>
@@ -117,10 +117,10 @@ else if(TipoURL == "jogo" & PaginaURL == 2){
 
         acriarLI.innerHTML+=`
         <li>
-            <a href="Download.html?id=`+jogosPC[i].id+`&s=`+RemoverEspacos+`">
+            <a href="Download.html?id=`+jogosPC[i].id+`&amp;s=`+RemoverEspacos+`">
                 <img src="`+jogosPC[i].Capa+`" alt="`+jogosPC[i].Nome+`" class="gallery-items" rel="nofollow">
             </a>
-            <a href="Download.html?id=`+jogosPC[i].id+`&s=`+RemoverEspacos+`">
+            <a href="Download.html?id=`+jogosPC[i].id+`&amp;s=`+RemoverEspacos+`">
                 <h2>`+jogosPC[i].Nome+`</h2>
             </a>
         </li>`;
@@ -130,15 +130,15 @@ else if(TipoURL == "jogo" & PaginaURL == 2){
 
     <ul class="ls-pagination">
     <p id="textPaginas">Paginas >>></p>
-    <a href="?t=jogo&p=1"><li id="pg1">1</li></a>
-    <a href="?t=jogo&p=2"><li id="pg2">2</li></a>
-    <a href="?t=jogo&p=3"><li id="pg3">3</li></a>
-    <a href="?t=jogo&p=4"><li id="pg4">4</li></a>
-    <a href="?t=jogo&p=5"><li id="pg5">5</li></a>
-    <a href="?t=jogo&p=6"><li id="pg6">6</li></a>
-    <a href="?t=jogo&p=7"><li id="pg7">7</li></a>
-    <a href="?t=jogo&p=8"><li id="pg8">8</li></a>
-    <a href="?t=jogo&p=9"><li id="pg9">9</li></a>
+    <a href="?t=jogo&amp;p=1"><li id="pg1">1</li></a>
+    <a href="?t=jogo&amp;p=2"><li id="pg2">2</li></a>
+    <a href="?t=jogo&amp;p=3"><li id="pg3">3</li></a>
+    <a href="?t=jogo&amp;p=4"><li id="pg4">4</li></a>
+    <a href="?t=jogo&amp;p=5"><li id="pg5">5</li></a>
+    <a href="?t=jogo&amp;p=6"><li id="pg6">6</li></a>
+    <a href="?t=jogo&amp;p=7"><li id="pg7">7</li></a>
+    <a href="?t=jogo&amp;p=8"><li id="pg8">8</li></a>
+    <a href="?t=jogo&amp;p=9"><li id="pg9">9</li></a>
     
           
     </ul>
@@ -152,10 +152,10 @@ else if(TipoURL == "jogo" & PaginaURL == 3){
         let RemoverEspacos = jogosPC[i].Nome.replace(/\s/g, '+');
         acriarLI.innerHTML+=`
         <li>
-            <a href="Download.html?id=`+jogosPC[i].id+`&s=`+RemoverEspacos+`">
+            <a href="Download.html?id=`+jogosPC[i].id+`&amp;s=`+RemoverEspacos+`">
                 <img src="`+jogosPC[i].Capa+`" alt="`+jogosPC[i].Nome+`" class="gallery-items" rel="nofollow">
             </a>
-            <a href="Download.html?id=`+jogosPC[i].id+`&s=`+RemoverEspacos+`">
+            <a href="Download.html?id=`+jogosPC[i].id+`&amp;s=`+RemoverEspacos+`">
                 <h2>`+jogosPC[i].Nome+`</h2>
             </a>
         </li>`;
@@ -165,15 +165,15 @@ else if(TipoURL == "jogo" & PaginaURL == 3){
 
     <ul class="ls-pagination">
     <p id="textPaginas">Paginas >>></p>
-          <a href="?t=jogo&p=1"><li id="pg1">1</li></a>
-          <a href="?t=jogo&p=2"><li id="pg2">2</li></a>
-          <a href="?t=jogo&p=3"><li id="pg3">3</li></a>
-          <a href="?t=jogo&p=4"><li id="pg4">4</li></a>
-          <a href="?t=jogo&p=5"><li id="pg5">5</li></a>
-          <a href="?t=jogo&p=6"><li id="pg6">6</li></a>
-          <a href="?t=jogo&p=7"><li id="pg7">7</li></a>
-          <a href="?t=jogo&p=8"><li id="pg8">8</li></a>
-          <a href="?t=jogo&p=9"><li id="pg9">9</li></a>
+          <a href="?t=jogo&amp;p=1"><li id="pg1">1</li></a>
+          <a href="?t=jogo&amp;p=2"><li id="pg2">2</li></a>
+          <a href="?t=jogo&amp;p=3"><li id="pg3">3</li></a>
+          <a href="?t=jogo&amp;p=4"><li id="pg4">4</li></a>
+          <a href="?t=jogo&amp;p=5"><li id="pg5">5</li></a>
+          <a href="?t=jogo&amp;p=6"><li id="pg6">6</li></a>
+          <a href="?t=jogo&amp;p=7"><li id="pg7">7</li></a>
+          <a href="?t=jogo&amp;p=8"><li id="pg8">8</li></a>
+          <a href="?t=jogo&amp;p=9"><li id="pg9">9</li></a>
           
           
     </ul>
@@ -187,10 +187,10 @@ else if(TipoURL == "jogo" & PaginaURL == 4){
         let RemoverEspacos = jogosPC[i].Nome.replace(/\s/g, '+');
         acriarLI.innerHTML+=`
         <li>
-            <a href="Download.html?id=`+jogosPC[i].id+`&s=`+RemoverEspacos+`">
+            <a href="Download.html?id=`+jogosPC[i].id+`&amp;s=`+RemoverEspacos+`">
                 <img src="`+jogosPC[i].Capa+`" alt="`+jogosPC[i].Nome+`" class="gallery-items" rel="nofollow">
             </a>
-            <a href="Download.html?id=`+jogosPC[i].id+`&s=`+RemoverEspacos+`">
+            <a href="Download.html?id=`+jogosPC[i].id+`&amp;s=`+RemoverEspacos+`">
                 <h2>`+jogosPC[i].Nome+`</h2>
             </a>
         </li>`;
@@ -200,15 +200,15 @@ else if(TipoURL == "jogo" & PaginaURL == 4){
 
     <ul class="ls-pagination">
     <p id="textPaginas">Paginas >>></p>
-    <a href="?t=jogo&p=1"><li id="pg1">1</li></a>
-    <a href="?t=jogo&p=2"><li id="pg2">2</li></a>
-    <a href="?t=jogo&p=3"><li id="pg3">3</li></a>
-    <a href="?t=jogo&p=4"><li id="pg4">4</li></a>
-    <a href="?t=jogo&p=5"><li id="pg5">5</li></a>
-    <a href="?t=jogo&p=6"><li id="pg6">6</li></a>
-    <a href="?t=jogo&p=7"><li id="pg7">7</li></a>
-    <a href="?t=jogo&p=8"><li id="pg8">8</li></a>
-    <a href="?t=jogo&p=9"><li id="pg9">9</li></a>
+    <a href="?t=jogo&amp;p=1"><li id="pg1">1</li></a>
+    <a href="?t=jogo&amp;p=2"><li id="pg2">2</li></a>
+    <a href="?t=jogo&amp;p=3"><li id="pg3">3</li></a>
+    <a href="?t=jogo&amp;p=4"><li id="pg4">4</li></a>
+    <a href="?t=jogo&amp;p=5"><li id="pg5">5</li></a>
+    <a href="?t=jogo&amp;p=6"><li id="pg6">6</li></a>
+    <a href="?t=jogo&amp;p=7"><li id="pg7">7</li></a>
+    <a href="?t=jogo&amp;p=8"><li id="pg8">8</li></a>
+    <a href="?t=jogo&amp;p=9"><li id="pg9">9</li></a>
     
           
     </ul>
@@ -222,10 +222,10 @@ else if(TipoURL == "jogo" & PaginaURL == 5){
         let RemoverEspacos = jogosPC[i].Nome.replace(/\s/g, '+');
         acriarLI.innerHTML+=`
         <li>
-            <a href="Download.html?id=`+jogosPC[i].id+`&s=`+RemoverEspacos+`">
+            <a href="Download.html?id=`+jogosPC[i].id+`&amp;s=`+RemoverEspacos+`">
                 <img src="`+jogosPC[i].Capa+`" alt="`+jogosPC[i].Nome+`" class="gallery-items" rel="nofollow">
             </a>
-            <a href="Download.html?id=`+jogosPC[i].id+`&s=`+RemoverEspacos+`">
+            <a href="Download.html?id=`+jogosPC[i].id+`&amp;s=`+RemoverEspacos+`">
                 <h2>`+jogosPC[i].Nome+`</h2>
             </a>
         </li>`;
@@ -235,15 +235,15 @@ else if(TipoURL == "jogo" & PaginaURL == 5){
 
     <ul class="ls-pagination">
     <p id="textPaginas">Paginas >>></p>
-          <a href="?t=jogo&p=1"><li id="pg1">1</li></a>
-          <a href="?t=jogo&p=2"><li id="pg2">2</li></a>
-          <a href="?t=jogo&p=3"><li id="pg3">3</li></a>
-          <a href="?t=jogo&p=4"><li id="pg4">4</li></a>
-          <a href="?t=jogo&p=5"><li id="pg5">5</li></a>
-          <a href="?t=jogo&p=6"><li id="pg6">6</li></a>
-          <a href="?t=jogo&p=7"><li id="pg7">7</li></a>
-          <a href="?t=jogo&p=8"><li id="pg8">8</li></a>
-          <a href="?t=jogo&p=9"><li id="pg9">9</li></a>
+          <a href="?t=jogo&amp;p=1"><li id="pg1">1</li></a>
+          <a href="?t=jogo&amp;p=2"><li id="pg2">2</li></a>
+          <a href="?t=jogo&amp;p=3"><li id="pg3">3</li></a>
+          <a href="?t=jogo&amp;p=4"><li id="pg4">4</li></a>
+          <a href="?t=jogo&amp;p=5"><li id="pg5">5</li></a>
+          <a href="?t=jogo&amp;p=6"><li id="pg6">6</li></a>
+          <a href="?t=jogo&amp;p=7"><li id="pg7">7</li></a>
+          <a href="?t=jogo&amp;p=8"><li id="pg8">8</li></a>
+          <a href="?t=jogo&amp;p=9"><li id="pg9">9</li></a>
           
           
     </ul>
@@ -257,10 +257,10 @@ else if(TipoURL == "jogo" & PaginaURL == 6){
         let RemoverEspacos = jogosPC[i].Nome.replace(/\s/g, '+');
         acriarLI.innerHTML+=`
         <li>
-            <a href="Download.html?id=`+jogosPC[i].id+`&s=`+RemoverEspacos+`">
+            <a href="Download.html?id=`+jogosPC[i].id+`&amp;s=`+RemoverEspacos+`">
                 <img src="`+jogosPC[i].Capa+`" alt="`+jogosPC[i].Nome+`" class="gallery-items" rel="nofollow">
             </a>
-            <a href="Download.html?id=`+jogosPC[i].id+`&s=`+RemoverEspacos+`">
+            <a href="Download.html?id=`+jogosPC[i].id+`&amp;s=`+RemoverEspacos+`">
                 <h2>`+jogosPC[i].Nome+`</h2>
             </a>
         </li>`;
@@ -270,15 +270,15 @@ else if(TipoURL == "jogo" & PaginaURL == 6){
 
     <ul class="ls-pagination">
     <p id="textPaginas">Paginas >>></p>
-          <a href="?t=jogo&p=1"><li id="pg1">1</li></a>
-          <a href="?t=jogo&p=2"><li id="pg2">2</li></a>
-          <a href="?t=jogo&p=3"><li id="pg3">3</li></a>
-          <a href="?t=jogo&p=4"><li id="pg4">4</li></a>
-          <a href="?t=jogo&p=5"><li id="pg5">5</li></a>
-          <a href="?t=jogo&p=6"><li id="pg6">6</li></a>
-          <a href="?t=jogo&p=7"><li id="pg7">7</li></a>
-          <a href="?t=jogo&p=8"><li id="pg8">8</li></a>
-          <a href="?t=jogo&p=9"><li id="pg9">9</li></a>
+          <a href="?t=jogo&amp;p=1"><li id="pg1">1</li></a>
+          <a href="?t=jogo&amp;p=2"><li id="pg2">2</li></a>
+          <a href="?t=jogo&amp;p=3"><li id="pg3">3</li></a>
+          <a href="?t=jogo&amp;p=4"><li id="pg4">4</li></a>
+          <a href="?t=jogo&amp;p=5"><li id="pg5">5</li></a>
+          <a href="?t=jogo&amp;p=6"><li id="pg6">6</li></a>
+          <a href="?t=jogo&amp;p=7"><li id="pg7">7</li></a>
+          <a href="?t=jogo&amp;p=8"><li id="pg8">8</li></a>
+          <a href="?t=jogo&amp;p=9"><li id="pg9">9</li></a>
           
           
     </ul>
@@ -292,10 +292,10 @@ else if(TipoURL == "jogo" & PaginaURL == 7){
         let RemoverEspacos = jogosPC[i].Nome.replace(/\s/g, '+');
         acriarLI.innerHTML+=`
         <li>
-            <a href="Download.html?id=`+jogosPC[i].id+`&s=`+RemoverEspacos+`">
+            <a href="Download.html?id=`+jogosPC[i].id+`&amp;s=`+RemoverEspacos+`">
                 <img src="`+jogosPC[i].Capa+`" alt="`+jogosPC[i].Nome+`" class="gallery-items" rel="nofollow">
             </a>
-            <a href="Download.html?id=`+jogosPC[i].id+`&s=`+RemoverEspacos+`">
+            <a href="Download.html?id=`+jogosPC[i].id+`&amp;s=`+RemoverEspacos+`">
                 <h2>`+jogosPC[i].Nome+`</h2>
             </a>
         </li>`;
@@ -305,15 +305,15 @@ else if(TipoURL == "jogo" & PaginaURL == 7){
 
     <ul class="ls-pagination">
     <p id="textPaginas">Paginas >>></p>
-          <a href="?t=jogo&p=1"><li id="pg1">1</li></a>
-          <a href="?t=jogo&p=2"><li id="pg2">2</li></a>
-          <a href="?t=jogo&p=3"><li id="pg3">3</li></a>
-          <a href="?t=jogo&p=4"><li id="pg4">4</li></a>
-          <a href="?t=jogo&p=5"><li id="pg5">5</li></a>
-          <a href="?t=jogo&p=6"><li id="pg6">6</li></a>
-          <a href="?t=jogo&p=7"><li id="pg7">7</li></a>
-          <a href="?t=jogo&p=8"><li id="pg8">8</li></a>
-          <a href="?t=jogo&p=9"><li id="pg9">9</li></a>
+          <a href="?t=jogo&amp;p=1"><li id="pg1">1</li></a>
+          <a href="?t=jogo&amp;p=2"><li id="pg2">2</li></a>
+          <a href="?t=jogo&amp;p=3"><li id="pg3">3</li></a>
+          <a href="?t=jogo&amp;p=4"><li id="pg4">4</li></a>
+          <a href="?t=jogo&amp;p=5"><li id="pg5">5</li></a>
+          <a href="?t=jogo&amp;p=6"><li id="pg6">6</li></a>
+          <a href="?t=jogo&amp;p=7"><li id="pg7">7</li></a>
+          <a href="?t=jogo&amp;p=8"><li id="pg8">8</li></a>
+          <a href="?t=jogo&amp;p=9"><li id="pg9">9</li></a>
           
     </ul>
     `
@@ -326,10 +326,10 @@ else if(TipoURL == "jogo" & PaginaURL == 8){
         let RemoverEspacos = jogosPC[i].Nome.replace(/\s/g, '+');
         acriarLI.innerHTML+=`
         <li>
-            <a href="Download.html?id=`+jogosPC[i].id+`&s=`+RemoverEspacos+`">
+            <a href="Download.html?id=`+jogosPC[i].id+`&amp;s=`+RemoverEspacos+`">
                 <img src="`+jogosPC[i].Capa+`" alt="`+jogosPC[i].Nome+`" class="gallery-items" rel="nofollow">
             </a>
-            <a href="Download.html?id=`+jogosPC[i].id+`&s=`+RemoverEspacos+`">
+            <a href="Download.html?id=`+jogosPC[i].id+`&amp;s=`+RemoverEspacos+`">
                 <h2>`+jogosPC[i].Nome+`</h2>
             </a>
         </li>`;
@@ -339,15 +339,15 @@ else if(TipoURL == "jogo" & PaginaURL == 8){
 
     <ul class="ls-pagination">
     <p id="textPaginas">Paginas >>></p>
-    <a href="?t=jogo&p=1"><li id="pg1">1</li></a>
-    <a href="?t=jogo&p=2"><li id="pg2">2</li></a>
-    <a href="?t=jogo&p=3"><li id="pg3">3</li></a>
-    <a href="?t=jogo&p=4"><li id="pg4">4</li></a>
-    <a href="?t=jogo&p=5"><li id="pg5">5</li></a>
-    <a href="?t=jogo&p=6"><li id="pg6">6</li></a>
-    <a href="?t=jogo&p=7"><li id="pg7">7</li></a>
-    <a href="?t=jogo&p=8"><li id="pg8">8</li></a>
-    <a href="?t=jogo&p=9"><li id="pg9">9</li></a>
+    <a href="?t=jogo&amp;p=1"><li id="pg1">1</li></a>
+    <a href="?t=jogo&amp;p=2"><li id="pg2">2</li></a>
+    <a href="?t=jogo&amp;p=3"><li id="pg3">3</li></a>
+    <a href="?t=jogo&amp;p=4"><li id="pg4">4</li></a>
+    <a href="?t=jogo&amp;p=5"><li id="pg5">5</li></a>
+    <a href="?t=jogo&amp;p=6"><li id="pg6">6</li></a>
+    <a href="?t=jogo&amp;p=7"><li id="pg7">7</li></a>
+    <a href="?t=jogo&amp;p=8"><li id="pg8">8</li></a>
+    <a href="?t=jogo&amp;p=9"><li id="pg9">9</li></a>
     
           
     </ul>
@@ -361,10 +361,10 @@ else if(TipoURL == "jogo" & PaginaURL == 9){
         let RemoverEspacos = jogosPC[i].Nome.replace(/\s/g, '+');
         acriarLI.innerHTML+=`
         <li>
-            <a href="Download.html?id=`+jogosPC[i].id+`&s=`+RemoverEspacos+`">
+            <a href="Download.html?id=`+jogosPC[i].id+`&amp;s=`+RemoverEspacos+`">
                 <img src="`+jogosPC[i].Capa+`" alt="`+jogosPC[i].Nome+`" class="gallery-items" rel="nofollow">
             </a>
-            <a href="Download.html?id=`+jogosPC[i].id+`&s=`+RemoverEspacos+`">
+            <a href="Download.html?id=`+jogosPC[i].id+`&amp;s=`+RemoverEspacos+`">
                 <h2>`+jogosPC[i].Nome+`</h2>
             </a>
         </li>`;
@@ -374,15 +374,15 @@ else if(TipoURL == "jogo" & PaginaURL == 9){
 
     <ul class="ls-pagination">
     <p id="textPaginas">Paginas >>></p>
-    <a href="?t=jogo&p=1"><li id="pg1">1</li></a>
-    <a href="?t=jogo&p=2"><li id="pg2">2</li></a>
-    <a href="?t=jogo&p=3"><li id="pg3">3</li></a>
-    <a href="?t=jogo&p=4"><li id="pg4">4</li></a>
-    <a href="?t=jogo&p=5"><li id="pg5">5</li></a>
-    <a href="?t=jogo&p=6"><li id="pg6">6</li></a>
-    <a href="?t=jogo&p=7"><li id="pg7">7</li></a>
-    <a href="?t=jogo&p=8"><li id="pg8">8</li></a>
-    <a href="?t=jogo&p=9"><li id="pg9">9</li></a>
+    <a href="?t=jogo&amp;p=1"><li id="pg1">1</li></a>
+    <a href="?t=jogo&amp;p=2"><li id="pg2">2</li></a>
+    <a href="?t=jogo&amp;p=3"><li id="pg3">3</li></a>
+    <a href="?t=jogo&amp;p=4"><li id="pg4">4</li></a>
+    <a href="?t=jogo&amp;p=5"><li id="pg5">5</li></a>
+    <a href="?t=jogo&amp;p=6"><li id="pg6">6</li></a>
+    <a href="?t=jogo&amp;p=7"><li id="pg7">7</li></a>
+    <a href="?t=jogo&amp;p=8"><li id="pg8">8</li></a>
+    <a href="?t=jogo&amp;p=9"><li id="pg9">9</li></a>
     
           
     </ul>
@@ -399,10 +399,10 @@ else if(TipoURL == "programa" & PaginaURL == 1){
         let RemoverEspacos = Programas[i].Nome.replace(/\s/g, '+');
         acriarLI.innerHTML+=`
         <li>
-            <a href="Download.html?id=`+Programas[i].id+`&s=`+RemoverEspacos+`">
+            <a href="Download.html?id=`+Programas[i].id+`&amp;s=`+RemoverEspacos+`">
                 <img src="`+Programas[i].Capa+`" alt="`+Programas[i].Nome+`" class="gallery-items" rel="nofollow">
             </a>
-            <a href="Download.html?id=`+Programas[i].id+`&s=`+RemoverEspacos+`">
+            <a href="Download.html?id=`+Programas[i].id+`&amp;s=`+RemoverEspacos+`">
                 <h2>`+Programas[i].Nome+`</h2>
             </a>
         </li>`;
@@ -413,7 +413,7 @@ else if(TipoURL == "programa" & PaginaURL == 1){
     <ul class="ls-pagination">
     <p id="textPaginas">Paginas >>></p>
          
-    <a href="?t=programa&p=1"><li id="pg1">1</li></a>
+    <a href="?t=programa&amp;p=1"><li id="pg1">1</li></a>
                
     </ul>
     `
