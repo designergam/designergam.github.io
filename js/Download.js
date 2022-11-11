@@ -105,3 +105,9 @@ description.content="download jogo x utorrent, baixar jogo x em capitaotorrent.c
 
 let keywords = document.getElementById("keywords")
 keywords.content=`download `+conteudo[0].Nome+`, baixar `+conteudo[0].Nome+`, `+conteudo[0].Nome+` torrent, `+conteudo[0].Nome+` utorrent, `+conteudo[0].Nome+` gratis, download gratis `+conteudo[0].Nome+`, `+conteudo[0].Nome+`, torrent jogos, utorrent download, games torrent, download game`
+
+//SEO
+let ogUrl = document.getElementById("ogUrl").content=``+window.location.href+``
+let ogTitle = document.getElementById("ogTitle").content=``+conteudo[0].Nome+``
+let ogImage = document.getElementById("ogImage").content=``+conteudo[0].Capa+``
+let ogDescription = document.getElementById("ogDescription").content=` Download Grátis de via Torrent`
