@@ -81,6 +81,7 @@ if(TipoURL == null & PaginaURL == null || TipoURL == "jogo" & PaginaURL == 1){
         let RemoverEspacos = jogosPC[i].Nome.replace(/\s/g, '+');
 
         acriarLI.innerHTML+=`
+        <a href="Download.html?id=`+jogosPC[i].id+`&amp;s=`+RemoverEspacos+`"></a>
         <li>
             <a href="Download.html?id=`+jogosPC[i].id+`&amp;s=`+RemoverEspacos+`">
                 <img src="`+jogosPC[i].Capa+`" alt="`+jogosPC[i].Nome+`" class="gallery-items" rel="nofollow">
