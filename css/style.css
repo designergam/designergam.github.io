@@ -49,9 +49,7 @@ a {
     text-decoration: none;
     color: inherit;
 }
-a:hover{
-    color: rgb(0, 220, 254);
-}
+
 #logo_site{
     width: 200px;
     margin: 0px;
@@ -176,14 +174,28 @@ main{
 }
 #gallery-container li {
     list-style: none;
+    /* border: 2px solid rgb(243, 227, 227);  */
+    position: relative;
+    
+
 }
 #gallery-container li h2{
     max-width: 160px;
     width: 12vw;
     font-size: 1rem;
+    margin-top: 0px;
+    
     text-align: center;
+    align-items: center;
+    font-style: normal;
+    font-weight: 200;
     margin: auto;
-    padding: 0;
+    
+    
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 @media (max-width: 768px) {
     #gallery-container li h2{
@@ -235,7 +247,7 @@ main{
 }
 @media (max-width: 768px) {
     .headline {
-        margin-top: 0pxpx;
+        margin-top: 0px;
     }
 }
 #ul{
@@ -257,15 +269,14 @@ main{
     border-radius: 7px;
     background-color: #263241;
     color: white;
+    height: 100%;
 }
 
 #ul li:hover{
     box-shadow: 2px 5px 20px 5px black;
 }
 
-#ul li h2{
-    margin-top: 10px;
-}
+
 
 @media (max-width: 768px) {
    #ul{
