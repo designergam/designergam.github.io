@@ -49,10 +49,10 @@ function pesquisar(){
             
             acriarLI.innerHTML+=`
             <li>
-                <a href="Download.html?id=`+jogo.id+`&amp;s=`+RemoverEspacos+`">
+                <a href="https://capitaotorrent.com.br/Download.html?id=`+jogo.id+`&amp;s=`+RemoverEspacos+`">
                     <img src="`+jogo.Capa+`" alt="`+jogo.Nome+`" class="gallery-items" rel="nofollow" >
                 </a>
-                <a href="Download.html?id=`+jogo.id+`&amp;s=`+RemoverEspacos+`">
+                <a href="https://capitaotorrent.com.br/Download.html?id=`+jogo.id+`&amp;s=`+RemoverEspacos+`">
                     <h2>`+jogo.Nome+`</h2>
                 </a>
             </li>`;
@@ -81,12 +81,11 @@ if(TipoURL == null & PaginaURL == null || TipoURL == "jogo" & PaginaURL == 1){
         let RemoverEspacos = jogosPC[i].Nome.replace(/\s/g, '+');
 
         acriarLI.innerHTML+=`
-     
         <li>
-            <a href="Download.html?id=`+jogosPC[i].id+`&amp;s=`+RemoverEspacos+`">
+            <a href="https://capitaotorrent.com.br/https://capitaotorrent.com.br/Download.html?id=`+jogosPC[i].id+`&amp;s=`+RemoverEspacos+`">
                 <img src="`+jogosPC[i].Capa+`" alt="`+jogosPC[i].Nome+`" class="gallery-items" rel="nofollow">
             </a>
-            <a href="Download.html?id=`+jogosPC[i].id+`&s=`+RemoverEspacos+`">
+            <a href="https://capitaotorrent.com.br/Download.html?id=`+jogosPC[i].id+`&s=`+RemoverEspacos+`">
                 <h2>`+jogosPC[i].Nome+`</h2>
             </a>
         </li>`;
@@ -118,10 +117,10 @@ else if(TipoURL == "jogo" & PaginaURL == 2){
 
         acriarLI.innerHTML+=`
         <li>
-            <a href="Download.html?id=`+jogosPC[i].id+`&amp;s=`+RemoverEspacos+`">
+            <a href="https://capitaotorrent.com.br/Download.html?id=`+jogosPC[i].id+`&amp;s=`+RemoverEspacos+`">
                 <img src="`+jogosPC[i].Capa+`" alt="`+jogosPC[i].Nome+`" class="gallery-items" rel="nofollow">
             </a>
-            <a href="Download.html?id=`+jogosPC[i].id+`&amp;s=`+RemoverEspacos+`">
+            <a href="https://capitaotorrent.com.br/Download.html?id=`+jogosPC[i].id+`&amp;s=`+RemoverEspacos+`">
                 <h2>`+jogosPC[i].Nome+`</h2>
             </a>
         </li>`;
@@ -153,10 +152,10 @@ else if(TipoURL == "jogo" & PaginaURL == 3){
         let RemoverEspacos = jogosPC[i].Nome.replace(/\s/g, '+');
         acriarLI.innerHTML+=`
         <li>
-            <a href="Download.html?id=`+jogosPC[i].id+`&amp;s=`+RemoverEspacos+`">
+            <a href="https://capitaotorrent.com.br/Download.html?id=`+jogosPC[i].id+`&amp;s=`+RemoverEspacos+`">
                 <img src="`+jogosPC[i].Capa+`" alt="`+jogosPC[i].Nome+`" class="gallery-items" rel="nofollow">
             </a>
-            <a href="Download.html?id=`+jogosPC[i].id+`&amp;s=`+RemoverEspacos+`">
+            <a href="https://capitaotorrent.com.br/Download.html?id=`+jogosPC[i].id+`&amp;s=`+RemoverEspacos+`">
                 <h2>`+jogosPC[i].Nome+`</h2>
             </a>
         </li>`;
@@ -188,10 +187,10 @@ else if(TipoURL == "jogo" & PaginaURL == 4){
         let RemoverEspacos = jogosPC[i].Nome.replace(/\s/g, '+');
         acriarLI.innerHTML+=`
         <li>
-            <a href="Download.html?id=`+jogosPC[i].id+`&amp;s=`+RemoverEspacos+`">
+            <a href="https://capitaotorrent.com.br/Download.html?id=`+jogosPC[i].id+`&amp;s=`+RemoverEspacos+`">
                 <img src="`+jogosPC[i].Capa+`" alt="`+jogosPC[i].Nome+`" class="gallery-items" rel="nofollow">
             </a>
-            <a href="Download.html?id=`+jogosPC[i].id+`&amp;s=`+RemoverEspacos+`">
+            <a href="https://capitaotorrent.com.br/Download.html?id=`+jogosPC[i].id+`&amp;s=`+RemoverEspacos+`">
                 <h2>`+jogosPC[i].Nome+`</h2>
             </a>
         </li>`;
@@ -223,10 +222,10 @@ else if(TipoURL == "jogo" & PaginaURL == 5){
         let RemoverEspacos = jogosPC[i].Nome.replace(/\s/g, '+');
         acriarLI.innerHTML+=`
         <li>
-            <a href="Download.html?id=`+jogosPC[i].id+`&amp;s=`+RemoverEspacos+`">
+            <a href="https://capitaotorrent.com.br/Download.html?id=`+jogosPC[i].id+`&amp;s=`+RemoverEspacos+`">
                 <img src="`+jogosPC[i].Capa+`" alt="`+jogosPC[i].Nome+`" class="gallery-items" rel="nofollow">
             </a>
-            <a href="Download.html?id=`+jogosPC[i].id+`&amp;s=`+RemoverEspacos+`">
+            <a href="https://capitaotorrent.com.br/Download.html?id=`+jogosPC[i].id+`&amp;s=`+RemoverEspacos+`">
                 <h2>`+jogosPC[i].Nome+`</h2>
             </a>
         </li>`;
@@ -258,10 +257,10 @@ else if(TipoURL == "jogo" & PaginaURL == 6){
         let RemoverEspacos = jogosPC[i].Nome.replace(/\s/g, '+');
         acriarLI.innerHTML+=`
         <li>
-            <a href="Download.html?id=`+jogosPC[i].id+`&amp;s=`+RemoverEspacos+`">
+            <a href="https://capitaotorrent.com.br/Download.html?id=`+jogosPC[i].id+`&amp;s=`+RemoverEspacos+`">
                 <img src="`+jogosPC[i].Capa+`" alt="`+jogosPC[i].Nome+`" class="gallery-items" rel="nofollow">
             </a>
-            <a href="Download.html?id=`+jogosPC[i].id+`&amp;s=`+RemoverEspacos+`">
+            <a href="https://capitaotorrent.com.br/Download.html?id=`+jogosPC[i].id+`&amp;s=`+RemoverEspacos+`">
                 <h2>`+jogosPC[i].Nome+`</h2>
             </a>
         </li>`;
@@ -293,10 +292,10 @@ else if(TipoURL == "jogo" & PaginaURL == 7){
         let RemoverEspacos = jogosPC[i].Nome.replace(/\s/g, '+');
         acriarLI.innerHTML+=`
         <li>
-            <a href="Download.html?id=`+jogosPC[i].id+`&amp;s=`+RemoverEspacos+`">
+            <a href="https://capitaotorrent.com.br/Download.html?id=`+jogosPC[i].id+`&amp;s=`+RemoverEspacos+`">
                 <img src="`+jogosPC[i].Capa+`" alt="`+jogosPC[i].Nome+`" class="gallery-items" rel="nofollow">
             </a>
-            <a href="Download.html?id=`+jogosPC[i].id+`&amp;s=`+RemoverEspacos+`">
+            <a href="https://capitaotorrent.com.br/Download.html?id=`+jogosPC[i].id+`&amp;s=`+RemoverEspacos+`">
                 <h2>`+jogosPC[i].Nome+`</h2>
             </a>
         </li>`;
@@ -327,10 +326,10 @@ else if(TipoURL == "jogo" & PaginaURL == 8){
         let RemoverEspacos = jogosPC[i].Nome.replace(/\s/g, '+');
         acriarLI.innerHTML+=`
         <li>
-            <a href="Download.html?id=`+jogosPC[i].id+`&amp;s=`+RemoverEspacos+`">
+            <a href="https://capitaotorrent.com.br/Download.html?id=`+jogosPC[i].id+`&amp;s=`+RemoverEspacos+`">
                 <img src="`+jogosPC[i].Capa+`" alt="`+jogosPC[i].Nome+`" class="gallery-items" rel="nofollow">
             </a>
-            <a href="Download.html?id=`+jogosPC[i].id+`&amp;s=`+RemoverEspacos+`">
+            <a href="https://capitaotorrent.com.br/Download.html?id=`+jogosPC[i].id+`&amp;s=`+RemoverEspacos+`">
                 <h2>`+jogosPC[i].Nome+`</h2>
             </a>
         </li>`;
@@ -362,10 +361,10 @@ else if(TipoURL == "jogo" & PaginaURL == 9){
         let RemoverEspacos = jogosPC[i].Nome.replace(/\s/g, '+');
         acriarLI.innerHTML+=`
         <li>
-            <a href="Download.html?id=`+jogosPC[i].id+`&amp;s=`+RemoverEspacos+`">
+            <a href="https://capitaotorrent.com.br/Download.html?id=`+jogosPC[i].id+`&amp;s=`+RemoverEspacos+`">
                 <img src="`+jogosPC[i].Capa+`" alt="`+jogosPC[i].Nome+`" class="gallery-items" rel="nofollow">
             </a>
-            <a href="Download.html?id=`+jogosPC[i].id+`&amp;s=`+RemoverEspacos+`">
+            <a href="https://capitaotorrent.com.br/Download.html?id=`+jogosPC[i].id+`&amp;s=`+RemoverEspacos+`">
                 <h2>`+jogosPC[i].Nome+`</h2>
             </a>
         </li>`;
@@ -400,10 +399,10 @@ else if(TipoURL == "programa" & PaginaURL == 1){
         let RemoverEspacos = Programas[i].Nome.replace(/\s/g, '+');
         acriarLI.innerHTML+=`
         <li>
-            <a href="Download.html?id=`+Programas[i].id+`&amp;s=`+RemoverEspacos+`">
+            <a href="https://capitaotorrent.com.br/Download.html?id=`+Programas[i].id+`&amp;s=`+RemoverEspacos+`">
                 <img src="`+Programas[i].Capa+`" alt="`+Programas[i].Nome+`" class="gallery-items" rel="nofollow">
             </a>
-            <a href="Download.html?id=`+Programas[i].id+`&amp;s=`+RemoverEspacos+`">
+            <a href="https://capitaotorrent.com.br/Download.html?id=`+Programas[i].id+`&amp;s=`+RemoverEspacos+`">
                 <h2>`+Programas[i].Nome+`</h2>
             </a>
         </li>`;
