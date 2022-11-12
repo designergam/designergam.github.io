@@ -451,3 +451,12 @@ a:hover{
     border-radius: 5px;
     
 }
+#propaganda{
+    width: 720px;
+    height: 90px;
+    position: fixed;
+    bottom: 2px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    z-index: 10;
+}
