@@ -3,6 +3,13 @@ const Url = new URLSearchParams(window.location.search);
 const TipoURL = Url.get('t');
 const PaginaURL = Url.get('p');
 
+//Ocultar menu abc se estiver em programas
+console.log(TipoURL)
+if(TipoURL == "programa"){
+let close = document.getElementById("AlfabeticoBTN").style.display="none"
+}
+
+
 let acriarLI = document.getElementById('ul')
 let PassarPagina = document.querySelector(".ls-pagination-filter")
 
