@@ -3,9 +3,7 @@ const Url = new URLSearchParams(window.location.search);
 const TipoURL = Url.get('t');
 const PaginaURL = Url.get('p');
 
-
 let acriarLI = document.getElementById('ul')
-
 let PassarPagina = document.querySelector(".ls-pagination-filter")
 
 //Filtrar por Objetos que são do tipo "jogo"
@@ -13,7 +11,6 @@ const jogosPC = BD.filter(item => item.Tipo == "jogo")
 
 //Filtrar por Objetos que são do tipo "programa"
 const Programas = BD.filter(item2 => item2.Tipo == "programa")
-
 
 //Ordenar Jogos em orgem alfabetica
 jogosPC.sort(function(a, b){
@@ -69,8 +66,6 @@ function pesquisar(){
 }
 
 
-
-
 // Tipo: Jogos - Pagina: 1
 if(TipoURL == null & PaginaURL == null || TipoURL == "jogo" & PaginaURL == 1){
    
@@ -88,7 +83,6 @@ if(TipoURL == null & PaginaURL == null || TipoURL == "jogo" & PaginaURL == 1){
     }
 
     PassarPagina.innerHTML =`
-
     <ul class="ls-pagination">
     <p id="textPaginas">Paginas >>></p>
           <a href="?t=jogo&amp;p=1"><li id="pg1">1</li></a>
@@ -100,8 +94,6 @@ if(TipoURL == null & PaginaURL == null || TipoURL == "jogo" & PaginaURL == 1){
           <a href="?t=jogo&amp;p=7"><li id="pg7">7</li></a>
           <a href="?t=jogo&amp;p=8"><li id="pg8">8</li></a>
           <a href="?t=jogo&amp;p=9"><li id="pg9">9</li></a>
-          
-          
     </ul>
     `
 }
