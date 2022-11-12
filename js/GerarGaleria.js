@@ -42,6 +42,7 @@ function pesquisar(){
         let novonome = jogo.Nome.toLowerCase()
         let novadesc = jogo.Descricao.toLocaleLowerCase()
         let RemoverEspacos = jogo.Nome.replace(/\s/g, '+');
+
         if(novonome.indexOf(pesquisa.toLowerCase()) > -1 || novadesc.indexOf(pesquisa.toLowerCase()) > -1){
             
             acriarLI.innerHTML+=`
@@ -64,6 +65,405 @@ function pesquisar(){
             let loading = document.getElementById("loading").style.display="none"
         }, 500)
 }
+
+//Filtrar pro Letra
+function A(){
+ let Minusculo = BD.filter(item => item.Nome.toLowerCase().substr(0, 1) == "a" & item.Tipo=="jogo")
+ acriarLI.innerHTML="";
+ Minusculo.map((i) => {
+    acriarLI.innerHTML+=`
+    <a href="Download.html?id=`+i.id+`&amp;s=teste">
+        <li>
+            <img src="`+i.Capa+`" alt="`+i.Nome+`" class="gallery-items" rel="nofollow" >
+            <h2>`+i.Nome+`</h2>
+        </li>
+    </a>`;
+
+    let b = document.getElementById("AlfabeticoBTN").children
+    b[0].style.border="2px solid white"
+
+ })
+}
+function B(){
+    
+    let Minusculo = BD.filter(item => item.Nome.toLowerCase().substr(0, 1) == "b" & item.Tipo=="jogo")
+    acriarLI.innerHTML="";
+    Minusculo.map((i) => {
+       acriarLI.innerHTML+=`
+       <a href="Download.html?id=`+i.id+`&amp;s=teste">
+           <li>
+               <img src="`+i.Capa+`" alt="`+i.Nome+`" class="gallery-items" rel="nofollow" >
+               <h2>`+i.Nome+`</h2>
+           </li>
+       </a>`;
+       let b = document.getElementById("AlfabeticoBTN").children
+    b[1].style.border="2px solid white"
+   
+    })
+    
+    
+}
+function C(){
+    let Minusculo = BD.filter(item => item.Nome.toLowerCase().substr(0, 1) == "c" & item.Tipo=="jogo")
+    acriarLI.innerHTML="";
+    Minusculo.map((i) => {
+       acriarLI.innerHTML+=`
+       <a href="Download.html?id=`+i.id+`&amp;s=teste">
+           <li>
+               <img src="`+i.Capa+`" alt="`+i.Nome+`" class="gallery-items" rel="nofollow" >
+               <h2>`+i.Nome+`</h2>
+           </li>
+       </a>`;
+       let b = document.getElementById("AlfabeticoBTN").children
+       b[2].style.border="2px solid white"
+    })
+}
+function D(){
+    let Minusculo = BD.filter(item => item.Nome.toLowerCase().substr(0, 1) == "d" & item.Tipo=="jogo")
+    acriarLI.innerHTML="";
+    Minusculo.map((i) => {
+       acriarLI.innerHTML+=`
+       <a href="Download.html?id=`+i.id+`&amp;s=teste">
+           <li>
+               <img src="`+i.Capa+`" alt="`+i.Nome+`" class="gallery-items" rel="nofollow" >
+               <h2>`+i.Nome+`</h2>
+           </li>
+       </a>`;
+       let b = document.getElementById("AlfabeticoBTN").children
+       b[3].style.border="2px solid white"
+    })
+}
+function E(){
+    let Minusculo = BD.filter(item => item.Nome.toLowerCase().substr(0, 1) == "e" & item.Tipo=="jogo")
+    acriarLI.innerHTML="";
+    Minusculo.map((i) => {
+       acriarLI.innerHTML+=`
+       <a href="Download.html?id=`+i.id+`&amp;s=teste">
+           <li>
+               <img src="`+i.Capa+`" alt="`+i.Nome+`" class="gallery-items" rel="nofollow" >
+               <h2>`+i.Nome+`</h2>
+           </li>
+       </a>`;
+       let b = document.getElementById("AlfabeticoBTN").children
+       b[4].style.border="2px solid white"
+    })
+}
+function F(){
+    let Minusculo = BD.filter(item => item.Nome.toLowerCase().substr(0, 1) == "f" & item.Tipo=="jogo")
+    acriarLI.innerHTML="";
+    Minusculo.map((i) => {
+       acriarLI.innerHTML+=`
+       <a href="Download.html?id=`+i.id+`&amp;s=teste">
+           <li>
+               <img src="`+i.Capa+`" alt="`+i.Nome+`" class="gallery-items" rel="nofollow" >
+               <h2>`+i.Nome+`</h2>
+           </li>
+       </a>`;
+       let b = document.getElementById("AlfabeticoBTN").children
+       b[5].style.border="2px solid white"
+    })
+}
+function G(){
+    let Minusculo = BD.filter(item => item.Nome.toLowerCase().substr(0, 1) == "g" & item.Tipo=="jogo")
+    acriarLI.innerHTML="";
+    Minusculo.map((i) => {
+       acriarLI.innerHTML+=`
+       <a href="Download.html?id=`+i.id+`&amp;s=teste">
+           <li>
+               <img src="`+i.Capa+`" alt="`+i.Nome+`" class="gallery-items" rel="nofollow" >
+               <h2>`+i.Nome+`</h2>
+           </li>
+       </a>`;
+       let b = document.getElementById("AlfabeticoBTN").children
+       b[6].style.border="2px solid white"
+    })
+}
+function H(){
+    let Minusculo = BD.filter(item => item.Nome.toLowerCase().substr(0, 1) == "h" & item.Tipo=="jogo")
+    acriarLI.innerHTML="";
+    Minusculo.map((i) => {
+       acriarLI.innerHTML+=`
+       <a href="Download.html?id=`+i.id+`&amp;s=teste">
+           <li>
+               <img src="`+i.Capa+`" alt="`+i.Nome+`" class="gallery-items" rel="nofollow" >
+               <h2>`+i.Nome+`</h2>
+           </li>
+       </a>`;
+       let b = document.getElementById("AlfabeticoBTN").children
+       b[7].style.border="2px solid white"
+    })
+}
+function I(){
+    let Minusculo = BD.filter(item => item.Nome.toLowerCase().substr(0, 1) == "i" & item.Tipo=="jogo")
+    acriarLI.innerHTML="";
+    Minusculo.map((i) => {
+       acriarLI.innerHTML+=`
+       <a href="Download.html?id=`+i.id+`&amp;s=teste">
+           <li>
+               <img src="`+i.Capa+`" alt="`+i.Nome+`" class="gallery-items" rel="nofollow" >
+               <h2>`+i.Nome+`</h2>
+           </li>
+       </a>`;
+       let b = document.getElementById("AlfabeticoBTN").children
+       b[8].style.border="2px solid white"
+    })
+}
+function J(){
+    let Minusculo = BD.filter(item => item.Nome.toLowerCase().substr(0, 1) == "j" & item.Tipo=="jogo")
+    acriarLI.innerHTML="";
+    Minusculo.map((i) => {
+       acriarLI.innerHTML+=`
+       <a href="Download.html?id=`+i.id+`&amp;s=teste">
+           <li>
+               <img src="`+i.Capa+`" alt="`+i.Nome+`" class="gallery-items" rel="nofollow" >
+               <h2>`+i.Nome+`</h2>
+           </li>
+       </a>`;
+       let b = document.getElementById("AlfabeticoBTN").children
+       b[9].style.border="2px solid white"
+    })
+}
+function K(){
+    let Minusculo = BD.filter(item => item.Nome.toLowerCase().substr(0, 1) == "k" & item.Tipo=="jogo")
+    acriarLI.innerHTML="";
+    Minusculo.map((i) => {
+       acriarLI.innerHTML+=`
+       <a href="Download.html?id=`+i.id+`&amp;s=teste">
+           <li>
+               <img src="`+i.Capa+`" alt="`+i.Nome+`" class="gallery-items" rel="nofollow" >
+               <h2>`+i.Nome+`</h2>
+           </li>
+       </a>`;
+       let b = document.getElementById("AlfabeticoBTN").children
+       b[10].style.border="2px solid white"
+    })
+}
+function L(){
+    let Minusculo = BD.filter(item => item.Nome.toLowerCase().substr(0, 1) == "l" & item.Tipo=="jogo")
+    acriarLI.innerHTML="";
+    Minusculo.map((i) => {
+       acriarLI.innerHTML+=`
+       <a href="Download.html?id=`+i.id+`&amp;s=teste">
+           <li>
+               <img src="`+i.Capa+`" alt="`+i.Nome+`" class="gallery-items" rel="nofollow" >
+               <h2>`+i.Nome+`</h2>
+           </li>
+       </a>`;
+       let b = document.getElementById("AlfabeticoBTN").children
+       b[11].style.border="2px solid white"
+    })
+}
+function M(){
+    let Minusculo = BD.filter(item => item.Nome.toLowerCase().substr(0, 1) == "m" & item.Tipo=="jogo")
+    acriarLI.innerHTML="";
+    Minusculo.map((i) => {
+       acriarLI.innerHTML+=`
+       <a href="Download.html?id=`+i.id+`&amp;s=teste">
+           <li>
+               <img src="`+i.Capa+`" alt="`+i.Nome+`" class="gallery-items" rel="nofollow" >
+               <h2>`+i.Nome+`</h2>
+           </li>
+       </a>`;
+       let b = document.getElementById("AlfabeticoBTN").children
+       b[12].style.border="2px solid white"
+    })
+}
+function N(){
+    let Minusculo = BD.filter(item => item.Nome.toLowerCase().substr(0, 1) == "n" & item.Tipo=="jogo")
+    acriarLI.innerHTML="";
+    Minusculo.map((i) => {
+       acriarLI.innerHTML+=`
+       <a href="Download.html?id=`+i.id+`&amp;s=teste">
+           <li>
+               <img src="`+i.Capa+`" alt="`+i.Nome+`" class="gallery-items" rel="nofollow" >
+               <h2>`+i.Nome+`</h2>
+           </li>
+       </a>`;
+       let b = document.getElementById("AlfabeticoBTN").children
+       b[13].style.border="2px solid white"
+    })
+}
+function O(){
+    let Minusculo = BD.filter(item => item.Nome.toLowerCase().substr(0, 1) == "o" & item.Tipo=="jogo")
+    acriarLI.innerHTML="";
+    Minusculo.map((i) => {
+       acriarLI.innerHTML+=`
+       <a href="Download.html?id=`+i.id+`&amp;s=teste">
+           <li>
+               <img src="`+i.Capa+`" alt="`+i.Nome+`" class="gallery-items" rel="nofollow" >
+               <h2>`+i.Nome+`</h2>
+           </li>
+       </a>`;
+       let b = document.getElementById("AlfabeticoBTN").children
+       b[14].style.border="2px solid white"
+    })
+}
+function P(){
+    let Minusculo = BD.filter(item => item.Nome.toLowerCase().substr(0, 1) == "p" & item.Tipo=="jogo")
+    acriarLI.innerHTML="";
+    Minusculo.map((i) => {
+       acriarLI.innerHTML+=`
+       <a href="Download.html?id=`+i.id+`&amp;s=teste">
+           <li>
+               <img src="`+i.Capa+`" alt="`+i.Nome+`" class="gallery-items" rel="nofollow" >
+               <h2>`+i.Nome+`</h2>
+           </li>
+       </a>`;
+       let b = document.getElementById("AlfabeticoBTN").children
+       b[15].style.border="2px solid white"
+    })
+}
+function Q(){
+    let Minusculo = BD.filter(item => item.Nome.toLowerCase().substr(0, 1) == "q" & item.Tipo=="jogo")
+    acriarLI.innerHTML="";
+    Minusculo.map((i) => {
+       acriarLI.innerHTML+=`
+       <a href="Download.html?id=`+i.id+`&amp;s=teste">
+           <li>
+               <img src="`+i.Capa+`" alt="`+i.Nome+`" class="gallery-items" rel="nofollow" >
+               <h2>`+i.Nome+`</h2>
+           </li>
+       </a>`;
+       let b = document.getElementById("AlfabeticoBTN").children
+       b[16].style.border="2px solid white"
+    })
+}
+function R(){
+    let Minusculo = BD.filter(item => item.Nome.toLowerCase().substr(0, 1) == "r" & item.Tipo=="jogo")
+    acriarLI.innerHTML="";
+    Minusculo.map((i) => {
+       acriarLI.innerHTML+=`
+       <a href="Download.html?id=`+i.id+`&amp;s=teste">
+           <li>
+               <img src="`+i.Capa+`" alt="`+i.Nome+`" class="gallery-items" rel="nofollow" >
+               <h2>`+i.Nome+`</h2>
+           </li>
+       </a>`;
+       let b = document.getElementById("AlfabeticoBTN").children
+       b[17].style.border="2px solid white"
+    })
+}
+function S(){
+    let Minusculo = BD.filter(item => item.Nome.toLowerCase().substr(0, 1) == "s" & item.Tipo=="jogo")
+    acriarLI.innerHTML="";
+    Minusculo.map((i) => {
+       acriarLI.innerHTML+=`
+       <a href="Download.html?id=`+i.id+`&amp;s=teste">
+           <li>
+               <img src="`+i.Capa+`" alt="`+i.Nome+`" class="gallery-items" rel="nofollow" >
+               <h2>`+i.Nome+`</h2>
+           </li>
+       </a>`;
+       let b = document.getElementById("AlfabeticoBTN").children
+       b[18].style.border="2px solid white"
+    })
+}
+function T(){
+    let Minusculo = BD.filter(item => item.Nome.toLowerCase().substr(0, 1) == "t" & item.Tipo=="jogo")
+    acriarLI.innerHTML="";
+    Minusculo.map((i) => {
+       acriarLI.innerHTML+=`
+       <a href="Download.html?id=`+i.id+`&amp;s=teste">
+           <li>
+               <img src="`+i.Capa+`" alt="`+i.Nome+`" class="gallery-items" rel="nofollow" >
+               <h2>`+i.Nome+`</h2>
+           </li>
+       </a>`;
+       let b = document.getElementById("AlfabeticoBTN").children
+       b[19].style.border="2px solid white"
+    })
+}
+function U(){
+    let Minusculo = BD.filter(item => item.Nome.toLowerCase().substr(0, 1) == "u" & item.Tipo=="jogo")
+    acriarLI.innerHTML="";
+    Minusculo.map((i) => {
+       acriarLI.innerHTML+=`
+       <a href="Download.html?id=`+i.id+`&amp;s=teste">
+           <li>
+               <img src="`+i.Capa+`" alt="`+i.Nome+`" class="gallery-items" rel="nofollow" >
+               <h2>`+i.Nome+`</h2>
+           </li>
+       </a>`;
+       let b = document.getElementById("AlfabeticoBTN").children
+       b[20].style.border="2px solid white"
+    })
+}
+function V(){
+    let Minusculo = BD.filter(item => item.Nome.toLowerCase().substr(0, 1) == "v" & item.Tipo=="jogo")
+    acriarLI.innerHTML="";
+    Minusculo.map((i) => {
+       acriarLI.innerHTML+=`
+       <a href="Download.html?id=`+i.id+`&amp;s=teste">
+           <li>
+               <img src="`+i.Capa+`" alt="`+i.Nome+`" class="gallery-items" rel="nofollow" >
+               <h2>`+i.Nome+`</h2>
+           </li>
+       </a>`;
+       let b = document.getElementById("AlfabeticoBTN").children
+       b[21].style.border="2px solid white"
+    })
+}
+function W(){
+    let Minusculo = BD.filter(item => item.Nome.toLowerCase().substr(0, 1) == "w" & item.Tipo=="jogo")
+    acriarLI.innerHTML="";
+    Minusculo.map((i) => {
+       acriarLI.innerHTML+=`
+       <a href="Download.html?id=`+i.id+`&amp;s=teste">
+           <li>
+               <img src="`+i.Capa+`" alt="`+i.Nome+`" class="gallery-items" rel="nofollow" >
+               <h2>`+i.Nome+`</h2>
+           </li>
+       </a>`;
+       let b = document.getElementById("AlfabeticoBTN").children
+       b[22].style.border="2px solid white"
+    })
+}
+function X(){
+    let Minusculo = BD.filter(item => item.Nome.toLowerCase().substr(0, 1) == "x" & item.Tipo=="jogo")
+    acriarLI.innerHTML="";
+    Minusculo.map((i) => {
+       acriarLI.innerHTML+=`
+       <a href="Download.html?id=`+i.id+`&amp;s=teste">
+           <li>
+               <img src="`+i.Capa+`" alt="`+i.Nome+`" class="gallery-items" rel="nofollow" >
+               <h2>`+i.Nome+`</h2>
+           </li>
+       </a>`;
+       let b = document.getElementById("AlfabeticoBTN").children
+       b[23].style.border="2px solid white"
+    })
+}
+function Y(){
+    let Minusculo = BD.filter(item => item.Nome.toLowerCase().substr(0, 1) == "y" & item.Tipo=="jogo")
+    acriarLI.innerHTML="";
+    Minusculo.map((i) => {
+       acriarLI.innerHTML+=`
+       <a href="Download.html?id=`+i.id+`&amp;s=teste">
+           <li>
+               <img src="`+i.Capa+`" alt="`+i.Nome+`" class="gallery-items" rel="nofollow" >
+               <h2>`+i.Nome+`</h2>
+           </li>
+       </a>`;
+       let b = document.getElementById("AlfabeticoBTN").children
+       b[24].style.border="2px solid white"
+    })
+}
+function Z(){
+    let Minusculo = BD.filter(item => item.Nome.toLowerCase().substr(0, 1) == "z" & item.Tipo=="jogo")
+    acriarLI.innerHTML="";
+    Minusculo.map((i) => {
+       acriarLI.innerHTML+=`
+       <a href="Download.html?id=`+i.id+`&amp;s=teste">
+           <li>
+               <img src="`+i.Capa+`" alt="`+i.Nome+`" class="gallery-items" rel="nofollow" >
+               <h2>`+i.Nome+`</h2>
+           </li>
+       </a>`;
+       let b = document.getElementById("AlfabeticoBTN").children
+       b[25].style.border="2px solid white"
+    })
+}
+
 
 
 // Tipo: Jogos - Pagina: 1

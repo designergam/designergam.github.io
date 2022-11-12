@@ -19,6 +19,8 @@ const BD = [
     "rom": "126 GB de espaço disponível.",
     "Plataforma": "pc",
     "Tipo": "jogo",
+    "Genero":"Aventura",
+    
 },
 { 
     "id":2,
@@ -39,6 +41,7 @@ const BD = [
     "rom":"75 GB",
     "Plataforma":"pc",
     "Tipo": "jogo",
+    "Genero":"Ação",
     
 },
 { 
@@ -58,6 +61,7 @@ const BD = [
     "rom":"60 GB",
     "Plataforma":"pc",
     "Tipo": "jogo",
+    "Genero":"Aventura",
     
 },
 { 
@@ -79,6 +83,7 @@ const BD = [
     "rom":"10 GB",
     "Plataforma":"pc",
     "Tipo": "jogo",
+    "Genero":"Aventura",
     
 },
 { 
@@ -97,6 +102,7 @@ const BD = [
     "rom":"80 GB",
     "Plataforma":"pc",
     "Tipo": "jogo",
+    "Genero":"Ação",
     
 },
 { 
@@ -115,6 +121,7 @@ const BD = [
     "rom":"60 GB",
     "Plataforma":"pc",
     "Tipo": "jogo",
+    "Genero":"Aventura",
     
     
 },
@@ -133,7 +140,7 @@ const BD = [
     "rom":"1.2 GB",
     "Plataforma":"pc",
     "Tipo":"programa",
-    "Genero":"designer",
+    "Genero":"Designer",
 },
 { 
     
@@ -153,6 +160,7 @@ const BD = [
     "rom":"60 GB",
     "Plataforma":"pc",
     "Tipo": "jogo",
+    "Genero":"Aventura",
     
 },
 { 
@@ -170,6 +178,7 @@ const BD = [
     "rom": "70 GB", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"Sobrevivência",
     
 },
 
@@ -188,6 +197,7 @@ const BD = [
     "rom": "70 GB", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"Ação",
     
 },
 
@@ -206,6 +216,7 @@ const BD = [
     "rom": "90 GB", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"Mundo Aberto",
     
 },
 { 
@@ -223,6 +234,7 @@ const BD = [
     "rom": "80 Gb", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"Luta",
     
 },
 { 
@@ -240,6 +252,7 @@ const BD = [
     "rom": "50 GB", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"Corrida",
     
 },
 
@@ -258,6 +271,7 @@ const BD = [
     "rom": " 36 GB", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"Luta",
     
 },
 { 
@@ -275,11 +289,12 @@ const BD = [
     "rom": "150GB", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"Mundo Aberto",
     
 },
 { 
     "id": 17,
-    "Nome": "Biomutant ", 
+    "Nome": "Biomutant", 
     "Capa": "https://i2.wp.com/torrentjogos.net/imagem/biomutant-torrent.jpg", 
     "Imagem": "https://sm.ign.com/ign_br/gallery/b/biomutant-/biomutant-screenshots_944e.jpg", 
     "Gif": "https://c.tenor.com/-jVX_NFQNzEAAAAd/biomutant-bio.gif", 
@@ -292,6 +307,7 @@ const BD = [
     "rom": "25 GB", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"Mundo Aberto",
     
 },
 { 
@@ -309,6 +325,7 @@ const BD = [
     "rom": "150 GB", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"Ação ",
     
 },
 { 
@@ -325,7 +342,8 @@ const BD = [
     "ram": "8 GB", 
     "rom": "80 GB", 
     "Plataforma": "pc",
-    "Tipo": "jogo", 
+    "Tipo": "jogo",
+    "Genero":"Mundo Aberto", 
     
 },
 { 
@@ -343,6 +361,7 @@ const BD = [
     "rom": "30 GB", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"RTS",
     
 },
 { 
@@ -360,6 +379,7 @@ const BD = [
     "rom": "18 GB", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"Simulação",
     
 },
 { 
@@ -377,6 +397,7 @@ const BD = [
     "rom": " 40 GB", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"Mundo Aberto",
     
 },
 { 
@@ -394,7 +415,7 @@ const BD = [
     "rom": "60 GB", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
-    "Genero": "rpg",
+    "Genero": "Mundo Aberto",
     
     
 },
@@ -413,7 +434,7 @@ const BD = [
     "rom": "60 GB", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
-    "Genero": "rpg",
+    "Genero":"Aventura",
     
 },
 { 
@@ -431,7 +452,8 @@ const BD = [
     "rom": "40 GB", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
-    "Genero": "rpg",
+    "Genero":"Esporte",
+    
     
 },
 { 
@@ -457,6 +479,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"Luta",
      
 },    { 
     "id": 28,
@@ -480,6 +503,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"RPG",
 },
 { 
     "id": 29,
@@ -499,6 +523,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"Terror",
      
 },
 { 
@@ -520,6 +545,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"Ação",
      
 },
 { 
@@ -539,6 +565,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"Aventura",
      
 },
 { 
@@ -559,6 +586,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -577,6 +605,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -597,6 +626,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -615,6 +645,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -636,6 +667,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -657,6 +689,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -675,6 +708,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -695,6 +729,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -713,6 +748,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -732,6 +768,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -753,6 +790,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -773,6 +811,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 
@@ -792,6 +831,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -811,6 +851,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -829,6 +870,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -846,6 +888,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -864,29 +907,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
-     
-},
-{ 
-    "id": 51,
-    "Nome": "One-Punch Man A Hero Nobody Knows Deluxe", 
-    "Capa": "https://i2.wp.com/torrentjogos.net/imagem/onepunch-man-a-hero-nobody-knows-deluxe-edition-torrent.jpg", 
-    "Imagem": "undefined", 
-    "Gif": "undefined", 
-    "Trailer": "undefined", 
-    "Download": "magnet:?xt=urn:btih:991dbe98c384e38eb3f200b71781231d744f5832&dn=One+Punch+Man+A+Hero+Nobody+Knows+Deluxe+Edition+ElAmigos", 
-    "Descricao":  `O primeiro jogo "One Punch Man" para console e PC finalmente chegou! 
-    Participe de uma experiência de luta dinâmica com seus amados personagens da primeira temporada de One Punch Man! Jogue como seu herói favorito ou torne-se um! 
-    VOCÊ é um herói! 
-    Crie seu avatar de herói e escolha seus poderes e habilidades! 
-    batalhas emocionantes! 
-    batalhas 3v3 dinâmicas com eventos vistos em One Punch Man, como meteoros e outros heróis.
-   `, 
-    "cpu": "undefined", 
-    "gpu": "undefined", 
-    "ram": "undefined", 
-    "rom": "undefined", 
-    "Plataforma": "pc", 
-    "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -905,6 +926,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -923,6 +945,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -940,6 +963,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -958,6 +982,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -975,6 +1000,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -992,6 +1018,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -1009,6 +1036,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -1026,6 +1054,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 
@@ -1044,6 +1073,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -1061,6 +1091,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -1078,6 +1109,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -1095,6 +1127,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -1112,6 +1145,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 
@@ -1130,6 +1164,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -1147,6 +1182,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -1164,6 +1200,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 
@@ -1182,6 +1219,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 
@@ -1200,6 +1238,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -1217,6 +1256,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -1234,6 +1274,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -1251,6 +1292,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -1268,6 +1310,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -1285,6 +1328,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -1302,6 +1346,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -1319,6 +1364,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 
@@ -1337,6 +1383,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -1354,6 +1401,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -1371,6 +1419,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -1388,6 +1437,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -1405,6 +1455,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 
@@ -1423,6 +1474,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -1440,6 +1492,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -1457,6 +1510,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -1474,6 +1528,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -1491,6 +1546,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -1508,6 +1564,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -1525,6 +1582,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -1542,6 +1600,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -1559,6 +1618,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -1576,6 +1636,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -1593,6 +1654,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -1610,6 +1672,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 
@@ -1628,6 +1691,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -1645,6 +1709,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -1662,6 +1727,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -1679,6 +1745,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -1696,6 +1763,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -1713,6 +1781,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 
@@ -1731,6 +1800,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -1748,6 +1818,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -1765,6 +1836,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -1782,6 +1854,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -1799,6 +1872,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 
@@ -1817,6 +1891,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -1834,6 +1909,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -1851,6 +1927,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 
@@ -1869,6 +1946,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 
@@ -1887,6 +1965,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -1904,6 +1983,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -1921,6 +2001,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -1938,6 +2019,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -1955,6 +2037,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -1972,6 +2055,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -1989,6 +2073,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 
@@ -2007,6 +2092,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -2024,6 +2110,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -2041,6 +2128,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -2058,6 +2146,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -2075,6 +2164,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -2092,6 +2182,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -2109,6 +2200,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -2126,6 +2218,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -2143,6 +2236,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -2160,6 +2254,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 
@@ -2178,6 +2273,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -2195,6 +2291,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 
@@ -2213,6 +2310,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -2230,6 +2328,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -2247,6 +2346,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -2264,6 +2364,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -2281,6 +2382,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -2298,6 +2400,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -2315,6 +2418,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -2332,6 +2436,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -2349,6 +2454,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -2366,6 +2472,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -2383,6 +2490,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -2400,6 +2508,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -2417,6 +2526,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -2434,6 +2544,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -2451,6 +2562,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 
@@ -2469,6 +2581,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -2486,6 +2599,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -2503,6 +2617,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 
@@ -2521,6 +2636,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -2538,6 +2654,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -2555,6 +2672,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -2572,6 +2690,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 
@@ -2590,6 +2709,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -2607,6 +2727,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -2624,6 +2745,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -2641,6 +2763,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -2658,6 +2781,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -2675,6 +2799,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -2692,6 +2817,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -2709,6 +2835,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -2726,6 +2853,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 
@@ -2744,6 +2872,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -2761,6 +2890,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -2778,6 +2908,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -2795,6 +2926,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -2812,6 +2944,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -2829,6 +2962,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -2846,6 +2980,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -2863,6 +2998,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -2880,6 +3016,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -2897,6 +3034,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -2914,6 +3052,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -2931,6 +3070,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -2948,6 +3088,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -2965,6 +3106,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -2982,6 +3124,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -2999,6 +3142,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -3016,6 +3160,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -3033,6 +3178,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -3050,6 +3196,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -3067,6 +3214,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -3084,6 +3232,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -3101,6 +3250,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -3118,6 +3268,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -3135,6 +3286,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 
@@ -3153,6 +3305,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -3170,6 +3323,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -3187,6 +3341,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -3204,6 +3359,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -3221,6 +3377,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -3238,6 +3395,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -3255,6 +3413,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -3272,6 +3431,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -3289,6 +3449,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -3306,6 +3467,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -3323,6 +3485,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -3340,6 +3503,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -3357,6 +3521,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -3374,6 +3539,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 
@@ -3392,6 +3558,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -3409,6 +3576,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -3426,6 +3594,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -3443,6 +3612,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -3460,6 +3630,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -3477,6 +3648,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -3494,6 +3666,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -3511,6 +3684,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -3528,6 +3702,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -3545,6 +3720,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -3562,6 +3738,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -3579,6 +3756,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -3596,6 +3774,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -3613,6 +3792,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -3630,6 +3810,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -3647,6 +3828,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -3664,6 +3846,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -3681,6 +3864,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -3698,6 +3882,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -3715,6 +3900,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 
@@ -3733,6 +3919,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -3750,6 +3937,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -3767,6 +3955,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -3784,6 +3973,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -3801,6 +3991,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -3818,6 +4009,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -3835,6 +4027,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 
@@ -3853,6 +4046,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -3870,6 +4064,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -3887,6 +4082,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -3904,6 +4100,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -3921,6 +4118,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -3938,6 +4136,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -3955,6 +4154,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -3972,6 +4172,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -3989,6 +4190,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -4006,6 +4208,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -4023,6 +4226,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -4040,6 +4244,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -4057,6 +4262,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -4074,6 +4280,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -4091,6 +4298,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -4108,6 +4316,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -4125,6 +4334,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -4142,6 +4352,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 
@@ -4160,6 +4371,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -4177,6 +4389,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -4194,6 +4407,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -4211,6 +4425,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -4228,6 +4443,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -4245,6 +4461,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -4262,6 +4479,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -4279,6 +4497,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -4296,6 +4515,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -4313,6 +4533,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -4330,6 +4551,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -4347,6 +4569,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 
@@ -4365,6 +4588,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -4382,6 +4606,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -4399,6 +4624,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -4416,6 +4642,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -4433,6 +4660,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -4450,6 +4678,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 
@@ -4468,6 +4697,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -4485,6 +4715,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -4502,6 +4733,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -4519,6 +4751,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -4536,6 +4769,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -4553,6 +4787,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -4570,6 +4805,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -4587,6 +4823,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -4604,6 +4841,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -4621,6 +4859,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -4638,6 +4877,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -4655,6 +4895,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -4672,6 +4913,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -4689,6 +4931,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -4706,6 +4949,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -4723,6 +4967,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -4740,6 +4985,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -4757,6 +5003,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -4774,6 +5021,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -4791,6 +5039,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -4808,6 +5057,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 
@@ -4825,6 +5075,7 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero":"",
      
 },
 { 

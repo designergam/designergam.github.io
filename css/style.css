@@ -421,3 +421,33 @@ aside{
     background-color: #3e5269;
     color: white;
 }
+
+
+#AlfabeticoBTN{
+    /* border: 1px solid red; */
+    width: 80%;
+    margin: auto;
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#AlfabeticoBTN button{
+background-color:#3e5269 ;
+border: none;
+width: 30px;
+height: 30px;
+border-radius: 50%;
+color: white;
+font-weight: 200;
+margin: auto;
+
+
+  align-items: center;
+  justify-content: center;
+
+}
+#AlfabeticoBTN button:hover{
+    box-shadow: 2px 5px 20px 5px black;
+    border: 1px  solid white;
+}
