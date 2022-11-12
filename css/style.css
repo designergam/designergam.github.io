@@ -454,10 +454,21 @@ margin: auto;
 #propaganda{
     width: 720px;
     height: 90px;
-    
+    background-color: red;
     position: fixed;
     bottom: 2px;
     left: 50%;
     transform: translate(-50%, 0%);
     z-index: 10;
+}
+#propaganda button{
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    padding: 5px;
+    padding-right: 7px;
+    z-index: 999;
 }

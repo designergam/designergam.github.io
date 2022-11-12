@@ -42,8 +42,9 @@
 
 
 <body>
-    <!-- Propaganda -->
-    <span id="propaganda">
+       <!-- Propaganda -->
+       <span id="propaganda">
+        <button onclick="closeads()">x</button>
         <script type="text/javascript">
             atOptions = {
                 'key' : '00437ddeb190e2546f876e88b5cf4ea9',
@@ -55,6 +56,12 @@
             document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplayformat.com/00437ddeb190e2546f876e88b5cf4ea9/invoke.js"></scr' + 'ipt>');
         </script>
     </span>
+    <script>
+        function closeads(){
+            let ads = document.getElementById("propaganda")
+            ads.style.display="none"
+        }
+    </script>
     <header>
         <nav id="navbar">
             <div id="navbar-container">
