@@ -432,7 +432,7 @@ aside{
     padding-bottom: 10px;
 }
 
-#AlfabeticoBTN button{
+#AlfabeticoBTN .btn{
 background-color:#3e5269 ;
 border: none;
 width: 30px;
@@ -441,13 +441,11 @@ border-radius: 50%;
 color: white;
 font-weight: 200;
 margin: auto;
-
-
-  align-items: center;
-  justify-content: center;
+align-items: center;
+justify-content: center;
 
 }
-#AlfabeticoBTN button:hover{
+#AlfabeticoBTN .btn:hover{
     box-shadow: 2px 5px 20px 5px black;
     border: 1px  solid white;
 }
