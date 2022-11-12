@@ -116,6 +116,7 @@ const BD = [
     "Plataforma":"pc",
     "Tipo": "jogo",
     
+    
 },
 { 
     "id":7,
@@ -132,6 +133,7 @@ const BD = [
     "rom":"1.2 GB",
     "Plataforma":"pc",
     "Tipo":"programa",
+    "Genero":"designer",
 },
 { 
     
@@ -392,6 +394,8 @@ const BD = [
     "rom": "60 GB", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero": "rpg",
+    
     
 },
 { 
@@ -409,6 +413,7 @@ const BD = [
     "rom": "60 GB", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero": "rpg",
     
 },
 { 
@@ -426,6 +431,7 @@ const BD = [
     "rom": "40 GB", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+    "Genero": "rpg",
     
 },
 { 
@@ -4819,6 +4825,24 @@ const BD = [
     "rom": "undefined", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
+     
+},
+{ 
+    "id": 327,
+    "Nome": "Office 365 2019", 
+    "Capa": "https://i0.wp.com/bigkey.com.br/wp-content/uploads/2022/05/a23363480b.jpg?fit=1024%2C1024&ssl=1", 
+    "Imagem": "http://blogs.kent.ac.uk/isnews/files/2019/12/Office365-all-icons-750x500.png", 
+    "Gif": "https://www.microsoft.com/neutralized/microsoft-365/blog/wp-content/uploads/sites/3/2019/04/Excel-with-Microsoft-Excel-in-Office-365-4.gif", 
+    "Trailer": "https://www.youtube.com/embed/HreK7xGX_Ds", 
+    "Download": "https://drive.google.com/file/d/1fXHILYpvyLVN6oJwqn_aacs3pd04DNFL/view?usp=share_link", 
+    "Descricao": "As versões licenciadas por volume do Office 2019 estão disponíveis para os administradores corporativos fazerem o download e implantarem para os usuários na organização. Os seguintes produtos do Office estão disponíveis para dispositivos que executam o Windows.  /n Esses produtos do Office agora usam o recurso Clique para Executar, em vez do Windows Installer (MSI), como a tecnologia de instalação. Mas, a forma de ativar esses produtos do Office (por exemplo, usando o Serviço de Gerenciamento de Chaves - KMS), continua igual.", 
+    "cpu": "1 GHz", 
+    "gpu": "1024x576 de resolução de tela com DirectX10", 
+    "ram": "1 GB", 
+    "rom": "3 GB", 
+    "Plataforma": "pc", 
+    "Tipo": "programa",
+    "Genero": "designer",
      
 },
 

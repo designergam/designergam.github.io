@@ -215,6 +215,11 @@ a:hover{
     text-align: center;
     margin-bottom: 20px;
 }
+
+#Recomendados{
+    text-align: center;
+    margin-bottom: 20px;
+}
 /* Requisitos icones */
 #icone_requisitos1{/* cpu */
     width: 50px;    
@@ -390,4 +395,59 @@ a:hover{
     width: 90%;
     margin: auto;
     margin-top: 130px;
+}
+
+#RecomendadosLi{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin: 0 auto;
+    width: 95%;
+    grid-gap: 8px; /*espaço*/
+    justify-content: center;
+    justify-items: center;
+    padding-top:20px ;
+    padding-bottom: 50px;
+}
+
+#RecomendadosLi li{
+    padding: 7px;
+    border-radius: 7px;
+    background-color: #151d27;
+    color: white;
+    height: 100%;
+    /* border: 2px solid white; */
+    list-style: none;
+}
+
+#RecomendadosLi li:hover{
+    box-shadow: 2px 5px 20px 5px black;
+}
+
+#RecomendadosLi li h2{
+    max-width: 160px;
+    width: 12vw;
+    font-size: 1rem;
+    margin-top: 0px;
+    
+    text-align: center;
+    align-items: center;
+    font-style: normal;
+    font-weight: 200;
+    margin: auto;
+    
+    
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.gallery-items{
+    display: inline-block;
+    max-width: 160px;
+    width: 12vw;
+    max-height: 190px;
+    height: 15vw;
+    border-radius: 5px;
+    
 }

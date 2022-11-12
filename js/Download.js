@@ -71,3 +71,35 @@ const ID0 = window.location.href;
     let ogTitle = document.getElementById("ogTitle").content=``+conteudo[0].Nome+``
     let ogImage = document.getElementById("ogImage").content=``+conteudo[0].Capa+``
     let ogDescription = document.getElementById("ogDescription").content=` Download Grátis de via Torrent`
+
+//RECOMENDADOS
+//Filtrar por Objetos de mesmo genero e do tipo "jogo"
+    const GeneroA = BD.filter(item => item.Genero == conteudo[0].Genero & item.Tipo == conteudo[0].Tipo)
+
+//Remove Item Atual dos recomendados
+    const Genero = GeneroA.filter((item) => item.Nome !== conteudo[0].Nome);
+    
+        let recomendados = document.getElementById("RecomendadosLi")
+
+        //Abrir container3 se tiver Genero
+
+      
+        if(conteudo[0].Genero){
+            for(let i=0; i<6; i++){
+            
+                let RemoverEspacos = Genero[i].Nome.replace(/\s/g, '+');
+            
+                recomendados.innerHTML+=`
+                <a href="Download.html?id=`+Genero[i].id+`&amp;s=`+RemoverEspacos+`" title="`+Genero[i].Nome+`">
+                    <li>
+                        <img src="`+Genero[i].Capa+`" alt="`+Genero[i].Nome+`" class="gallery-items" rel="nofollow">
+                        <h2>`+Genero[i].Nome+`</h2>
+                    </li>
+                </a>`;
+    
+            }
+        }
+        //Fechar container3 se não tiver Genero
+        else{
+            let off = document.getElementById("container3").style.display="none"
+        }
