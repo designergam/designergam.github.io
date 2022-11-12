@@ -5085,7 +5085,7 @@ const BD = [
     "Imagem": "http://blogs.kent.ac.uk/isnews/files/2019/12/Office365-all-icons-750x500.png", 
     "Gif": "https://www.microsoft.com/neutralized/microsoft-365/blog/wp-content/uploads/sites/3/2019/04/Excel-with-Microsoft-Excel-in-Office-365-4.gif", 
     "Trailer": "https://www.youtube.com/embed/HreK7xGX_Ds", 
-    "Download": "https://drive.google.com/file/d/1fXHILYpvyLVN6oJwqn_aacs3pd04DNFL/view?usp=share_link", 
+    "Download": "https://drive.google.com/file/d/1atI2wj5ZBHJXGsKpu7VruNdFAnQjQxDi/view?usp=share_link", 
     "Descricao": "As versões licenciadas por volume do Office 2019 estão disponíveis para os administradores corporativos fazerem o download e implantarem para os usuários na organização. Os seguintes produtos do Office estão disponíveis para dispositivos que executam o Windows.  /n Esses produtos do Office agora usam o recurso Clique para Executar, em vez do Windows Installer (MSI), como a tecnologia de instalação. Mas, a forma de ativar esses produtos do Office (por exemplo, usando o Serviço de Gerenciamento de Chaves - KMS), continua igual.", 
     "cpu": "1 GHz", 
     "gpu": "1024x576 de resolução de tela com DirectX10", 
