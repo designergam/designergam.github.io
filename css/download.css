@@ -454,7 +454,6 @@ a:hover{
 #propaganda{
     width: 720px;
     height: 90px;
-    background-color: red;
     position: fixed;
     bottom: 2px;
     left: 50%;
@@ -471,4 +470,5 @@ a:hover{
     padding: 5px;
     padding-right: 7px;
     z-index: 999;
+    text-shadow: 1px 1px 6px rgb(255, 255, 255);
 }
