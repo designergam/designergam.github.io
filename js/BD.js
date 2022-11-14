@@ -460,18 +460,16 @@ const BD = [
     "id": 27,
     "Nome": "Cobra Kai 2 Dojos Rising", 
     "Capa": "https://i2.wp.com/torrentjogos.net/imagem/cobra-kai-2-dojos-rising-torrent.jpg", 
-    "Imagem": "undefined", 
-    "Gif": "undefined", 
+    "Imagem": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/pt_BR/games/switch/c/cobra-kai-2-dojos-rising-switch/hero", 
+    "Gif": "https://steamuserimages-a.akamaihd.net/ugc/1692778329729262767/F056C12C9EF0E01252DCD7C601BE4B932B33446A/?imw=1024&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false", 
     "Trailer": "undefined", 
     "Download": "magnet:?xt=urn:btih:D2F8FC86F6146F0B8C49021BE26D5C6DB206E043&dn=Cobra+Kai+2+Dojos+Rising-DARKSiDERS&tr=udp%3A%2F%2F9.rarbg.me%3A2720%2Fannounce&tr=udp%3A%2F%2F9.rarbg.to%3A2800%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Fopentracker.i2p.rocks%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fcoppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337%2Fannounce", 
-    "Descricao": `Recrute... Treine... Lute! Todo o vale está esperando! 
-    Eagle Fang, Cobra Kai, Miyagi-do - Qual é o seu dojo? Essa escolha iniciará sua jornada, mas  você deve recrutar a equipe mais poderosa enquanto domina seus estilos de luta e luta para fortalecer o LEGADO do seu Dojo como o Grande Campeão de All Valley Karate! 
+    "Descricao": `
      Principais recursos do jogo: 
     •  Modos de jogo emocionantes: Entre  no Modo História e mergulhe em uma nova e emocionante história que fará você lutar até o All Valley Tournament ou jogar clássicos Cobra  e reviver momentos épicos da série e muito mais! 
     • Escolha um dojo: Escolha  Eagle Fang, Cobra Kai ou Miyagi-do e comece a treinar, recrutar e lutar com seu sensei para se tornar o dojo mais poderoso e selar seu destino como o Grandmaster of the All Valley Tournament. 
     • 28 personagens jogáveis: Jogue como seus personagens favoritos do grande elenco da série e use suas habilidades e habilidades especiais em seu caminho para a vitória! 
     • Aumente suas habilidades: colete chi e moedas para melhorar suas habilidades. Recrute novos membros do dojo e deixe-os fortalecer o seu enquanto você torna o dojo  uma potência. 
-    • Torneio Versus Online: Entre no modo de torneio online e compita no All Valley Tournament. Lute para garantir seu legado como o campeão supremo.
    `, 
     "cpu": "undefined", 
     "gpu": "undefined", 
@@ -485,8 +483,8 @@ const BD = [
     "id": 28,
     "Nome": "Harvestella", 
     "Capa": "https://i2.wp.com/torrentjogos.net/imagem/harvestella-torrent.jpg", 
-    "Imagem": "undefined", 
-    "Gif": "undefined", 
+    "Imagem": "https://3dnews.ru/assets/external/illustrations/2020/12/09/1027397/Haven_review_1.jpg", 
+     "Gif": "https://i.playground.ru/p/TWLywpZJFWE0H4wFUFW_fA.png", 
     "Trailer": "undefined", 
     "Download": "magnet:?xt=urn:btih:418C16334FCC51D8730DDCDA1DF04D168B0D54A8&dn=HARVESTELLA&tr=udp%3A%2F%2Fopentor.org%3A2710%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.moeking.me%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.theoks.net%3A6969%2Fannounce&tr=udp%3A%2F%2Fretracker.lanta-net.ru%3A2710%2Fannounce&tr=udp%3A%2F%2Fmovies.zsw.ca%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Fopentracker.i2p.rocks%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fcoppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337%2Fannounce", 
     "Descricao": `HARVESTELLA, o novo RPG de simulação de vida da SQUARE ENIX! 
@@ -509,8 +507,8 @@ const BD = [
     "id": 29,
     "Nome": "The Chant", 
     "Capa": "https://i2.wp.com/torrentjogos.net/imagem/the-chant-torrent.jpg", 
-    "Imagem": "undefined", 
-    "Gif": "undefined", 
+    "Imagem": "https://adrenaline.com.br/uploads/2022/10/28/79807/the-chant_(3).jpg", 
+    "Gif": "https://cdn.cloudflare.steamstatic.com/steam/apps/1577250/ss_89f6dbbfaf72c7e16a6da47bca11d91727c97322.1920x1080.jpg?t=1667528179", 
     "Trailer": "undefined", 
     "Download": "magnet:?xt=urn:btih:801D7FC17A42C03ACF70B9FA508D65153F008E47&dn=The+Chant-FLT&tr=udp%3A%2F%2F9.rarbg.me%3A2720%2Fannounce&tr=udp%3A%2F%2F9.rarbg.to%3A2800%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Fopentracker.i2p.rocks%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fcoppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337%2Fannounce", 
     "Descricao": `Posso começar dizendo que The Chant realmente me surpreendeu em termos de história. Aqui temos um hot start onde mostra um ritual que abre os portões para outra espécie dimensional. Quando a filha do líder do culto se recusa a assumir seu lugar no ritual, tudo sai pela culatra quando ela consegue escapar da ilha sendo jogada no mar. 
@@ -528,10 +526,10 @@ const BD = [
 },
 { 
     "id": 30,
-    "Nome": "Vade Retro Exorcist", 
+    "Nome": "Vade Retro Exorcist imagem do jogo", 
     "Capa": "https://i2.wp.com/torrentjogos.net/imagem/vade-retro-exorcist-torrent.jpg", 
-    "Imagem": "undefined", 
-    "Gif": "undefined", 
+    "Imagem": "https://cdn.cloudflare.steamstatic.com/steam/apps/1931950/ss_439f4d10b5972a196967a87287e17d87e9b17ee3.1920x1080.jpg?t=1667363073", 
+    "Gif": "https://cdn.akamai.steamstatic.com/steam/apps/1931950/extras/Vade-Gif4__1_.gif?t=1667363073", 
     "Trailer": "undefined", 
     "Download": "magnet:?xt=urn:btih:661126C1B9CBD42C1956BCD3ABC8CC17C0A612C5&dn=Vade+Retro+%3A+Exorcist&tr=udp%3A%2F%2Fopentor.org%3A2710%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.moeking.me%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.theoks.net%3A6969%2Fannounce&tr=udp%3A%2F%2Fretracker.lanta-net.ru%3A2710%2Fannounce&tr=udp%3A%2F%2Fmovies.zsw.ca%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Fopentracker.i2p.rocks%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fcoppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337%2Fannounce", 
     "Descricao": `Vade Retro é um jogo de exorcismo PvP para 
@@ -552,8 +550,8 @@ const BD = [
     "id": 31,
     "Nome": "The Entropy Centre", 
     "Capa": "https://i2.wp.com/torrentjogos.net/imagem/the-entropy-centre-torrent.jpg", 
-    "Imagem": "undefined", 
-    "Gif": "undefined", 
+    "Imagem": "https://www.ultimaficha.com.br/wp-content/uploads/2022/11/The-Entropy-Centre_20221107220001-scaled.jpg", 
+    "Gif": "https://cdn.akamai.steamstatic.com/steam/apps/1730590/extras/TEC_Gameplay_Text.gif?t=1667503237", 
     "Trailer": "undefined", 
     "Download": "magnet:?xt=urn:btih:64C0FF23004D3592D4238D42D8F6031B0898C3A0&dn=The+Entropy+Centre+%28v1.0.7%2C+MULTi13%29+%5BFitGirl+Repack%5D&tr=udp%3A%2F%2Fopentor.net%3A6969&tr=udp%3A%2F%2Fopentor.org%3A2710&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=udp%3A%2F%2Fipv4.tracker.harry.lu%3A80%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Fretracker.lanta-net.ru%3A2710%2Fannounce&tr=udp%3A%2F%2Ftracker.cyberia.is%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.moeking.me%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.tiny-vps.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Fopentracker.i2p.rocks%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fcoppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337%2Fannounce", 
     "Descricao":  `Entropy Center é uma aventura de quebra-cabeça que muda o jogo, onde você vira objetos ao longo do tempo para superar obstáculos e quebra-cabeças aparentemente impossíveis. 
@@ -572,8 +570,8 @@ const BD = [
     "id": 32,
     "Nome": "WRC Generations The FIA WRC Official Game", 
     "Capa": "https://i2.wp.com/torrentjogos.net/imagem/wrc-generations-the-fia-wrc-official-game-torrent.jpg", 
-    "Imagem": "undefined", 
-    "Gif": "undefined", 
+    "Imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1953520/capsule_616x353.jpg?t=1668069699", 
+    "Gif": "https://cdn.akamai.steamstatic.com/steam/apps/1302110/extras/GHOSTS_GIF.gif?t=1644411191", 
     "Trailer": "undefined", 
     "Download": "magnet:?xt=urn:btih:10946DD801879C36A0DEBE5366D81524CA4C9947&dn=WRC+Generations+The+FIA+WRC+Official+Game-FLT&tr=udp%3A%2F%2F9.rarbg.me%3A2720%2Fannounce&tr=udp%3A%2F%2F9.rarbg.to%3A2800%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Fopentracker.i2p.rocks%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fcoppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337%2Fannounce", 
     "Descricao":  `2022 é o ano em que o WRC entra na era híbrida. É uma revolução no mundo do rally e tem um grande impacto no desempenho, mudando estratégias e adaptando-se aos pilotos e equipes. 
@@ -593,8 +591,8 @@ const BD = [
     "id": 33,
     "Nome": "Crashday Redline Edition", 
     "Capa": "https://i2.wp.com/torrentjogos.net/imagem/crashday-redline-edition-torrent.jpg", 
-    "Imagem": "undefined", 
-    "Gif": "undefined", 
+    "Imagem": "https://cdn.akamai.steamstatic.com/steam/apps/508980/ss_c88b39f61c6e65a21b87efe947a607d04bf744a1.1920x1080.jpg?t=1502749966", 
+    "Gif": "https://cdn.akamai.steamstatic.com/steam/apps/1454270/extras/01_travel.gif?t=1666989699", 
     "Trailer": "undefined", 
     "Download": "https://www.mediafire.com/file/ri64odk0ht9et6y/Cr1ashd1ay-RED-1.5.36-elamigos.rar/file", 
     "Descricao":  `Carros poderosos, armas e muitas explosões. Essa seria a definição perfeita para Crashday: Redline Edition, um jogo de corrida produzido pela Moonbyte e distribuído pela 2tainment GmbH. Há uma competitividade arcade em seus vários modos de jogo, o que é muito comum em outros jogos de corrida até falarmos do reboot de Crashday lançado em 2006, que alcançou razoável sucesso em sua época.
@@ -612,8 +610,8 @@ const BD = [
     "id": 34,
     "Nome": "Bayonetta 3", 
     "Capa": "https://i2.wp.com/torrentjogos.net/imagem/bayonetta-3-torrent.jpg", 
-    "Imagem": "undefined", 
-    "Gif": "undefined", 
+    "Imagem": "https://s2.glbimg.com/JuIN-oqTjwVcIH3KKgyLdZ1dIrk=/0x0:1200x675/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2022/H/L/BM5IJoRrS7GmbzeYmd2g/bayonetta-3-nintendo-switch-demon-masquerade-platinum.jpg", 
+    "Gif": "https://1.bp.blogspot.com/-vQOKhNH4UCU/XkwY9wn8opI/AAAAAAAADtQ/x2LzBisPAk8nAYBo7v2uaVgPurU4G6avACEwYBhgL/s1600/kiss1.gif", 
     "Trailer": "undefined", 
     "Download": "magnet:?xt=urn:btih:9CA0A119B7F6A7998D38A523C282A5A2A81E2EBD&dn=Bayonetta+3+%28v1.1.0+%2B+Ryujinx+Switch+Emulator%2C+MULTi10%29+%5BFitGirl+Repack%2C+Selective+Download+-+from+9+GB%5D&tr=udp%3A%2F%2Fopentor.net%3A6969&tr=udp%3A%2F%2Fopentor.org%3A2710&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=udp%3A%2F%2Fipv4.tracker.harry.lu%3A80%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Fretracker.lanta-net.ru%3A2710%2Fannounce&tr=udp%3A%2F%2Ftracker.cyberia.is%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.moeking.me%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.tiny-vps.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Fopentracker.i2p.rocks%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fcoppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337%2Fannounce", 
     "Descricao":  `No terceiro e melhor jogo da série, a Platinum Games continua a oferecer criatividade, ação e humor por meio de hacks e slashes de ponta e experimentos com diferentes gêneros de jogos. 
@@ -633,8 +631,8 @@ const BD = [
     "id": 35,
     "Nome": "Dead Mans Diary", 
     "Capa": "https://i2.wp.com/torrentjogos.net/imagem/dead-mans-diary-torrent.jpg", 
-    "Imagem": "undefined", 
-    "Gif": "undefined", 
+    "Imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1808700/ss_6ffc60ca204e9d0e2ec89ba17ec1df5315d7b6c3.1920x1080.jpg?t=1649329892", 
+    "Gif": "https://cdn.cloudflare.steamstatic.com/steam/apps/1808700/extras/schule_C_Ap.gif?t=1649329892", 
     "Trailer": "undefined", 
     "Download": "magnet:?xt=urn:btih:DD3F69DC9F8F240DD3220D17369D947B3A256818&dn=Dead+Man%26%23039%3Bs+Diary+%28v1.5.54360%2C+MULTi9%29+%5BFitGirl+Repack%5D&tr=udp%3A%2F%2Fopentor.net%3A6969&tr=udp%3A%2F%2Fopentor.org%3A2710&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=udp%3A%2F%2Fipv4.tracker.harry.lu%3A80%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Fretracker.lanta-net.ru%3A2710%2Fannounce&tr=udp%3A%2F%2Ftracker.cyberia.is%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.moeking.me%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.tiny-vps.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Fopentracker.i2p.rocks%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fcoppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337%2Fannounce", 
     "Descricao":  `Diary of a Dead Man é uma mistura única de elementos de vários gêneros. O jogo usa mecânicas típicas de sobrevivência, como criar itens ou explorar um mundo hostil, além da necessidade de encontrar lugares para dormir ou comer. E o enriquece com uma história envolvente e quebra-cabeças práticos para resolver.
@@ -652,8 +650,8 @@ const BD = [
     "id": 36,
     "Nome": "Valkyrie of Phantasm", 
     "Capa": "https://i2.wp.com/torrentjogos.net/imagem/valkyrie-of-phantasm-torrent.jpg", 
-    "Imagem": "undefined", 
-    "Gif": "undefined", 
+    "Imagem": "https://www.densetsugames.com.br/wp-content/uploads/2019/06/Valkyrie-of-Phantasm.jpg", 
+    "Gif": "https://uploadstatic-sea.mihoyo.com/strategyweb/20190818/2019081808250140873.gif", 
     "Trailer": "undefined", 
     "Download": "magnet:?xt=urn:btih:6ED9195A60679C373EF910E55B6F828F5D83AD41&dn=Valkyrie+of+Phantasm&tr=udp%3A%2F%2Fopentor.org%3A2710%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.moeking.me%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.theoks.net%3A6969%2Fannounce&tr=udp%3A%2F%2Fretracker.lanta-net.ru%3A2710%2Fannounce&tr=udp%3A%2F%2Fmovies.zsw.ca%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Fopentracker.i2p.rocks%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fcoppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337%2Fannounce", 
     "Descricao":  `O jogo usa mecânicas vistas em jogos anteriores, como Touhou Sky Arena e Magical Battle Arena, trazendo melhorias em seus sistemas "para criar batalhas aéreas mais espetaculares, bonitas e divertidas do que nunca". 
@@ -674,8 +672,8 @@ const BD = [
     "id": 37,
     "Nome": "Persona 5 Royal", 
     "Capa": "https://i2.wp.com/torrentjogos.net/imagem/persona-5-royal-torrent.jpg", 
-    "Imagem": "undefined", 
-    "Gif": "undefined", 
+    "Imagem": "https://1.bp.blogspot.com/-Bx2VScGoFnI/XdLMEGt854I/AAAAAAAANAg/RhqSavwK_z0xgQshm1I7r1hOn_UGJfvYwCLcBGAsYHQ/s1600/capa_persona_5_royal_trailer_abertura_1400x875_5d7946d6d4465.webp", 
+    "Gif": "https://cdn.akamai.steamstatic.com/steam/apps/1687950/extras/2_Summons.gif?t=1666698742", 
     "Trailer": "undefined", 
     "Download": "magnet:?xt=urn:btih:C1F470CCC59389CD1AB2D41CD317662B4D16CABD&dn=Persona+5+Royal+%28v1.0.0+%2B+Switch+Emulators+%2B+60FPS+Mod%2C+MULTi5%29+%5BFitGirl+Repack%2C+Selective+Download+-+from+7.6+GB%5D&tr=udp%3A%2F%2Fopentor.net%3A6969&tr=udp%3A%2F%2Fopentor.org%3A2710&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=udp%3A%2F%2Fipv4.tracker.harry.lu%3A80%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Fretracker.lanta-net.ru%3A2710%2Fannounce&tr=udp%3A%2F%2Ftracker.cyberia.is%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.moeking.me%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.tiny-vps.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Fopentracker.i2p.rocks%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fcoppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337%2Fannounce", 
     "Descricao":  `Persona 5 Royal é uma nova versão do RPG que foi lançado há alguns anos para PlayStation 3 (PS3) e PlayStation 
@@ -696,8 +694,8 @@ const BD = [
     "id": 38,
     "Nome": "Phantom Breaker Omnia", 
     "Capa": "https://i2.wp.com/torrentjogos.net/imagem/phantom-breaker-omnia-torrent.jpg", 
-    "Imagem": "undefined", 
-    "Gif": "undefined", 
+    "Imagem": "https://p2.trrsf.com/image/fget/cf/940/0/images.terra.com/2022/03/16/phantom-breaker-omnia-cover-1hr85newl40fs.jpg", 
+    "Gif": "https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_2.625/c_scale,w_400/ncom/pt_BR/games/switch/p/phantom-breaker-omnia-switch/hero", 
     "Trailer": "undefined", 
     "Download": "magnet:?xt=urn:btih:EAE7AD111AB328D8EE694CA99D2F9F0FCB8D6BD1&dn=Phantom+Breaker+Omnia-DOGE&tr=udp%3A%2F%2F9.rarbg.me%3A2720%2Fannounce&tr=udp%3A%2F%2F9.rarbg.to%3A2800%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Fopentracker.i2p.rocks%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fcoppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337%2Fannounce", 
     "Descricao":  `Versão completa e atualizada do jogo de luta Mages. Phantom Breaker deveria originalmente ser lançado em inglês para o Xbox 360 em 2012, mas nunca foi lançado no Ocidente. Apesar de alguns problemas, o título revela-se uma experiência competente no gênero, atravessando o limiar entre uma experiência altamente técnica e complexa e aparente simplicidade e acessibilidade.
@@ -715,8 +713,8 @@ const BD = [
     "id": 39,
     "Nome": "Nickelodeon Kart Racers 3: Slime Speedway", 
     "Capa": "https://i2.wp.com/torrentjogos.net/imagem/kart-racers-3-slime-speedway-torrent.jpg", 
-    "Imagem": "undefined", 
-    "Gif": "undefined", 
+    "Imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1620040/capsule_616x353.jpg?t=1667409046", 
+    "Gif": "https://shin-reviews.com/wp-content/uploads/2022/11/nkr3-startboost.gif", 
     "Trailer": "undefined", 
     "Download": "magnet:?xt=urn:btih:A98C4A825AE0189B82B16A7FC59F59909BA66124&dn=Nickelodeon+Kart+Racers+3%3A+Slime+Speedway&tr=udp%3A%2F%2Fopentor.org%3A2710%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.moeking.me%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.theoks.net%3A6969%2Fannounce&tr=udp%3A%2F%2Fretracker.lanta-net.ru%3A2710%2Fannounce&tr=udp%3A%2F%2Fmovies.zsw.ca%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Fopentracker.i2p.rocks%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fcoppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337%2Fannounce", 
     "Descricao":  `A próxima geração de Nickelodeon Kart Racers chegou! 
@@ -736,8 +734,8 @@ const BD = [
     "id": 40,
     "Nome": "Squad 51 vs. the Flying Saucers", 
     "Capa": "https://i2.wp.com/torrentjogos.net/imagem/squad-51-vs-the-flying-saucers-torrent.jpg", 
-    "Imagem": "undefined", 
-    "Gif": "undefined", 
+    "Imagem": "https://www.gamersegames.com.br/wp-content/uploads/2022/09/Esquadrao-51-contra-os-Discos-Voadores.jpg", 
+    "Gif": "https://cdn.akamai.steamstatic.com/steam/apps/1378800/extras/BannerGameplay1.gif?t=1663835185", 
     "Trailer": "undefined", 
     "Download": "magnet:?xt=urn:btih:EE4911BC726709C00928719F545DE3FEAB4F895A&dn=Squad+51+vs.+the+Flying+Saucers&tr=udp%3A%2F%2Fopentor.org%3A2710%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.moeking.me%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.theoks.net%3A6969%2Fannounce&tr=udp%3A%2F%2Fretracker.lanta-net.ru%3A2710%2Fannounce&tr=udp%3A%2F%2Fmovies.zsw.ca%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Fopentracker.i2p.rocks%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fcoppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337%2Fannounce", 
     "Descricao":  `A proposta é muito interessante: trazer de volta a atmosfera de ficção científica dos filmes em preto e branco dos anos 50 no formato shoot'em up. Aqui lideramos um grupo de bravos pilotos de linha aérea que lideram uma rebelião contra invasores do espaço sideral. O tenente Kaya e seu grupo de voluntários são a única esperança da Terra, e a história é contada  com cuidado cinematográfico e cenas criadas com atores reais.
@@ -755,8 +753,8 @@ const BD = [
     "id": 41,
     "Nome": "Freedom Planet 2", 
     "Capa": "https://i2.wp.com/torrentjogos.net/imagem/freedom-planet-2-torrent.jpg", 
-    "Imagem": "undefined", 
-    "Gif": "undefined", 
+    "Imagem": "https://cdn.akamai.steamstatic.com/steam/apps/595500/ss_ad92f77da63ead6a924863084645fa9210197c54.1920x1080.jpg?t=1667488940", 
+    "Gif": "https://pa1.narvii.com/6909/6e224dad7d9b08ebb210052fefd5cb694e20edfcr1-420-237_hq.gif", 
     "Trailer": "undefined", 
     "Download": "magnet:?xt=urn:btih:1BAB114E63FC444A7CB87B3A9D116659159AA144&dn=Freedom+Planet+2+%28v1.0.0r%29+%5BFitGirl+Repack%5D&tr=udp%3A%2F%2Fopentor.net%3A6969&tr=udp%3A%2F%2Fopentor.org%3A2710&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=udp%3A%2F%2Fipv4.tracker.harry.lu%3A80%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Fretracker.lanta-net.ru%3A2710%2Fannounce&tr=udp%3A%2F%2Ftracker.cyberia.is%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.moeking.me%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.tiny-vps.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Fopentracker.i2p.rocks%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fcoppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337%2Fannounce", 
     "Descricao":  `Freedom Planet foi originalmente lançado  em 201
@@ -775,8 +773,8 @@ const BD = [
     "id": 42,
     "Nome": "Persona 4 Arena Ultimax", 
     "Capa": "https://i2.wp.com/torrentjogos.net/imagem/persona-4-arena-ultimax-torrent.jpg", 
-    "Imagem": "undefined", 
-    "Gif": "undefined", 
+    "Imagem": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhixFALJslBY7nXtHpBfmc70sKzYD00eOfYNjAklavsVBoS6DyNfiL4x3_YpFd5KXMC44KtUkbnpk87ZjsC3rq6FzLpOCT6BQDoG0lDzAaofp_CBfsyJP-hyuAQFN3F5G4-azokfM9HPiU4mB0qyNEnIv2wnSLTwxbYEuhDilo6ep9emwR0tHpqO-h3/s640/persona-4-ultimax_capa02.jpg", 
+    "Gif": "https://i.pinimg.com/originals/72/2e/ed/722eed81e3261b1692f29205c36f947a.gif", 
     "Trailer": "undefined", 
     "Download": "magnet:?xt=urn:btih:F7700A242B0FC968C54A58154E0452D527DF5140&dn=Persona+4%3A+Arena+Ultimax+%28Arcade+Version%29+%5BFitGirl+Repack%5D&tr=udp%3A%2F%2Fopentor.net%3A6969&tr=udp%3A%2F%2Fopentor.org%3A2710&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=udp%3A%2F%2Fipv4.tracker.harry.lu%3A80%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Fretracker.lanta-net.ru%3A2710%2Fannounce&tr=udp%3A%2F%2Ftracker.cyberia.is%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.moeking.me%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.tiny-vps.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Fopentracker.i2p.rocks%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fcoppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337%2Fannounce", 
     "Descricao":  `Após os eventos de Persona 
@@ -797,8 +795,8 @@ const BD = [
     "id": 43,
     "Nome": "Mortal Kombat Trilogy", 
     "Capa": "https://i2.wp.com/torrentjogos.net/imagem/mortal-kombat-trilogy-torrent.jpg", 
-    "Imagem": "undefined", 
-    "Gif": "undefined", 
+    "Imagem": "https://criticalhits.com.br/wp-content/uploads/2021/03/c06504cdc2c881864efbcb227681f6ab.jpg", 
+    "Gif": "https://64.media.tumblr.com/211563c239def846b0c35caffa632d43/tumblr_petb5jhIJK1s3uawvo2_400.gif", 
     "Trailer": "undefined", 
     "Download": "magnet:?xt=urn:btih:c6248e4d41483c67a540c7a9717238e5e40933c3&dn=Mortal.Kombat.Trilogy.v1.0-GOG&tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce&tr=udp%3A%2F%2F9.rarbg.me%3A2740&tr=udp%3A%2F%2F9.rarbg.to%3A2980&tr=udp%3A%2F%2Ftracker.fatkhoala.org%3A13740&tr=udp%3A%2F%2Ftracker.tallpenguin.org%3A15740", 
     "Descricao":  `Este jogo apresenta a maioria das arenas do Mortal Kombat original, Mortal Kombat II, Mortal Kombat 3 e Ultimate Mortal Kombat 3. As plataformas PC, PlayStation e Sega Saturn apenas removeram as arenas The Hidden Portal e Noob Saibot Dorfen do MK3, enquanto a versão N6
@@ -2171,18 +2169,18 @@ const BD = [
     "id": 136,
     "Nome": "171 (Pré-Alpha)", 
     "Capa": "https://i2.wp.com/torrentjogos.net/imagem/171-torrent.jpg", 
-    "Imagem": "undefined", 
-    "Gif": "undefined", 
-    "Trailer": "undefined", 
+    "Imagem": "https://manuaisedrivers.com/wp-content/uploads/2022/05/unnamed1_auto_x2-1024x576.jpg", 
+    "Gif": "https://viciados.net/wp-content/uploads/2022/10/171-GTA-Brasileiro-2022.webp", 
+    "Trailer": "https://www.youtube.com/embed/V6qnyGGZ9Xo", 
     "Download": "magnet:?xt=urn:btih:25E104933BDD260E33517E7832E66785E09E0D21&dn=171%28Pr-Alpha%29&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.ch%3A1337%2Fannounce&tr=udp%3A%2F%2Feddie4.nl%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2F9.rarbg.me%3A2720%2Fannounce&tr=udp%3A%2F%2F9.rarbg.to%3A2800%2Fannounce&tr=http%3A%2F%2Fnyaa.tracker.wf%3A7777%2Fannounce&tr=http%3A%2F%2Fsukebei.tracker.wf%3A8888%2Fannounce&tr=http%3A%2F%2Fanidex.moe%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fcoppersurfer.tk%3A6969%2Fannounce", 
-    "Descricao":  `undefined`, 
-    "cpu": "undefined", 
-    "gpu": "undefined", 
-    "ram": "undefined", 
-    "rom": "undefined", 
+    "Descricao":  `171 possui uma ampla cidade inspirada em cenários essencialmente brasileiros, cada detalhe e elemento presente no ambiente do jogo foi pensado para trazer uma sensação de familiaridade ao jogador, a cidade toma vida com pedestres e carros andando pelo mapa que interagem entre si e com o mapa, o jogador conta com armas`, 
+    "cpu": "Intel Core i5 7400 / AMD Ryzen 5 1400", 
+    "gpu": "Nvidia GTX 1050 2GB", 
+    "ram": "8 GB", 
+    "rom": "17 GB", 
     "Plataforma": "pc", 
     "Tipo": "jogo",
-    "Genero":"",
+    "Genero":"tiro",
      
 },
 { 
