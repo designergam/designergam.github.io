@@ -30,6 +30,7 @@ jogosPC.sort(function(a, b){
 
 })
 
+
 BD.sort(function(a, b){
     if(a.Nome < b.Nome){
         return -1;

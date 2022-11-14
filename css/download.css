@@ -170,8 +170,11 @@ a:hover{
     border-radius: 3%;
     margin: 20px;
     margin-right: 50px;
-    background-color: black;
     box-sizing: border-box;
+    background-image: url("/img/loading-gif.gif");
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
 }
 @media (max-width: 768px) {
     #img_capa{
@@ -308,6 +311,10 @@ a:hover{
     margin:auto;
     margin-top: 20px;
     margin-bottom: 20px;
+    background-image: url("/img/loading-gif.gif");
+    background-position: center;
+    background-size: 40%;
+    background-repeat: no-repeat;
 }
 
 /* //////////////////////////////////////////////// Descrição do jogo /////////////////////////////////////////////////// */
@@ -323,6 +330,10 @@ a:hover{
     width: 100%;
     height: 295px;
     border-radius:  15px;
+    background-image: url("/img/loading-gif.gif");
+    background-position: center;
+    background-size: 40%;
+    background-repeat: no-repeat;
 }
 @media (max-width: 768px) {
     #trailer{
@@ -459,6 +470,8 @@ a:hover{
     left: 50%;
     transform: translate(-50%, 0%);
     z-index: 10;
+    background-color: rgba(255, 255, 255, 0.137);
+    border: 2px solid rgba(255, 255, 255, 0.404);
 }
 #propaganda button{
     background-color: transparent;
