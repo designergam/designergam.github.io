@@ -17,10 +17,8 @@ const ID0 = window.location.href;
         let Gif = (conteudo[0].Gif)
 
 //Requisitos Minimos
-        let cpu_A = (conteudo[0].cpu);
-        let gpu_A = (conteudo[0].gpu);
-        let ram_A = (conteudo[0].ram);
-        let rom_A = (conteudo[0].rom);
+        let cpu_A = (conteudo[0].Resquisitos);
+        
 
         function goBack() {
             window.history.back()
@@ -35,18 +33,19 @@ const ID0 = window.location.href;
     let tit_B =  window.document.getElementById("tit").innerText = Nome 
     let img_gameplay1_B =  window.document.getElementById("img_gameplay1").src = Imagem
     let img_gameplay2_B =  window.document.getElementById("img_gameplay2").src = Gif
-    let cpu_B =  window.document.getElementById("cpu").innerText = cpu_A 
-    let gpu_B =  window.document.getElementById("gpu").innerText = gpu_A 
-    let ram_B =  window.document.getElementById("ram").innerText = ram_A 
-    let rom_B =  window.document.getElementById("rom").innerText = rom_A 
+    let cpu_B =  window.document.getElementById("Resquisitos").innerText = cpu_A 
+    
     let trailer_B =  window.document.getElementById("trailer").src = Trailer
     let baixarbtn = document.getElementById("btnDownloadArea").innerHTML=`<a href="Redirect.html?id=`+ID+`" id="download">DOWNLOAD</a>`
 
 //Requisitos e Trailer, fecha o container se nao tiver nada
-    if(conteudo[0].cpu == "undefined"){
-            let ReT = document.getElementById("container4")
+    if(conteudo[0].Resquisitos == "undefined"){
+            let ReT = document.getElementById("container5")
             ReT.style.display = "none"
+            console.log("ok")
     }
+    
+ 
 
 //Imagem e Gid, fecha o container se nao tiver nada
     if(conteudo[0].Imagem == "undefined"){
@@ -81,9 +80,7 @@ const ID0 = window.location.href;
     
         let recomendados = document.getElementById("RecomendadosLi")
 
-        //Abrir container3 se tiver Genero
-
-      
+        //Abrir container3 se tiver Genero     
         if(conteudo[0].Genero){
             for(let i=0; i<6; i++){
             
@@ -103,3 +100,5 @@ const ID0 = window.location.href;
         else{
             let off = document.getElementById("container3").style.display="none"
         }
+
+       

@@ -139,10 +139,29 @@ a:hover{
     margin: auto;
     margin-bottom: 35px;
     margin-top: 10px;
-    grid-template-columns: 55% 45%;  
+     
 }
 @media (max-width: 768px) {
     #container4{
+        grid-template-columns: none;  
+    }
+}
+#container5{
+    align-items: center;
+    display: grid;
+    border-radius: 10px;
+    width: 90%;
+    padding: 20px; 
+    margin-top: 200px; 
+    margin-bottom: 40px;  
+    background-color: #263241;
+    margin: auto;
+    margin-bottom: 35px;
+    margin-top: 10px;
+     
+}
+@media (max-width: 768px) {
+    #container5{
         grid-template-columns: none;  
     }
 }
@@ -216,12 +235,12 @@ a:hover{
 }
 #requisitos{
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 
 #Recomendados{
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 /* Requisitos icones */
 #icone_requisitos1{/* cpu */
@@ -326,10 +345,13 @@ a:hover{
 
 /* //////////////////////////////////////////////// Trailer /////////////////////////////////////////////////// */
 #trailer{
-    margin: auto;
-    width: 100%;
-    height: 295px;
+    margin: 0 auto;
+    display: block;
+    width: 70%;
+    height: auto;
+    min-height: 450px;
     border-radius:  15px;
+
     background-image: url("/img/loading-gif.gif");
     background-position: center;
     background-size: 40%;
@@ -484,4 +506,14 @@ a:hover{
     padding-right: 7px;
     z-index: 999;
     text-shadow: 1px 1px 6px rgb(255, 255, 255);
+}
+
+#Resquisitos{
+    /* border: 2px solid red; */
+    margin: auto;
+    display: block;
+    width: 70%;
+    font-weight: 400;
+    font-size: 16px;
+    
 }
