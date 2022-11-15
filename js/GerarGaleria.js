@@ -50,7 +50,7 @@ function pesquisar(){
         let novonome = jogo.Nome.toLowerCase()
         let novadesc = jogo.Descricao.toLocaleLowerCase()
         let RemoverEspacos = jogo.Nome.replace(/\s/g, '+');
-
+        
         if(novonome.indexOf(pesquisa.toLowerCase()) > -1 || novadesc.indexOf(pesquisa.toLowerCase()) > -1){
             
             acriarLI.innerHTML+=`

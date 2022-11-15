@@ -17,7 +17,7 @@ const ID0 = window.location.href;
         let Gif = (conteudo[0].Gif)
 
 //Requisitos Minimos
-        let cpu_A = (conteudo[0].Resquisitos);
+        let cpu_A = (conteudo[0].Requisitos);
         
 
         function goBack() {
@@ -33,16 +33,15 @@ const ID0 = window.location.href;
     let tit_B =  window.document.getElementById("tit").innerText = Nome 
     let img_gameplay1_B =  window.document.getElementById("img_gameplay1").src = Imagem
     let img_gameplay2_B =  window.document.getElementById("img_gameplay2").src = Gif
-    let cpu_B =  window.document.getElementById("Resquisitos").innerText = cpu_A 
+    let cpu_B =  window.document.getElementById("Requisitos").innerText = cpu_A 
     
     let trailer_B =  window.document.getElementById("trailer").src = Trailer
     let baixarbtn = document.getElementById("btnDownloadArea").innerHTML=`<a href="Redirect.html?id=`+ID+`" id="download">DOWNLOAD</a>`
 
 //Requisitos e Trailer, fecha o container se nao tiver nada
-    if(conteudo[0].Resquisitos == "undefined"){
+    if(conteudo[0].Requisitos == "undefined"){
             let ReT = document.getElementById("container5")
             ReT.style.display = "none"
-            console.log("ok")
     }
     
  
@@ -71,7 +70,7 @@ const ID0 = window.location.href;
     let ogImage = document.getElementById("ogImage").content=``+conteudo[0].Capa+``
     let ogDescription = document.getElementById("ogDescription").content=` Download Grátis de via Torrent`
 
-//RECOMENDADOS
+//-------------------------------RECOMENDADOS---------------------------------
 //Filtrar por Objetos de mesmo genero e do tipo "jogo"
     const GeneroA = BD.filter(item => item.Genero == conteudo[0].Genero & item.Tipo == conteudo[0].Tipo)
 
@@ -80,25 +79,30 @@ const ID0 = window.location.href;
     
         let recomendados = document.getElementById("RecomendadosLi")
 
-        //Abrir container3 se tiver Genero     
-        if(conteudo[0].Genero){
-            for(let i=0; i<6; i++){
-            
-                let RemoverEspacos = Genero[i].Nome.replace(/\s/g, '+');
-            
-                recomendados.innerHTML+=`
-                <a href="Download.html?id=`+Genero[i].id+`&amp;s=`+RemoverEspacos+`" title="`+Genero[i].Nome+`">
-                    <li>
-                        <img src="`+Genero[i].Capa+`" alt="`+Genero[i].Nome+`" class="gallery-items" rel="nofollow">
-                        <h2>`+Genero[i].Nome+`</h2>
-                    </li>
-                </a>`;
-    
-            }
+//Abrir container3 se tiver Genero     
+    if(conteudo[0].Genero){
+        for(let i=0; i<6; i++){
+        
+            let RemoverEspacos = Genero[i].Nome.replace(/\s/g, '+');
+        
+            recomendados.innerHTML+=`
+            <a href="Download.html?id=`+Genero[i].id+`&amp;s=`+RemoverEspacos+`" title="`+Genero[i].Nome+`">
+                <li>
+                    <img src="`+Genero[i].Capa+`" alt="`+Genero[i].Nome+`" class="gallery-items" rel="nofollow">
+                    <h2>`+Genero[i].Nome+`</h2>
+                </li>
+            </a>`;
+
         }
-        //Fechar container3 se não tiver Genero
-        else{
-            let off = document.getElementById("container3").style.display="none"
         }
 
-       
+//Fechar container3 se não tiver Genero
+    else{
+        let close = document.getElementById("container3").style.display="none"
+    }
+
+// Fechar container5 se nao tiver trailer
+    if(conteudo[0].Trailer == "undefined"){
+        let close = document.getElementById("container4").style.display="none" 
+    }
+
