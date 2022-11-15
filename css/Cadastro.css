@@ -16,7 +16,7 @@
  font-size: 18px;
 }
 .Array{
-    border: 2px solid white;
+    border: 2px solid rgb(0, 0, 0);
     width: 40%;
     margin: auto;
     height: 300px;
@@ -27,6 +27,7 @@
     white-space: nowrap;
     
 }
+
 .bolinha{
     width: 20px;
     height: 20px;

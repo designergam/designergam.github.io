@@ -80,9 +80,10 @@ const ID0 = window.location.href;
         let recomendados = document.getElementById("RecomendadosLi")
 
 //Abrir container3 se tiver Genero     
-    if(conteudo[0].Genero){
+if(conteudo[0].Genero){
+    if(Genero.length>5){
         for(let i=0; i<6; i++){
-        
+    
             let RemoverEspacos = Genero[i].Nome.replace(/\s/g, '+');
         
             recomendados.innerHTML+=`
@@ -92,17 +93,18 @@ const ID0 = window.location.href;
                     <h2>`+Genero[i].Nome+`</h2>
                 </li>
             </a>`;
-
+    
         }
-        }
-
-//Fechar container3 se não tiver Genero
+    }
+    //Fechar container3 se não tiver Genero
     else{
         let close = document.getElementById("container3").style.display="none"
     }
+   
+}
 
 // Fechar container5 se nao tiver trailer
     if(conteudo[0].Trailer == "undefined"){
         let close = document.getElementById("container4").style.display="none" 
     }
-
+    
