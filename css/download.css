@@ -27,7 +27,7 @@ body {
     height: 80px;
     position: fixed;
     top: 0;
-    z-index: 1;
+    z-index: 3;
 }
 #navbar-container {
     width: 100%;
@@ -78,7 +78,7 @@ a:hover{
     padding: 10px; 
     margin-top: 200px; 
     margin-bottom: 40px;  
-    background-color: #263241;
+    background-image: linear-gradient(to top, #1e2c3d, #151d27d3);
     margin: auto;
     margin-bottom: 30px;
     margin-top: 10px;
@@ -92,16 +92,38 @@ a:hover{
 #container2{
     align-items: center;
     display: grid;
-    border-radius: 10px;
-    width: 90%;
-    padding: 10px; 
+    width: 100%;
+    padding: 30px; 
     margin-top: 200px; 
     margin-bottom: 40px;  
     background-color: #263241;
+    background-position: center;
+    object-fit: cover;
+    background-size:cover;
+    background-repeat: no-repeat;
+    /* degrade */
+    position: relative;
+    
+   
     margin: auto;
     margin-bottom: 30px;
     margin-top: 10px;
     grid-template-columns: 25% 75%;  
+    
+}
+#fundocontainercapa{
+    
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    background-image: linear-gradient(to top, #151d27, #151d27d3);
+    
+    
+    
+    z-index: 1;
 }
 @media (max-width: 768px) {
     #container2{
@@ -121,7 +143,7 @@ a:hover{
     padding: 10px; 
     margin-top: 200px; 
     margin-bottom: 40px;  
-    background-color: #263241;
+    background-image: linear-gradient(to top, #1e2c3d, #151d27d3);
     margin: auto;
     margin-bottom: 30px;
     margin-top: 10px;
@@ -135,7 +157,7 @@ a:hover{
     padding: 20px; 
     margin-top: 200px; 
     margin-bottom: 40px;  
-    background-color: #263241;
+    background-image: linear-gradient(to top, #1e2c3d, #151d27d3);
     margin: auto;
     margin-bottom: 35px;
     margin-top: 10px;
@@ -154,7 +176,7 @@ a:hover{
     padding: 20px; 
     margin-top: 200px; 
     margin-bottom: 40px;  
-    background-color: #263241;
+    background-image: linear-gradient(to top, #1e2c3d, #151d27d3);
     margin: auto;
     margin-bottom: 35px;
     margin-top: 10px;
@@ -194,6 +216,9 @@ a:hover{
     background-position: center;
     background-size: 80%;
     background-repeat: no-repeat;
+    z-index: 2;
+    
+ 
 }
 @media (max-width: 768px) {
     #img_capa{
@@ -208,6 +233,13 @@ a:hover{
     font-size: 1.3rem;
     text-align: justify;
     margin-right: 40px;
+    z-index: 2;
+    text-shadow: 2px 2px 3px #111 ;
+    color: #FFF;
+    
+    
+    
+    
 }
 @media (max-width: 768px) {
 
@@ -242,85 +274,13 @@ a:hover{
     text-align: center;
     margin-bottom: 0px;
 }
-/* Requisitos icones */
-#icone_requisitos1{/* cpu */
-    width: 50px;    
-    height: 50px;
-    background-color: white;
-    display: inline-block;
-    margin: 10px;
-    vertical-align: middle;
-    border-radius: 50%;
-    margin-right: 10px;
-    background-image: url("https://cdn-icons-png.flaticon.com/512/4617/4617522.png" ) ;
-    background-size: 40px;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-#icone_requisitos1:hover{
-    border: 2px solid #48648b;
-    transform: translate(1px, 1px);
-}
-#icone_requisitos2{/* gpu */
-    width: 50px;
-    height: 50px;
-    background-color: white;
-    display: inline-block;
-    margin: 10px;
-    vertical-align: middle;
-    border-radius: 50%;
-    margin-right: 10px;
-    background-image: url("https://cdn-icons-png.flaticon.com/512/1470/1470120.png" ) ;
-    background-size: 40px;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-#icone_requisitos2:hover{
-    border: 2px solid #48648b;
-    transform: translate(1px, 1px);
-}
-#icone_requisitos3{/* ram */
-    width: 50px;
-    height: 50px;
-    background-color: white;
-    display: inline-block;
-    margin: 10px;
-    vertical-align: middle;
-    border-radius: 50%;
-    margin-right: 10px;
-    background-image: url("https://cdn-icons-png.flaticon.com/512/900/900330.png" ) ;
-    background-size: 40px;
-    background-repeat: no-repeat;
-    background-position: center center; 
-}
-#icone_requisitos3:hover{
-    border: 2px solid #48648b;
-    transform: translate(1px, 1px);
-}
-#icone_requisitos4{/* hdd */
-    width: 50px;
-    height: 50px;
-    background-color: white;
-    display: inline-block;
-    margin: 10px;
-    vertical-align: middle;
-    border-radius: 50%;
-    margin-right: 10px;
-    background-image: url("https://cdn-icons-png.flaticon.com/512/287/287441.png" ) ;
-    background-size: 40px;
-    background-repeat: no-repeat;
-    background-position: center center;   
-}
-#icone_requisitos4:hover{
-    border: 2px solid #48648b;
-    transform: translate(1px, 1px);
-}
 
 /* //////////////////////////////////////////////// Imagens Gameplay /////////////////////////////////////////////////// */
 #TEXTO_H2{
     font-size: 1.5rem;
     font-weight: bold;
     text-align: center;
+    color: white;
     
 }
 .img_gameplay {
@@ -336,13 +296,6 @@ a:hover{
     background-repeat: no-repeat;
 }
 
-/* //////////////////////////////////////////////// Descrição do jogo /////////////////////////////////////////////////// */
-#descricao{
-    font-size: 1.2rem;
-    text-align: justify;
-    margin: 50px;
-}
-
 /* //////////////////////////////////////////////// Trailer /////////////////////////////////////////////////// */
 #trailer{
     margin: 0 auto;
@@ -351,7 +304,6 @@ a:hover{
     height: auto;
     min-height: 450px;
     border-radius:  15px;
-
     background-image: url("/img/loading-gif.gif");
     background-position: center;
     background-size: 40%;
@@ -445,7 +397,7 @@ a:hover{
 #RecomendadosLi li{
     padding: 7px;
     border-radius: 7px;
-    background-color: #151d27;
+    background-image: linear-gradient(to top, #0b1116, #28384bd3);
     color: white;
     height: 100%;
     /* border: 2px solid white; */
@@ -454,6 +406,9 @@ a:hover{
 
 #RecomendadosLi li:hover{
     box-shadow: 2px 5px 20px 5px black;
+    background-image: linear-gradient(to top, #121c24, #456081d3);
+    transform: translate(-5px, -5px);
+    transition: 200ms;
 }
 
 #RecomendadosLi li h2{

@@ -13,7 +13,12 @@ const BD = [
  UNCHARTED: Legacy of Thieves Collection apresenta as aclamadas aventuras para um jogador de UNCHARTED™ 
  : A Thief's End e UNCHARTED™: The Lost Legacy, remasterizado para o console PS5™ com detalhes impressionantes, gráficos e taxas de quadros aprimorados.
  `,
- "Requisitos": `undefined`,
+ "Requisitos": `SO: Windows 10 64-bit.
+ Processador: Intel i5-4330, AMD Ryzen 3 1200.
+ Memória: 8 GB de RAM.
+ Placa de vídeo: NVIDIA GTX 960 (4 GB), AMD R9 290X (4 GB)
+ DirectX: Versão 12.
+ Armazenamento: 126 GB de espaço disponível.`,
  "Plataforma": "pc",
  "Tipo": "jogo",
  "Genero":"Aventura",

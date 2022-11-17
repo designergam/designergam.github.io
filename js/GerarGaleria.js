@@ -20,26 +20,26 @@ const jogosPC = BD.filter(item => item.Tipo == "jogo")
 const Programas = BD.filter(item2 => item2.Tipo == "programa")
 
 //Ordenar Jogos em orgem alfabetica
-jogosPC.sort(function(a, b){
-    if(a.Nome < b.Nome){
-        return -1;
-    }
-    else{
-        return true;
-    }
+// jogosPC.sort(function(a, b){
+//     if(a.Nome < b.Nome){
+//         return -1;
+//     }
+//     else{
+//         return true;
+//     }
 
-})
+// })
 
 
-BD.sort(function(a, b){
-    if(a.Nome < b.Nome){
-        return -1;
-    }
-    else{
-        return true;
-    }
+// BD.sort(function(a, b){
+//     if(a.Nome < b.Nome){
+//         return -1;
+//     }
+//     else{
+//         return true;
+//     }
 
-})
+// })
 
 //pesquisa
 function pesquisar(){

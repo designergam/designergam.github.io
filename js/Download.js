@@ -70,6 +70,10 @@ const ID0 = window.location.href;
     let ogImage = document.getElementById("ogImage").content=``+conteudo[0].Capa+``
     let ogDescription = document.getElementById("ogDescription").content=` Download Grátis de via Torrent`
 
+
+    let fundo = document.getElementById("container2")
+    fundo.style.backgroundImage=`url(`+conteudo[0].Imagem+`)`
+
 //-------------------------------RECOMENDADOS---------------------------------
 //Filtrar por Objetos de mesmo genero e do tipo "jogo"
     const GeneroA = BD.filter(item => item.Genero == conteudo[0].Genero & item.Tipo == conteudo[0].Tipo)

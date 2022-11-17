@@ -150,12 +150,76 @@ a {
     display: block;
     
 }
-/* /////////////////////////////// Main ////////////////////////// */
-main{
-    width: 100%;
+.headline{
+    color: white;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    margin: 30px;
+    font-size: 30px;
+}
+/* /////////////////////////////// Galeria de Jogos ////////////////////////// */
+#gallery-container{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+#ul{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    row-gap: 15px;
+}
+@media (max-width: 768px) {
+    #ul{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+#ul li{
+   width: 170px;
+   height: 285px;
+   background-image: linear-gradient(to top, #0b1116, #28384bd3);
+   border-radius: 10px;
+   list-style: none;
+   margin: auto;
+   display: flex;
+   flex-wrap: wrap;
+   padding: 5px;
+}
+@media (max-width: 768px) {
+    #ul li{
+        width: 160px;
+        height: 275px;
+     
+     }
 }
 
-/* Section gallery */
+#ul li:hover{
+    box-shadow: 5px 5px 10px black;
+    background-image: linear-gradient(to top, #121c24, #456081d3);
+    transform: translate(-5px, -5px);
+    transition: 200ms;
+  
+}
+#ul li img{
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    display: block;
+    width: 150px;
+    height: 200px;
+}
+#ul li h2{
+    color: white;
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+    font-weight: 300;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+/* ----------------------------------------------------------------- */
+
 #gallery{
     float: left;
     width: 75%;
@@ -167,56 +231,7 @@ main{
         width: 100%;
     }
 }
-#gallery-container{
-    /* border: 2px solid blue; */
-    width: 95%;
-    margin: auto;
-}
-#gallery-container li {
-    list-style: none;
-    /* border: 2px solid rgb(243, 227, 227);  */
-    position: relative;
-    
 
-}
-#gallery-container li h2{
-    max-width: 160px;
-    width: 12vw;
-    font-size: 1rem;
-    margin-top: 0px;
-    
-    text-align: center;
-    align-items: center;
-    font-style: normal;
-    font-weight: 200;
-    margin: auto;
-    
-    
-    height: 60px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-@media (max-width: 768px) {
-    #gallery-container li h2{
-        max-width: 160px;
-        width: 95%;
-        height: 60px;
-    }
-}
-.gallery-items{
-    display: inline-block;
-    max-width: 160px;
-    width: 12vw;
-    max-height: 190px;
-    height: 15vw;
-    border-radius: 5px;
-    background-image: url("/img/loading-gif.gif");
-    background-position: center;
-    background-size: 80%;
-    background-repeat: no-repeat;
-    
-}
 .gallery-Recomendados{
     display: inline-block;
     max-width: 160px;
@@ -228,7 +243,6 @@ main{
 }
 #ulRecomendados li{
     list-style: none;
-
 }
 @media (max-width: 768px) {
     .gallery-items{
@@ -237,57 +251,8 @@ main{
         height: 200px; 
     }
 }
-.headline {
-    font-size: 1.5rem;
-    padding: 10px;
-    text-transform: uppercase;
-    font-weight: bold;
-    text-align: center;
-    letter-spacing: 2px;
-    margin: auto;
-    color: #eee;
-    /* background-color: red; */
-
-}
-@media (max-width: 768px) {
-    .headline {
-        margin-top: 0px;
-    }
-}
-#ul{
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    margin: 0 auto;
-    /* border: 1px solid red; */
-    width: 95%;
-    grid-gap: 8px; /*espaço*/
-    justify-content: center;
-    justify-items: center;
-    padding-top:20px ;
-    padding-bottom: 50px;
-}
-
-#ul li{
-    
-    padding: 7px;
-    border-radius: 7px;
-    background-color: #263241;
-    color: white;
-    height: 100%;
-    
-}
-
-#ul li:hover{
-    box-shadow: 2px 5px 20px 5px black;
-}
 
 
-
-@media (max-width: 768px) {
-   #ul{
-    grid-template-columns: repeat(2, 1fr);
-   }
-}
 /* /////////////////////////////// Aside ////////////////////////////// */
 
 aside{
@@ -403,29 +368,7 @@ aside{
    
 }
 
-#PesquisarBtn{
-    border: none;
-    padding: 10px;
-    border-radius: 25px;
-    height: 40px;
-    width: 40px;
-    margin-left: 5px;
-    font-weight: bold;
 
-}
-@media (max-width: 768px) { 
-    #PesquisarBtn{
-        position: absolute;
-        right: 7%;
-        top: 80%;
-        transform: translate(-50%, -50%);
-        
-    }
-}
-#PesquisarBtn:hover{
-    background-color: #3e5269;
-    color: white;
-}
 
 
 #AlfabeticoBTN{
