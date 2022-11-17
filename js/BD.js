@@ -37,7 +37,13 @@ const BD = [
  Worlds Collide 
  Os mundos de Peter Parker e do Homem-Aranha colidem nesta nova história repleta de ação. Neste novo universo do Homem-Aranha, alguns dos personagens icônicos da vida de Peter e Homem-Aranha foram reimaginados para colocar os personagens que já conhecemos em papéis únicos.
  `,
- "Requisitos": `undefined`,
+ "Requisitos": `Requer um sistema operativo e processador de 64 bits.
+ Sistema Operativo: Windows 10 64-bit.
+ Processador: Intel Core i3-4160, 3.6 GHz or AMD equivalent.
+ Memória: 8 GB de RAM.
+ Placa gráfica: NVIDIA GTX 950 or AMD Radeon RX 470.
+ DirectX: Versão 12.
+ Espaço no disco: Requer 75 GB de espaço livre.`,
  "Plataforma":"pc",
  "Tipo": "jogo",
  "Genero":"Ação",
@@ -54,7 +60,11 @@ const BD = [
  "Descricao":`Lutamos contra o vírus em Harran por mais de vinte anos - e perdemos. Agora estamos perdendo de novo. A cidade, um dos últimos grandes assentamentos humanos, é dilacerada pelo conflito. A civilização retornou à Idade das Trevas. No entanto, temos esperança. 
  Você é um viajante com o poder de mudar o destino de uma cidade. No entanto, suas habilidades extraordinárias têm um preço. Assombrando memórias que você não consegue interpretar, você luta para encontrar a verdade... e entra em uma zona de combate. Aumente suas habilidades porque força e inteligência são necessárias para derrotar os inimigos e fazer aliados. Desafie os segredos sombrios daqueles que estão no poder, escolha seu lado e decida seu próprio destino. Onde quer que suas ações o levem, há uma coisa que você nunca deve esquecer - permaneça humano.
  `,
- "Requisitos": `undefined`,
+ "Requisitos": `Sistema operacional: Windows 7 64 Bits.
+ Processador: Intel Core i3-9100 ou AMD Ryzen 3 2300X.
+ Memória: 8 GB de RAM.
+ Placa de vídeo: Nvidia Geforce GTX 1050 Ti ou AMD Radeon RX 560 c/ 4 GB de VRAM.
+ Armazenamento: 60 GB de espaço disponível.`,
  "Plataforma":"pc",
  "Tipo": "jogo",
  "Genero":"Aventura",
@@ -73,7 +83,13 @@ const BD = [
  Veja o mundo pelos olhos de um gato de rua e interaja com o ambiente de uma forma divertida. 
  Stray foi desenvolvido pela BlueTwelve Studio, uma pequena equipe no sul da França, composta principalmente por gatos e algumas pessoas.
  `,
- "Requisitos": `undefined`,
+ "Requisitos": `Requer um sistema operativo e processador de 64 bits.
+ Sistema Operativo: Windows 10.
+ Processador: Intel Core i5-2300 | AMD FX-6350.
+ Memória: 8 GB de RAM.
+ Placa gráfica: NVIDIA GeForce GTX 650 Ti, 2 GB | AMD Radeon R7 360, 2 GB.
+ DirectX: Versão 12.
+ Espaço no disco: Requer 10 GB de espaço livre.`,
  "Plataforma":"pc",
  "Tipo": "jogo",
  "Genero":"Aventura",
@@ -89,7 +105,10 @@ const BD = [
  "Download": "magnet:?xt=urn:btih:4F515CD16844D32DF2AAB1995C2561D759DCEAA6&dn=God+of+War+%282022%29+MULTi19-ElAmigos&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=http%3A%2F%2F104.28.1.30%3A8080%2Fannounce&tr=http%3A%2F%2F104.28.16.69%2Fannounce&tr=http%3A%2F%2F107.150.14.110%3A6969%2Fannounce&tr=http%3A%2F%2F109.121.134.121%3A1337%2Fannounce&tr=http%3A%2F%2F114.55.113.60%3A6969%2Fannounce&tr=http%3A%2F%2F125.227.35.196%3A6969%2Fannounce&tr=http%3A%2F%2F128.199.70.66%3A5944%2Fannounce&tr=http%3A%2F%2F157.7.202.64%3A8080%2Fannounce&tr=http%3A%2F%2F158.69.146.212%3A7777%2Fannounce&tr=http%3A%2F%2F173.254.204.71%3A1096%2Fannounce&tr=http%3A%2F%2F178.175.143.27%2Fannounce&tr=http%3A%2F%2F178.33.73.26%3A2710%2Fannounce&tr=http%3A%2F%2F182.176.139.129%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fcoppersurfer.tk%3A6969%2Fannounce",
  "Descricao":`Do Santa Monica Studios, é a sequência do aclamado God of War de 2018. O inverno de Vibol começou. Kratos e Atreus devem viajar pelos nove mundos para encontrar respostas enquanto o exército de Asgard se prepara para uma batalha profética que levará ao fim do mundo. Nesta jornada, eles explorarão fantásticas paisagens míticas  e encontrarão inimigos aterrorizantes: deuses  e monstros nórdicos. A ameaça do Ragnarok está se aproximando. Kratos e Atreus terão que escolher entre sua própria segurança e a segurança do mundo.
  `,
- "Requisitos": `undefined`,
+ "Requisitos": `GPU	NVIDIA GTX 960 (4GB) ou AMD R9 290X (4GB)
+ CPU	Intel i5-2500k (4 core 3.3 GHz) ou AMD Ryzen 3 1200 (4 core 3.1 GHz)
+ RAM	8 GB DDR
+ OS	Windows 10 64-bit   `,
  "Plataforma":"pc",
  "Tipo": "jogo",
  "Genero":"Ação",
@@ -105,7 +124,12 @@ const BD = [
  "Download": "magnet:?xt=urn:btih:192494E9498BF45256E04774B264629856492714&dn=Far+Cry+6+%26ndash%3B+Ultimate+Edition+%28v1.5.0+%2B+All+DLCs+%2B+HD+Texture+Pack+%2B+MULTi15%29+%28From+40.4+GB%29+-+%5BEMPRESS+%2F+DODI+Repack%5D&tr=udp%3A%2F%2F9.rarbg.to%3A2870%2Fannounce&tr=udp%3A%2F%2Feddie4.nl%3A6969%2Fannounce&tr=udp%3A%2F%2Fthetracker.org%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337&tr=udp%3A%2F%2F9.rarbg.com%3A2710%2Fannounce&tr=udp%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker1.wasabii.com.tw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.cypherpunks.ru%3A6969%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Fopentracker.i2p.rocks%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fcoppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337%2Fannounce",
  "Descricao":`O ditador de Yala Anton Castillo quer que seu filho Diego, tão sanguinário quanto seu pai, salve a glória de seu país a qualquer custo. O governo autoritário de Anton e Diego causou uma revolução. - Jogue como Dani Rojas, filho de Yalani, e junte-se aos combatentes revolucionários de hoje para libertar Yarra!
  `,
- "Requisitos": `undefined`,
+ "Requisitos": `Sistema operacional: Windows 10 20H1 ou mais recente (64 Bits)
+ Processador: AMD Ryzen 3 1200 3 GHz ou Intel Core i5-4460 3.1 GHz.
+ Memória: 8 GB RAM.
+ Placa de vídeo: AMD RX 460 (4 GB) ou NVIDIA GeForce GTX 960 (4 GB)
+ DirectX: 12.
+ Armazenamento: 60 GB de espaço disponível.`,
  "Plataforma":"pc",
  "Tipo": "jogo",
  "Genero":"Aventura",
@@ -121,7 +145,10 @@ const BD = [
  "Trailer": "https://www.youtube.com/embed/459FjmLx-XM",
  "Download": "https://drive.google.com/u/0/uc?id=1fHJbqZMeQEtd2OiYe-4ktUl8g7Kufcwg&export=download",
  "Descricao":`O CorelDRAW® Graphics Suite é o seu kit completo de ferramentas de design profissional para entregar projetos fantásticos de ilustração vetorial, layout de página, edição de fotos e tipografia com total eficiência. Uma assinatura acessível oferece uma incrível relação custo/benefício contínua, com acesso instantâneo e garantido a novos recursos e conteúdos exclusivos, desempenho máximo e compatibilidade com as tecnologias mais recentes. `,
- "Requisitos": `undefined`,
+ "Requisitos": `Windows 11 ou Windows 10 (versão 21H1 ou posterior), 64 bits, com as atualizações mais recentes.
+ Placa de vídeo compatível com OpenCL 1.2 com mais de 3 GB de VRAM.
+ 8 GB de RAM.
+ 5,5 GB de espaço livre no disco rígido para os arquivos de instalação e do aplicativo.`,
  "Plataforma":"pc",
  "Tipo":"programa",
  "Genero":"Designer",
@@ -138,7 +165,12 @@ const BD = [
  "Descricao":`Elden Ring, o novo jogo do diretor de Dark Souls, Bloodborne e Sekiro: Shadows Dies Twice, foi lançado há menos de um mês, mas  se tornou um fenômeno popular. Além de ser um dos jogos mais esperados deste ano, Elden Ring teve um bom desempenho nos sites de análise de jogos Metacritic e OpenCritic. 
  é um RPG de mundo aberto que se passa no meio do mundo depois que o "Elden Ring" é destruído e  seus fragmentos, The Great Runes. Os jogadores devem viajar pelo mundo, encontrar todas as runas capitais, coletar o Elden Ring e se tornar o Elden Master.
 `,
-"Requisitos": `undefined`,
+"Requisitos": `Sistema operacional: Windows 10.
+Processador: Intel Core i5-8400 ou AMD Ryzen 3 3300X.
+Memória: 12 GB de RAM.
+Placa de vídeo: Nvidia Geforce GTX 1060 c/ 3 GB ou AMD Radeon RX 580 c/ 4 GB.
+DirectX: 12 (Feature Level 12.0)
+Armazenamento: 60 GB de espaço disponível.`,
  "Plataforma":"pc",
  "Tipo": "jogo",
  "Genero":"Aventura",
@@ -153,7 +185,12 @@ const BD = [
  "Trailer": "https://www.youtube.com/embed/Qge5m24C5qs", 
  "Download": "magnet:?xt=urn:btih:7BP2664C2GGCV4NTXPPYN4BB55JZMPAU&dn=Resident%20Evil%20Village%20Deluxe%20Edition%20v2&tr=udp%3A%2F%2Fshubt.net%3A2710", 
  "Descricao": "Neste novo jogo de Resident Evil, os jogadores irão vivenciar uma história com Ethan, o protagonista de RE 7: Resident Evil. Após os acontecimentos do jogo de 2017, o personagem tenta voltar ao normal com a esposa Mia e a filha Rosemary. Mas no início da vila, ele é surpreendido pelo famoso Chris Redfield, que matou Mia e sequestrou Rose.Ethan, que briga com Chris,  acorda em uma cidade completamente destruída e parece ter um carinho especial  por uma personagem semi-religiosa chamada Mama Miranda. Lá, ele embarca em uma jornada para encontrar Rosemary, enfrentar vários inimigos e descobrir inúmeros segredos.", 
- "Requisitos": `undefined`,
+ "Requisitos": `Requer um sistema operativo e processador de 64 bits.
+ Sistema Operativo: Windows 10 (64 bit)
+ Processador: AMD Ryzen 3 1200 ／ Intel Core i5-7500.
+ Memória: 8 GB de RAM.
+ Placa gráfica: AMD Radeon RX 560 with 4GB VRAM ／ NVIDIA GeForce GTX 1050 Ti with 4GB VRAM.
+ DirectX: Versão 12.`,
  "Plataforma": "pc", 
  "Tipo": "jogo",
  "Genero":"Sobrevivência",
@@ -169,7 +206,11 @@ const BD = [
  "Trailer": "https://www.youtube.com/embed/qTsx64xYhPM", 
  "Download": "magnet:?xt=urn:btih:50E0E662E8E91221708FCCF077389D0917981C9E&dn=Days+Gone+%28MULTi23%29+%5BFitGirl+Repack%2C+Selective+Download+-+from+20.1+GB%5D&tr=udp%3A%2F%2F46.148.18.250%3A2710&tr=udp%3A%2F%2Fopentor.org%3A2710&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.me%3A2730%2Fannounce&tr=udp%3A%2F%2F9.rarbg.to%3A2770%2Fannounce&tr=udp%3A%2F%2Ftracker.pirateparty.gr%3A6969%2Fannounce&tr=http%3A%2F%2Fretracker.local%2Fannounce&tr=http%3A%2F%2Fretracker.ip.ncnet.ru%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=udp%3A%2F%2Fipv4.tracker.harry.lu%3A80%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fcoppersurfer.tk%3A6969%2Fannounce", 
  "Descricao": "Days Gone é um jogo de ação e aventura de mundo aberto ambientado em um ambiente hostil, dois anos após uma pandemia global devastadora. Jogue como Deacon St. Deolate Open World: Usando o poder do PlayStatione do Unreal Engine  , Days Gone oferece uma experiência de mundo aberto incrivelmente realista e detalhada. Mergulhe em um ambiente vasto e hostil e descubra seus segredos. Procure  veículos abandonados, casas, barracos de beira de estrada e cidades em sua busca por recursos. Mas tenha cuidado:  ciclos diurnos e noturnos e um sistema climático dinâmico podem afetar a jogabilidade e o comportamento do inimigo. Simulação de Combate Brutal: Aprimore seu jogo com uma mistura infinita de estratégia e jogabilidade em qualquer situação. Crie itens personalizados usando itens na natureza, desde armas brutais corpo a corpo até armadilhas; E mais Aja com sabedoria porque qualquer escolha pode significar a diferença entre a vida e a morte. Inimigos únicos: Além de caminhantes humanos, milícias e ladrões, os diáconos devem atravessar um deserto cheio de monstros - criaturas selvagens e irracionais.", 
- "Requisitos": `undefined`,
+ "Requisitos": `Sistema operativo: Windows 10 64-bit.
+ Processador: Intel Core i5-2500K@3.3 GHz ou AMD FX-6300@3.5 GHz.
+ Memória: 8 GB RAM.
+ Placa gráfica: Nvidia GeForce GTX 780 (3 GB) ou AMD Radeon R9 290 (4 GB)
+ Espaço de disco: 70 GB.`,
  "Plataforma": "pc", 
  "Tipo": "jogo",
  "Genero":"Ação",
@@ -185,7 +226,9 @@ const BD = [
  "Trailer": "https://www.youtube.com/embed/dnSTk7wCtAM", 
  "Download": "magnet:?xt=urn:btih:58a92f8072b724dd34d0d4a5472ec2ea250f27ce&dn=Grand+Theft+Auto+V+v1.50+ElAmigos", 
  "Descricao": "Grand Theft Auto V:  Grand Theft Auto V:  Premium Edition inclui o modo de história completo de Grand Theft Auto V, acesso gratuito ao crescente mundo de Grand Theft Auto Online, todo o conteúdo do jogo e aprimoramentos de lançamento, como The Doomsday Heist, Gunrunning e Above the Certo, motociclistas e muito mais. Você receberá um conjunto de ferramentas de planejamento do crime, que é a maneira mais rápida de iniciar seu império do crime em Grand Theft Auto Online.", 
- "Requisitos": `undefined`, 
+ "Requisitos": `Sistema Operacional: Windows 8 ou 8.1 64-Bit, Windows 7 64-Bit Service Pack 1, Windows Vista 64 Bit Service Pack 2.
+ Processador / CPU: Intel Core 2 Quad CPU Q6600 de 2.40GHz com quatro núcleos, ou AMD Phenom 9850 Quad-Core de 2.5 GHz ou equivalente.
+ Memória: 4 GB de RAM.`, 
  "Plataforma": "pc", 
  "Tipo": "jogo",
  "Genero":"Mundo Aberto",
@@ -200,7 +243,10 @@ const BD = [
  "Trailer": "https://www.youtube.com/embed/H3lfTa3JCek", 
  "Download": "magnet:?xt=urn:btih:5D81D903CDDC963A293FF8E7473F858CD4CE8747&dn=Mortal+Kombat+11+%28v09.29.2020+%2B+All+DLCs%2C+MULTi12%29+%5BFitGirl+Repack%2C+Selective+Download+-+from+52.3+GB%5D&tr=udp%3A%2F%2F46.148.18.250%3A2710&tr=udp%3A%2F%2Fopentor.org%3A2710&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.me%3A2730%2Fannounce&tr=udp%3A%2F%2F9.rarbg.to%3A2770%2Fannounce&tr=udp%3A%2F%2Ftracker.pirateparty.gr%3A6969%2Fannounce&tr=http%3A%2F%2Fretracker.local%2Fannounce&tr=http%3A%2F%2Fretracker.ip.ncnet.ru%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=udp%3A%2F%2Fipv4.tracker.harry.lu%3A80%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fcoppersurfer.tk%3A6969%2Fannounce", 
  "Descricao": "Dois anos após os eventos de Mortal Kombat X, Kronika, a Titã do Tempo e mãe do deus de Shinnok, traça um plano para repetir a história com a Ampulheta, um artefato capaz de controlar livremente o tempo, facilitado pelas mudanças causadas por Raiden. ...na timeline, com a mensagem He will win em Mortal Kombat (2011). Para este fim, ele recuperou clones de personagens de Outworld e Earthrealm, e se aliou aos agora caídos Linkui e Shaohan, que são ressuscitados pelo poder de Kronika. Guerreiros do passado e do presente devem se unir para frustrar os planos do vilão.,",
- "Requisitos": `undefined`,
+ "Requisitos": `Processador:	Intel Core i5-2300 2,8 GHz, AMD FX-6300 3,5 GHz ou AMD Ryzen 5 1400 3,2 GHz
+ Memória RAM:	8 GB
+ Placa de vídeo:	Nvidia GeForce GTX 780, Nvidia GeForce GTX 1060 6GB ou AMD Radeon R9 290, RX 570
+ DirectX:	11`,
  "Plataforma": "pc", 
  "Tipo": "jogo",
  "Genero":"Luta",
@@ -215,7 +261,13 @@ const BD = [
  "Trailer": "https://www.youtube.com/embed/9ewiJJe_nYI", 
  "Download": "magnet:?xt=urn:btih:WYYJHKQQVNK54YJXOVAG5X5GDZZIYCHI&dn=Need%20for%20Speed%20Heat%20MULTI%20V2%20ElAmigos&tr=udp%3A%2F%2Fshubt.net%3A2710", 
  "Descricao": "Need for Speed: Heat é um jogo de corrida de mundo aberto ambientado em uma cidade conhecida como Palm City, uma versão fictícia de Miami, Flórida. [10] Ao contrário de Need for Speed's Revenge, The Heat não tem um ciclo dia-noite de 2  horas, mas os jogadores podem alternar entre dia e noite. Durante o dia, os jogadores podem participar de eventos de corrida puníveis que recompensam os jogadores com dinheiro para comprar novos carros  e atualizações. Eles também podem participar de corridas de rua ilegais à noite, dando aos jogadores um REP. Quanto mais representações ele ganhar, mais agressiva será a polícia à noite, e o jogador terá que fugir da polícia e voltar ao seu esconderijo antes de ser preso ou  seu veículo ser destruído.", 
- "Requisitos": `undefined`,
+ "Requisitos": `Sistema operacional: Windows 10.
+ Processador (AMD): FX-6350 ou equivalente.
+ Processador (Intel): Core i5-3570 ou equivalente.
+ Memória: 8 GB.
+ Placa de vídeo (AMD): Radeon 7970/Radeon R9 280x ou equivalente.
+ Placa de vídeo (NVIDIA): GeForce GTX 760 ou equivalente.
+ Direct X: 11.`,
  "Plataforma": "pc", 
  "Tipo": "jogo",
  "Genero":"Corrida",
@@ -231,7 +283,12 @@ const BD = [
  "Trailer": "https://www.youtube.com/embed/Bf85wwJuFBE", 
  "Download": "magnet:?xt=urn:btih:985449d8f465bec39f908a998d8de3dccb5c5638&dn=Dragon+Ball+Z+Kakarot+Ultimate+Edition+v1.60", 
  "Descricao": "Experimente a história de DRAGON BALL Z, de eventos épicos a missões secundárias divertidas, incluindo momentos totalmente novos que contam alguns dos fatos revelados pela primeira vez na história de DRAGON BALL!Jogue o icônico jogo DRAGON BALL Z em uma escala incomparável. Lute em vastos campos de batalha com ambientes destrutíveis e experimente batalhas épicas contra chefes que testarão os limites de suas habilidades de luta. Aumente sua força e aceite o desafio!Não lute como um lutador Z, viva como eles! Divirta-se caçando, voando, comendo, treinando e lutando em DRAGON BALL Z Saga, fazendo amigos e construindo relacionamentos com muitos personagens.", 
- "Requisitos": `undefined`,
+ "Requisitos": `Sistema Operacional: Windows 7 SP1 64 bits.
+ Processador: Intel Core i5-2400 ou AMD Phenom II X6 1100T.
+ Memória RAM: 4 GB.
+ Placa de vídeo: GeForce GTX 750 Ti ou Radeon HD 7950.
+ DirectX: 11.
+ Armazenamento: 36 GB de espaço disponível.`,
  "Plataforma": "pc", 
  "Tipo": "jogo",
  "Genero":"Luta",
@@ -246,7 +303,11 @@ const BD = [
  "Trailer": "https://www.youtube.com/embed/WDvFz2LL1WI", 
  "Download": "magnet:?xt=urn:btih:4A00FF80E34B4577ADF34F08D788C83BA7AEFB7A&dn=Red+Dead+Redemption+2%3A+Ultimate+Edition+%5B1.0.1311.23%5D+%28MULTi13%29-InsaneRamZes&tr=http%3A%2F%2Ftr.ysagin.top%3A2710%2Fannounce&tr=http%3A%2F%2Ftr2.ysagin.top%3A2710%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Fopentor.org%3A2710&tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fcoppersurfer.tk%3A6969%2Fannounce", 
  "Descricao": "Red Dead Redemption II é um videogame de ação e aventura desenvolvido pela Rockstar Studios e publicado pela Rockstar Games. É uma prequela de Red Dead Redemption de 2010 e é a terceira entrada da série Red Dead. A trama gira em torno de Arthur Morgan, um dos principais membros da gangue de Van der Linde.Red Dead Redemption II foi lançado  em 26 de fevereiro de 2019 no PlayStatione Xbox One, com críticos elogiando sua história de renome mundial e nível de detalhes. O jogo arrecadou US $ 877 milhões  em vendas de fim de semana de abertura e vendeu mais de 67 milhões de cópias em duas semanas.", 
- "Requisitos": `undefined`,
+ "Requisitos": `Sistema operacional: Windows 7.
+ Processador: Intel Core i5-2500K ou AMD FX-6300.
+ Memória RAM: 8 GB.
+ Placa de vídeo: Nvidia Geforce GTX 770 2 GB ou AMD Radeon R9 280 3 GB.
+ Armazenamento: 150 GB.`,
  "Plataforma": "pc", 
  "Tipo": "jogo",
  "Genero":"Mundo Aberto",
@@ -261,7 +322,10 @@ const BD = [
  "Trailer": "https://www.youtube.com/embed/r5c0-TFP18g", 
  "Download": "magnet:?xt=urn:btih:e6cd1358fe51fb2524af475f599aed078e7454da&dn=Biomutant.v1.3-GOG&tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce&tr=udp%3A%2F%2F9.rarbg.me%3A2980&tr=udp%3A%2F%2F9.rarbg.to%3A2720&tr=udp%3A%2F%2Ftracker.fatkhoala.org%3A13770&tr=udp%3A%2F%2Ftracker.thinelephant.org%3A12790", 
  "Descricao": "BIOMUTANT® é um incrível RPG  de Kung Fu pós-apocalíptico de mundo aberto com um sistema de combate único no estilo de artes marciais  que permite combinar habilidades corpo a corpo,  tiro e  mutantes. Uma praga devasta a região e a Árvore da Vida sangra pela morte de suas raízes. As tribos estão divididas. Explore um mundo conturbado e decida seu próprio destino: você será o salvador dela ou a levará a um destino ainda mais sombrio? Download do jogo biomutant completo para pc via torrent.", 
- "Requisitos": `undefined`, 
+ "Requisitos": `Processador	AMD FX-8350 ou Intel Core i5 4690K a 3,5 GHz ou superior
+ Memória RAM	8 GB
+ Placa de vídeo	AMD Radeon R9 380 ou Nvidia GeForce GTX 960
+ Armazenamento	25 GB de espaço disponível`, 
  "Plataforma": "pc", 
  "Tipo": "jogo",
  "Genero":"Mundo Aberto",
@@ -291,7 +355,13 @@ const BD = [
  "Trailer": "https://www.youtube.com/embed/VCuEA0pAi-g", 
  "Download": "magnet:?xt=urn:btih:CACAD2258EE507FF2C265DD3D0DB93D8D46F06DF&dn=Watch.Dogs.Legion-EMPRESS&tr=http%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fcoppersurfer.tk%3A6969%2Fannounce", 
  "Descricao": "Watch Dogs: Legion é um jogo de ação e aventura em terceira pessoa. O jogo se passa em um mundo aberto e narrativo em Londres, que incluirá os famosos marcos, regiões e padrões culturais da cidade. O  jogo se passa em Londres, que se tornou uma cidade de vigilância em massa. As liberdades pessoais são severamente restringidas e os movimentos dos cidadãos são constantemente monitorados  pela Albion, uma empresa de segurança privada que atua como a polícia da cidade.Os jogadores poderão explorar rapidamente a  cidade a pé, usando um veículo ou  pelas estações de metrô da cidade. Ao contrário dos jogos anteriores da série, que se concentravam em usar um único herói para liderar a  história, Legion tem a capacidade de controlar vários personagens no jogo.", 
- "Requisitos": `undefined`,
+ "Requisitos": `Requer um processador e sistema operacional de 64 bits.
+ SO: Windows® 10 64 bit Build 1903.
+ Processador: AMD Ryzen™ 5 1400 / Intel® Core™ i5-4460.
+ Memória: 8 GB de RAM.
+ Placa de vídeo: NVIDIA® GeForce® GTX 1060 6GB / AMD Radeon™ RX 570.
+ DirectX: Versão 12.
+ Armazenamento: 80 GB de espaço disponível.`,
  "Plataforma": "pc",
  "Tipo": "jogo",
  "Genero":"Mundo Aberto", 
@@ -306,7 +376,11 @@ const BD = [
  "Trailer": "https://www.youtube.com/embed/UgTmcnR3iaY", 
  "Download": "https://drive.google.com/file/d/1qmmq81HYS7_UNtQ5dSkgF_Al1c08JGos/view?usp=share_link", 
  "Descricao": "O Warcraft III apresentou uma mudança importante com relação às versões anteriores do jogo: unidades únicas, mais poderosas, chamadas Heroes. Um herói no jogo pode achar ou trocar itens mágicos para melhorar suas características e atributos, ao género dos RPGs. Os heróis podem também adquirir auras de proteção através de habilidades, que beneficiam unidades aliadas que estão próximas dele. Tal como nos RPGs, os heróis ganham experiência através de combate, subindo de nível, e desbloqueando novas habilidades ou melhorando aquelas que já possui.Outra inovação são os creeps: criaturas controladas pelo computador, presentes mesmo em jogos multijogador. Eles guardam certas áreas do mapa. Estes são usados ​​para aumentar o nível do herói no início do jogo à medida que ele ganha experiência e tesouros.", 
- "Requisitos": `undefined`,
+ "Requisitos": `Sistema Operacional: Windows 7 / Windows 8 / Windows 10 64-bit (versão mais recente)
+ Processador: Intel Core i3-530 ou AMD Athlon Phenom II X4 910.
+ Placa de vídeo: NVIDIA GeForce GTS 450 ou AMD Radeon HD 5750.
+ Memória RAM: 4 GB.
+ Armazenamento: 30 GB de espaço disponível em disco.`,
  "Plataforma": "pc", 
  "Tipo": "jogo",
  "Genero":"RTS",
@@ -321,7 +395,11 @@ const BD = [
  "Trailer": "https://www.youtube.com/embed/DL2hlOIf-PM", 
  "Download": "magnet:?xt=urn:btih:dd670edc556b8fb0ce860d66c2e8dd4b7fdf2a8b&dn=The.Sims.4.Digital.Deluxe.Edition.v1.92.145.elamigos-games.com", 
  "Descricao": "The Simsse concentra na criação de personagens e ferramentas aprimoradas de construção de casas, bem como  uma simulação de jogabilidade mais profunda dos Sims com  novos emotes e sistemas de personagens. The Simsrecebeu vários pacotes de DLC pagos desde seu lançamento. Onze pacotes de expansão, onze pacotes de jogos, dezoito pacotes de recursos e dez pacotes de ferramentas foram lançados; O pacote de expansão mais recente é o Cottage Living em 22 de julho de 2021. Várias atualizações gratuitas também foram lançadas ao longo da vida útil do jogo, incluindo os principais recursos e adições ao jogo, como grupos adicionados, personalização de personagens e ferramentas de campo", 
- "Requisitos": `undefined`,
+ "Requisitos": `SISTEMA OPERACIONAL: Windows 10 (64 bits)
+ PROCESSADOR: Intel core i5 (4 núcleos), AMD Ryzen 5 ou superior.
+ PLACA DE VÍDEO: 1 GB de RAM de vídeo, NVIDIA GTX 650, AMD Radeon HD 7750 ou superior.
+ MEMÓRIA: 8 GB de RAM.
+ DISCO RÍGIDO:`,
  "Plataforma": "pc", 
  "Tipo": "jogo",
  "Genero":"Simulação",
@@ -336,7 +414,11 @@ const BD = [
  "Trailer": "https://www.youtube.com/embed/qIAne6xZs6c", 
  "Download": "magnet:?xt=urn:btih:97eb2078fafd7b75717a33da5408655df83cbed9&dn=The+Witcher+3+Wild+Hunt+1.31", 
  "Descricao": "The Witcher 3: Wild Hunt é um jogo de aventura em mundo aberto ambientado em um mundo de fantasia sombrio. Você é Geralt de Rivia, contratando caçadores de monstros. Todas as ferramentas do comércio estão à sua disposição: espadas afiadas, equipamentos mortais, arcos invisíveis e poderosa magia de luta. Explore o conteúdo do seu coração antes de enfrentar o continente infestado de monstros. Seu contrato atual? Caçando o filho da profecia, uma arma viva que pode mudar a forma do mundo. A versão completacontém todo o conteúdo para download do jogo, incluindo duas grandes expansões de história: Hearts of Stone e Blood and Wine. Esta é a oportunidade perfeita para entrar no mundo pela primeira vez ou ter uma aventura, em qualquer lugar!Recursos:Um enorme mundo aberto para explorar.Visite a opulenta e corrupta cidade de Novigrad, enfrente os ventos frios que varrem as Ilhas Skellig e desafie as forças das trevas que vagam pela terra desolada e devastada. ", 
- "Requisitos": `undefined`,
+ "Requisitos": `Sistema operacional: Windows 7 64 bits ou superior.
+ Processador: Intel CPU Core i5-2500K 3.3GHz, AMD CPU Phenom II X4 940 ou superior.
+ Memória RAM: 6GB ou mais.
+ Armazenamento: 40GB de espaço livre.
+ Placa de vídeo: Nvidia GPU GeForce GTX 660, AMD GPU Radeon HD 7870 ou superior.`,
  "Plataforma": "pc", 
  "Tipo": "jogo",
  "Genero":"Mundo Aberto",
@@ -351,7 +433,12 @@ const BD = [
  "Trailer": "https://www.youtube.com/embed/9axpikOIHEo", 
  "Download": "magnet:?xt=urn:btih:2032bdc4d6e86791b0a57cad855094d97c5e1ea8&dn=Horizon+Zero+Dawn+Complete+Edition+ElAmigos", 
  "Descricao": "Orizon Zero Dawn é um emocionante jogo de RPG de ação desenvolvido exclusivamente para PlayStationpela Guerrilla Games, criadores da popular série Killzone. Jogue como Aloy, uma caçadora habilidosa, e explore um mundo vibrante e rico cheio de misteriosas criaturas mecânicas. Embarque em uma jornada imersiva e emocional para descobrir os segredos das sociedades tribais, artefatos antigos e tecnologias avançadas que determinarão o destino deste planeta e da própria vida. Um mundo fértil após o Apocalipse: como as máquinas dominam o mundo e o que elas fazem? O que aconteceu com a civilização que viveu aqui? Explore cada canto do reino cheio de ruínas antigas e edifícios misteriosos, descubra o passado e revele os muitos segredos desta terra esquecida. Clash of Nature and Machines: Horizon Zero Dawn combina dois elementos contrastantes, reunindo um mundo vibrante cheio de beleza natural e impressionante tecnologia de ponta. Essa fusão cria uma combinação dinâmica de exploração e jogabilidade. ", 
- "Requisitos": `undefined`,
+ "Requisitos": `Requer um processador e sistema operacional de 64 bits.
+ SO: Windows 10 64-bits.
+ Processador: Intel Core i5-2500K@3.3GHz ou AMD FX 6300@3.5GHz.
+ Memória: 8 GB de RAM.
+ Placa de vídeo: Nvidia GeForce GTX 780 (3 GB) ou AMD Radeon R9 290 (4GB)
+ DirectX: Versão 12.`,
  "Plataforma": "pc", 
  "Tipo": "jogo",
  "Genero": "Mundo Aberto",
@@ -382,7 +469,14 @@ const BD = [
  "Trailer": "https://www.youtube.com/embed/GSXViWOyEO4", 
  "Download": "magnet:?xt=urn:btih:da532319adf8cd1757b65200e6b5931abfd0a4b5&dn=E.Football.PES.2021-CPY&tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce&tr=udp%3A%2F%2F9.rarbg.me%3A2980&tr=udp%3A%2F%2F9.rarbg.to%3A2860", 
  "Descricao": "A atualização da temporada do eFootball PES 2021 oferece todos os recursos populares para ganhar o título de Melhor Jogo de Esportes na E3 2019 e além!Neste quarto de século desde o lançamento da franquia PES em 1995, convidamos você a se juntar a nós em campo para uma emocionante nova temporada de futebol.Com os dados mais recentes de jogadores e equipas, o jogo também apresenta o modo exclusivo UEFA EURO 2020™, permitindo-te a ti e aos teus amigos simular algumas das maiores competições do desporto.", 
- "Requisitos": `undefined`,
+ "Requisitos": `Sistema operacional (OS) Windows 8.1/10 - 64bit.
+ Processador (CPU) Intel Core i5-3470 / AMD FX 4350.
+ Memória (RAM) 8 GB.
+ Gráficos (GPU) NVIDIA GTX 670 / AMD Radeon HD 7870.
+ VRAM. 2 GB.
+ DirectX. 11.0.
+ Espaço de armazenamento livre. 40 GB.
+ Resolução. 1280 x 720.`,
  "Plataforma": "pc", 
  "Tipo": "jogo",
  "Genero":"Esporte",
@@ -404,7 +498,11 @@ const BD = [
  • 28 personagens jogáveis: Jogue como seus personagens favoritos do grande elenco da série e use suas habilidades e habilidades especiais em seu caminho para a vitória! 
  • Aumente suas habilidades: colete chi e moedas para melhorar suas habilidades. Recrute novos membros do dojo e deixe-os fortalecer o seu enquanto você torna o dojo  uma potência. 
 `, 
- "Requisitos": `undefined`,  
+ "Requisitos": `SO: Windows 10 (64 BIT only) or above.
+ Armazenamento: 48 GB.
+ Processador: AMD Ryzen 3 1200 - 3.1GHZ / Intel i5-4460 - 3.2GHZ.
+ Memória: 8 GB.
+ Placa de vídeo: AMD R9 380 - 4GB / Nvidia GeForce GTX 960 - 4GB.`,  
  "Plataforma": "pc", 
  "Tipo": "jogo",
  "Genero":"Luta",
