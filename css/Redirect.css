@@ -2,8 +2,10 @@
     width: 250px;
     height: 340px;
     position: relative;
-    box-shadow:  2px 2px 22px 2px black;
+    box-shadow:  2px 2px 22px 2px rgb(24, 13, 68);
     margin-top: 20px;
+    background-image: linear-gradient(to top, #0b1116, #28384bd3);
+    border-radius: 10px;
 }
 
 #img_capa{
@@ -20,15 +22,66 @@
     width: 60%;
     margin-top: 30px;
     
+    
+}
+#previa a{color: rgb(59, 59, 185);}
+
+#navbar-items li a:hover{
+    color: red;
+   cursor: pointer;
 }
 
-#previa a{
-    color: blue;
-}
-
-#download{
+.download{
     position: static;
     margin-top: 100px;
     margin-bottom: 20px;
+}
+#btnDownloadContainer{
+    display: none;
+}
+
+/* Propagandas */
+
+#adsA{
+    width:300px ;
+    height: 250px;
+    /* border: 1px solid red; */
+    margin: auto;
+}
+#adsB{
+    width:728px ;
+    height:90px;
+    /* border: 1px solid red; */
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+#adsC{ width:160px ;
+    height:600px ;
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 335px;
+    left: 50px;
+}
+#adsD{ width:160px ;
+    height:600px ;
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 335px;
+    right: 50px;
+}
+
+#tit{
+    margin-top: 50px;
+}
+
+#containerProp{
+   
+    width: 100%;
+    height: 250px;
+    display: flex;
+    margin:  0 auto;
+    /* border: 2px solid green; */
+    margin-top: 80px;
 }
 
