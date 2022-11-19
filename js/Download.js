@@ -35,17 +35,21 @@ const ID0 = window.location.href;
     let img_gameplay2_B =  window.document.getElementById("img_gameplay2").src = Gif
     let cpu_B =  window.document.getElementById("Requisitos").innerText = cpu_A 
     
-    let trailer_B =  window.document.getElementById("trailer").src = Trailer
+    let trailer_B =  window.document.getElementById("trailer").src = `https://www.youtube.com/embed/`+Trailer+``
     let baixarbtn = document.getElementById("btnDownloadArea").innerHTML=`<a href="Redirect.html?id=`+ID+`" id="download">DOWNLOAD</a>`
 
-//Requisitos e Trailer, fecha o container se nao tiver nada
-    if(conteudo[0].Requisitos == "undefined"){
-            let ReT = document.getElementById("container5")
+//Trailer, fecha o container se nao tiver nada
+    if(conteudo[0].Trailer == "undefined"){
+            let ReT = document.getElementById("container4")
             ReT.style.display = "none"
     }
-    
- 
 
+//Requisitos, fecha o container se nao tiver nada
+    if(conteudo[0].Requisitos == "undefined"){
+        let ReT = document.getElementById("container5")
+        ReT.style.display = "none"
+    }
+    
 //Imagem e Gid, fecha o container se nao tiver nada
     if(conteudo[0].Imagem == "undefined"){
         let IeG = document.getElementById("container")
@@ -100,15 +104,32 @@ if(conteudo[0].Genero){
     
         }
     }
-    //Fechar container3 se não tiver Genero
-    else{
-        let close = document.getElementById("container3").style.display="none"
-    }
+    
    
 }
+//Fechar container3 se não tiver Genero
+else{
+    let close = document.getElementById("container3").style.display="none"
+}
 
-// Fechar container5 se nao tiver trailer
-    if(conteudo[0].Trailer == "undefined"){
-        let close = document.getElementById("container4").style.display="none" 
-    }
-    
+
+//Mensagem Aleatoria
+
+const mensagem =["Qual quer problema deixe nos comentários abaixo!", "Seja bem vindo meu nobre!", "Pronto para navegar?", "A embarcação ainda não está compatível com dispositivos moveis, e porque estaria?"]
+let Aleatoria = mensagem[Math.floor(Math.random() * mensagem.length)]
+
+let MA = document.getElementById("MA")
+let MAp = document.getElementById("MAp")
+MAp.innerText = Aleatoria
+
+setTimeout(function() {
+    MA.style.transform="translate(15px)"
+}, 1500)
+setTimeout(function() {
+    MA.style.transform="translate(-400px)"
+}, 7000)
+
+function fecharmensagem(){
+    MA.style.transform="translate(-400px)"
+}
+
