@@ -45,6 +45,10 @@ body {
     list-style: none;
     text-transform: uppercase;
 }
+
+#navbar-items li{
+    margin-left: 20px;
+}
 /* links */
 a {
     text-decoration: none;
