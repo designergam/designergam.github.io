@@ -140,10 +140,18 @@ if(conteudo[0].Genero2 == "undefined"){
 
 //-------------------------------RECOMENDADOS---------------------------------
 //Filtrar por Objetos de mesmo genero e do tipo "jogo"
-    const GeneroA = BD.filter(item => item.Genero1 == conteudo[0].Genero1 ||item.Genero2 == conteudo[0].Genero2||item.Genero3 == conteudo[0].Genero3||item.Genero4 == conteudo[0].Genero4 & item.Tipo == conteudo[0].Tipo)
+    const GeneroA = BD.filter(item => item.Genero1 == conteudo[0].Genero1 || item.Genero2 == conteudo[0].Genero2 & item.Tipo == conteudo[0].Tipo)
 
 //Remove Item Atual dos recomendados
     const Genero = GeneroA.filter((item) => item.Nome !== conteudo[0].Nome);
+
+//Randomizar array de recomendados
+    function shuffleArray(inputArray){
+        inputArray.sort(()=> Math.random() - 0.5);
+    }shuffleArray(Genero);
+
+    console.log(Genero)
+    
     
     let recomendados = document.getElementById("RecomendadosLi")
 

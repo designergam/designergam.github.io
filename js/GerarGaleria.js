@@ -19,7 +19,8 @@ const jogosPC = BD.filter(item => item.Tipo == "jogo")
 //Filtrar por Objetos que são do tipo "programa"
 const Programas = BD.filter(item2 => item2.Tipo == "programa")
 
-//Ordenar Jogos em orgem alfabetica
+//-----------------Ordenar Jogos em orgem alfabetica
+//------------------------------------------------------------------
 // jogosPC.sort(function(a, b){
 //     if(a.Nome < b.Nome){
 //         return -1;
@@ -27,9 +28,7 @@ const Programas = BD.filter(item2 => item2.Tipo == "programa")
 //     else{
 //         return true;
 //     }
-
 // })
-
 
 // BD.sort(function(a, b){
 //     if(a.Nome < b.Nome){
@@ -40,17 +39,15 @@ const Programas = BD.filter(item2 => item2.Tipo == "programa")
 //     }
 
 // })
+//------------------------------------------------------------------
 
 //pesquisa
 function pesquisar(){
-
     let pesquisa = document.getElementById("input").value
     acriarLI.innerHTML="";
     BD.map((jogo) => {
         let novonome = jogo.Nome.toLowerCase()
-        
         let RemoverEspacos = jogo.Nome.replace(/\s/g, '+');
-        
         if(novonome.indexOf(pesquisa.toLowerCase()) > -1 ){
             
             acriarLI.innerHTML+=`
@@ -60,19 +57,15 @@ function pesquisar(){
                     <h2>`+jogo.Nome+`</h2>
                 </li>
             </a>`;
-        }}
-        )
-
+        }})
         PassarPagina.style.display = "none"
-
-
 }
 
 //Filtrar pro Letra
 function carregarJogosAlfabeto(letra){
- let Minusculo = BD.filter(item => item.Nome.toLowerCase().substr(0, 1) == letra & item.Tipo=="jogo")
- acriarLI.innerHTML="";
- Minusculo.map((i) => {
+    let Minusculo = BD.filter(item => item.Nome.toLowerCase().substr(0, 1) == letra & item.Tipo=="jogo")
+    acriarLI.innerHTML="";
+    Minusculo.map((i) => {
     acriarLI.innerHTML+=`
     <a href="Download.html?id=`+i.id+`&amp;s=teste">
         <li>
@@ -80,18 +73,17 @@ function carregarJogosAlfabeto(letra){
             <h2>`+i.Nome+`</h2>
         </li>
     </a>`;    
-    
- })
- let todosbotoes = document.querySelectorAll('.btn')
- todosbotoes.forEach(element => {
-     element.setAttribute('style', 'background-color:#3e5269; border: none; width: 30px; height: 30px; border-radius: 50%; color: white; font-weight: 200; margin: auto; align-items: center; justify-content: center;')
- })
- 
 
- let botaoselecionado = document.getElementById(letra)
- botaoselecionado.setAttribute('style', 'background-color:#3e5269; border: 2px solid white; width: 30px; height: 30px; border-radius: 50%; color: white; font-weight: 200; margin: auto; align-items: center; justify-content: center;')
+    })
+    let todosbotoes = document.querySelectorAll('.btn')
+    todosbotoes.forEach(element => {
+        element.setAttribute('style', 'background-color:#3e5269; border: none; width: 30px; height: 30px; border-radius: 50%; color: white; font-weight: 200; margin: auto; align-items: center; justify-content: center;')
+    })
 
- let PaginasNone = document.getElementById("PaginasNone").style.display="none"
+    let botaoselecionado = document.getElementById(letra)
+    botaoselecionado.setAttribute('style', 'background-color:#3e5269; border: 2px solid white; width: 30px; height: 30px; border-radius: 50%; color: white; font-weight: 200; margin: auto; align-items: center; justify-content: center;')
+
+    let PaginasNone = document.getElementById("PaginasNone").style.display="none"
 }
 
 // Tipo: Jogos - Pagina: 1
