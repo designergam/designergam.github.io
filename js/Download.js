@@ -85,6 +85,15 @@ if(conteudo[0].Genero2 == "undefined"){
         baixarbtn.innerHTML=`<a href="Redirect.html?id=`+ID+`" id="download">DOWNLOAD</a>`
 
 
+        let fundo = document.getElementById("fundo")
+        fundo.style.background=`URL(`+Capa+`)`
+        fundo.style.backgroundRepeat="no-repeat"
+        fundo.style.backgroundSize="cover"
+        fundo.style.background
+        
+       
+       
+
 //Desligar se nao tiver dado
     if(conteudo[0].Trailer == undefined){
             let ReT = document.getElementById("container4")
