@@ -36,6 +36,26 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">  
 </head>
 <body>
+
+    <div id="Aviso_Responsividade">
+        <p> Atenção! este site ainda esta em desenvolvimento.
+            NÃO ESTA RESPONSIVO EM DISPOSITIVOS MOVEIS.
+            por favor acesse por um computador
+        </p>
+        <button onclick="Close()">X</button>
+    </div>
+    
+    <script>
+        let av = document.getElementById("Aviso_Responsividade")
+        var largura = window.screen.width;
+        if(largura < 768){
+            av.style.display="block"
+        }
+        function Close(){
+            av.style.display="none"
+        }
+    </script>
+
     </span>
     <script>
         function closeads() {
@@ -71,7 +91,7 @@
                             <div class="link">FPS</div>
                         </a>
                         <a href="?type=jogo&page=MUNDO_ABERTO">
-                            <div class="link">MUNDO_ABERTO</div>
+                            <div class="link">MUNDO ABERTO</div>
                         </a>
                         <a href="?type=jogo&page=LUTA">
                             <div class="link">LUTA</div>

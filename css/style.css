@@ -14,6 +14,7 @@ body {
     font-family: 'Roboto', sans-serif;
     width: 100%;
     background-color: #151d27;
+   
 }
 
 /*//////////////////////////////////// Header /////////////////////////////////////////////*/
@@ -457,4 +458,36 @@ aside {
     padding-right: 7px;
     z-index: 999;
     text-shadow: 1px 1px 6px rgb(255, 255, 255);
+}
+
+
+#Aviso_Responsividade{
+    width: 300px;
+    height:150px;
+    border-radius: 20px;
+    position: fixed;
+    
+    background-color: #0b1116;
+   
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    z-index: 999;
+}
+#Aviso_Responsividade > p{
+    width: 100%;
+    line-height: 30px;
+    font-size: 18px;
+    color: #FFF;
+    text-align: center;
+}
+#Aviso_Responsividade button{
+width: 30px;
+height: 30px;
+border-radius: 50%;
+font-weight: 900;
+position: absolute;
+top: -15px;
+right: -15px;
 }
