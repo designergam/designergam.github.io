@@ -1,87 +1,95 @@
-#container2{
+#container2 {
     width: 250px;
     height: 340px;
     position: relative;
-    box-shadow:  2px 2px 22px 2px rgb(24, 13, 68);
+    box-shadow: 2px 2px 22px 2px rgb(24, 13, 68);
     margin-top: 20px;
     background-image: linear-gradient(to top, #0b1116, #28384bd3);
     border-radius: 10px;
 }
 
-#img_capa{
-    margin:  0;
+#img_capa {
+    margin: 0;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-#previa{
+#previa {
     text-align: center;
     margin: auto;
     width: 60%;
     margin-top: 30px;
-    
-    
-}
-#previa a{color: rgb(59, 59, 185);}
 
-#navbar-items li a:hover{
+
+}
+
+#previa a {
+    color: rgb(59, 59, 185);
+}
+
+#navbar-items li a:hover {
     color: red;
-   cursor: pointer;
+    cursor: pointer;
 }
 
-.download{
+.download {
     position: static;
     margin-top: 100px;
     margin-bottom: 20px;
 }
-#btnDownloadContainer{
+
+#btnDownloadContainer {
     display: none;
 }
 
 /* Propagandas */
 
-#adsA{
-    width:300px ;
+#adsA {
+    width: 300px;
     height: 250px;
     /* border: 1px solid red; */
     margin: auto;
 }
-#adsB{
-    width:728px ;
-    height:90px;
+
+#adsB {
+    width: 728px;
+    height: 90px;
     /* border: 1px solid red; */
     margin: auto;
     margin-top: 20px;
     margin-bottom: 0px;
 }
-#adsC{ width:160px ;
-    height:600px ;
+
+#adsC {
+    width: 160px;
+    height: 600px;
     /* border: 1px solid red; */
     position: absolute;
     top: 350px;
     left: 50px;
 }
-#adsD{ width:160px ;
-    height:600px ;
+
+#adsD {
+    width: 160px;
+    height: 600px;
     /* border: 1px solid red; */
     position: absolute;
     top: 350px;
     right: 50px;
 }
 
-#tit{
+#tit {
     margin-top: 50px;
 }
 
-#containerProp{
-   
+#containerProp {
+
     width: 100%;
     height: 250px;
     display: flex;
-    margin:  0 auto;
+    margin: 0 auto;
     /* border: 2px solid green; */
     margin-top: 90px;
 }
-

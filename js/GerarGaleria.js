@@ -117,6 +117,37 @@ if(TipoURL == null & PaginaURL == null || TipoURL == "jogo" & PaginaURL == 1){
     </ul>
     `
 }
+
+//Teste------------------------------------------------------------------------
+let teste = document.getElementById("teste")
+
+if(TipoURL == null & PaginaURL == null || TipoURL == "jogo" & PaginaURL == 1){
+   
+    for(let i=0; i<100; i++){
+
+        let RemoverEspacos = jogosPC[i].Nome.replace(/\s/g, '+');
+
+        teste.innerHTML+=`
+        <a href="Download.html?id=`+jogosPC[i].id+`&amp;s=`+RemoverEspacos+`" title="`+jogosPC[i].Nome+`"></a>`;
+    }
+
+    PassarPagina.innerHTML =`
+    <ul class="ls-pagination">
+    <p id="textPaginas">Páginas >>></p>
+          <a href="?t=jogo&amp;p=1"><li id="pg1">1</li></a>
+          <a href="?t=jogo&amp;p=2"><li id="pg2">2</li></a>
+          <a href="?t=jogo&amp;p=3"><li id="pg3">3</li></a>
+          <a href="?t=jogo&amp;p=4"><li id="pg4">4</li></a>
+          <a href="?t=jogo&amp;p=5"><li id="pg5">5</li></a>
+          <a href="?t=jogo&amp;p=6"><li id="pg6">6</li></a>
+          <a href="?t=jogo&amp;p=7"><li id="pg7">7</li></a>
+          <a href="?t=jogo&amp;p=8"><li id="pg8">8</li></a>
+          <a href="?t=jogo&amp;p=9"><li id="pg9">9</li></a>
+    </ul>
+    `
+}
+//Teste--------------------------------------------------------------------------------
+
 // Tipo: Jogos - Pagina: 2
 else if(TipoURL == "jogo" & PaginaURL == 2){
    
