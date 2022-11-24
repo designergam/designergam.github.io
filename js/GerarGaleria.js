@@ -4,11 +4,10 @@ const TipoURL = Url.get('type');
 const PaginaURL = Url.get('page');
 
 //Ocultar menu abc se estiver em programas
-console.log(TipoURL)
+
 if (TipoURL == "programa") {
     let close = document.getElementById("AlfabeticoBTN").style.display = "none"
 }
-
 
 let acriarLI = document.getElementById('ul')
 let PassarPagina = document.querySelector(".ls-pagination-filter")
@@ -379,6 +378,66 @@ else if (TipoURL == "jogo" & PaginaURL == 9) {
 
     <ul class="ls-pagination">
     <p id="textPaginas">Paginas >>></p>
+    <a href="?type=jogo&amp;page=2"><li id="pg2">2</li></a>
+    <a href="?type=jogo&amp;page=3"><li id="pg3">3</li></a>
+    <a href="?type=jogo&amp;page=4"><li id="pg4">4</li></a>
+    <a href="?type=jogo&amp;page=5"><li id="pg5">5</li></a>
+    <a href="?type=jogo&amp;page=6"><li id="pg6">6</li></a>
+    <a href="?type=jogo&amp;page=7"><li id="pg7">7</li></a>
+    <a href="?type=jogo&amp;page=8"><li id="pg8">8</li></a>
+    <a href="?type=jogo&amp;page=9"><li id="pg9">9</li></a>
+    <a href="?type=jogo&amp;page=10"><li id="pg10">10</li></a>
+    
+          
+    </ul>
+    `
+
+}
+// Tipo: Jogos - Pagina: 10
+else if (TipoURL == "jogo" & PaginaURL == 10) {
+
+    for (let i = 1100; i < 1200; i++) {
+        let RemoverEspacos = jogosPC[i].Nome.replace(/\s/g, '-').toUpperCase();;
+        acriarLI.innerHTML += `
+        <a href="Download.html?search=`+RemoverEspacos+`&amp;id=`+jogosPC[i].id+`&amp;type=`+jogosPC[i].Tipo+`">
+            <li>
+                <img src="`+ jogosPC[i].Capa + `" alt="` + jogosPC[i].Nome + `" class="gallery-items" rel="nofollow">
+                <h2>`+ jogosPC[i].Nome + `</h2>
+            </li>
+        </a>`;
+    }
+    PassarPagina.innerHTML = `
+    <ul class="ls-pagination">
+    <p id="textPaginas">Paginas >>></p>
+    <a href="?type=jogo&amp;page=2"><li id="pg2">2</li></a>
+    <a href="?type=jogo&amp;page=3"><li id="pg3">3</li></a>
+    <a href="?type=jogo&amp;page=4"><li id="pg4">4</li></a>
+    <a href="?type=jogo&amp;page=5"><li id="pg5">5</li></a>
+    <a href="?type=jogo&amp;page=6"><li id="pg6">6</li></a>
+    <a href="?type=jogo&amp;page=7"><li id="pg7">7</li></a>
+    <a href="?type=jogo&amp;page=8"><li id="pg8">8</li></a>
+    <a href="?type=jogo&amp;page=9"><li id="pg9">9</li></a>
+    <a href="?type=jogo&amp;page=10"><li id="pg10">10</li></a>  
+    <a href="?type=jogo&amp;page=11"><li id="pg11">11</li></a>  
+    </ul>
+    `
+}
+// Tipo: Jogos - Pagina: 11
+else if (TipoURL == "jogo" & PaginaURL == 11) {
+
+    for (let i = 1200; i < 1300; i++) {
+        let RemoverEspacos = jogosPC[i].Nome.replace(/\s/g, '-').toUpperCase();;
+        acriarLI.innerHTML += `
+        <a href="Download.html?search=`+RemoverEspacos+`&amp;id=`+jogosPC[i].id+`&amp;type=`+jogosPC[i].Tipo+`">
+            <li>
+                <img src="`+ jogosPC[i].Capa + `" alt="` + jogosPC[i].Nome + `" class="gallery-items" rel="nofollow">
+                <h2>`+ jogosPC[i].Nome + `</h2>
+            </li>
+        </a>`;
+    }
+    PassarPagina.innerHTML = `
+    <ul class="ls-pagination">
+    <p id="textPaginas">Paginas >>></p>
     <a href="?type=jogo&amp;page=1"><li id="pg1">1</li></a>
     <a href="?type=jogo&amp;page=2"><li id="pg2">2</li></a>
     <a href="?type=jogo&amp;page=3"><li id="pg3">3</li></a>
@@ -388,12 +447,45 @@ else if (TipoURL == "jogo" & PaginaURL == 9) {
     <a href="?type=jogo&amp;page=7"><li id="pg7">7</li></a>
     <a href="?type=jogo&amp;page=8"><li id="pg8">8</li></a>
     <a href="?type=jogo&amp;page=9"><li id="pg9">9</li></a>
-    
-          
+    <a href="?type=jogo&amp;page=10"><li id="pg10">10</li></a>  
+    <a href="?type=jogo&amp;page=11"><li id="pg11">11</li></a>  
+    <a href="?type=jogo&amp;page=12"><li id="pg12">12</li></a>  
     </ul>
     `
-
 }
+// Tipo: Jogos - Pagina: 12
+else if (TipoURL == "jogo" & PaginaURL == 12) {
+
+    for (let i = 1300; i < 1400; i++) {
+        let RemoverEspacos = jogosPC[i].Nome.replace(/\s/g, '-').toUpperCase();;
+        acriarLI.innerHTML += `
+        <a href="Download.html?search=`+RemoverEspacos+`&amp;id=`+jogosPC[i].id+`&amp;type=`+jogosPC[i].Tipo+`">
+            <li>
+                <img src="`+ jogosPC[i].Capa + `" alt="` + jogosPC[i].Nome + `" class="gallery-items" rel="nofollow">
+                <h2>`+ jogosPC[i].Nome + `</h2>
+            </li>
+        </a>`;
+    }
+    PassarPagina.innerHTML = `
+    <ul class="ls-pagination">
+    <p id="textPaginas">Paginas >>></p>
+    <a href="?type=jogo&amp;page=1"><li id="pg1">1</li></a>
+    <a href="?type=jogo&amp;page=2"><li id="pg2">2</li></a>
+    <a href="?type=jogo&amp;page=3"><li id="pg3">3</li></a>
+    <a href="?type=jogo&amp;page=4"><li id="pg4">4</li></a>
+    <a href="?type=jogo&amp;page=5"><li id="pg5">5</li></a>
+    <a href="?type=jogo&amp;page=6"><li id="pg6">6</li></a>
+    <a href="?type=jogo&amp;page=7"><li id="pg7">7</li></a>
+    <a href="?type=jogo&amp;page=8"><li id="pg8">8</li></a>
+    <a href="?type=jogo&amp;page=9"><li id="pg9">9</li></a>
+    <a href="?type=jogo&amp;page=10"><li id="pg10">10</li></a>  
+    <a href="?type=jogo&amp;page=11"><li id="pg11">11</li></a>  
+    <a href="?type=jogo&amp;page=12"><li id="pg12">12</li></a>  
+    </ul>
+    `
+}
+
+
 
 
 //Mostar Pagina Selecionada
