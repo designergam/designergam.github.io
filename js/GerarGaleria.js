@@ -92,6 +92,16 @@ function carregarJogosAlfabeto(letra) {
 
     let PaginasNone = document.getElementById("PaginasNone").style.display = "none"
 }
+//sitemap_______________________________________________________________________________
+for (let i = 0; i < 1393; i++) {  
+    let sitemap = document.getElementById("sitemap")
+    let RemoverEspacos = jogosPC[i].Nome.replace(/\s/g, '-').toUpperCase();
+    sitemap.innerHTML+=""
+
+    sitemap.innerHTML += `
+    <a href="Download.html?search=`+RemoverEspacos+`&amp;id=`+jogosPC[i].id+`&amp;type=`+jogosPC[i].Tipo+`"></a>`;
+}
+//________________________________________________
 
 // Tipo: Jogos - Pagina: 1
 if (TipoURL == null & PaginaURL == null || TipoURL == "jogo" & PaginaURL == 1) {
@@ -125,6 +135,10 @@ if (TipoURL == null & PaginaURL == null || TipoURL == "jogo" & PaginaURL == 1) {
     </ul>
     `
 }
+
+
+
+
 // Tipo: Jogos - Pagina: 2
 else if (TipoURL == "jogo" & PaginaURL == 2) {
 
