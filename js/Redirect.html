@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <!-- SEO -->
+    <title id="title"></title>
+    <meta name="robots" content="noindex">
+    <meta name="googlebot" content="noindex">
+    <meta name="description" id="descricao_pagina" content="">
+    <meta name="author" content="Capitão Torrent" >
+    <meta name="robots" content="noindex, nofollow" >
+    <link rel="canonical" href="https://capitaotorrent.com.br/Download"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="8cEwtzY5TZC-QrefrCThf38df3mgfj6MExRdD_dKfeI" />
+    <!--Icone-->
+    <link rel="shortcut icon" href="../img/iconepirata.png" type="image/x-icon">
+    <!--Estilos-->
+    <link rel="stylesheet" href="css/download.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/download_mobile.css">
+    <link rel="stylesheet" href="css/propagandas.css">
+    <link rel="stylesheet" href="css/Redirect.css">
+</head>
+<body>
+     
+
+    <!---galeria de jogos--> 
+    <script src="js/BD.js"></script>
+    
+   
+    <script>
+        const urlAtual = window.location.href;
+        const urlClass = new URL(urlAtual);
+
+        let EscolhidoURL = urlClass.searchParams.get("id");
+        
+
+        let conteudo = [];
+
+         conteudo = BD.filter(function(item){
+            return item.id == EscolhidoURL;
+        })
+
+       
+        let Nome = (conteudo[0].Nome);
+        let Capa = (conteudo[0].Capa)
+        let Descricao = (conteudo[0].Descricao)
+        let Trailer = (conteudo[0].Trailer)
+        let Download= (conteudo[0].Download)
+        let Imagem= (conteudo[0].Imagem)
+        let Gif = (conteudo[0].Gif)
+
+        //Requisitos Minimos
+        let cpu_A = (conteudo[0].cpu);
+        let gpu_A = (conteudo[0].gpu);
+        let ram_A = (conteudo[0].ram);
+        let rom_A = (conteudo[0].rom);
+    </script>
+
+    <header>
+        <nav id="navbar">
+            <div id="navbar-container">
+                <h1 class="logo"><img src="img/logopirata.png" alt="logo do site"></h1>
+                <ul id="navbar-items">
+                    <li><a href="index.html" >Home</a></li>
+                    <li onclick="goBack()" id="voltar" ><a rel="prev" >Voltar</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>        
+    
+        <script>
+            function goBack() {
+                window.history.back()
+            }
+        </script>
+
+    <main>
+        <div id="containerProp">
+            <div id="adsA">
+                <script type="text/javascript">
+                    atOptions = {
+                        'key' : '1492d10ec3dffb52c7376a13e9fc9620',
+                        'format' : 'iframe',
+                        'height' : 250,
+                        'width' : 300,
+                        'params' : {}
+                    };
+                    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplayformat.com/1492d10ec3dffb52c7376a13e9fc9620/invoke.js"></scr' + 'ipt>');
+                </script>
+               </div>
+               <div id="adsA">
+                <script type="text/javascript">
+                    atOptions = {
+                        'key' : '1492d10ec3dffb52c7376a13e9fc9620',
+                        'format' : 'iframe',
+                        'height' : 250,
+                        'width' : 300,
+                        'params' : {}
+                    };
+                    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplayformat.com/1492d10ec3dffb52c7376a13e9fc9620/invoke.js"></scr' + 'ipt>');
+                </script>
+               </div>
+               <div id="adsA">
+                <script type="text/javascript">
+                    atOptions = {
+                        'key' : '1492d10ec3dffb52c7376a13e9fc9620',
+                        'format' : 'iframe',
+                        'height' : 250,
+                        'width' : 300,
+                        'params' : {}
+                    };
+                    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplayformat.com/1492d10ec3dffb52c7376a13e9fc9620/invoke.js"></scr' + 'ipt>');
+                </script>
+               </div>
+               <div id="adsA">
+                <script type="text/javascript">
+                    atOptions = {
+                        'key' : '1492d10ec3dffb52c7376a13e9fc9620',
+                        'format' : 'iframe',
+                        'height' : 250,
+                        'width' : 300,
+                        'params' : {}
+                    };
+                    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplayformat.com/1492d10ec3dffb52c7376a13e9fc9620/invoke.js"></scr' + 'ipt>');
+                </script>
+               </div>
+            
+            </div>
+
+       
+        <!--Titulo -->
+        <div id="tit"></div>
+
+        <!-- titulo, capa, previa -->
+        <section id="container2">
+            
+            <script>
+                var tit_B =  window.document.getElementById("tit") //liga ao id
+                tit_B.innerText = Nome// escreve dentro de tit o que esta escrito em tit_a
+            </script>
+
+            <!--img jogo-->
+            <img src="" alt="imagem de capa do jogo" id="img_capa">
+            
+            <script>
+                var src_B =  window.document.getElementById("img_capa") 
+                src_B.src = Capa
+            </script>
+
+        </section>      
+        
+                
+        <!-- Botao de Download -->
+        <section>
+            <div id="testimonials-container">
+                <div class="testimonial2">
+                    <span id="temporizador">
+
+                    </span>
+                    <span id="btnDownloadContainer">
+                        <a class="download" id="DW" href="" rel="download do jogo" target="_blank">Magnet Link</a>
+                        <a class="download" id="ctrlc" href="" rel="download do jogo" onclick="copiarlink()">Copiar!</a>
+                    </span> 
+                    <script>
+                        var download_B =  window.document.getElementById("DW") //liga ao id
+                        download_B.href = Download
+                    </script>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <p id="previa">Para abrir Magnet Links e baixar Este jogo via torrent você terá que ter um gerenciador de downloads torrent no seu PC, recomendamos o <a href="https://www.qbittorrent.org/download.php">Qbittorrent</a> ou <a href="https://www.utorrent.com/intl/pt/web/downloads/complete/track/stable/os/win/">uTorrent</a>.</p>
+
+        <div class="overlay"> <div class="loader"></div>  </div>
+    </main>
+
+    <script>
+//copiar magnet link
+        function copiarlink(){
+           
+            let texto = document.createElement("input")
+            texto.value = Download
+            document.body.appendChild(texto)
+            texto.select()
+            document.execCommand("copy")
+            alert("Magnet link - Copiado!")
+            
+        }
+      
+    </script>
+
+    <script>
+        //Temporisador
+        let btnDownloadContainer = document.getElementById("btnDownloadContainer")
+        let temporizador = document.getElementById("temporizador")
+        temporizador.innerHTML = `<h1>Aguarde 5 segundos</h1>`
+
+
+        setTimeout(function() {temporizador.innerHTML = `<h1>Aguarde 4 segundos</h1>`
+            setTimeout(function() {temporizador.innerHTML = `<h1>Aguarde 3 segundos</h1>`
+                setTimeout(function() {temporizador.innerHTML = `<h1>Aguarde 2 segundos</h1>`
+                    setTimeout(function() {temporizador.innerHTML = `<h1>Aguarde 1 segundos</h1>`
+                        setTimeout(function() {temporizador.innerHTML = `<h1>Aguarde 0 segundos</h1>`
+                        }, 1000)
+                    }, 1000)
+                }, 1000)
+            }, 1000)
+        }, 1000)
+
+        setTimeout(function() {
+            temporizador.style.display="none"
+            btnDownloadContainer.style.display="block"
+        }, 6000)
+        
+    </script>
+
+<div id="adsB">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : '00437ddeb190e2546f876e88b5cf4ea9',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+        document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplayformat.com/00437ddeb190e2546f876e88b5cf4ea9/invoke.js"></scr' + 'ipt>');
+    </script>
+   </div>
+    
+    <!--footer-->
+    <footer id="footer">
+        <p>Copyright &copy; 2022</p>
+        <br>
+        <p>Importante: Os jogos disponíveis nesse site não são hospedados por nós, apenas indexamos, qualquer denúncia deve ser encaminhada diretamente aos sites responsáveis por hospedar os jogos em seus servidores. O intuito deste site é apenas organizar os links com imagens e textos para fins de busca do usuário.</p>
+    </footer>
+
+   <!-- Propagandas -->
+
+   
+   
+   <div id="adsC">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : '164d7062e0ae7877c9ef9cdac729a722',
+            'format' : 'iframe',
+            'height' : 600,
+            'width' : 160,
+            'params' : {}
+        };
+        document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplayformat.com/164d7062e0ae7877c9ef9cdac729a722/invoke.js"></scr' + 'ipt>');
+    </script>
+   </div>
+   <div id="adsD">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : '164d7062e0ae7877c9ef9cdac729a722',
+            'format' : 'iframe',
+            'height' : 600,
+            'width' : 160,
+            'params' : {}
+        };
+        document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplayformat.com/164d7062e0ae7877c9ef9cdac729a722/invoke.js"></scr' + 'ipt>');
+    </script>
+   </div>
+
+    
+</body>
+</html>
+
+<!--SCRIPTS DA PAGINA-->
+
+<!-- Font Awesome -->
+<script src="https://kit.fontawesome.com/f9e19193d6.js" crossorigin="anonymous"></script>
+
+ <!-- jQuery CDN -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head id="headtags">
+    <meta charset="UTF-8">
+    <title id="title"></title>
+
+    <!-- meta tags -->
+    <meta name="description" id="description" content="">
+    <meta name="keywords"  id="keywords" content="">
+    <meta name="robots" content="index,follow">
+    <meta name="author" content="Capitão Torrent">
+    <meta name="googlebot" content="index,follow">
+    <meta http-equiv="content-langue" content="pt-br">
+    <meta content="Global" name="distribution">
+    <meta name="google-site-verification" content="8cEwtzY5TZC-QrefrCThf38df3mgfj6MExRdD_dKfeI" />
+
+    <!-- SEO -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta property="og:url" id="ogUrl" content="" />
+    <meta property="og:title" id="ogTitle" content="" />
+    <meta property="og:image" id="ogImage" content="" />
+    <meta property="og:description"  id="ogDescription" content="" />
+    <meta name="theme-color" content="#fe2813">
+
+    <!--Icone-->
+    <link rel="shortcut icon" href="../img/iconepirata.png" type="image/x-icon">
+
+    <!--Estilos-->
+    <link rel="stylesheet" href="css/download.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/download_mobile.css">
+    <link rel="stylesheet" href="css/propagandas.css">
+    <link rel="stylesheet" href="css/menu_lateral.css">
+
+    
+</head>
+
+
+
+
+<!---Banco de Dados--> 
+<script src="js/BD.js"></script>
+
+<body>
+       
+    <script>
+        function closeads(){
+            let ads = document.getElementById("propaganda")
+            ads.style.display="none"
+        }
+    </script>
+    <header>
+        <nav id="navbar">
+            <div id="navbar-container">
+
+                <!-- menu lateral-->
+                <!-- <input type="checkbox" id="check">
+                <label id="icone" for="check" ><img id="icone_menu" src="../img/RWHvwPE.png" alt=""></label>
+
+                <div class="barra"> 
+                    <nav>
+                        <a  href="index.html?t=programa&amp;p=1"><div class="link">Programas</div></a>
+                       
+                    </nav>
+                </div>   -->
+
+                <h1 class="logo"><img src="img/logopirata.png" alt="logo do site"></h1>
+                <ul id="navbar-items">
+                    <li><a href="index.html" >Home</a></li>
+                    <li onclick="goBack()" id="voltar" ><a rel="prev" >Voltar</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>     
+     
+
+    <main>
+
+        <header id="header-main">
+            <img src="" id="fundo" alt="">
+            <div id="nome_header" class="header_cor"></div>
+            <div id="img_header" class="header_cor"></div>
+            <div id="genero_header" class="header_cor">
+                <p id="gen1"></p>
+                <p id="gen2"></p>
+                <p id="gen3"></p>
+                <p id="gen4"></p>
+            </div>
+            <div id="info_header" class="header_cor"></div>
+            <button id="btnDownloadArea"></button>
+            <div id="previa_header" class="header_cor"></div>
+
+            
+            
+        </header>
+
+       
+
+       
+
+       
+       
+       
+       
+
+        
+
+        
+            <h2 id="TEXTO_H2">IMAGENS DO JOGO</h2>
+
+<!-- Imagem e Gif -->
+        <section id="container">         
+            <img src="" alt="imagens da gameplay" class="img_gameplay" id="img_gameplay1" rel="nofollow">
+            <img src="" alt="gif da gameplay" class="img_gameplay" id="img_gameplay2" rel="nofollow">
+        </section>
+
+<!-- Trailer -->
+        
+        <section id="container4">
+            <h2 id="TEXTO_H2">TRAILER</h2><br>
+            <iframe  id="trailer"  src="" frameborder="0"  rel="nofollow"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>  
+        </section>
+         
+<!--Requisitos Minimos-->
+        <section id="container5">
+            <div class="testimonial3">
+                <h2 id="requisitos">REQUISITOS MÍNIMOS</h2><br>    
+                <p id="Requisitos"></p>
+            </div>
+
+
+        </section>
+
+<!-- Recomenados -->
+        <section id="container3">
+            <h2 id="Recomendados">RECOMENDADOS</h2><br>
+            <ul id="RecomendadosLi">
+
+            </ul>
+        </section>
+
+
+    </main>
+
+<!-- Comentarios -->
+      <div id="comentarios">
+          <div id="disqus_thread"></div>
+          <script>
+              (function() { // DON'T EDIT BELOW THIS LINE
+              var d = document, s = d.createElement('script');
+              s.src = 'https://capitaotorrent.disqus.com/embed.js';
+              s.setAttribute('data-timestamp', +new Date());
+              (d.head || d.body).appendChild(s);
+              })();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+          <script id="dsq-count-scr" src="//capitaotorrent.disqus.com/count.js" async></script>
+      </div>
+
+      <!-- Mensagem Aleatoia -->
+      <div id="MA">
+        <img src="img/logopirata.png" alt="">
+        <h1>"YO HO MARUJO!!!"</h1>
+        <p id="MAp"></p>
+        <button onclick="fecharmensagem()">X</button>
+      </div>
+
+<!--Rodapé-->
+    <footer id="footer">
+        <p>Copyright &copy; 2022</p>
+        <br>
+        <p>Importante: Os jogos disponíveis nesse site não são hospedados por nós, apenas indexamos, qualquer denúncia deve ser encaminhada diretamente aos sites responsáveis por hospedar os jogos em seus servidores. O intuito deste site é apenas organizar os links com imagens e textos para fins de busca do usuário.</p>
+    </footer>
+
+</body>
+</html>
+
+<script src="js/Download.js"></script>
