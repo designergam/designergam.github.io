@@ -160,10 +160,10 @@ if(conteudo[0].Genero1){
     if(Genero.length>5){
         for(let i=0; i<6; i++){
     
-            let RemoverEspacos = Genero[i].Nome.replace(/\s/g, '+');
+            let RemoverEspacos = Genero[i].Nome.replace(/\s/g, '+').toUpperCase();
         
             recomendados.innerHTML+=`
-            <a href="Download.html?id=`+Genero[i].id+`&amp;s=`+RemoverEspacos+`" title="`+Genero[i].Nome+`">
+            <a href="Download.html?search=`+RemoverEspacos+`&amp;id=`+Genero[i].id+`&amp;type=`+Genero[i].Tipo+`">
                 <li>
                     <img src="`+Genero[i].Capa+`" alt="`+Genero[i].Nome+`" class="gallery-items" rel="nofollow">
                     <h2>`+Genero[i].Nome+`</h2>
