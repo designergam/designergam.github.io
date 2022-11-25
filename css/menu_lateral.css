@@ -11,8 +11,8 @@
 
 @media (max-width: 768px) {
     #icone {
-        top: 50%;
-        margin-left: 15px;
+        top: 20%;
+        margin-left: 20px;
         transform: translate(-50%, -50%);
     }
 }

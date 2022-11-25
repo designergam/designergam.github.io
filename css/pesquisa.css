@@ -11,6 +11,10 @@
 @media (max-width: 768px) {
     .caixa-search {
         margin-left: 0px;
+       
+        height: 50px;
+        width: 300px;
+        margin-top: 40px;
     }
 }
 
@@ -18,7 +22,12 @@
     width: 300px;
     padding: 0 6px;
 }
-
+@media (max-width: 768px) {
+    .caixa-search:hover > .caixa-texto {
+        width: 240px;
+        padding: 0 6px;
+    }
+}
 .caixa-search:hover > .botao-search {
     background-color: #151d27;
     color:white ;
@@ -38,6 +47,25 @@
     align-items: center;
     transition: 0.4s;
 }
+@media (max-width: 768px) {
+    .botao-search {
+        color: #1f224d;
+        float: right;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        align-items: center;
+        transition: 0.4s;
+        position: absolute;
+        top: 50%;
+        right: -15px;
+        transform: translate(-50%, -50%);
+    }
+}
 
 .caixa-texto {
     border: none;
@@ -55,5 +83,9 @@
 @media (max-width: 768px) {
     .caixa-texto {
         line-height: 0px;
+        width: 240px;
+        height: 100%;
+        
+        
     }
 }
