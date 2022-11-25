@@ -381,8 +381,11 @@ a:hover {
 #btnDownloadArea {
     font-size: 16px;
     position: absolute;
-    top: 40%;
-    right: 35%;
+    top: 30%;
+    right: 30%;
+    width: 50px;
+    height: 50px;
+    z-index: 999999999;
 }
 
 .download {

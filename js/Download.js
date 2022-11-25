@@ -82,7 +82,9 @@ if(conteudo[0].Genero2 == "undefined"){
         trailer_B.src = Trailer
 
     let baixarbtn = document.getElementById("btnDownloadArea") //Download
-        baixarbtn.innerHTML=`<a href="Redirect.html?id=`+ID+`" id="download">DOWNLOAD</a>`
+        baixarbtn.innerHTML=`
+        
+        <a href="Redirect.html?id=`+ID+`" id="download">DOWNLOAD</a>`
 
 
         let fundo = document.getElementById("fundo")
