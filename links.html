@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="js/BD.js"></script>
+    <div id="acriarLI"></div>
+    <script>
+        let acriarLI = document.getElementById("acriarLI")
+        const jogosPC = BD.filter(item => item.Tipo == "jogo")
+        for (let i = 1374; i < 1832; i++) {
+        let RemoverEspacos = jogosPC[i].Nome.replace(/\s/g, '-').toUpperCase();;
+
+        acriarLI.innerText += `
+        <url>
+            <loc>https://capitaotorrent.com.br/Download.html?search=`+RemoverEspacos+`&amp;id=`+jogosPC[i].id+`&amp;type=`+jogosPC[i].Tipo+`</loc>
+            <lastmod>2022-11-25T14:20:59+00:00</lastmod>
+            <priority>0.80</priority>
+        </url>`
+    }
+    </script>
+</body>
+</html>
