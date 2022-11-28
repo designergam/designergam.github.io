@@ -32,6 +32,8 @@
     <link rel="stylesheet" href="css/sidebar.css">
     <link rel="stylesheet" href="css/menu_lateral.css">
     <link rel="stylesheet" href="css/propagandas.css">
+    <link rel="stylesheet" href="css/GaleriaItem.css">
+    
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">  
 </head>
@@ -142,9 +144,12 @@
                 </section>
 
                 <ul id="navbar-items">
+                    <li id="home" ><a href="index.html" rel="prev" >Home</a></li>
+                    
                     <li id="Favoritos"><a href="?page=Favoritos" onclick="Favoritos()">Favoritos</a></li>
                     
                     <li onclick="goBack()" id="voltar" ><a rel="prev" >Voltar</a></li>
+                    
                 </ul>
             </div>
 
@@ -200,7 +205,7 @@
 
     <!-- Galeria de jogos -->
     <main>
-        <div class="headline">  ADICIONADOS RECENTEMENTE</div>
+        <div class="headline">ADICIONADOS RECENTEMENTE</div>
         <div id="gallery-container">
             <ul id="ul">
                 <!-- aqui ficara a lista de jogos gerada pelo js -->

@@ -29,13 +29,13 @@ function pesquisar() {
 
             acriarLI.innerHTML += `
             <li id="containerjg">
-                <img src="img/favorito_Off.png" alt="favorito" id="${jogo.id}" class="favor" onclick="t('${jogo.id}' )"
                 <a href="Download.html?search=`+RemoverEspacos+`&amp;id=`+jogo.id+`&amp;type=`+jogo.Tipo+`">
                     <img src="`+jogo.Capa + `" alt="` +jogo.Nome + `" class="gallery-items" rel="nofollow">
                 </a>
                 <a href="Download.html?search=`+RemoverEspacos+`&amp;id=`+jogo.id+`&amp;type=`+jogo.Tipo+`">
                     <h2>`+jogo.Nome + `</h2>
                 </a>
+                <img src="img/favorito_Off.png" alt="favorito" id="${jogo.id}" class="favor" onclick="t('${jogo.id}' )"
             </li>`;
 
             if(ArryFavoritos.find(element => element == `${jogo.id}`)){
@@ -57,13 +57,13 @@ function carregarJogosAlfabeto(letra) {
         let RemoverEspacos = i.Nome.replace(/\s/g, '-').toUpperCase();;
         acriarLI.innerHTML += `
             <li id="containerjg">
-                <img src="img/favorito_Off.png" alt="favorito" id="${i.id}" class="favor" onclick="t('${i.id}' )"
                 <a href="Download.html?search=`+RemoverEspacos+`&amp;id=`+i.id+`&amp;type=`+i.Tipo+`">
                     <img src="`+i.Capa + `" alt="` +i.Nome + `" class="gallery-items" rel="nofollow">
                 </a>
                 <a href="Download.html?search=`+RemoverEspacos+`&amp;id=`+i.id+`&amp;type=`+i.Tipo+`">
                     <h2>`+i.Nome + `</h2>
                 </a>
+                <img src="img/favorito_Off.png" alt="favorito" id="${i.id}" class="favor" onclick="t('${i.id}' )"
             </li>`;
             if(ArryFavoritos.find(element => element == `${i.id}`)){
                 document.getElementById(`${i.id}`).src="img/favorito_On.png"
@@ -88,15 +88,16 @@ function carregarJogosAlfabeto(letra) {
 if (TipoURL == null & PaginaURL == null || TipoURL == "jogo" & PaginaURL == 1) {
 
     for (let i = 0; i < 100; i++) {
-        let RemoverEspacos = jogosPC[i].Nome.replace(/\s/g, '-').toUpperCase();        acriarLI.innerHTML += `
-            <li id="containerjg">
-                <img src="img/favorito_Off.png" alt="favorito" id="${jogosPC[i].id}" class="favor" onclick="t('${jogosPC[i].id}' )"
+        let RemoverEspacos = jogosPC[i].Nome.replace(/\s/g, '-').toUpperCase();       
+         acriarLI.innerHTML += `
+            <li>
                 <a href="Download.html?search=`+RemoverEspacos+`&amp;id=`+jogosPC[i].id+`&amp;type=`+jogosPC[i].Tipo+`">
                     <img src="`+ jogosPC[i].Capa + `" alt="` + jogosPC[i].Nome + `" class="gallery-items" rel="nofollow">
                 </a>
                 <a href="Download.html?search=`+RemoverEspacos+`&amp;id=`+jogosPC[i].id+`&amp;type=`+jogosPC[i].Tipo+`">
                     <h2>`+ jogosPC[i].Nome + `</h2>
                 </a>
+                <img src="img/favorito_Off.png" alt="favorito" id="${jogosPC[i].id}" class="favor" onclick="t('${jogosPC[i].id}' )"
             </li>
         `;
 
@@ -119,13 +120,13 @@ else if (PaginaURL == "Favoritos") {
 
             acriarLI.innerHTML += `
             <li id="containerjg">
-                <img src="img/favorito_On.png" alt="favorito" id="${item[0].id}" class="favor" onclick="f('${item[0].id}' )"
                 <a href="Download.html?search=`+RemoverEspacos+`&amp;id=`+item[0].id+`&amp;type=`+item[0].Tipo+`">
                     <img src="`+ item[0].Capa + `" alt="` + item[0].Nome + `" class="gallery-items" rel="nofollow">
                 </a>
                 <a href="Download.html?search=`+RemoverEspacos+`&amp;id=`+item[0].id+`&amp;type=`+item[0].Tipo+`">
                     <h2>`+ item[0].Nome + `</h2>
                 </a>
+                <img src="img/favorito_On.png" alt="favorito" id="${item[0].id}" class="favor" onclick="f('${item[0].id}' )"
             </li>`;
 
             
