@@ -8,7 +8,7 @@
         content="Os melhores jogos para baixar totalmente gratis via utorrent, download de jogos utorrent para computador pc, torrent de jogos para computador, jogos gratis, download via torrent games">
     <meta name="keywords" id="keywords"
         content="capitão torrent, baixar jogos torrent, torrent games, baixar jogos gratis via torrent ">
-    <link rel=“canonical” href=”https://capitaotorrent.com.br” />
+    <link rel="canonical" href="https://capitaotorrent.com.br">
     <meta name="author" content="Capitão Torrent">
     <meta name="googlebot" content="index,follow">
     <meta name="robots" content="index,follow">
@@ -49,7 +49,7 @@
             ads.style.display = "none"
         }
     </script>
-
+<a href="" onclick=""></a>
     <!-- Cabeçalho -->
     <header>
         <nav id="navbar">
@@ -134,8 +134,6 @@
                 <h1 class="logo"><img id="logo_site" src="img/logopirata.png" alt=""></h1>
 
                 <!-- Barra de Pesquisa -->
-                
-
                 <section class="caixa-search">
                     <input class="caixa-texto" type="text"  id="input" name=""  placeholder="Pesquisar...">
                     <a class="botao-search" href="#AlfabeticoBTN"onclick="pesquisar()">
@@ -144,7 +142,9 @@
                 </section>
 
                 <ul id="navbar-items">
-                    <li id="inicio"><a onclick="goBack()">Voltar</a></li>
+                    <li id="Favoritos"><a href="?page=Favoritos" onclick="Favoritos()">Favoritos</a></li>
+                    
+                    <li onclick="goBack()" id="voltar" ><a rel="prev" >Voltar</a></li>
                 </ul>
             </div>
 
@@ -207,6 +207,39 @@
             </ul>
         </div>
     </main>
+
+    <script>
+
+        var arr=[];
+           
+        //Adicionar ao LocalStorage e trocar item
+        function t(item){
+            document.getElementById(item).src="img/favorito_On.png"
+           if(localStorage.meuArr){
+            arr = JSON.parse(localStorage.getItem("meuArr"))
+           }
+           let novoItem = item
+           arr.push(novoItem)
+           localStorage.meuArr = JSON.stringify(arr)
+           document.getElementById(item).setAttribute("onclick",`f('`+item+`');`);
+        }
+
+        //Remover ao LocalStorage e trocar item
+        function f(item){
+            if(localStorage.meuArr){
+                arr = JSON.parse(localStorage.getItem('meuArr'))
+            }
+            document.getElementById(item).src="img/favorito_Off.png"
+            document.getElementById(item).setAttribute("onclick",`t('`+item+`');`);
+            let posicao = arr.indexOf(item)
+            arr.splice(posicao, 1)
+            localStorage.meuArr = JSON.stringify(arr)
+        }
+
+       
+
+        
+    </script>
 
     <!--  Paginas-->
     <div class="ls-pagination-filter" id="PaginasNone">

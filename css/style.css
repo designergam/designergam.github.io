@@ -16,6 +16,18 @@ body {
     background-color: #151d27;
    
 }
+#containerjg{
+    position: relative;
+}
+#containerjg .favor{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 2px;
+    top: 2px ;
+    
+
+}
 
 /*//////////////////////////////////// Header /////////////////////////////////////////////*/
 #navbar {
@@ -209,8 +221,12 @@ a {
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    padding: 5px;
+    padding: 10px;
+    padding-top: 5px;
+   
 }
+
+
 
 @media (max-width: 768px) {
     #ul li {
@@ -246,6 +262,9 @@ a {
     font-weight: 300;
     padding-left: 5px;
     padding-right: 5px;
+}
+#ul li a {
+width: 100%;
 }
 
 /* ----------------------------------------------------------------- */
@@ -374,7 +393,7 @@ aside {
     margin: auto;
     justify-content: center;
     align-items: center;
-    display: flex;
+    
 
 }
 @media (max-width: 768px) {
@@ -511,5 +530,4 @@ aside {
     z-index: 999;
     text-shadow: 1px 1px 6px rgb(255, 255, 255);
 }
-
 
