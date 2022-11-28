@@ -198,7 +198,7 @@ setTimeout(function() {
 }, 10000)
 setTimeout(function() {
     MA.style.transform="translate(-400px)"
-}, 13000)
+}, 15000)
 
 function fecharmensagem(){
     MA.style.transform="translate(-400px)"

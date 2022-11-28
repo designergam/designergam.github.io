@@ -589,6 +589,7 @@ a:hover {
     transform: translate(-400px);
     transition: 600ms;
     border-radius: 10px;
+    z-index: 9999999999;
 
 }
 
