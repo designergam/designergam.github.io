@@ -1,0 +1,298 @@
+#navbar {
+    height: 180px;
+    z-index: 100;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    /* border: 2px solid rgb(131, 7, 94); */
+}
+
+#html {
+    height: 100vh;
+}
+
+#navbar-container {
+    position: relative;
+    flex-direction: column;
+    width: 85%;
+    /* border: 2px solid red; */
+}
+
+#navbar-container li {
+    position: absolute;
+    top: 88%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* border: 2px solid red; */
+}
+
+#navbar-items {
+    flex-direction: column;
+    text-align: center;
+    width: 95%;
+    /* border: 2px solid red; */
+}
+
+#navbar-items li:nth-child(2) {
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    /* border: 2px solid red; */
+}
+
+/* Clients */
+#clients-container {
+    grid-template-columns: repeat(2, 1fr);
+    /* border: 2px solid red; */
+}
+
+.client {
+    width: 50%;
+    /* border: 2px solid red; */
+}
+
+/* Features */
+#features-container {
+    grid-template-columns: 1fr;
+    /* border: 2px solid red; */
+}
+
+#features-container .feature:nth-child(2) {
+    margin: 15px 0;
+    /* border: 2px solid red; */
+}
+
+/* Product */
+#product-container {
+    flex-direction: column;
+    /* border: 2px solid red; */
+}
+
+#items {
+    width: 90%;
+    /* border: 2px solid red; */
+}
+
+.item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* border: 2px solid red; */
+}
+
+/* Testimonials */
+.testimonial {
+    flex-direction: column;
+    text-align: center;
+    /* border: 2px solid red; */
+}
+
+#gallery {
+    width: 95%;
+    margin: 0px;
+    padding: 0px;
+    background-color: transparent;
+    /* border: 2px solid red; */
+}
+
+#gallery-container {
+    margin-top: 0px;
+    width: 95%;
+    margin-right: 0px;
+    padding-left: 0px;
+    background-color: transparent;
+    /* border: 2px solid red; */
+}
+
+/* Gallery */
+#gallery-container #ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0px;
+    /*espaço*/
+    justify-content: center;
+    margin: auto;
+    width: 90%;
+    margin-top: 0px;
+    background-color: transparent;
+    /* border: 2px solid red; */
+}
+
+.gallery-items {
+    display: inline-block;
+    width: 110px;
+    height: 140px;
+    border-radius: 5px;
+    /* border: 2px solid red; */
+}
+
+.gallery-items li {
+    margin: 0px;
+    margin-top: 20px;
+    /* border: 2px solid red; */
+}
+
+.gallery-items {
+    margin-top: 20px;
+    /* border: 2px solid red; */
+}
+
+#gallery-container li h2 {
+    /* border: 2px solid rgb(99, 0, 0); */
+    width: 100px;
+    margin: px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: transparent;
+}
+
+.gallery-items h2 {
+    font-size: 1rem;
+    text-align: center;
+    /* border: 2px solid black;   */
+    width: 120px;
+    height: 40px;
+    padding: 0px;
+    margin: auto;
+    margin-bottom: 20px;
+    /* border: 2px solid red; */
+}
+
+.gallery-items:hover {
+    display: inline-block;
+    width: 110px;
+    height: 140px;
+    border-radius: 5px;
+    /* border: 3px solid blue; */
+}
+
+.logo img {
+    width: 200px;
+    margin: 0;
+    float: left;
+    /* border: 2px solid red; */
+}
+
+.headline {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 30px;
+    font-size: 1.2rem;
+    width: 90%;
+    height: 40px;
+    background-color: transparent;
+    /* border: 2px solid red; */
+}
+
+.header #input {
+    width: 95%;
+    /* border: 2px solid red; */
+}
+
+/* Showcase */
+/* ///////////////////////////////////////////////// */
+#showcase {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    height: 40vw;
+    margin-top: 170px;
+    /* border: 2px solid rgb(238, 255, 0); */
+}
+
+#showcase-container {
+    position: flex;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* border: 4px solid rgb(255, 255, 255); */
+    height: 80px;
+    width: 95%;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* border: 2px solid rgb(8, 197, 18); */
+}
+
+#showcase-container #Texto_Melhores_Jogos {
+    font-size: 1.3rem;
+    margin-top: 0px;
+    /* border: 1px solid rgb(132, 190, 24); */
+    width: 98%;
+    margin: auto;
+    /* border: 2px solid red; */
+}
+
+#showcase-container #Paragrafo_baixe_os_melhores {
+    font-size: 1rem;
+    margin-top: 10px;
+    /* border: 1px solid rgb(132, 190, 24); */
+    width: 98%;
+    margin: auto;
+    /* border: 2px solid red; */
+}
+
+/* //////////////////////////////// */
+.row {
+    padding: 0px;
+    padding-right: 0px;
+    margin-left: 0px;
+    display: table;
+    width: 100%;
+    /* background-color: aqua; */
+    /* border: 2px solid red; */
+}
+
+#gallery {
+    float: none;
+    width: 95%;
+    /* border: 2px solid rgb(184, 181, 27); */
+}
+
+aside {
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    width: 0px;
+    height: 0px;
+    padding-left: 20px;
+    visibility: hidden;
+    /* border: 2px solid red; */
+}
+
+main {
+    width: 100%;
+    /* border: 2px solid red; */
+}
+
+#icone_menu {
+    position: absolute;
+    left: -155px;
+    /* border: 2px solid red; */
+    margin-left: 2px;
+    /* border: 2px solid red; */
+}
+
+#logo_site {
+    margin-top: 30px;
+    /* border: 2px solid red; */
+}
+
+input {
+    margin-bottom: 30px;
+    /* border: 2px solid red; */
+}
+
+aside {
+    visibility: hidden;
+    /* border: 2px solid red; */
+}
+
+#contailer_recomendado {
+    background-color: transparent;
+    /* border: 2px solid red; */
+}
+
+#container_prop {
+    width: 95%;
+    /* border: 2px solid red; */
+}

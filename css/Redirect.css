@@ -1,0 +1,74 @@
+#container2 {
+    width: 250px;
+    height: 340px;
+    position: relative;
+    box-shadow: 2px 2px 22px 2px rgb(24, 13, 68);
+    margin-top: 20px;
+    background-image: linear-gradient(to top, #0b1116, #28384bd3);
+    border-radius: 10px;
+}
+
+#img_capa {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#previa {
+    text-align: center;
+    margin: auto;
+    width: 60%;
+    margin-top: 30px;
+
+
+}
+
+#previa a {
+    color: rgb(59, 59, 185);
+}
+
+#navbar-items li a:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.download {
+    position: static;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+#btnDownloadContainer {
+    display: none;
+}
+
+
+#tit {
+    margin-top: 50px;
+}
+
+#propaganda {
+    width: 730px;
+    height: 90px;
+    position: fixed;
+    bottom: 2px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    z-index: 10;
+    
+}
+
+#propaganda button {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    padding: 5px;
+    padding-right: 7px;
+    z-index: 999;
+    text-shadow: 0px 0px 10px rgb(255, 255, 255);
+}
