@@ -16844,20 +16844,7 @@ const BD =[
     "Plataforma": "pc",
     "Tipo": "jogo"
   },
-  {
-    "id": 1150,
-    "Nome": "Danger Scavenger",
-    "Capa": "https://i2.wp.com/torrentjogos.net/imagem/danger-scavenger-torrent.jpg",
-    "Trailer": "https://www.youtube.com/embed/GDVjkSdgPRA",
-    "Descricao": "Sinopse No Jogo Danger Scavenger  Completo PC - Danger Scavenger é um jogo rápido de ação e exploração roguelike com tema cyberpunk. Exploda, corte, e atire em robôs inimigos no alto de arranha-céus. Escolha como subir de nível, saquear, comprar coisas, fazer melhorias, lutar contra corporações gananciosas e rebelar-se! baixe via torrent o Jogo Danger Scavenger completo para PC.\n",
-    "Informacoes": "Baixar Jogo Danger Scavenger \nLançamento: 2020\nPlataforma: PC\nIdioma: Inglês\nTextos: Português | Multi\nCrack: INCLUSO\nTamanho: 831 MB\nFormato: ISO / Exe\n\n",
-    "Genero1": "AÇÃO",
-    "Genero2": "ARCADE",
-    "Genero3": "ATMOSFERICO",
-    "Download": "magnet:?xt=urn:btih:75b5fb964f5b312a9e941ef56efd5bc314be8978&dn=Danger.Scavenger-CODEX&tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce&tr=udp%3A%2F%2F9.rarbg.me%3A2750&tr=udp%3A%2F%2F9.rarbg.to%3A2770",
-    "Plataforma": "pc",
-    "Tipo": "jogo"
-  },
+  
   {
     "id": 1151,
     "Nome": "Danger Scavenger",

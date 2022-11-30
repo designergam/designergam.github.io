@@ -128,7 +128,7 @@ if(conteudo[0].Genero2 == "undefined"){
         description.content="download jogo x utorrent, baixar jogo x em capitaotorrent.com, baixar o jogo x via torrent "
 
     let keywords = document.getElementById("keywords")
-        keywords.content=`download `+conteudo[0].Nome+`, baixar `+conteudo[0].Nome+`, `+conteudo[0].Nome+` torrent, `+conteudo[0].Nome+` utorrent, `+conteudo[0].Nome+` gratis, download gratis `+conteudo[0].Nome+`, `+conteudo[0].Nome+`, torrent jogos, utorrent download, games torrent, download game`
+        keywords.content+=`download `+conteudo[0].Nome+`, baixar `+conteudo[0].Nome+`, `+conteudo[0].Nome+` torrent,  download gratis `+conteudo[0].Nome+`, `+conteudo[0].Nome+`, jogos torrent pc, jogos torrent.net, jogos torrent site, jogos torrent pc fraco,`
 
     
 
