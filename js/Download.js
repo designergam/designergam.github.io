@@ -130,14 +130,7 @@ if(conteudo[0].Genero2 == "undefined"){
     let keywords = document.getElementById("keywords")
         keywords.content=`download `+conteudo[0].Nome+`, baixar `+conteudo[0].Nome+`, `+conteudo[0].Nome+` torrent, `+conteudo[0].Nome+` utorrent, `+conteudo[0].Nome+` gratis, download gratis `+conteudo[0].Nome+`, `+conteudo[0].Nome+`, torrent jogos, utorrent download, games torrent, download game`
 
-    let ogUrl = document.getElementById("ogUrl")
-
-    let ogTitle = document.getElementById("ogTitle")
-        ogTitle.content=``+conteudo[0].Nome+``
-
-    let ogImage = document.getElementById("ogImage")
-
-    let ogDescription = document.getElementById("ogDescription")
+    
 
 
 //-------------------------------RECOMENDADOS---------------------------------
@@ -167,10 +160,10 @@ if(conteudo[0].Genero1){
             recomendados.innerHTML+=`
             
                 <li>
-                    <a href="Download.html?search=`+RemoverEspacos+`&amp;id=`+Genero[i].id+`&amp;type=`+Genero[i].Tipo+`">
-                        <img src="`+Genero[i].Capa+`" alt="`+Genero[i].Nome+`" class="gallery-items" rel="nofollow">
-                        <h2>`+Genero[i].Nome+`</h2>
-                    </a>
+                <a href="Download.html?search=`+RemoverEspacos+`&amp;id=`+Genero[i].id+`&amp;type=`+Genero[i].Tipo+`">
+                    <img src="`+Genero[i].Capa+`" alt="`+Genero[i].Nome+`" class="gallery-items" rel="nofollow">
+                    <h2>`+Genero[i].Nome+`</h2>
+                </a>
                 </li>
             `;
     
