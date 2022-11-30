@@ -165,12 +165,14 @@ if(conteudo[0].Genero1){
             let RemoverEspacos = Genero[i].Nome.replace(/\s/g, '+').toUpperCase();
         
             recomendados.innerHTML+=`
-            <a href="Download.html?search=`+RemoverEspacos+`&amp;id=`+Genero[i].id+`&amp;type=`+Genero[i].Tipo+`">
+            
                 <li>
-                    <img src="`+Genero[i].Capa+`" alt="`+Genero[i].Nome+`" class="gallery-items" rel="nofollow">
-                    <h2>`+Genero[i].Nome+`</h2>
+                    <a href="Download.html?search=`+RemoverEspacos+`&amp;id=`+Genero[i].id+`&amp;type=`+Genero[i].Tipo+`">
+                        <img src="`+Genero[i].Capa+`" alt="`+Genero[i].Nome+`" class="gallery-items" rel="nofollow">
+                        <h2>`+Genero[i].Nome+`</h2>
+                    </a>
                 </li>
-            </a>`;
+            `;
     
         }
     }

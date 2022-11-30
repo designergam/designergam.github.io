@@ -88,9 +88,7 @@ a {
     color: inherit;
 }
 
-a:hover {
-    color: rgb(38, 38, 135);
-}
+
 
 .logo img {
     width: 200px;
