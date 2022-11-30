@@ -87,7 +87,7 @@ function carregarJogosAlfabeto(letra) {
 //===Pagina Principal===================================================================
 if (TipoURL == null & PaginaURL == null || TipoURL == "jogo" & PaginaURL == 1) {
 
-    for (let i = 0; i < 100; i++) {
+    for (let i = 0; i < 60; i++) {
         let RemoverEspacos = jogosPC[i].Nome.replace(/\s/g, '-').toUpperCase();       
          acriarLI.innerHTML += `
             <li>
