@@ -1,0 +1,773 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto&display=swap);
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0
+}
+
+html {
+    width: 100%
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    width: 100%;
+    background-color: #0f151d
+}
+
+#navbar {
+    width: 100%;
+    background: #111;
+    color: #eee;
+    height: 80px;
+    position: fixed;
+    display: inline-block;
+    z-index: 1
+}
+
+@media (max-width:768px) {
+    #navbar {
+        position: relative;
+        top: 0;
+        height: 150px
+    }
+}
+
+#navbar-items li {
+    padding: 10px
+}
+
+#navbar-container {
+    width: 95%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+a {
+    text-decoration: none;
+    color: inherit
+}
+
+#logo_site {
+    width: 200px;
+    margin: 0;
+    margin-left: 70px
+}
+
+@media (max-width:768px) {
+    #logo_site {
+        position: absolute;
+        left: 50%;
+        top: 5%;
+        margin: 0;
+        float: left;
+        transform: translate(-50%)
+    }
+}
+
+#navbar-items {
+    margin-right: 30px;
+    display: flex;
+    list-style: none;
+    text-transform: uppercase
+}
+
+@media (max-width:768px) {
+    #navbar-items {
+        margin-right: 0;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%)
+    }
+
+    #navbar-items a {
+        text-align: center;
+        padding: 0
+    }
+}
+
+#showcase {
+    position: relative;
+    margin-top: 80px;
+    width: 100%;
+    height: 40vh;
+    color: #eee;
+    display: inline-block
+}
+
+#showcase-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 95%;
+    width: 95%;
+    margin: auto;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 80px
+}
+
+#img {
+    background-image: url('https://cdn.wallpapersafari.com/59/5/eQWfUX.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    background-blend-mode: color;
+    transition: 2s ease;
+    transform: translateX(0)
+}
+
+@media (max-width:768px) {
+    #showcase {
+        margin-top: 0;
+        height: 30vh
+    }
+}
+
+#Texto_Melhores_Jogos {
+    font-size: 2rem;
+    width: 100%;
+    text-shadow: 4px 4px 4px #000;
+    display: block;
+    color: #fff
+}
+
+#Paragrafo_baixe_os_melhores {
+    font-size: 1rem;
+    width: 100%;
+    text-shadow: 4px 4px 4px #000;
+    padding-top: 10px;
+    display: block
+}
+
+.headline {
+    color: #fff;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    margin: 30px;
+    font-size: 30px
+}
+
+#gallery {
+    float: left;
+    width: 75%;
+    background-color: #fff;
+    margin-top: 0
+}
+
+@media (max-width:768px) {
+    #gallery {
+        width: 100%
+    }
+}
+
+.jogos {
+    min-width: 20px;
+    height: 15vw;
+    width: 100%;
+    border-radius: 15px;
+    background-color: #00f
+}
+
+.jogos:hover {
+    border: 4px solid #00f
+}
+
+#footer {
+    width: 100%;
+    color: gray;
+    padding: 20px;
+    text-align: center
+}
+
+.ls-pagination-filter {
+    width: 100%;
+    margin: auto
+}
+
+.ls-pagination {
+    display: flex;
+    width: 400px;
+    margin: auto;
+    justify-content: center;
+    align-items: center
+}
+
+@media (max-width:768px) {
+    .ls-pagination {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px
+    }
+}
+
+.ls-pagination li {
+    list-style: none;
+    margin: 0;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: #eee;
+    min-width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: 700
+}
+
+@media (max-width:768px) {
+    .ls-pagination li {
+        margin-left: 0;
+        margin-right: 0;
+        max-width: 20px;
+        height: 35px;
+        padding: 10px
+    }
+}
+
+.ls-pagination li:hover {
+    background-color: #3e5269;
+    color: #fff
+}
+
+#AlfabeticoBTN {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px
+}
+
+@media (max-width:768px) {
+    #AlfabeticoBTN {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        height: 130px;
+        display: inline-block;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto
+    }
+}
+
+#AlfabeticoBTN .btn {
+    background-color: #3e5269;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: 200;
+    margin: auto;
+    align-items: center;
+    justify-content: center
+}
+
+@media (max-width:768px) {
+    #AlfabeticoBTN .btn {
+        width: 25px;
+        height: 25px;
+        margin: 5px;
+        font-size: 16px
+    }
+}
+
+#AlfabeticoBTN .btn:hover {
+    box-shadow: 2px 5px 20px 5px #000;
+    border: 1px solid #fff
+}
+
+#propaganda {
+    width: 728px;
+    height: 90px;
+    position: fixed;
+    bottom: 2px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 2
+}
+
+#propaganda button {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 5px;
+    padding-right: 7px;
+    z-index: 3;
+    text-shadow: 0 0 10px #fff
+}
+
+.caixa-search {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #333;
+    border-radius: 40px;
+    padding: 10px
+}
+
+@media (max-width:768px) {
+    .caixa-search {
+        margin-left: 0;
+        height: 50px;
+        width: 300px;
+        margin-top: 40px
+    }
+}
+
+.caixa-search:hover>.caixa-texto {
+    width: 300px;
+    padding: 0 6px
+}
+
+@media (max-width:768px) {
+    .caixa-search:hover>.caixa-texto {
+        width: 240px;
+        padding: 0 6px
+    }
+}
+
+.caixa-search:hover>.botao-search {
+    background-color: #151d27;
+    color: #fff;
+    margin-left: 3px
+}
+
+.botao-search {
+    color: #1f224d;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    align-items: center;
+    transition: .4s
+}
+
+@media (max-width:768px) {
+    .botao-search {
+        color: #1f224d;
+        float: right;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        align-items: center;
+        transition: .4s;
+        position: absolute;
+        top: 50%;
+        right: -15px;
+        transform: translate(-50%, -50%)
+    }
+}
+
+.caixa-texto {
+    border: none;
+    background-color: #333;
+    outline: 0;
+    float: left;
+    padding: 0;
+    color: #fff;
+    font-size: 16px;
+    transition: .4s;
+    line-height: 40px;
+    width: 300px;
+    cursor: pointer
+}
+
+@media (max-width:768px) {
+    .caixa-texto {
+        line-height: 0;
+        width: 240px;
+        height: 100%
+    }
+}
+
+#sidebar {
+    width: 30px;
+    height: 30px
+}
+
+#sidebar:onclick {
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    top: 10px;
+    left: 0
+}
+
+#check {
+    display: none
+}
+
+#icone {
+    cursor: pointer;
+    padding: 15px;
+    position: absolute;
+    z-index: 1
+}
+
+@media (max-width:768px) {
+    #icone {
+        top: 20%;
+        margin-left: 20px;
+        transform: translate(-50%, -50%)
+    }
+}
+
+nav {
+    width: 100%;
+    position: absolute
+}
+
+nav a {
+    text-decoration: none
+}
+
+.barra {
+    background-color: #333;
+    height: 70%;
+    width: 200px;
+    position: absolute;
+    transition: all .2s linear;
+    border-bottom: 2px solid#222;
+    left: -300px;
+    top: 60px;
+    z-index: 1
+}
+
+.link {
+    background-color: #494950;
+    padding: 3px;
+    font-family: arial;
+    font-size: 16px;
+    transition: all .2s linear;
+    color: #fff;
+    border-bottom: 2px solid#222;
+    z-index: 1;
+    text-align: center
+}
+
+.link:hover {
+    background-color: #050542;
+    z-index: 10
+}
+
+#check:checked~.barra {
+    transform: translateX(300px)
+}
+
+@media (max-width:768px) {
+    .barra {
+        left: -75vw;
+        width: 50vw
+    }
+
+    #check:checked~.barra {
+        transform: translateX(70vw)
+    }
+}
+
+#gallery-container {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 50px
+}
+
+#ul {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    row-gap: 15px
+}
+
+#ul li {
+    position: relative;
+    width: 170px;
+    height: 285px;
+    background-image: linear-gradient(to top, #182530, #445d7bd3);
+    border-radius: 12px;
+    list-style: none;
+    margin: auto;
+    padding: 5px
+}
+
+#ul li:hover {
+    box-shadow: 5px 5px 10px #000;
+    background-image: linear-gradient(to top, #2a4052, #628abad3);
+    transform: translate(-5px, -5px);
+    transition: .2s
+}
+
+#ul li a {
+    z-index: 4;
+    width: 160px;
+    height: auto;
+    display: inline-block;
+    padding-top: 3px
+}
+
+#ul li img {
+    border-radius: 12px;
+    display: block;
+    width: 155px;
+    height: 200px;
+    margin: auto;
+    margin-top: 0
+}
+
+#ul li h2 {
+    color: #fff;
+    font-size: 16px;
+    width: 160px;
+    height: 60px;
+    text-align: center;
+    font-weight: 300;
+    display: table-cell;
+    vertical-align: middle
+}
+
+@media (max-width:768px) {
+    .gallery-items {
+        width: 150px;
+        max-height: 190px;
+        height: 200px
+    }
+}
+
+@media (max-width:768px) {
+    #ul li {
+        width: 160px;
+        height: 275px
+    }
+}
+
+@media (max-width:768px) {
+    #ul {
+        grid-template-columns: repeat(2, 1fr)
+    }
+}
+
+/*!
+ * Font Awesome Free 5.7.0 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ */
+.fa,
+.fas {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1
+}
+
+.fa-1x {
+    font-size: 1em
+}
+
+.fa-2x {
+    font-size: 2em
+}
+
+.fa-3x {
+    font-size: 3em
+}
+
+.fa-4x {
+    font-size: 4em
+}
+
+.fa-5x {
+    font-size: 5em
+}
+
+.fa-6x {
+    font-size: 6em
+}
+
+.fa-7x {
+    font-size: 7em
+}
+
+.fa-8x {
+    font-size: 8em
+}
+
+.fa-9x {
+    font-size: 9em
+}
+
+.fa-10x {
+    font-size: 10em
+}
+
+.fa-ul {
+    list-style-type: none;
+    margin-left: 2.5em;
+    padding-left: 0
+}
+
+.fa-ul>li {
+    position: relative
+}
+
+.fa-li {
+    left: -2em;
+    position: absolute;
+    text-align: center;
+    width: 2em;
+    line-height: inherit
+}
+
+@keyframes fa-spin {
+    0% {
+        transform: rotate(0)
+    }
+
+    to {
+        transform: rotate(1turn)
+    }
+}
+
+.fa-check:before {
+    content: "\f00c"
+}
+
+.fa-copy:before {
+    content: "\f0c5"
+}
+
+.fa-copyright:before {
+    content: "\f1f9"
+}
+
+.fa-css3:before {
+    content: "\f13c"
+}
+
+.fa-css3-alt:before {
+    content: "\f38b"
+}
+
+.fa-download:before {
+    content: "\f019"
+}
+
+.fa-filter:before {
+    content: "\f0b0"
+}
+
+.fa-google:before {
+    content: "\f1a0"
+}
+
+.fa-home:before {
+    content: "\f015"
+}
+
+.fa-html5:before {
+    content: "\f13b"
+}
+
+.fa-image:before {
+    content: "\f03e"
+}
+
+.fa-js:before {
+    content: "\f3b8"
+}
+
+.fa-key:before {
+    content: "\f084"
+}
+
+.fa-link:before {
+    content: "\f0c1"
+}
+
+.fa-page4:before {
+    content: "\f3d7"
+}
+
+.fa-search:before {
+    content: "\f002"
+}
+
+.fa-search-location:before {
+    content: "\f689"
+}
+
+.fa-tag:before {
+    content: "\f02b"
+}
+
+.fa-tags:before {
+    content: "\f02c"
+}
+
+.fa-text-height:before {
+    content: "\f034"
+}
+
+.fa-text-width:before {
+    content: "\f035"
+}
+
+@font-face {
+    font-family: "Font Awesome 5 Brands";
+    font-style: normal;
+    font-weight: 400;
+    font-display: auto;
+    src: url(https://use.fontawesome.com/releases/v5.7.0/webfonts/fa-brands-400.eot);
+    src: url(https://use.fontawesome.com/releases/v5.7.0/webfonts/fa-brands-400.eot?#iefix) format("embedded-opentype"), url(https://use.fontawesome.com/releases/v5.7.0/webfonts/fa-brands-400.woff2) format("woff2"), url(https://use.fontawesome.com/releases/v5.7.0/webfonts/fa-brands-400.woff) format("woff"), url(https://use.fontawesome.com/releases/v5.7.0/webfonts/fa-brands-400.ttf) format("truetype"), url(https://use.fontawesome.com/releases/v5.7.0/webfonts/fa-brands-400.svg#fontawesome) format("svg")
+}
+
+@font-face {
+    font-family: "Font Awesome 5 Free";
+    font-style: normal;
+    font-weight: 400;
+    font-display: auto;
+    src: url(https://use.fontawesome.com/releases/v5.7.0/webfonts/fa-regular-400.eot);
+    src: url(https://use.fontawesome.com/releases/v5.7.0/webfonts/fa-regular-400.eot?#iefix) format("embedded-opentype"), url(https://use.fontawesome.com/releases/v5.7.0/webfonts/fa-regular-400.woff2) format("woff2"), url(https://use.fontawesome.com/releases/v5.7.0/webfonts/fa-regular-400.woff) format("woff"), url(https://use.fontawesome.com/releases/v5.7.0/webfonts/fa-regular-400.ttf) format("truetype"), url(https://use.fontawesome.com/releases/v5.7.0/webfonts/fa-regular-400.svg#fontawesome) format("svg")
+}
+
+@font-face {
+    font-family: "Font Awesome 5 Free";
+    font-style: normal;
+    font-weight: 900;
+    font-display: auto;
+    src: url(https://use.fontawesome.com/releases/v5.7.0/webfonts/fa-solid-900.eot);
+    src: url(https://use.fontawesome.com/releases/v5.7.0/webfonts/fa-solid-900.eot?#iefix) format("embedded-opentype"), url(https://use.fontawesome.com/releases/v5.7.0/webfonts/fa-solid-900.woff2) format("woff2"), url(https://use.fontawesome.com/releases/v5.7.0/webfonts/fa-solid-900.woff) format("woff"), url(https://use.fontawesome.com/releases/v5.7.0/webfonts/fa-solid-900.ttf) format("truetype"), url(https://use.fontawesome.com/releases/v5.7.0/webfonts/fa-solid-900.svg#fontawesome) format("svg")
+}
+
+.fa,
+.fas {
+    font-family: "Font Awesome 5 Free"
+}
+
+.fa,
+.fas {
+    font-weight: 900
+}
