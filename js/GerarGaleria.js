@@ -144,7 +144,9 @@ function goBack() {
 if (PaginaURL == null) {
     document.getElementById("voltar").style.display = "none"
 }
+
 if (PaginaURL == "Favoritos") {
     document.getElementById("Favoritos").style.display = "none"
 }
+
 
