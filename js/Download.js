@@ -145,7 +145,7 @@ if(conteudo[0].Genero2 == "undefined"){
         inputArray.sort(()=> Math.random() - 0.5);
     }shuffleArray(Genero);
 
-    console.log(Genero)
+  
     
     
     let recomendados = document.getElementById("RecomendadosLi")

@@ -1,0 +1,174 @@
+#navbar {
+    width: 100%;
+    background: #111;
+    color: #eee;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    z-index: 9;
+}
+@media (max-width:768px) {
+    #navbar {
+        height: 180px
+    }
+}
+#icone {
+    cursor: pointer;
+    padding: 7px;
+    position: absolute;
+    z-index: 1;
+}
+
+@media (max-width:768px) {
+    #icone { 
+        top: 10px;
+        left: 10px;
+    }
+}
+#navbar-container {
+    width: 95%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+
+#logo_site {
+    width: 200px;
+    margin: 0;
+    margin-left: 70px;
+
+}
+@media(max-width:768px){
+    #logo_site {
+        position: absolute;
+        top: 10px;
+        left: 56%;
+        transform: translate(-50%, 0%);
+        width: 230px;
+        margin: 0;
+        
+        margin-left: 0px;
+    
+    }
+}
+#navbar-items {
+    margin-right: 30px;
+    display: flex;
+    list-style: none;
+    text-transform: uppercase;
+
+}
+@media (max-width:768px) {
+    #navbar-items {
+        margin: auto;
+        width: 100%;
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        transform: translate(-50%, 0%);
+    }
+}
+#navbar-items li {
+    padding: 10px;
+}
+@media (max-width:768px) {
+    #navbar-items li {
+        margin: auto
+    }
+}
+
+/*===Barra de Pesquisa====================================================*/
+.caixa-search {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #333;
+    border-radius: 40px;
+    padding: 10px;
+}
+
+@media (max-width:768px) {
+    .caixa-search {
+        margin-left: 0;
+        height: 50px;
+        width: 300px;
+        margin-top: 8px
+    }
+}
+
+.caixa-search:hover>.caixa-texto {
+    width: 300px;
+    padding: 0 6px
+}
+
+@media (max-width:768px) {
+    .caixa-search:hover>.caixa-texto {
+        width: 240px;
+        padding: 0 6px
+    }
+}
+
+.caixa-search:hover>.botao-search {
+    background-color: #151d27;
+    color: #fff;
+    margin-left: 3px
+}
+
+.botao-search {
+    color: #1f224d;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    align-items: center;
+    transition: .4s
+}
+
+@media (max-width:768px) {
+    .botao-search {
+        color: #1f224d;
+        float: right;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        align-items: center;
+        transition: .4s;
+        position: absolute;
+        top: 50%;
+        right: -15px;
+        transform: translate(-50%, -50%)
+    }
+}
+
+.caixa-texto {
+    border: none;
+    background-color: #333;
+    outline: 0;
+    float: left;
+    padding: 0;
+    color: #fff;
+    font-size: 16px;
+    transition: .4s;
+    line-height: 40px;
+    width: 300px;
+    cursor: pointer
+}
+
+@media (max-width:768px) {
+    .caixa-texto {
+        line-height: 0;
+        width: 240px;
+        height: 100%
+    }
+}

@@ -20,9 +20,9 @@
     <link rel="shortcut icon" href="../img/iconepirata.png" type="image/x-icon">
 
     <!--Estilos-->
+    <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/Download.css">
-    
-    
+  
 
 </head>
 
@@ -40,29 +40,47 @@
             ads.style.display="none"
         }
     </script>
-    <header>
-        <nav id="navbar">
-            <div id="navbar-container">
+   
 
-                <!-- menu lateral-->
-                <!-- <input type="checkbox" id="check">
-                <label id="icone" for="check" ><img id="icone_menu" src="../img/RWHvwPE.png" alt=""></label>
+   <header>
+    <nav id="navbar">
+        <div id="navbar-container">
 
-                <div class="barra"> 
-                    <nav>
-                        <a  href="index.html?t=programa&amp;p=1"><div class="link">Programas</div></a>
-                       
-                    </nav>
-                </div>   -->
+  
+            <!-- Logo Pirata-->
+            <h1 class="logo"><img id="logo_site" src="img/logopirata.png" alt=""></h1>
 
-                <h1 class="logo"><img src="img/logopirata.png" alt="logo do site"></h1>
-                <ul id="navbar-items">
-                    <li><a href="index.html" >Home</a></li>
-                    <li onclick="goBack()" id="voltar" ><a href="#" rel="prev" >Voltar</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>     
+
+            <ul id="navbar-items">
+                <li id="home" ><a href="index.html" rel="prev" >Home</a></li>
+                
+                
+                <li onclick="goBack()" id="voltar" ><a href="#" rel="prev" >Voltar</a></li>
+                
+            </ul>
+        </div>
+
+        
+
+    </nav>
+
+   
+
+   
+</header>
+
+<script>
+    //ajuste modo mobile
+
+    const tipo = window.location.href; 
+    const tipo2 = new URL(tipo);
+    let tipo3 = tipo2.searchParams.get("type");
+
+    if(window.screen.width<768 & tipo3 =="jogo"){
+        document.getElementById("navbar").style.height="120px"
+        document.getElementById("logo_site").style.left="50%"
+    }
+</script>
      
 
     <main>
