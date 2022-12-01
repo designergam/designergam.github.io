@@ -141,7 +141,7 @@
 <!-- Comentarios -->
       <div id="comentarios">
           <div id="disqus_thread"></div>
-          <script>
+          <script defer>
               (function() { // DON'T EDIT BELOW THIS LINE
               var d = document, s = d.createElement('script');
               s.src = 'https://capitaotorrent.disqus.com/embed.js';
@@ -150,7 +150,7 @@
               })();
           </script>
           <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-          <script id="dsq-count-scr" src="//capitaotorrent.disqus.com/count.js" async></script>
+          <script defer id="dsq-count-scr" src="//capitaotorrent.disqus.com/count.js" async></script>
       </div>
 
       <!-- Mensagem Aleatoia -->
@@ -171,7 +171,7 @@
     <section id="propaganda">
         <button onclick="closeprop()">x</button>
         
-        <script type="text/javascript">
+        <script type="text/javascript" defer>
             atOptions = {
                 'key' : '00437ddeb190e2546f876e88b5cf4ea9',
                 'format' : 'iframe',
