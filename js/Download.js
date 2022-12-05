@@ -59,6 +59,8 @@ if(conteudo[0].Genero2 == "undefined"){
 //Escrever Pagina   
     let img_header = document.getElementById("img_header") //Capa
     img_header.style.background = `URL(`+Capa+`)`
+    img_header.style.backgroundPosition = "center"
+    img_header.style.backgroundSize = "cover"
 
     let info_header = document.getElementById("info_header") //Informações
     info_header.innerText = Informacoes
@@ -134,8 +136,8 @@ if(conteudo[0].Genero2 == "undefined"){
 
 
 //-------------------------------RECOMENDADOS---------------------------------
-//Filtrar por Objetos de mesmo genero e do tipo "jogo"
-    const GeneroA = BD.filter(item => item.Genero1 == conteudo[0].Genero1 || item.Genero2 == conteudo[0].Genero2 & item.Tipo == conteudo[0].Tipo)
+//Filtrar por Objetos da mesma PLATAFOMA / GENERO / TIPO
+    const GeneroA = BD.filter(item =>item.Plataforma == conteudo[0].Plataforma & item.Genero1 == conteudo[0].Genero1 & item.Tipo == conteudo[0].Tipo)
 
 //Remove Item Atual dos recomendados
     const Genero = GeneroA.filter((item) => item.Nome !== conteudo[0].Nome);
@@ -179,24 +181,6 @@ else{
 }
 
 
-//Mensagem Aleatoria
 
-const mensagem =["Qual quer problema deixe nos comentários abaixo!", "Seja bem vindo meu nobre!", "Pronto para navegar?", "A embarcação ainda não está compatível com dispositivos moveis, e porque estaria?"]
-let Aleatoria = mensagem[Math.floor(Math.random() * mensagem.length)]
-
-let MA = document.getElementById("MA")
-let MAp = document.getElementById("MAp")
-MAp.innerText = Aleatoria
-
-setTimeout(function() {
-    MA.style.transform="translate(15px)"
-}, 10000)
-setTimeout(function() {
-    MA.style.transform="translate(-400px)"
-}, 13000)
-
-function fecharmensagem(){
-    MA.style.transform="translate(-400px)"
-}
 
 

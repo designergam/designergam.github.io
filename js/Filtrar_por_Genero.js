@@ -62,6 +62,15 @@ else if(PaginaURL == "ESPACIAL"){
 else if(PaginaURL == "ESPORTES"){
     Genero = BD.filter(item =>  item.Genero1 == "ESPORTES" || item.Genero2 == "ESPORTES" || item.Genero3 == "ESPORTES" || item.Genero4 == "ESPORTES" )
 }
+else if(PaginaURL == "PSP"){
+    Genero = BD.filter(item =>  item.Plataforma == "psp"  )
+}
+else if(PaginaURL == "PS2"){
+    Genero = BD.filter(item =>  item.Plataforma == "ps2"  )
+}
+else if(PaginaURL == "PS3"){
+    Genero = BD.filter(item =>  item.Plataforma == "ps3"  )
+}
 
     for (let i = 0; i < 200; i++) {
         let RemoverEspacos = Genero[i].Nome.replace(/\s/g, '-').toUpperCase();

@@ -276,27 +276,31 @@ nav a {
 }
 
 .barra {
-    background-color: #333;
-    height: 70%;
-    width: 200px;
+    background-color: rgba(19, 9, 42, 0.769);
+    height: 100vh;
+    width: 400px;
     position: absolute;
     transition: all .2s linear;
     border-bottom: 2px solid#222;
-    left: -300px;
+    left: -400px;
     top: 60px;
-    z-index: 1
+    z-index: 1;
+    display: flex;
+    padding-bottom: 5px;
 }
 
 .link {
-    background-color: #494950;
+    background-color: #444444;
     padding: 3px;
     font-family: arial;
-    font-size: 16px;
+    font-size: 18px;
     transition: all .2s linear;
     color: #fff;
-    border-bottom: 2px solid#222;
+    border-bottom: 4px solid#222;
     z-index: 1;
-    text-align: center
+    text-align: center;
+    display: inline-block;
+    width: 49%;
 }
 
 .link:hover {
@@ -305,7 +309,7 @@ nav a {
 }
 
 #check:checked~.barra {
-    transform: translateX(300px)
+    transform: translateX(400px)
 }
 
 @media (max-width:768px) {

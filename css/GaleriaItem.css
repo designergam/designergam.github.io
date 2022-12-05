@@ -52,12 +52,16 @@
     border-radius: 12px;
     display: block;
     width: 170px;
+    max-height: 240px;
+    
     height: auto;
     /* border: 2px solid yellow; */
     margin: auto;
     margin-top: 0px;
 }
-
+.gallery-items {
+    min-height: 240px;  
+}
 /* IMAGEM CAPA */
 #ul li h2 {
     color: white;
@@ -96,6 +100,7 @@
 @media (max-width: 768px) {
     .gallery-items {
         width: 120px;
+        min-height: auto;
      
         
     }

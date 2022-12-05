@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerar Sitemap - Xml</title>
+</head>
+<body>
+<p id="sitemap"></p>    
+</body>
+</html>
+<script src="js/BD.js"></script>
+<script>
+    let sitemap = document.getElementById("sitemap")
+
+    const jogosPC = BD.filter(item => item.Tipo == "jogo")
+
+    for (let i = 654; i <1308; i++) {
+        let RemoverEspacos = jogosPC[i].Nome.replace(/\s/g, '-').toUpperCase();       
+         sitemap.innerText += 
+         `<url>
+            <loc>https://capitaotorrent.com.br/Download.html?search=${RemoverEspacos}&id=${jogosPC[i].id}&type=jogo</loc>
+            <lastmod>2022-12-01T14:20:59+00:00</lastmod>
+            <priority>1.00</priority>
+        </url>
+        `;}
+</script>
