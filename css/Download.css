@@ -699,13 +699,3 @@ nav a {
     min-width: 170px;
 }
 
-#propaganda_caixa{
-    width: 300px;
-    height: 250px;
-    background-color: grey;
-    position: fixed;
-    top: 85px;
-    right: 10px;
-    z-index: 2;
-    
-}

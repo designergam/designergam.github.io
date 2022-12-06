@@ -1,0 +1,35 @@
+#propaganda_728x90{
+    width: 728px;
+    height: 90px;
+    margin: auto;
+}
+#propaganda_728x90_redirect{
+    width: 728px;
+    height: 90px;
+    margin: auto;
+    margin-top: 85px;
+}
+#propaganda_300x250{
+    width: 300px;
+    height: 250px;
+    position: absolute;
+    top: 85px;
+    right: 20px;
+    z-index: 2;
+    
+}
+
+#propaganda_600x160_esquerdo{
+    width: 160px;
+    height: 600px;
+    position: absolute;
+    top: 100px;
+    left: 70px;
+}
+#propaganda_600x160_direito{
+    width: 160px;
+    height: 600px;
+    position: absolute;
+    top: 100px;
+    right: 70px;
+}
