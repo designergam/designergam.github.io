@@ -92,12 +92,12 @@ if (TipoURL == null & PaginaURL == null || TipoURL == "jogo" & PaginaURL == 1) {
          acriarLI.innerHTML += `
             <li>
                 <a href="Download.html?search=`+RemoverEspacos+`&amp;id=`+jogosPC[i].id+`&amp;type=`+jogosPC[i].Tipo+`">
-                    <img src="`+ jogosPC[i].Capa + `" alt="` + jogosPC[i].Nome + `" class="gallery-items" rel="nofollow">
+                    <img src="`+jogosPC[i].Capa+`" alt="`+jogosPC[i].Nome+`" class="gallery-items" rel="nofollow">
                 </a>
                 <a href="Download.html?search=`+RemoverEspacos+`&amp;id=`+jogosPC[i].id+`&amp;type=`+jogosPC[i].Tipo+`">
-                    <h2>`+ jogosPC[i].Nome + `</h2>
+                    <h2>`+jogosPC[i].Nome+`</h2>
                 </a>
-                <img src="img/favorito_Off.png" alt="favorito" id="${jogosPC[i].id}" class="favor" onclick="t('${jogosPC[i].id}' )"
+                <img src="img/favorito_Off.png" alt="favorito" id="`+jogosPC[i].id+`" class="favor" onclick="t("`+jogosPC[i].id+`")"
             </li>
         `;
 

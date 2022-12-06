@@ -71,6 +71,9 @@ else if(PaginaURL == "PS2"){
 else if(PaginaURL == "PS3"){
     Genero = BD.filter(item =>  item.Plataforma == "ps3"  )
 }
+else if(PaginaURL == "XBOX360"){
+    Genero = BD.filter(item =>  item.Plataforma == "xbox360"  )
+}
 
     for (let i = 0; i < 200; i++) {
         let RemoverEspacos = Genero[i].Nome.replace(/\s/g, '-').toUpperCase();
