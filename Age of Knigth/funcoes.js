@@ -1,3 +1,4 @@
+
 mostrarlevel()
 function mostrarlevel(){
     document.getElementById("level").innerText += `${localStorage.vitorias}`
@@ -83,7 +84,6 @@ function player_golpe(){
     player.src="https://cdn.domestika.org/c_limit,dpr_1.0,f_auto,q_auto,w_820/v1586415892/content-items/004/129/334/personaje_Ataque-original.gif?1586415892"
 }  
 
-//movimentação inimigo==============================================================
 
 if(localStorage.vitorias == 0){
     localStorage.boleano = "true"
@@ -94,15 +94,11 @@ if(localStorage.boleano == "false"){
     play()
 }
 
-if(!localStorage.inimigo){
-    localStorage.inimigo = 1
-}
-function play(){
-    //inimigo aleatorio
-    localStorage.inimigo = Math.floor(3* Math.random())
 
-    //parar musica de introdução
-    let audio = document.getElementById("audio_fundo")
+function play(){
+   //INIMIGO ALEATORIO
+    localStorage.inimigo = Math.floor(4* Math.random())
+    
 
     //movimentar inimigo
     document.getElementById("inimigo_img").style.display="block"

@@ -1,8 +1,14 @@
+//iniciar inimigo DE 0 A 3
+if(!localStorage.inimigo){
+    localStorage.inimigo = Math.floor(4* Math.random())
+}
+
 
 //vitorias
 if(!localStorage.vitorias){
     localStorage.vitorias = 0
 }
+
 
 //atributo player
 if(!localStorage.HP_player){localStorage.HP_player = 10}
@@ -45,7 +51,7 @@ if(localStorage.backgroud>=10){
 
 //trocar inimigo========================================================================
 
-if(localStorage.inimigo == 0){
+if(localStorage.inimigo == 0 ){
     let inimigo = document.getElementById("inimigo_img")
     inimigo.style.background="url(https://i.pinimg.com/originals/2a/99/a8/2a99a878e17b7527ea1f72b7730c6be9.gif)"
     inimigo.style.transform="scaleX(-1)"
@@ -72,4 +78,14 @@ if(localStorage.inimigo == 2){
     localStorage.HP_inimigo = 10 +  parseInt(localStorage.vitorias) + Math.floor(4* Math.random()) +2
     
     
+}
+if(localStorage.inimigo == 3){
+    let inimigo = document.getElementById("inimigo_img")
+    inimigo.style.transform="scaleX(-1)"
+    inimigo.style.background="url(https://thumbs.gfycat.com/FriendlyLazyEeve-max-1mb.gif"
+    inimigo.style.backgroundSize="95%"
+    inimigo.style.backgroundPosition="center"
+    inimigo.style.backgroundRepeat="no-repeat"
+    localStorage.ATK_inimigo = 6 +  parseInt(localStorage.vitorias) + Math.floor(4* Math.random()) +2
+     
 }
