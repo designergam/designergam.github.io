@@ -63,6 +63,9 @@ function inimigo_morre(){
     setTimeout(function(){
         document.getElementById("inimigo_img").style.display="none"
     },1000)
+
+    
+        
    
 }
 
@@ -91,8 +94,13 @@ if(localStorage.boleano == "false"){
     play()
 }
 
-
+if(!localStorage.inimigo){
+    localStorage.inimigo = 1
+}
 function play(){
+    //inimigo aleatorio
+    localStorage.inimigo = Math.floor(3* Math.random())
+
     //parar musica de introdução
     let audio = document.getElementById("audio_fundo")
 

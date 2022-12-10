@@ -29,7 +29,7 @@ if(localStorage.play == "on"){
     
 }
 
-//mudar senario
+//mudar senario==========================================================================
 if(localStorage.vitorias >= 10){
     localStorage.backgroud=10
     
@@ -43,20 +43,33 @@ if(localStorage.backgroud>=10){
     cenario.style.backgroundPosition="ceneter"
 }
 
-//trocar inimigo
-if(localStorage.vitorias<5){
+//trocar inimigo========================================================================
+
+if(localStorage.inimigo == 0){
     let inimigo = document.getElementById("inimigo_img")
     inimigo.style.background="url(https://i.pinimg.com/originals/2a/99/a8/2a99a878e17b7527ea1f72b7730c6be9.gif)"
+    inimigo.style.transform="scaleX(-1)"
     inimigo.style.backgroundSize="70%"
     inimigo.style.backgroundPosition="center"
     inimigo.style.backgroundRepeat="no-repeat"
 }
-if(localStorage.vitorias<2){
+if(localStorage.inimigo == 1){
     let inimigo = document.getElementById("inimigo_img")
     inimigo.style.transform="scaleX(1)"
     inimigo.style.background="url(https://i.pinimg.com/originals/92/e5/6f/92e56ffb13f7181271c0e4c199250dc3.gif)"
     inimigo.style.backgroundSize="95%"
     inimigo.style.backgroundPosition="center"
     inimigo.style.backgroundRepeat="no-repeat"
+    
+}
+if(localStorage.inimigo == 2){
+    let inimigo = document.getElementById("inimigo_img")
+    inimigo.style.transform="scaleX(-1)"
+    inimigo.style.background="url(http://25.media.tumblr.com/tumblr_m4gcm09wPO1qbcqw8o1_400.gif)"
+    inimigo.style.backgroundSize="95%"
+    inimigo.style.backgroundPosition="center"
+    inimigo.style.backgroundRepeat="no-repeat"
+    localStorage.HP_inimigo = 10 +  parseInt(localStorage.vitorias) + Math.floor(4* Math.random()) +2
+    
     
 }

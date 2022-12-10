@@ -1,6 +1,20 @@
 body{
     background-color: black;
 }
+#mensagemtela{
+    margin: auto;
+    text-align: center;
+    display: none;
+    color: white;
+}
+@media(max-width:768px){
+    #mensagemtela{
+        margin: auto;
+        text-align: center;
+        display: block;
+        color: white;
+    }
+}
 #play{
     display: none;
     transition: 200ms;
