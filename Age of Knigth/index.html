@@ -20,288 +20,39 @@
 
         <h2 id="mensagem"></h2>
         <img src="https://cdn.domestika.org/c_limit,dpr_1.0,f_auto,q_auto,w_820/v1586415165/content-items/004/129/278/personaje-parada-original.gif?1586415165" alt="player" id="player_img" >
-        <img src="https://cdn.domestika.org/c_limit,dpr_1.0,f_auto,q_auto,w_820/v1586415165/content-items/004/129/278/personaje-parada-original.gif?1586415165" alt="player" id="inimigo_img" >
+        
+        <div id="inimigo_img"></div>
 
         <div id="atributos_player"> </div>
         <div id="atributos_inimigo"> </div>
-        <img src="btn_player.png" onclick="play()" id="play">
-        <button onclick="resetar()">RESETAR</button>
+
+        <div onclick="play()" id="play"></div>
+        <audio src="" id="audio" onclick="golpe_espada()"></audio>
+        <audio src="audios/Proerd em 8 Bits.mp3" id="audio_fundo" onclick="musica_fundo()"></audio>
+
         
+        <button onclick="resetar()">RESETAR</button>
     </section>
 
-    
-    
-
+    <!-- Comentarios -->
+    <div id="comentarios">
+        <div async id="disqus_thread"></div>
+        <script async>
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://capitaotorrent.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript async>Please enable JavaScript to view the <a async href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <script async id="dsq-count-scr" src="//capitaotorrent.disqus.com/count.js" ></script>
+    </div>
 </body>
 </html>
-<script src="movimentar_cards.js"></script>
 
-<script>
-//movimentação player================================================================
-let player = document.getElementById("player_img")
-
-function player_parado(){
-    player.src="https://cdn.domestika.org/c_limit,dpr_1.0,f_auto,q_auto,w_820/v1586415165/content-items/004/129/278/personaje-parada-original.gif?1586415165"
-}  
-
-function player_golpe(){
-    player.src="https://cdn.domestika.org/c_limit,dpr_1.0,f_auto,q_auto,w_820/v1586415892/content-items/004/129/334/personaje_Ataque-original.gif?1586415892"
-}  
-
-//movimentação inimigo==============================================================
-let inimigo = document.getElementById("inimigo_img")
-
-function inimigo_parado(){
-    inimigo.src="https://cdn.domestika.org/c_limit,dpr_1.0,f_auto,q_auto,w_820/v1586415165/content-items/004/129/278/personaje-parada-original.gif?1586415165"
-}  
-
-function inimigo_golpe(){
-    inimigo.src="https://cdn.domestika.org/c_limit,dpr_1.0,f_auto,q_auto,w_820/v1586415892/content-items/004/129/334/personaje_Ataque-original.gif?1586415892"
-}  
-
-
-
-
-
-    //mensagem
-    let mensagem = document.getElementById("mensagem")
-   
-    //vitorias
-    if(!localStorage.vitorias){
-        localStorage.vitorias = 0
-    }
-
-    //atributo player
-    if(!localStorage.HP_player){localStorage.HP_player = 10}
-    if(!localStorage.DEF_player){localStorage.DEF_player = 5}
-    if(!localStorage.ATK_player){localStorage.ATK_player = 5}
-    
-
-    //atributo inimigo
-    if(!localStorage.HP_inimigo){localStorage.HP_inimigo = 10}
-    if(!localStorage.DEF_inimigo){localStorage.DEF_inimigo = 2}
-    if(!localStorage.ATK_inimigo){localStorage.ATK_inimigo = 6}
-    
-
-    //atributos de batalha do player
-    let atributos_player = document.getElementById("atributos_player")
-    atributos_player.innerHTML =`
-    <p> HP: ${localStorage.HP_player}</p>
-    <p> DEF: ${localStorage.DEF_player}</p>
-    <p> ATK: ${localStorage.ATK_player}</p>
-    `
-    //atributos de batalha do inimigo       
-    let atributos_inimigo = document.getElementById("atributos_inimigo")
-    atributos_inimigo.innerHTML =`
-    <p> HP: ${localStorage.HP_inimigo}</p>
-    <p> DEF: ${localStorage.DEF_inimigo}</p>
-    <p> ATK: ${localStorage.ATK_inimigo}</p>
-    `
-    mostrarlevel()
-
-
-
-
-
-
-
-function play(){
-    //movimentar inimigo
-    document.getElementById("inimigo_img").style.display="block"
-    setTimeout(function(){
-        document.getElementById("inimigo_img").style.transition="1000ms"
-    
-        document.getElementById("inimigo_img").style.right="-20px"
-    },30)
-    
-    
-    //ocutarplayer
-    document.getElementById("play").style.width="140px"
-
-    setTimeout(function(){
-        document.getElementById("play").style.display="none"
-    },500)
-    
-//player==================================
-    let golpe_player = setInterval(function(){
-
-        //evitar dano negativo
-        let dano_player = (localStorage.ATK_player - localStorage.DEF_inimigo)
-        if(dano_player<=0){dano_player = 0}
-
-        localStorage.HP_inimigo = localStorage.HP_inimigo - dano_player
-
-        //movimentação
-        player_golpe()
-        player.style.left="280px"
-
-        setTimeout(function(){
-            player_parado()
-            player.style.left="0px"
-            trocar_cor_inimigo()
-        },700)
-        
-        //se ganhar=====================
-        if(localStorage.HP_inimigo <= 0){
-            //parar batalha
-            clearInterval(golpe_inimigo)
-            clearInterval(golpe_player)
-
-            
-            mensagem_ganhou()
-            vitoria ()
-    
-            inimigo_mais_forte()
-            reset_vida_e_levelUp()
-            inimigo_morre()
-            setTimeout(function(){
-                recarregar()
-            },3000)
-        }
-
-        atributos_inimigo.innerHTML =`
-        <p> HP: ${localStorage.HP_inimigo}</p>
-        <p> DEF: ${localStorage.DEF_inimigo}</p>
-        <p> ATK: ${localStorage.ATK_inimigo}</p>
-        `
-        
-         
-    }, 2000)
-
-
-
-
-
-
-
-//inimigo=================================
-    let golpe_inimigo = setInterval(function(){
-
-        //evitar dano negativo
-        let dano_inimigo = (localStorage.ATK_inimigo - localStorage.DEF_player)
-        if(dano_inimigo<=0){dano_inimigo = 0}
-        
-        localStorage.HP_player = (localStorage.HP_player - dano_inimigo)
-
-        //movimentação
-        inimigo_golpe()
-        inimigo.style.right="280px"
-
-        setTimeout(function(){
-            inimigo_parado()
-            inimigo.style.right="0px"
-            trocar_cor_player()
-        },700)
-
-        //se perder===
-        if(localStorage.HP_player <= 0){
-            //parar batalha
-            clearInterval(golpe_player)
-            clearInterval(golpe_inimigo)
-
-            mensagem_derrota()
-    
-            setTimeout(function(){
-                resetar()
-            }, 3000)
-             
-        }
-
-        atributos_player.innerHTML =`
-            <p> HP: ${localStorage.HP_player}</p>
-            <p> DEF: ${localStorage.DEF_player}</p>
-            <p> ATK: ${localStorage.ATK_player}</p>
-            `
-
-    }, 3000)
-  
-}
-
-
-
-
-
-
-
-
-
-
-
-
-//boleano uma partida sim outra nao
-if(!localStorage.boleano){
-    localStorage.boleano = false
-}
-
-function mostrarlevel(){
-    document.getElementById("level").innerText += `${localStorage.vitorias}`
-}
-
-function recarregar(){
-    window.location.reload()
-}
-
-function resetar(){
-    localStorage.clear();
-    window.location.reload()
-}
-async function inimigo_mais_forte(){
-    localStorage.HP_inimigo = 10 +  parseInt(localStorage.vitorias) + Math.floor(4* Math.random())
-    localStorage.ATK_inimigo = 6 +  parseInt(localStorage.vitorias) + Math.floor(4* Math.random())
-    localStorage.DEF_inimigo = 2 +  parseInt(localStorage.vitorias) + Math.floor(4* Math.random())
-}
-async function reset_vida_e_levelUp(){
-    localStorage.HP_player = 10 + parseInt(localStorage.vitorias)
-    localStorage.ATK_player = 5 + parseInt(localStorage.vitorias)
-    localStorage.DEF_player = 5 + parseInt(localStorage.vitorias) 
-}
-
-async function vitoria (){
-    localStorage.vitorias ++
-    localStorage.boleano = true
-}
-
-async function mensagem_ganhou(){
-    mensagem.innerHTML=`
-    <h2>Voce Ganhou!</h2> <br>
-    <p style="font-size:15px; text-align:center;">HP: +1 &nbsp; &nbsp;  ATK: +1  &nbsp; &nbsp; DEF: +1</p>
-    `
-}
-async function trocar_cor_inimigo(){
-    let inimigo_cor = document.getElementById("inimigo_img")
-    inimigo_cor.style.transition="200ms"
-    inimigo_cor.style.filter="opacity(0.6) drop-shadow(0 0 0 red)"
-    setTimeout(function(){
-        inimigo_cor.style.transition="400ms"
-        inimigo_cor.style.filter="none"
-    },180)
-
-
-}
-async function trocar_cor_player(){
-    let player_cor = document.getElementById("player_img")
-    player_cor.style.transition="200ms"
-    player_cor.style.filter="opacity(0.6) drop-shadow(0 0 0 red)"
-    setTimeout(function(){
-        player_cor.style.transition="400ms"
-        player_cor.style.filter="none"
-    },180)
-
-
-}
-
-function inimigo_morre(){
-    
-   
-    document.getElementById("inimigo_img").style.transform="scaleX(-1) rotate(-90deg)"
-
-    setTimeout(function(){
-        document.getElementById("inimigo_img").style.display="none"
-    },1000)
-   
-}
-
-function mensagem_derrota(){
-    mensagem.innerText="Voce perdeu!"
-}
-</script>
+<script src="cards.js"></script>
+<script src="condicoes.js"></script>
+<script src="variaveis.js"></script>
+<script src="funcoes.js"></script>
+<script src="efeito_sonoro.js"></script>
