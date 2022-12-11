@@ -59,8 +59,6 @@ if(conteudo[0].Genero2 == "undefined"){
 //Escrever Pagina   
     let img_header = document.getElementById("img_header") //Capa
     img_header.style.background = `URL(`+Capa+`)`
-    img_header.style.backgroundPosition = "center"
-    img_header.style.backgroundSize = "cover"
 
     let info_header = document.getElementById("info_header") //Informações
     info_header.innerText = Informacoes
@@ -130,14 +128,21 @@ if(conteudo[0].Genero2 == "undefined"){
         description.content="download jogo x utorrent, baixar jogo x em capitaotorrent.com, baixar o jogo x via torrent "
 
     let keywords = document.getElementById("keywords")
-        keywords.content+=`download `+conteudo[0].Nome+`, baixar `+conteudo[0].Nome+`, `+conteudo[0].Nome+` torrent,  download gratis `+conteudo[0].Nome+`, `+conteudo[0].Nome+`, jogos torrent pc, jogos torrent.net, jogos torrent site, jogos torrent pc fraco,`
+        keywords.content=`download `+conteudo[0].Nome+`, baixar `+conteudo[0].Nome+`, `+conteudo[0].Nome+` torrent, `+conteudo[0].Nome+` utorrent, `+conteudo[0].Nome+` gratis, download gratis `+conteudo[0].Nome+`, `+conteudo[0].Nome+`, torrent jogos, utorrent download, games torrent, download game`
 
-    
+    let ogUrl = document.getElementById("ogUrl")
+
+    let ogTitle = document.getElementById("ogTitle")
+        ogTitle.content=``+conteudo[0].Nome+``
+
+    let ogImage = document.getElementById("ogImage")
+
+    let ogDescription = document.getElementById("ogDescription")
 
 
 //-------------------------------RECOMENDADOS---------------------------------
-//Filtrar por Objetos da mesma PLATAFOMA / GENERO / TIPO
-    const GeneroA = BD.filter(item =>item.Plataforma == conteudo[0].Plataforma & item.Genero1 == conteudo[0].Genero1 & item.Tipo == conteudo[0].Tipo)
+//Filtrar por Objetos de mesmo genero e do tipo "jogo"
+    const GeneroA = BD.filter(item => item.Genero1 == conteudo[0].Genero1 || item.Genero2 == conteudo[0].Genero2 & item.Tipo == conteudo[0].Tipo)
 
 //Remove Item Atual dos recomendados
     const Genero = GeneroA.filter((item) => item.Nome !== conteudo[0].Nome);
@@ -147,7 +152,7 @@ if(conteudo[0].Genero2 == "undefined"){
         inputArray.sort(()=> Math.random() - 0.5);
     }shuffleArray(Genero);
 
-  
+    console.log(Genero)
     
     
     let recomendados = document.getElementById("RecomendadosLi")
@@ -160,14 +165,12 @@ if(conteudo[0].Genero1){
             let RemoverEspacos = Genero[i].Nome.replace(/\s/g, '+').toUpperCase();
         
             recomendados.innerHTML+=`
-            
+            <a href="Download.html?search=`+RemoverEspacos+`&amp;id=`+Genero[i].id+`&amp;type=`+Genero[i].Tipo+`">
                 <li>
-                <a href="Download.html?search=`+RemoverEspacos+`&amp;id=`+Genero[i].id+`&amp;type=`+Genero[i].Tipo+`">
                     <img src="`+Genero[i].Capa+`" alt="`+Genero[i].Nome+`" class="gallery-items" rel="nofollow">
                     <h2>`+Genero[i].Nome+`</h2>
-                </a>
                 </li>
-            `;
+            </a>`;
     
         }
     }
@@ -181,6 +184,24 @@ else{
 }
 
 
+//Mensagem Aleatoria
 
+const mensagem =["Qual quer problema deixe nos comentários abaixo!", "Seja bem vindo meu nobre!", "Pronto para navegar?", "A embarcação ainda não está compatível com dispositivos moveis, e porque estaria?"]
+let Aleatoria = mensagem[Math.floor(Math.random() * mensagem.length)]
+
+let MA = document.getElementById("MA")
+let MAp = document.getElementById("MAp")
+MAp.innerText = Aleatoria
+
+setTimeout(function() {
+    MA.style.transform="translate(15px)"
+}, 10000)
+setTimeout(function() {
+    MA.style.transform="translate(-400px)"
+}, 13000)
+
+function fecharmensagem(){
+    MA.style.transform="translate(-400px)"
+}
 
 

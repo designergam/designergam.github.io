@@ -1,21 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-93Y40HFQN4"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-93Y40HFQN4');
-    </script>
-
     <meta charset="UTF-8">
-<!-- meta tags -->
+    <!-- meta tags -->
     <title>Capitão Torrent</title>
-    <meta name="description" content="Os melhores jogos para baixar totalmente gratis via utorrent, download de jogos utorrent para computador pc, torrent de jogos para computador, jogos gratis, download via torrent games">
-    <meta name="keywords" id="keywords" content="capitão torrent, baixar jogos torrent, torrent games, baixar jogos gratis via torrent ">
+    <meta name="description"
+        content="Os melhores jogos para baixar totalmente gratis via utorrent, download de jogos utorrent para computador pc, torrent de jogos para computador, jogos gratis, download via torrent games">
+    <meta name="keywords" id="keywords"
+        content="capitão torrent, baixar jogos torrent, torrent games, baixar jogos gratis via torrent ">
     <link rel="canonical" href="https://capitaotorrent.com.br">
     <meta name="author" content="Capitão Torrent">
     <meta name="googlebot" content="index,follow">
@@ -24,25 +16,43 @@
     <meta content="Global" name="distribution">
     <meta name="google-site-verification" content="8cEwtzY5TZC-QrefrCThf38df3mgfj6MExRdD_dKfeI" />
 
-<!-- SEO -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+    <!-- SEO -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta property="og:url" content="https://capitaotorrent.com.br/" />
     <meta property="og:title" content="Capitão Torrent" />
     <meta property="og:image" content="https://capitaotorrent.com.br/img/iconepirata.png" />
     <meta property="og:description" content="Download Jogos Gratis!" />
     <meta name="theme-color" content="#fe2813">
 
-<!-- Estilos -->
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="../img/iconepirata.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/paginacao.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/Style.css">
+    <link rel="stylesheet" href="css/preload.css">
+    <link rel="stylesheet" href="css/pesquisa.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/menu_lateral.css">
+    <link rel="stylesheet" href="css/propagandas.css">
     <link rel="stylesheet" href="css/GaleriaItem.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">  
 </head>
 <body>
-    
-<!-- Cabeçalho -->
+
+<div id="teste"></div>
+<script>
+    let teste = document.getElementById("teste")
+    teste.innerHTML=`<a href="https://capitaotorrent.com.br/Download.html?search=GHOSTBUSTERS-SPIRITS-UNLEASHED-&id=38&type=jogo"></a>`
+</script>
+    </span>
+    <script>
+        function closeads() {
+            let ads = document.getElementById("propaganda")
+            ads.style.display = "none"
+        }
+    </script>
+<a href="" onclick=""></a>
+    <!-- Cabeçalho -->
     <header>
         <nav id="navbar">
             <div id="navbar-container">
@@ -110,23 +120,14 @@
                         <a href="?type=jogo&page=MEMES">
                             <div class="link">MEMES</div>
                         </a>
+                        <a href="?type=jogo&page=CRIME">
+                            <div class="link">CRIME</div>
+                        </a>
                         <a href="?type=jogo&page=ESPACIAL">
                             <div class="link">ESPACIAL</div>
                         </a>
                         <a href="?type=jogo&page=ESPORTES">
                             <div class="link">ESPORTES</div>
-                        </a>
-                        <a href="?type=jogo&page=PSP">
-                            <div class="link">PSP</div>
-                        </a>
-                        <a href="?type=jogo&page=PS2">
-                            <div class="link">PS2</div>
-                        </a>
-                        <a href="?type=jogo&page=PS3">
-                            <div class="link">PS3</div>
-                        </a>
-                        <a href="?type=jogo&page=XBOX360">
-                            <div class="link">XBOX 360</div>
                         </a>
                     </nav>
                 </div>
@@ -136,30 +137,42 @@
 
                 <!-- Barra de Pesquisa -->
                 <section class="caixa-search">
-                    <input class="caixa-texto" type="text" id="input" name="" placeholder="Pesquisar...">
-                    <a class="botao-search" href="#AlfabeticoBTN" onclick="pesquisar()">
-                        <i class="fas fa-search"></i>
+                    <input class="caixa-texto" type="text"  id="input" name=""  placeholder="Pesquisar...">
+                    <a class="botao-search" href="#AlfabeticoBTN"onclick="pesquisar()">
+                        <i class="fas fa-search" ></i>
                     </a>
                 </section>
 
                 <ul id="navbar-items">
+                    <li id="home" ><a href="index.html" rel="prev" >Home</a></li>
+                    
                     <li id="Favoritos"><a href="?page=Favoritos" onclick="Favoritos()">Favoritos</a></li>
-                    <li onclick="goBack()" id="voltar"><a href="#" rel="prev">Voltar</a></li>
+                    
+                    <li onclick="goBack()" id="voltar" ><a rel="prev" >Voltar</a></li>
+                    
                 </ul>
             </div>
+
+            
+
         </nav>
+
+       
+
+       
     </header>
+   
 
-<!-- Banner -->
-        <section id="showcase">
-            <div id="img"></div>
-            <div id="showcase-container">
-                <h2 id="Texto_Melhores_Jogos">Os Melhores Jogos </h2>
-                <p id="Paragrafo_baixe_os_melhores">Baixe os melhores jogos 100% grátis</p>
-            </div>
-        </section>
 
-<!-- Filtar Por Letra -->
+    <!-- Banner -->
+    <section id="showcase">
+        <div id="img"></div>
+        <div id="showcase-container">
+            <h2 id="Texto_Melhores_Jogos">Os Melhores Jogos </h2>
+            <p id="Paragrafo_baixe_os_melhores">Baixe os melhores jogos 100% grátis</p>
+        </div>
+    </section>
+
     <section id="AlfabeticoBTN">
         <button class="btn" id="a" onclick="carregarJogosAlfabeto('a')">A</button>
         <button class="btn" id="b" onclick="carregarJogosAlfabeto('b')">B</button>
@@ -189,7 +202,8 @@
         <button class="btn" id="z" onclick="carregarJogosAlfabeto('z')">Z</button>
     </section>
 
-<!-- Galeria de jogos -->
+
+    <!-- Galeria de jogos -->
     <main>
         <div class="headline">ADICIONADOS RECENTEMENTE</div>
         <div id="gallery-container">
@@ -199,41 +213,46 @@
         </div>
     </main>
 
-<!-- Paginação -->
-    <section id="ContainerPaginação">
-        <button onclick="pagina('1')">1</button>
-        <button onclick="pagina('2')">2</button>
-        <button onclick="pagina('3')">3</button>
-    </section>
+    <script>
 
-    <script>//Favoritos script
-        var arr = [];
+        var arr=[];
+           
         //Adicionar ao LocalStorage e trocar item
-        function t(item) {
-            document.getElementById(item).src = "img/favorito_On.png"
-            if (localStorage.meuArr) {
-                arr = JSON.parse(localStorage.getItem("meuArr"))
-            }
-            let novoItem = item
-            arr.push(novoItem)
-            localStorage.meuArr = JSON.stringify(arr)
-            document.getElementById(item).setAttribute("onclick", `f('` + item + `');`);
+        function t(item){
+            document.getElementById(item).src="img/favorito_On.png"
+           if(localStorage.meuArr){
+            arr = JSON.parse(localStorage.getItem("meuArr"))
+           }
+           let novoItem = item
+           arr.push(novoItem)
+           localStorage.meuArr = JSON.stringify(arr)
+           document.getElementById(item).setAttribute("onclick",`f('`+item+`');`);
         }
 
         //Remover ao LocalStorage e trocar item
-        function f(item) {
-            if (localStorage.meuArr) {
+        function f(item){
+            if(localStorage.meuArr){
                 arr = JSON.parse(localStorage.getItem('meuArr'))
             }
-            document.getElementById(item).src = "img/favorito_Off.png"
-            document.getElementById(item).setAttribute("onclick", `t('` + item + `');`);
+            document.getElementById(item).src="img/favorito_Off.png"
+            document.getElementById(item).setAttribute("onclick",`t('`+item+`');`);
             let posicao = arr.indexOf(item)
             arr.splice(posicao, 1)
             localStorage.meuArr = JSON.stringify(arr)
         }
+
+       
+
+        
     </script>
 
-<!-- Rodapé -->
+    <!--  Paginas-->
+    <div class="ls-pagination-filter" id="PaginasNone">
+
+    </div>
+
+
+    <!-- Rodapé -->
     <footer id="footer">
         <p>Copyright &copy; 2022</p>
         <br>
@@ -242,29 +261,19 @@
             deste site é apenas organizar os links com imagens e textos para fins de busca do usuário.</p>
     </footer>
 
-<!-- Propaganda -->
-    <section id="propaganda">
-        <button onclick="closeprop()">x</button>
-        <script async type="text/javascript">
-            atOptions = {
-                'key': '00437ddeb190e2546f876e88b5cf4ea9',
-                'format': 'iframe',
-                'height': 90,
-                'width': 728,
-                'params': {}
-            };
-            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplayformat.com/00437ddeb190e2546f876e88b5cf4ea9/invoke.js"></scr' + 'ipt>');
-        </script>
-    </section>
+    
 
-    <script>//Fechar propaganda
-        function closeprop() {
-            document.getElementById("propaganda").style.display = "none"
-        }
-    </script>
 </body>
+
 </html>
 
+<!-- Pesquisa -->
+<script src="js/sistema_de_busca.js"></script>
+
+<!-- Banco de dados -->
 <script src="js/BD.js"></script>
+
+<!-- Gerar Galeria -->
 <script src="js/GerarGaleria.js"></script>
+
 <script src="js/Filtrar_por_Genero.js"></script>

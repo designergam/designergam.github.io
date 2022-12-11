@@ -1,5 +1,4 @@
 let Genero =""
-
 if(PaginaURL == "AÇÃO"){
      Genero = BD.filter(item => item.Genero1 == "AÇÃO" || item.Genero2 == "AÇÃO" || item.Genero3 == "AÇÃO" || item.Genero4 == "AÇÃO" )
 }
@@ -63,37 +62,25 @@ else if(PaginaURL == "ESPACIAL"){
 else if(PaginaURL == "ESPORTES"){
     Genero = BD.filter(item =>  item.Genero1 == "ESPORTES" || item.Genero2 == "ESPORTES" || item.Genero3 == "ESPORTES" || item.Genero4 == "ESPORTES" )
 }
-else if(PaginaURL == "PSP"){
-    Genero = BD.filter(item =>  item.Plataforma == "psp"  )
-}
-else if(PaginaURL == "PS2"){
-    Genero = BD.filter(item =>  item.Plataforma == "ps2"  )
-}
-else if(PaginaURL == "PS3"){
-    Genero = BD.filter(item =>  item.Plataforma == "ps3"  )
-}
-else if(PaginaURL == "XBOX360"){
-    Genero = BD.filter(item =>  item.Plataforma == "xbox360"  )
-}
 
-    for (let i = 0; i < 6; i++) {
+    for (let i = 0; i < 200; i++) {
         let RemoverEspacos = Genero[i].Nome.replace(/\s/g, '-').toUpperCase();
         acriarLI.innerHTML += `
             <li id="containerjg">
                 <a href="Download.html?search=`+RemoverEspacos+`&amp;id=`+Genero[i].id+`&amp;type=`+Genero[i].Tipo+`">
-                    <img src="`+Genero[i].Capa +`" alt="`+Genero[i].Nome+`" class="gallery-items" rel="nofollow">
+                    <img src="`+Genero[i].Capa + `" alt="` +Genero[i].Nome + `" class="gallery-items" rel="nofollow">
                 </a>
                 <a href="Download.html?search=`+RemoverEspacos+`&amp;id=`+Genero[i].id+`&amp;type=`+Genero[i].Tipo+`">
-                    <h2>`+Genero[i].Nome+`</h2>
+                    <h2>`+Genero[i].Nome + `</h2>
                 </a>
                 <img src="img/favorito_Off.png" alt="favorito" id="${Genero[i].id}" class="favor" onclick="t('${Genero[i].id}' )"
             </li>`;
-
             if(ArryFavoritos.find(element => element == `${Genero[i].id}`)){
                 document.getElementById(`${Genero[i].id}`).src="img/favorito_On.png"
                 document.getElementById(`${Genero[i].id}`).setAttribute("onclick",`f(${Genero[i].id});`);
             }
-    }   
+    }
+
 
 
 

@@ -1,0 +1,27 @@
+#PopupDownload{
+    background-color: gray;
+    border: 2px solid white;
+    border-radius: 20px;
+    width: 60vw;
+    height: 40vw;
+    
+    z-index: 10;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+#PopupDownload button{
+    z-index: 9999;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: bold;
+    
+    
+}

@@ -8,54 +8,13 @@ let acriarLI = document.getElementById('ul')
 let PassarPagina = document.querySelector(".ls-pagination-filter")
 
 //Filtrar por Objetos que são do tipo "jogo"
-const jogosPC = BD.filter(item => item.Tipo == "jogo" & item.Plataforma == "pc")
+const jogosPC = BD.filter(item => item.Tipo == "jogo")
 
 //Favoritos
 let ArryFavoritos =[]
     if(localStorage.meuArr){
         ArryFavoritos = JSON.parse(localStorage.getItem('meuArr'))
     }else{localStorage.meuArr}
-
-//===Pagina Principal===================================================================
-if (TipoURL == null & PaginaURL == null || TipoURL == "jogo" & PaginaURL == 1) {
-
-    let home = "jogosPC.slice(0,102)"
-
-    
-    //paginaçãp - EM DESENVOLVIMENTO!!
-function pagina(pagina){
-    
-    if(pagina =="2"){
-        home = jogosPC.slice(0,6)
-       
-        
-    }
-    
-    
-}
-
-    home.map((i)=>{
-
-            let RemoverEspacos = i.Nome.replace(/\s/g, '-').toUpperCase();       
-            acriarLI.innerHTML +=`
-                <li>
-                    <a href="Download.html?search=`+RemoverEspacos+`&amp;id=`+i.id+`&amp;type=`+i.Tipo+`">
-                        <img src="`+i.Capa+`" alt="`+i.Nome+`" class="gallery-items" rel="nofollow">
-                    </a>
-                    <a href="Download.html?search=`+RemoverEspacos+`&amp;id=`+i.id+`&amp;type=`+i.Tipo+`">
-                        <h2>`+i.Nome+`</h2>
-                    </a>
-                    <img src="img/favorito_Off.png" alt="favorito" id="`+i.id+`" class="favor" onclick="t("`+i.id+`")"
-                </li>
-            `;
-
-            if(ArryFavoritos.find(element => element == `${i.id}`)){
-            document.getElementById(`${i.id}`).src="img/favorito_On.png"
-            document.getElementById(`${i.id}`).setAttribute("onclick",`f(${i.id});`);
-            }
-    })   
-}
-//============================================================================================
 
 //===Pesquisar======================================================================================
 function pesquisar() {
@@ -125,8 +84,33 @@ function carregarJogosAlfabeto(letra) {
 }
 //=============================================================================================
 
+//===Pagina Principal===================================================================
+if (TipoURL == null & PaginaURL == null || TipoURL == "jogo" & PaginaURL == 1) {
+
+    for (let i = 0; i < 100; i++) {
+        let RemoverEspacos = jogosPC[i].Nome.replace(/\s/g, '-').toUpperCase();       
+         acriarLI.innerHTML += `
+            <li>
+                <a href="Download.html?search=`+RemoverEspacos+`&amp;id=`+jogosPC[i].id+`&amp;type=`+jogosPC[i].Tipo+`">
+                    <img src="`+ jogosPC[i].Capa + `" alt="` + jogosPC[i].Nome + `" class="gallery-items" rel="nofollow">
+                </a>
+                <a href="Download.html?search=`+RemoverEspacos+`&amp;id=`+jogosPC[i].id+`&amp;type=`+jogosPC[i].Tipo+`">
+                    <h2>`+ jogosPC[i].Nome + `</h2>
+                </a>
+                <img src="img/favorito_Off.png" alt="favorito" id="${jogosPC[i].id}" class="favor" onclick="t('${jogosPC[i].id}' )"
+            </li>
+        `;
+
+        if(ArryFavoritos.find(element => element == `${jogosPC[i].id}`)){
+            document.getElementById(`${jogosPC[i].id}`).src="img/favorito_On.png"
+            document.getElementById(`${jogosPC[i].id}`).setAttribute("onclick",`f(${jogosPC[i].id});`);
+        }
+    }    
+}
+//============================================================================================
+
 //===Favoritos==========================================================
-if (PaginaURL == "Favoritos") {
+else if (PaginaURL == "Favoritos") {
     let fav = JSON.parse(localStorage.getItem('meuArr'))
 
     for (let i = 0; i < fav.length; i++) {
@@ -160,9 +144,7 @@ function goBack() {
 if (PaginaURL == null) {
     document.getElementById("voltar").style.display = "none"
 }
-
 if (PaginaURL == "Favoritos") {
     document.getElementById("Favoritos").style.display = "none"
 }
-
 

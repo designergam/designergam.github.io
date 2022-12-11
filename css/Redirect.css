@@ -1,491 +1,11 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto&display=swap);
-
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0
-}
-
-html {
-    scroll-behavior: smooth
-}
-
-body {
-    font-family: Roboto, sans-serif;
-    width: 100%;
-    background-color: #0f151d;
-    color: #eee;
-    padding: 15px;
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0
-}
-
-#navbar {
-    width: 100%;
-    background: #111;
-    color: #eee;
-    height: 80px;
-    position: fixed;
-    top: 0;
-    z-index: 9
-}
-
-@media (max-width:768px) {
-    #navbar {
-        height: 120px
-    }
-}
-
-#navbar-container {
-    width: 100%;
-    height: 100%;
-    margin: auto;
-    display: flex;
-    padding-left: 20px;
-    padding-right: 50px;
-    justify-content: space-between;
-    align-items: center
-}
-
-@media (max-width:768px) {
-    #navbar-container {
-        height: 200px
-    }
-}
-
-#navbar-items {
-    display: flex;
-    list-style: none;
-    text-transform: uppercase
-}
-
-@media (max-width:768px) {
-    #navbar-items {
-        margin: auto;
-        width: 100%;
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        padding-left: 30px;
-        padding-right: 30px
-    }
-}
-
-#navbar-items li {
-    margin-left: 20px
-}
-
-@media (max-width:768px) {
-    #navbar-items li {
-        margin-left: 0;
-        margin: auto
-    }
-}
-
-a {
-    text-decoration: none;
-    color: inherit
-}
-
-.logo img {
-    width: 200px;
-    height: 45px;
-    margin: 0;
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 13%;
-    transform: translate(-50%, -50%)
-}
-
-@media (max-width:768px) {
-    .logo img {
-        left: 50%;
-        top: 10%;
-        transform: translate(-50%, 0)
-    }
-}
-
-#container {
-    align-items: center;
-    display: grid;
-    border-radius: 10px;
-    width: 90%;
-    padding: 10px;
-    margin-top: 200px;
-    margin-bottom: 40px;
-    background-image: linear-gradient(to top, #1e2c3d, #151d27d3);
-    margin: auto;
-    margin-bottom: 30px;
-    margin-top: 10px;
-    grid-template-columns: 50% 50%
-}
-
-#container2 {
-    align-items: center;
-    display: grid;
-    width: 100%;
-    padding: 30px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin-top: 200px;
-    margin-bottom: 40px;
-    background-color: #263241;
-    background-position: center;
-    object-fit: cover;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-    margin: auto;
-    margin-bottom: 30px;
-    margin-top: 10px;
-    grid-template-columns: 25% 75%
-}
-
-#container3 {
-    align-items: center;
-    display: grid;
-    border-radius: 10px;
-    width: 90%;
-    padding: 10px;
-    margin-top: 200px;
-    margin-bottom: 40px;
-    background-image: linear-gradient(to top, #202e40, #19222fd3);
-    margin: auto;
-    margin-bottom: 30px;
-    margin-top: 10px
-}
-
-@media (max-width:768px) {
-    #container3 {
-        width: 100%;
-        margin-bottom: 0
-    }
-}
-
-#container4 {
-    align-items: center;
-    display: grid;
-    border-radius: 10px;
-    width: 90%;
-    padding: 20px;
-    margin-top: 200px;
-    margin-bottom: 40px;
-    background-image: linear-gradient(to top, #1e2c3d, #151d27d3);
-    margin: auto;
-    margin-bottom: 35px;
-    margin-top: 10px
-}
-
-@media (max-width:768px) {
-    #container4 {
-        width: 100%;
-        margin-bottom: 0
-    }
-}
-
-#container5 {
-    align-items: center;
-    display: grid;
-    border-radius: 10px;
-    width: 90%;
-    padding: 20px;
-    margin-top: 200px;
-    margin-bottom: 40px;
-    background-image: linear-gradient(to top, #1e2c3d, #151d27d3);
-    margin: auto;
-    margin-bottom: 35px;
-    margin-top: 10px
-}
-
-#testimonials-container {
-    width: 100%;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    flex-direction: column
-}
-
-#tit {
-    font-size: 1.8rem;
-    text-transform: uppercase;
-    font-weight: 700;
-    text-align: center;
-    margin-top: 115px
-}
-
-#img_capa {
-    height: 300px;
-    width: 210px;
-    border-radius: 3%;
-    margin: 20px;
-    margin-right: 50px;
-    box-sizing: border-box;
-    background-image: url(https://capitaotorrent.com.brhttps://capitaotorrent.com.brhttps://capitaotorrent.com.br/img/loading-gif.gif);
-    background-position: center;
-    background-size: 80%;
-    background-repeat: no-repeat;
-    z-index: 2
-}
-
-#previa {
-    font-size: 1.3rem;
-    text-align: justify;
-    margin:auto;
-    z-index: 2;
-    text-shadow: 2px 2px 3px #111;
-    color: #fff
-}
-
-@media (max-width:768px) {
-    #previa_header {
-        width: 100%;
-        padding-bottom: 20px
-    }
-}
-
-.testimonial3 {
-    width: 100%
-}
-
-.testimonial3 p {
-    display: inline-block
-}
-
-.testimonial3 h3 {
-    display: inline-block
-}
-
-#requisitos {
-    text-align: center;
-    margin-bottom: 0
-}
-
-#TEXTO_H2 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    text-align: center;
-    color: #fff
-}
-
-#trailer {
-    margin: 0 auto;
-    display: block;
-    width: 768px;
-    height: auto;
-    height: 432px;
-    border-radius: 20px;
-    background-image: url(/img/loading-gif.gif);
-    background-position: center;
-    background-size: 40%;
-    background-repeat: no-repeat
-}
-
-@media (max-width:768px) {
-    #trailer {
-        width: 100%;
-        height: auto;
-        min-height: 190px
-    }
-}
-
-#download {
-    font-weight: 700;
-    padding: 15px;
-    background-color: green;
-    border-radius: 5px;
-    color: #fff;
-    text-decoration: none;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin-top: 70px
-}
-
-@media (max-width:768px) {
-    #download {
-        position: absolute;
-        top: 0;
-        margin-left: -60px;
-        margin-right: 50%;
-        margin-top: 50px
-    }
-}
-
-#download:hover {
-    padding: 13PX;
-    background-color: #110092
-}
-
-.download {
-    color: #fff;
-    font-weight: 700;
-    padding: 15px;
-    background-color: green;
-    border-radius: 5px;
-    text-decoration: none;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%)
-}
-
-.download:hover {
-    padding: 14px;
-    background-color: #110092;
-    color: #fff
-}
-
-#id {
-    opacity: 0
-}
-
-#footer {
-    align-items: center;
-    padding: 15px;
-    margin-top: 100px
-}
-
-@media (max-width:768px) {
-    #footer {
-        margin-top: 10px
-    }
-}
-
-#footer p {
-    text-align: center;
-    font-size: 1rem;
-    margin-left: 70px;
-    margin-right: 70px;
-    color: gray
-}
-
-@media (max-width:768px) {
-    #footer p {
-        margin-left: 10px;
-        margin-right: 10px
-    }
-}
-
-#propaganda {
-    width: 730px;
-    height: 90px;
-    position: fixed;
-    bottom: 2px;
-    left: 50%;
-    transform: translate(-50%, 0);
-    z-index: 10
-}
-
-#propaganda button {
-    background-color: transparent;
-    border: none;
-    font-size: 20px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    padding: 5px;
-    padding-right: 7px;
-    z-index: 999;
-    text-shadow: 0 0 10px #fff
-}
-
-#Requisitos {
-    margin: auto;
-    display: block;
-    width: 70%;
-    font-weight: 400;
-    font-size: 16px
-}
-
-#header-main {
-    width: 100%;
-    height: 580px;
-    position: relative;
-    background-color: #0c1117;
-    margin-top: 80px;
-    display: grid;
-    padding: 20px;
-    padding-right: 15%;
-    padding-left: 15%;
-    grid-template-columns: 40% 60%;
-    grid-template-rows: 11% 44% 15% 25%;
-    grid-template-areas: "capa nome" "capa info" "capa genero" "previa previa"
-}
-
-@media (max-width:768px) {
-    #header-main {
-        grid-template-areas: "nome" "capa" "genero" "info" "previa";
-        grid-template-rows: 100px 350px 180px 200px;
-        margin-top: 100px;
-        grid-template-columns: 100%;
-        height: auto;
-        padding-bottom: 250px;
-        width: 100%;
-        padding: 10px
-    }
-}
-
-#img_header {
-    grid-area: capa;
-    width: 225px;
-    height: 320px;
-    background-repeat: no-repeat;
-    border-radius: 20px;
-    margin: auto;
-    margin-top: 5px;
-    z-index: 1
-}
-
-@media (max-width:768px) {
-    #img_header {
-        grid-area: capa;
-        width: 225px;
-        height: 320px;
-        background-repeat: no-repeat;
-        border-radius: 20px;
-        margin: auto;
-        margin-top: 10px;
-        z-index: 1
-    }
-}
-
-#previa_header {
-    grid-area: previa;
-    width: 100%;
-    height: 100%;
-    font-size: 20px;
-    z-index: 1;
-    text-shadow: 2px 2px 2px #000
-}
-
-#nome_header {
-    grid-area: nome;
-    width: 100%;
-    font-size: 30px;
-    font-weight: 700;
-    z-index: 1
-}
-
-@media (max-width:768px) {
-    #nome_header {
-        width: 100%;
-        position: absolute;
-        left: 50%;
-        top: 50px;
-        text-align: center;
-        transform: translate(-50%, -50%)
-    }
-}
-
 #container2 {
     width: 250px;
     height: 340px;
     position: relative;
-    box-shadow: 2px 2px 22px 2px #180d44;
+    box-shadow: 2px 2px 22px 2px rgb(24, 13, 68);
     margin-top: 20px;
     background-image: linear-gradient(to top, #0b1116, #28384bd3);
-    border-radius: 10px
+    border-radius: 10px;
 }
 
 #img_capa {
@@ -493,58 +13,83 @@ a {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
 }
 
 #previa {
     text-align: center;
     margin: auto;
     width: 60%;
-    margin-top: 30px
+    margin-top: 30px;
+
+
 }
 
 #previa a {
-    color: #3b3bb9
+    color: rgb(59, 59, 185);
 }
 
 #navbar-items li a:hover {
     color: red;
-    cursor: pointer
+    cursor: pointer;
 }
 
 .download {
     position: static;
     margin-top: 100px;
-    margin-bottom: 20px
+    margin-bottom: 20px;
 }
 
 #btnDownloadContainer {
-    display: none
+    display: none;
+}
+
+/* Propagandas */
+
+#adsA {
+    width: 300px;
+    height: 250px;
+    /* border: 1px solid red; */
+    margin: auto;
+}
+
+#adsB {
+    width: 728px;
+    height: 90px;
+    /* border: 1px solid red; */
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+#adsC {
+    width: 160px;
+    height: 600px;
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 350px;
+    left: 50px;
+}
+
+#adsD {
+    width: 160px;
+    height: 600px;
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 350px;
+    right: 50px;
 }
 
 #tit {
-    margin-top: 20px
+    margin-top: 50px;
 }
 
-#propaganda {
-    width: 730px;
-    height: 90px;
-    position: fixed;
-    bottom: 2px;
-    left: 50%;
-    transform: translate(-50%, 0);
-    z-index: 10
-}
+#containerProp {
 
-#propaganda button {
-    background-color: transparent;
-    border: none;
-    font-size: 20px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    padding: 5px;
-    padding-right: 7px;
-    z-index: 999;
-    text-shadow: 0 0 10px #fff
+    width: 100%;
+    height: 250px;
+    display: flex;
+    margin: 0 auto;
+    /* border: 2px solid green; */
+    margin-top: 90px;
 }
