@@ -106,7 +106,7 @@ function inimigo_cair_para_traz(){
     },800)
 
     setTimeout(function(){
-        inimigo.style.right="-15%"
+        inimigo.style.right="0%"
         localStorage.inimigo = Math.floor(4* Math.random()) //INIMIGO ALEATORIO
         escolher_inimigo()
     },900) 
