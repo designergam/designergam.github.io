@@ -1,7 +1,7 @@
 //Carta aleatorio
     localStorage.card_ATK = Math.floor(5* Math.random())
     localStorage.card_DEF = Math.floor(4* Math.random())
-    localStorage.card_HP = Math.floor(4* Math.random())
+    localStorage.card_HP = Math.floor(5* Math.random())
 
 //Cartas de ATK
     let carta_ATK_1 = "https://img.freepik.com/vetores-premium/espada-de-ferro-com-estilo-pixel-art_475147-440.jpg"
@@ -19,6 +19,7 @@
 //Cartas de HP
     let carta_HP_1 = "https://static.vecteezy.com/ti/vetor-gratis/p3/5644880-vermelho-coracao-em-pixel-estilo-arte-icone-de-8-bit-simbolo-dia-dos-namorados-gratis-vetor.jpg"
     let carta_HP_2 = "https://img.freepik.com/vetores-premium/caixao-com-estilo-pixel-art_475147-670.jpg"
+    let carta_HP_3 = "https://img.freepik.com/vetores-premium/frasco-de-pocao-mini-vermelho-com-estilo-pixel-art_475147-230.jpg"
    
 
 //carta de atk
@@ -200,6 +201,23 @@
 
         localStorage.HP_player = parseInt(localStorage.HP_player) +7
         localStorage.DEF_player = parseInt(localStorage.DEF_player) -1
+
+        fechar_cards()
+        
+    });
+    }
+    if(localStorage.card_HP == 4){
+        card3.style.background=`url(${carta_HP_3})`
+        card3.style.backgroundPosition="center"
+        card3.style.backgroundSize="cover"
+        card3.style.backgroundRepeat = "no-repeat"
+
+
+        h1_hp.innerText="HP +10"
+        card3.addEventListener("click", function () {
+
+        localStorage.HP_player = parseInt(localStorage.HP_player) +10
+        
 
         fechar_cards()
         
