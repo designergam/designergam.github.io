@@ -1,0 +1,11 @@
+#ContainerPaginação{
+    width: 500px;
+    height: 60px;
+    background-color: red;
+    margin: auto;
+}
+#ContainerPaginação button{
+    width: 30px;
+    height: 40px;
+
+}
