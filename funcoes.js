@@ -1,6 +1,12 @@
+if(!localStorage.xp){
+    localStorage.xp = 0
+}
+if(!localStorage.next_level){
+    localStorage.next_level = 10
+}
 //atributos de batalha do player
     atributos_player.innerHTML =`
-    <span> HP: ${localStorage.HP_player}<br>DEF: ${localStorage.DEF_player}<br>ATK: ${localStorage.ATK_player}</span>
+    <span>XP: ${localStorage.xp}/${localStorage.next_level}<br> HP: ${localStorage.HP_player}<br>DEF: ${localStorage.DEF_player}<br>ATK: ${localStorage.ATK_player}</span>
     `
 
     mostrarlevel()
@@ -88,6 +94,13 @@ function jogar(){
 
                 //esconder inimigo morto
                     atributos_inimigo.style.display="none"
+
+                //recebe xp
+                
+                localStorage.xp = parseInt(localStorage.xp)+2
+                
+
+                    
                     
             }
 
@@ -118,7 +131,7 @@ function jogar(){
 
         //atributos de batalha do player
     atributos_player.innerHTML =`
-    <span> HP: ${localStorage.HP_player}<br>DEF: ${localStorage.DEF_player}<br>ATK: ${localStorage.ATK_player}</span>
+    <span>XP: ${localStorage.xp}/${localStorage.next_level}<br> HP: ${localStorage.HP_player}<br>DEF: ${localStorage.DEF_player}<br>ATK: ${localStorage.ATK_player}</span>
     `
         //se perder
             if(localStorage.HP_player <= 0){
