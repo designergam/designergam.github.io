@@ -1,4 +1,5 @@
 function jogar(){
+    
     //atribuir aleatoriamente incremento no inimigo
         adicional_aleatorio()
 
@@ -9,6 +10,7 @@ function jogar(){
             escolher_inimigo()
             inimigo.style.display="block" //trazer inimigo pro cenario
             atributos_inimigo.style.display="block"//esconder atributos inimigo
+            
         },10)
         
         setTimeout(function(){
@@ -108,6 +110,7 @@ function jogar(){
                     inimigo_mais_forte()//tornar inimigo mais forte               
                     inimigo_cair_para_traz() //deitar inimigo e esconder
 
+                    
                     atributos_inimigo.style.display="none"//esconder atributos inimigo
                     localStorage.xp = parseInt(localStorage.xp)+2  //recebe xp
             }

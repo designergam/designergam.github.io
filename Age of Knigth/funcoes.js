@@ -51,6 +51,10 @@ function fechar_cards(){
     setTimeout(function(){
         jogar()
     },1000)
+
+    //mostar melhorias
+    atributos_player.innerHTML =`<span>XP: ${parseInt(localStorage.xp)}/${parseInt(localStorage.next_level)}<br> HP: ${parseInt(localStorage.HP_player)}<br>DEF: ${parseInt(localStorage.DEF_player)}<br>ATK: ${parseInt(localStorage.ATK_player)}</span>`
+
 }
 function mostrarlevel(){
     document.getElementById("level").innerText = `LEVEL:  ${localStorage.vitorias}`
