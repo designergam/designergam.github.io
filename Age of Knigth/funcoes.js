@@ -6,7 +6,7 @@ if(!localStorage.next_level){
 }
 //atributos de batalha do player
     atributos_player.innerHTML =`
-    <span>XP: ${localStorage.xp}/${localStorage.next_level}<br> HP: ${localStorage.HP_player}<br>DEF: ${localStorage.DEF_player}<br>ATK: ${localStorage.ATK_player}</span>
+    <span>XP: ${parseInt(localStorage.xp)}/${parseInt(localStorage.next_level)}<br> HP: ${parseInt(localStorage.HP_player)}<br>DEF: ${parseInt(localStorage.DEF_player)}<br>ATK: ${parseInt(localStorage.ATK_player)}</span>
     `
 
     mostrarlevel()
@@ -59,7 +59,7 @@ function jogar(){
         document.getElementById("atributos_inimigo").style.backgroundSize="cover"
     
     atributos_inimigo.innerHTML =`
-    <span> HP: ${localStorage.HP_inimigo}<br>DEF: ${localStorage.DEF_inimigo}<br>ATK: ${localStorage.ATK_inimigo}</span>
+    <span> HP: ${ parseInt(localStorage.HP_inimigo) }<br>DEF: ${parseInt(localStorage.DEF_inimigo)}<br>ATK: ${parseInt(localStorage.ATK_inimigo)}</span>
     `
         //se ganhar
             if(localStorage.HP_inimigo <= 0){
@@ -131,7 +131,7 @@ function jogar(){
 
         //atributos de batalha do player
     atributos_player.innerHTML =`
-    <span>XP: ${localStorage.xp}/${localStorage.next_level}<br> HP: ${localStorage.HP_player}<br>DEF: ${localStorage.DEF_player}<br>ATK: ${localStorage.ATK_player}</span>
+    <span>XP: ${parseInt(localStorage.xp)}/${parseInt(localStorage.next_level)}<br> HP: ${parseInt(localStorage.HP_player)}<br>DEF: ${parseInt(localStorage.DEF_player)}<br>ATK: ${parseInt(localStorage.ATK_player)}</span>
     `
         //se perder
             if(localStorage.HP_player <= 0){
@@ -200,11 +200,7 @@ async function inimigo_mais_forte(){
     localStorage.ATK_inimigo = 6 +  parseInt(localStorage.vitorias) + Math.floor(4* Math.random())
     localStorage.DEF_inimigo = 2 +  parseInt(localStorage.vitorias) + Math.floor(4* Math.random())
 }
-async function reset_vida_e_levelUp(){
-    localStorage.HP_player = parseInt(localStorage.HP_player) + (parseInt(localStorage.vitorias)*0.5)
-    localStorage.ATK_player = parseInt(localStorage.ATK_player) + (parseInt(localStorage.vitorias)*0.5)
-    localStorage.DEF_player = parseInt(localStorage.DEF_player) + (parseInt(localStorage.vitorias) *0.5)
-}
+
 
 
 
@@ -213,6 +209,8 @@ async function vitoria(){
    
 }
 async function mensagem_ganhou(){
+    
+    
     mensagem.innerHTML=`
     <h2>VICTORY!</h2> 
     `

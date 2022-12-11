@@ -17,5 +17,15 @@ if(xp == next_level){
     setTimeout(function(){
         localStorage.next_level = parseInt(localStorage.next_level)*2
     },1000)
+
+    setTimeout(function(){
+        mensagem.innerHTML=""
+    },3000)
     
+}
+
+async function reset_vida_e_levelUp(){
+    localStorage.HP_player = parseInt(localStorage.HP_player) + (parseInt(localStorage.vitorias)*0.3)
+    localStorage.ATK_player = parseInt(localStorage.ATK_player) + (parseInt(localStorage.vitorias)*0.3)
+    localStorage.DEF_player = parseInt(localStorage.DEF_player) + (parseInt(localStorage.vitorias) *0.3)
 }

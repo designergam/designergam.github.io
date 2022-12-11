@@ -10,7 +10,7 @@
     }
 //atributo player
     if(!localStorage.HP_player){localStorage.HP_player = 30}
-    if(!localStorage.DEF_player){localStorage.DEF_player = 6}
+    if(!localStorage.DEF_player){localStorage.DEF_player = 5}
     if(!localStorage.ATK_player){localStorage.ATK_player = 8}
 
 //atributo inimigo
