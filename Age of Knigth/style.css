@@ -144,8 +144,13 @@ body{
     background-color: rebeccapurple;
     z-index: 2;
     border-radius: 20px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     
 }
+
+
 .cards:hover{
     border: 4px solid white;
 }

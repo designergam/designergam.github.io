@@ -6,38 +6,17 @@
     }
 //vitorias
     if(!localStorage.vitorias){
-        localStorage.vitorias = 0
+        localStorage.vitorias = 1
     }
 //atributo player
-    if(!localStorage.HP_player){localStorage.HP_player = 10}
-    if(!localStorage.DEF_player){localStorage.DEF_player = 5}
-    if(!localStorage.ATK_player){localStorage.ATK_player = 5}
+    if(!localStorage.HP_player){localStorage.HP_player = 30}
+    if(!localStorage.DEF_player){localStorage.DEF_player = 6}
+    if(!localStorage.ATK_player){localStorage.ATK_player = 8}
 
 //atributo inimigo
     if(!localStorage.HP_inimigo){localStorage.HP_inimigo = 10}
     if(!localStorage.DEF_inimigo){localStorage.DEF_inimigo = 2}
     if(!localStorage.ATK_inimigo){localStorage.ATK_inimigo = 6}
-
-//mudar senario
-    if(localStorage.vitorias >= 10){
-        localStorage.backgroud=10
-    }
-
-    if(localStorage.backgroud>=10){
-        cenario.style.background="url(https://i.pinimg.com/originals/c0/25/94/c02594845d2a9bb78543136132d12b96.gif)"
-        cenario.style.backgroundRepeat="no-repeat"
-        cenario.style.backgroundSize="cover"
-        cenario.style.backgroundPosition="ceneter"
-    }
-
-    
-        
-    
-
-
-
-
-
 
     if(localStorage.play == "false"){
         play.style.display="none"

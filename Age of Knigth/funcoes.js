@@ -1,6 +1,12 @@
+if(!localStorage.xp){
+    localStorage.xp = 0
+}
+if(!localStorage.next_level){
+    localStorage.next_level = 10
+}
 //atributos de batalha do player
     atributos_player.innerHTML =`
-    <span> HP: ${localStorage.HP_player}<br>DEF: ${localStorage.DEF_player}<br>ATK: ${localStorage.ATK_player}</span>
+    <span>XP: ${localStorage.xp}/${localStorage.next_level}<br> HP: ${localStorage.HP_player}<br>DEF: ${localStorage.DEF_player}<br>ATK: ${localStorage.ATK_player}</span>
     `
 
     mostrarlevel()
@@ -75,7 +81,7 @@ function jogar(){
                     mensagem_ganhou()
 
                 //atribuir vitoria
-                    vitoria ()
+                    vitoria()
 
                 //mostrar level
                     mostrarlevel()
@@ -83,14 +89,18 @@ function jogar(){
                 //tornar inimigo mais forte
                     inimigo_mais_forte()
 
-                //voltar a vida anterior e levelup
-                    reset_vida_e_levelUp()
-
                 //deitar inimigo e esconder
                     inimigo_cair_para_traz()
 
                 //esconder inimigo morto
                     atributos_inimigo.style.display="none"
+
+                //recebe xp
+                
+                localStorage.xp = parseInt(localStorage.xp)+2
+                
+
+                    
                     
             }
 
@@ -121,7 +131,7 @@ function jogar(){
 
         //atributos de batalha do player
     atributos_player.innerHTML =`
-    <span> HP: ${localStorage.HP_player}<br>DEF: ${localStorage.DEF_player}<br>ATK: ${localStorage.ATK_player}</span>
+    <span>XP: ${localStorage.xp}/${localStorage.next_level}<br> HP: ${localStorage.HP_player}<br>DEF: ${localStorage.DEF_player}<br>ATK: ${localStorage.ATK_player}</span>
     `
         //se perder
             if(localStorage.HP_player <= 0){
@@ -145,7 +155,10 @@ function jogar(){
 
 function mostrar_cartas(){
     //esconder mensagem de vitoria
+    setTimeout(function(){
         mensagem.innerText=""
+    }, 2000)
+       
     
     //mostrar cartas
         cartas.style.display="block"
@@ -158,12 +171,12 @@ function mostrar_cartas(){
             card1.style.top="50%"
             card2.style.top="50%"
             card3.style.top="50%"
-        }, 500)
+        }, 2000)
     //espalhar na tela
         setInterval(function(){
             card2.style.left="80%"
             card3.style.left="20%"
-        }, 1000)
+        }, 2500)
 
 }
 function fechar_cards(){
@@ -188,18 +201,20 @@ async function inimigo_mais_forte(){
     localStorage.DEF_inimigo = 2 +  parseInt(localStorage.vitorias) + Math.floor(4* Math.random())
 }
 async function reset_vida_e_levelUp(){
-    localStorage.HP_player = 10 + parseInt(localStorage.vitorias)
-    localStorage.ATK_player = 6 + parseInt(localStorage.vitorias) 
-    localStorage.DEF_player = 5 + parseInt(localStorage.vitorias) 
+    localStorage.HP_player = parseInt(localStorage.HP_player) + parseInt(localStorage.vitorias) 
+    localStorage.ATK_player = parseInt(localStorage.ATK_player) + parseInt(localStorage.vitorias) 
+    localStorage.DEF_player = parseInt(localStorage.DEF_player) + parseInt(localStorage.vitorias) 
 }
+
+
+
 async function vitoria(){
     localStorage.vitorias ++
    
 }
 async function mensagem_ganhou(){
     mensagem.innerHTML=`
-    <h2>VICTORY!</h2> <br>
-    <p style="font-size:15px; text-align:center;">HP: +1 &nbsp; &nbsp;  ATK: +1  &nbsp; &nbsp; DEF: +1</p>
+    <h2>VICTORY!</h2> 
     `
 }
 async function trocar_cor_inimigo(){
