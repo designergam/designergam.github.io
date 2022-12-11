@@ -11,10 +11,7 @@
     if(!localStorage.DEF_player){localStorage.DEF_player = 7}
     if(!localStorage.ATK_player){localStorage.ATK_player = 9}
 
-//atributo inimigo
-    if(!localStorage.HP_inimigo){localStorage.HP_inimigo = 10}
-    if(!localStorage.DEF_inimigo){localStorage.DEF_inimigo = 2}
-    if(!localStorage.ATK_inimigo){localStorage.ATK_inimigo = 6}
+
 
     if(localStorage.play == "false"){
         play.style.display="none"

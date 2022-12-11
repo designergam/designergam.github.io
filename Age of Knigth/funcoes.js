@@ -4,6 +4,7 @@ if(!localStorage.xp){
 if(!localStorage.next_level){
     localStorage.next_level = 10
 }
+
 //atributos de batalha do player
     atributos_player.innerHTML =`
     <span>XP: ${parseInt(localStorage.xp)}/${parseInt(localStorage.next_level)}<br> HP: ${parseInt(localStorage.HP_player)}<br>DEF: ${parseInt(localStorage.DEF_player)}<br>ATK: ${parseInt(localStorage.ATK_player)}</span>
@@ -58,11 +59,7 @@ function resetar(){
     localStorage.clear();
     window.location.reload()
 }
-async function inimigo_mais_forte(){
-    localStorage.HP_inimigo = 10 +  parseInt(localStorage.vitorias) + Math.floor(4* Math.random())
-    localStorage.ATK_inimigo = 6 +  parseInt(localStorage.vitorias) + Math.floor(4* Math.random())
-    localStorage.DEF_inimigo = 2 +  parseInt(localStorage.vitorias) + Math.floor(4* Math.random())
-}
+
 async function vitoria(){
     localStorage.vitorias ++
    
@@ -106,10 +103,12 @@ function inimigo_cair_para_traz(){
     },800)
 
     setTimeout(function(){
-        inimigo.style.right="0%"
-        localStorage.inimigo = Math.floor(4* Math.random()) //INIMIGO ALEATORIO
+        inimigo.style.right="-15%"
+        localStorage.inimigo = Math.floor(6* Math.random()) //INIMIGO ALEATORIO
         escolher_inimigo()
     },900) 
+
+    
 }
 function mensagem_derrota(){
     mensagem.innerText="YOU LOST!"
@@ -143,4 +142,9 @@ function vitoria_som(){
 function musica_fundo(){
     audio.volume = 0.1;
     audio.play()
+}
+
+function adicional_aleatorio(){
+    //+0 a +3
+        localStorage.adicional_aleatorio = Math.floor(4* Math.random())
 }

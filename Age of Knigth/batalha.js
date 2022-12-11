@@ -1,5 +1,7 @@
 function jogar(){
-    
+    //atribuir aleatoriamente incremento no inimigo
+        adicional_aleatorio()
+
     play.style.display="none" //ocutar botão de play
     
     //trazer inimigo pro cenario
@@ -42,10 +44,13 @@ function jogar(){
                 },1500)
 
             //atributos de batalha do player
-                document.getElementById("atributos_inimigo").style.background = "url(img/pergaminho.png)"
-                document.getElementById("atributos_inimigo").style.backgroundPosition="center"
-                document.getElementById("atributos_inimigo").style.backgroundSize="cover"
-                atributos_inimigo.innerHTML =`<span> HP: ${ parseInt(localStorage.HP_inimigo) }<br>DEF: ${parseInt(localStorage.DEF_inimigo)}<br>ATK: ${parseInt(localStorage.ATK_inimigo)}</span>`  
+            
+            document.getElementById("atributos_inimigo").style.background = "url(img/pergaminho.png)"
+            document.getElementById("atributos_inimigo").style.backgroundPosition="center"
+            document.getElementById("atributos_inimigo").style.backgroundSize="cover"
+            atributos_inimigo.innerHTML =`<span> HP: ${ parseInt(localStorage.HP_inimigo) }<br>DEF: ${parseInt(localStorage.DEF_inimigo)}<br>ATK: ${parseInt(localStorage.ATK_inimigo)}</span>`  
+            
+                
         }, 1700)
 
         
