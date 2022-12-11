@@ -1,14 +1,13 @@
 //atributos de batalha do player
     atributos_player.innerHTML =`
-    <p> HP: ${localStorage.HP_player}</p>
-    <p> DEF: ${localStorage.DEF_player}</p>
-    <p> ATK: ${localStorage.ATK_player}</p>
+    <span> HP: ${localStorage.HP_player}<br>DEF: ${localStorage.DEF_player}<br>ATK: ${localStorage.ATK_player}</span>
     `
 
     mostrarlevel()
-
+    document.getElementById("atributos_inimigo").style.background = "url()"
 function jogar(){
-    localStorage.play = false
+    
+    
     //ocutar botão de play
         play.style.display="none"
     
@@ -48,12 +47,14 @@ function jogar(){
                 trocar_cor_inimigo()
             },800)
 
-        //mostrar atributos inimigo
-            atributos_inimigo.innerHTML =`
-            <p> HP: ${localStorage.HP_inimigo}</p>
-            <p> DEF: ${localStorage.DEF_inimigo}</p>
-            <p> ATK: ${localStorage.ATK_inimigo}</p>
-            ` 
+        //atributos de batalha do player
+        document.getElementById("atributos_inimigo").style.background = "url(img/pergaminho.png)"
+        document.getElementById("atributos_inimigo").style.backgroundPosition="center"
+        document.getElementById("atributos_inimigo").style.backgroundSize="cover"
+    
+    atributos_inimigo.innerHTML =`
+    <span> HP: ${localStorage.HP_inimigo}<br>DEF: ${localStorage.DEF_inimigo}<br>ATK: ${localStorage.ATK_inimigo}</span>
+    `
         //se ganhar
             if(localStorage.HP_inimigo <= 0){
                 //parar luta
@@ -118,12 +119,10 @@ function jogar(){
                 trocar_cor_player()
             },800)
 
-        //mostrar atributos do inimigo  
-            atributos_player.innerHTML =`
-            <p> HP: ${localStorage.HP_player}</p>
-            <p> DEF: ${localStorage.DEF_player}</p>
-            <p> ATK: ${localStorage.ATK_player}</p>
-            `
+        //atributos de batalha do player
+    atributos_player.innerHTML =`
+    <span> HP: ${localStorage.HP_player}<br>DEF: ${localStorage.DEF_player}<br>ATK: ${localStorage.ATK_player}</span>
+    `
         //se perder
             if(localStorage.HP_player <= 0){
                 //parar luta

@@ -105,33 +105,42 @@ body{
 }
 
 #atributos_player{
-    color: yellow;
-    font-size: 18px;
-    text-shadow: 1px 1px 3px rgb(2, 1, 1);
+    color: rgb(123,62,18);
+    font-size: 16px;
     font-weight: bold;
     position: absolute;
     left: 10px;
     bottom: 10px;
+    background-image: url("img/pergaminho.png");
+    background-position: center;
+    background-size: cover;
+    padding: 50px;
+    text-align: center;
+    
 }
 
 #atributos_inimigo{
-    color: yellow;
+    color: rgb(123,62,18);
     font-size: 18px;
-    text-shadow: 1px 1px 3px rgb(2, 1, 1);
     font-weight: bold;
     position: absolute;
     right: 10px;
     bottom: 10px;
+    background-image: url("img/pergaminho.png");
+    background-position: center;
+    background-size: cover;
+    padding: 50px;
+    text-align: center;
 }
 .cards{
     transition:all 150ms;
-    display: none;
+    display: block;
     position: absolute;
     top: -70%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 250px;
-    height: 400px;
+    width: 200px;
+    height: 200px;
     background-color: rebeccapurple;
     z-index: 2;
     border-radius: 20px;
@@ -151,6 +160,7 @@ body{
     font-family: monospace;
     position: absolute;
     right: 10px;
+    box-shadow: 2px 2px 7px black;
 }
 #level{
     color: yellow;
