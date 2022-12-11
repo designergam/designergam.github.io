@@ -1,5 +1,3 @@
-
-
 //iniciar inimigo 
     if(!localStorage.inimigo){
         localStorage.inimigo = Math.floor(4* Math.random())
@@ -9,9 +7,9 @@
         localStorage.vitorias = 1
     }
 //atributo player
-    if(!localStorage.HP_player){localStorage.HP_player = 40}
+    if(!localStorage.HP_player){localStorage.HP_player = 50}
     if(!localStorage.DEF_player){localStorage.DEF_player = 7}
-    if(!localStorage.ATK_player){localStorage.ATK_player = 8}
+    if(!localStorage.ATK_player){localStorage.ATK_player = 9}
 
 //atributo inimigo
     if(!localStorage.HP_inimigo){localStorage.HP_inimigo = 10}
@@ -23,10 +21,5 @@
 
     }
     if(localStorage.play == "true"){
-        setTimeout(function(){
-            jogar()
-        }, 500)
         play.style.display="none"
-
     }
-

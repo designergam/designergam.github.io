@@ -1,12 +1,17 @@
 function jogar(){
+    
     play.style.display="none" //ocutar botão de play
-    localStorage.inimigo = Math.floor(4* Math.random()) //INIMIGO ALEATORIO
-    inimigo.style.display="block" //trazer inimigo pro cenario
-
+    
     //trazer inimigo pro cenario
         setTimeout(function(){
+            escolher_inimigo()
+            inimigo.style.display="block" //trazer inimigo pro cenario
+            atributos_inimigo.style.display="block"//esconder atributos inimigo
+        },10)
+        
+        setTimeout(function(){
             inimigo.style.right="15%"
-        },30)
+        },300)
         
 
     //==============================ataque do jogador==============================
@@ -87,16 +92,19 @@ function jogar(){
                     setTimeout(function(){//tocar som de vitoria
                         vitoria_som()
                     },800)
+
                     setTimeout(function(){//mostar cartas
                         mostrar_cartas()
-                    },800)                   
+                    },800)      
+
                     mensagem_ganhou()//mensagem de vitoria                 
                     vitoria()//atribuir vitoria  
                     mostrarlevel()//mostrar level
                     inimigo_mais_forte()//tornar inimigo mais forte               
                     inimigo_cair_para_traz() //deitar inimigo e esconder
-                    atributos_inimigo.style.display="none"//esconder inimigo morto
-                    localStorage.xp = parseInt(localStorage.xp)+2   //recebe xp
+
+                    atributos_inimigo.style.display="none"//esconder atributos inimigo
+                    localStorage.xp = parseInt(localStorage.xp)+2  //recebe xp
             }
         }
 

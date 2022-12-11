@@ -41,13 +41,15 @@ function mostrar_cartas(){
 
 }
 function fechar_cards(){
-    
     //esconder cartas
     document.querySelector("#container_cards").style.display="none"
 
     localStorage.play = true
-    window.location.reload() 
- 
+    //window.location.reload() 
+
+    setTimeout(function(){
+        jogar()
+    },1000)
 }
 function mostrarlevel(){
     document.getElementById("level").innerText = `LEVEL:  ${localStorage.vitorias}`
@@ -61,10 +63,6 @@ async function inimigo_mais_forte(){
     localStorage.ATK_inimigo = 6 +  parseInt(localStorage.vitorias) + Math.floor(4* Math.random())
     localStorage.DEF_inimigo = 2 +  parseInt(localStorage.vitorias) + Math.floor(4* Math.random())
 }
-
-
-
-
 async function vitoria(){
     localStorage.vitorias ++
    
@@ -107,7 +105,11 @@ function inimigo_cair_para_traz(){
         inimigo.style.transform="translate(0%, 0%) rotate(0deg) scaleX(-1)"
     },800)
 
-    
+    setTimeout(function(){
+        inimigo.style.right="-15%"
+        localStorage.inimigo = Math.floor(4* Math.random()) //INIMIGO ALEATORIO
+        escolher_inimigo()
+    },900) 
 }
 function mensagem_derrota(){
     mensagem.innerText="YOU LOST!"
