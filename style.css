@@ -1,0 +1,183 @@
+body{
+    background-color: black;
+}
+#mensagemtela{
+    margin: auto;
+    text-align: center;
+    display: none;
+    color: white;
+}
+@media(max-width:768px){
+    #mensagemtela{
+        margin: auto;
+        text-align: center;
+        display: block;
+        color: white;
+    }
+}
+#play{
+    display: block;
+    transition: 200ms;
+    background-image: url(img/btn_play.png);
+    background-position: center;
+    background-size: cover;
+    width: 150px;
+    height: 65px;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+#play:hover{
+    transform: translate(-50%, -40%);
+    
+}
+
+#cenario{
+
+    width: 1000px;
+    height: 500px;
+    position: relative;
+    margin: auto;
+    margin-top: 50px;
+    background-image: url(img/backgroud.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    
+}
+
+#player_img{
+    width: 300px;
+    height: 250px;
+    position: absolute;
+    bottom: 100px;
+    left: 15%;
+    z-index: 1;
+    /* border: 2px solid red; */
+    background-image: url("https://cdn.domestika.org/c_limit,dpr_1.0,f_auto,q_auto,w_820/v1586415165/content-items/004/129/278/personaje-parada-original.gif?1586415165");
+    background-position-y: 7px;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: 130%;
+    
+}
+#chao{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 0%;
+    border-radius: 0px 0px 20px 20px;
+    background-size: cover;
+    background-image: url("https://static.vecteezy.com/ti/fotos-gratis/p2/5628385-parede-tijolo-textura-parede-pedra-textura-parede-pedra-foto.jpg");
+}
+
+#inimigo_img{
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    bottom: 100px;
+    right: -15%;
+    display: none;
+    background-size: 50%;
+    /* border: 2px solid red; */
+    background-position-y: 47px;
+    background-position-x: center;
+
+}
+#mensagem{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: yellow;
+    top: 15%;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#player_img{
+    transition: 500ms;
+}
+#inimigo_img{
+    transition: 500ms;
+
+}
+
+#atributos_player{
+    color: rgb(123,62,18);
+    font-size: 16px;
+    font-weight: bold;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    background-image: url("img/pergaminho.png");
+    background-position: center;
+    background-size: cover;
+    padding: 50px;
+    text-align: center;
+    
+}
+
+#atributos_inimigo{
+    color: rgb(123,62,18);
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    background-image: url("img/pergaminho.png");
+    background-position: center;
+    background-size: cover;
+    padding: 50px;
+    text-align: center;
+}
+.cards{
+    transition:all 150ms;
+    display: block;
+    position: absolute;
+    top: -70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    background-color: rebeccapurple;
+    z-index: 2;
+    border-radius: 20px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+
+.cards:hover{
+    border: 4px solid white;
+}
+.cards h1{
+    color: rgb(0, 0, 0);
+    background-color: white;
+    display: inline-block;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 15px;
+    font-family: monospace;
+    position: absolute;
+    right: 10px;
+    box-shadow: 2px 2px 7px black;
+}
+#level{
+    color: yellow;
+    font-size: 18px;
+    text-shadow: 1px 1px 3px rgb(2, 1, 1);
+    font-weight: bold;
+    position: absolute;
+    right: 10px;
+   
+}
+#comentarios{
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
