@@ -12,7 +12,7 @@ if(xp == next_level){
     reset_vida_e_levelUp()
     mensagem.innerHTML=`
     <h2>LEVEL UP!</h2> 
-    <p style="font-size: 18px; text-align: center;">HP: ${parseInt(localStorage.vitorias)} - DEF:${parseInt(localStorage.vitorias)} - ATK: ${parseInt(localStorage.vitorias)} </p>
+    <p style="font-size: 18px; text-align: center;">HP: +${parseInt(localStorage.vitorias)*0.5} &nbsp;&nbsp;&nbsp; DEF:+ ${parseInt(localStorage.vitorias)*0.5} &nbsp;&nbsp;&nbsp; ATK: +${parseInt(localStorage.vitorias)*0.5} </p>
     `
     setTimeout(function(){
         localStorage.next_level = parseInt(localStorage.next_level)*2

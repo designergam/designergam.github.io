@@ -201,9 +201,9 @@ async function inimigo_mais_forte(){
     localStorage.DEF_inimigo = 2 +  parseInt(localStorage.vitorias) + Math.floor(4* Math.random())
 }
 async function reset_vida_e_levelUp(){
-    localStorage.HP_player = parseInt(localStorage.HP_player) + parseInt(localStorage.vitorias) 
-    localStorage.ATK_player = parseInt(localStorage.ATK_player) + parseInt(localStorage.vitorias) 
-    localStorage.DEF_player = parseInt(localStorage.DEF_player) + parseInt(localStorage.vitorias) 
+    localStorage.HP_player = parseInt(localStorage.HP_player) + (parseInt(localStorage.vitorias)*0.5)
+    localStorage.ATK_player = parseInt(localStorage.ATK_player) + (parseInt(localStorage.vitorias)*0.5)
+    localStorage.DEF_player = parseInt(localStorage.DEF_player) + (parseInt(localStorage.vitorias) *0.5)
 }
 
 
