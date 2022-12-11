@@ -14,31 +14,34 @@
     
 
     <section id="cenario">
-        <h1 id="level">LEVEL: </h1>
+        <h1 id="level"></h1>
         <div id="container_cards">
         <div id="card1" class="cards"><h1 id="h1_atk"></h1></div>
         <div id="card2" class="cards"><h1 id="h1_def"></h1></div>
         <div id="card3" class="cards"><h1 id="h1_hp"></h1></div>
         </div>
 
+        <div id="chao"></div>
+
         <h2 id="mensagem"></h2>
-        <img src="https://cdn.domestika.org/c_limit,dpr_1.0,f_auto,q_auto,w_820/v1586415165/content-items/004/129/278/personaje-parada-original.gif?1586415165" alt="player" id="player_img" >
+        
+        <div id="player_img"></div>
         
         <div id="inimigo_img"></div>
 
         <div id="atributos_player"> </div>
         <div id="atributos_inimigo"> </div>
 
-        <div onclick="play()" id="play"></div>
+        <div onclick="jogar()" id="play"></div>
         <audio src="" id="audio" onclick="golpe_espada()"></audio>
         <audio src="audios/Proerd em 8 Bits.mp3" id="audio_fundo" onclick="musica_fundo()"></audio>
 
         
-        <button onclick="resetar()">RESETAR</button>
+        <!-- <button onclick="resetar()">RESETAR</button> -->
     </section>
 
     <!-- Comentarios -->
-    <div id="comentarios">
+    <!-- <div id="comentarios">
         <div async id="disqus_thread"></div>
         <script async>
             (function() { // DON'T EDIT BELOW THIS LINE
@@ -50,12 +53,14 @@
         </script>
         <noscript async>Please enable JavaScript to view the <a async href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
         <script async id="dsq-count-scr" src="//capitaotorrent.disqus.com/count.js" ></script>
-    </div>
+    </div> -->
+    
 </body>
 </html>
-
-<script src="cards.js"></script>
-<script src="condicoes.js"></script>
 <script src="variaveis.js"></script>
+<script src="condicoes.js"></script>
 <script src="funcoes.js"></script>
-<script src="efeito_sonoro.js"></script>
+
+
+
+
