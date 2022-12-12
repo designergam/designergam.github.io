@@ -11,7 +11,10 @@
 //botão de play
     let play = document.getElementById("play")
 
-//mensagem
+//botão de ataque
+    let button_atk = document.getElementById("atacar")
+
+//MENSAGEM
     let mensagem = document.getElementById("mensagem")
 
 //cenario
