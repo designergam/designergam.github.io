@@ -1,4 +1,12 @@
 function jogar(){
+    carta()
+    
+    if(parseInt(localStorage.xp) == parseInt(localStorage.next_level)){
+        levelup()
+        
+    }
+    
+     
     
     localStorage.inimigo = Math.floor(6* Math.random()) //INIMIGO ALEATORIO
 
@@ -11,10 +19,10 @@ function jogar(){
         esconder_btn_play()
     
     //trazer inimigo pro cenario
-    trazer_inimigo_pro_cenario()
+        trazer_inimigo_pro_cenario()
 
     //escolher inimigo
-    escolher_inimigo()     
+        escolher_inimigo()     
     
 }  
 
@@ -37,8 +45,9 @@ function jogar(){
                 player.style.left="35%"
 
                 //se ganhar======================
-                if(localStorage.HP_inimigo <= 0){
-                    vitoria()   
+                if(localStorage.HP_inimigo <= 0){           
+                     vitoria()  
+                     
                 } 
 
                 
@@ -104,7 +113,11 @@ function jogar(){
                     localStorage.HP_player = (localStorage.HP_player - dano_inimigo)
 
                     //atributos de batalha do player
-                atributos_player.innerHTML =`<span>XP: ${parseInt(localStorage.xp)}/${parseInt(localStorage.next_level)}<br> HP: ${parseInt(localStorage.HP_player)}<br>DEF: ${parseInt(localStorage.DEF_player)}<br>ATK: ${parseInt(localStorage.ATK_player)}</span>`
+
+                    atributos_do_player()
+                    function atributos_do_player(){
+                        atributos_player.innerHTML =`<span>XP: ${parseInt(localStorage.xp)}/${parseInt(localStorage.next_level)}<br> HP: ${parseInt(localStorage.HP_player)}<br>DEF: ${parseInt(localStorage.DEF_player)}<br>ATK: ${parseInt(localStorage.ATK_player)}</span>`
+                    }
                     
                 },500)
 

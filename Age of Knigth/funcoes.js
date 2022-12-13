@@ -1,26 +1,17 @@
-mostrarlevel()
-
-if(!localStorage.xp){
-    localStorage.xp = 0
-}
-if(!localStorage.next_level){
-    localStorage.next_level = 10
-}
-
-//atributos de batalha do player
-    atributos_player.innerHTML =`
-    <span>XP: ${parseInt(localStorage.xp)}/${parseInt(localStorage.next_level)}<br> HP: ${parseInt(localStorage.HP_player)}<br>DEF: ${parseInt(localStorage.DEF_player)}<br>ATK: ${parseInt(localStorage.ATK_player)}</span>
-    `
 
 
 
 
+
+    
 
 //===Funções de gameplay=======================================================
 function esconder_btn_play(){
     play.style.display="none" 
 }
+
 function mostrar_cartas(){
+    
     //esconder mensagem de vitoria
     setTimeout(function(){
         mensagem.innerText=""
@@ -69,6 +60,7 @@ function resetar(){
     window.location.reload()
 }
 async function vitoria(){
+    
     localStorage.vitorias ++
     esconder_controle()
                     
@@ -87,6 +79,8 @@ async function vitoria(){
     inimigo_cair_para_traz()
     esconder_atributos_do_inimigo()
     ganhar_xp()
+
+    
    
 }
 async function mensagem_ganhou(){
@@ -216,7 +210,7 @@ function dano_do_player(){
     dano_player = (localStorage.ATK_player - localStorage.DEF_inimigo)
     if(dano_player<=0){dano_player = 1}
 
-    localStorage.HP_inimigo = localStorage.HP_inimigo - dano_player
+    localStorage.HP_inimigo = parseInt(Number(localStorage.HP_inimigo - dano_player))
 
     setTimeout(function(){
         atualizar_atributos_inimigo()
@@ -230,4 +224,7 @@ function desabilitar_ataque_do_player(){
 }
 function habilitar_ataque_do_player(){
     button_atk.setAttribute('onclick', "atacar()");
+}
+function atributos_do_player(){
+    atributos_player.innerHTML =`<span>XP: ${parseInt(localStorage.xp)}/${parseInt(localStorage.next_level)}<br> HP: ${parseInt(localStorage.HP_player)}<br>DEF: ${parseInt(localStorage.DEF_player)}<br>ATK: ${parseInt(localStorage.ATK_player)}</span>`
 }

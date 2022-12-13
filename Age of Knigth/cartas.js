@@ -1,7 +1,4 @@
-//Carta aleatorio
-    localStorage.card_ATK = Math.floor(5* Math.random())
-    localStorage.card_DEF = Math.floor(4* Math.random())
-    localStorage.card_HP = Math.floor(5* Math.random())
+
 
 //Cartas de ATK
     let carta_ATK_1 = "https://img.freepik.com/vetores-premium/espada-de-ferro-com-estilo-pixel-art_475147-440.jpg"
@@ -21,6 +18,11 @@
     let carta_HP_2 = "https://img.freepik.com/vetores-premium/caixao-com-estilo-pixel-art_475147-670.jpg"
     let carta_HP_3 = "https://img.freepik.com/vetores-premium/frasco-de-pocao-mini-vermelho-com-estilo-pixel-art_475147-230.jpg"
    
+    //Carta aleatorio
+    function carta(){
+    localStorage.card_ATK = Math.floor(5* Math.random())
+    localStorage.card_DEF = Math.floor(4* Math.random())
+    localStorage.card_HP = Math.floor(5* Math.random())
 
 //carta de atk
     if(localStorage.card_ATK == 0){
@@ -222,4 +224,5 @@
         fechar_cards()
         
     });
+    }
     }

@@ -7,9 +7,9 @@
         localStorage.vitorias = 1
     }
 //atributo player
-    if(!localStorage.HP_player){localStorage.HP_player = 50}
+    if(!localStorage.HP_player){localStorage.HP_player = 30}
     if(!localStorage.DEF_player){localStorage.DEF_player = 7}
-    if(!localStorage.ATK_player){localStorage.ATK_player = 9}
+    if(!localStorage.ATK_player){localStorage.ATK_player = 10}
 
 
 
