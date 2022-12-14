@@ -89,10 +89,10 @@ function cartas_aleatorias(){
     //Escolher carta Aleatoriamente
     localStorage.card_ATK =  Math.floor(5* Math.random())
     localStorage.card_DEF = Math.floor(4* Math.random())
-    localStorage.card_HP = Math.floor(5* Math.random())
+    localStorage.card_HP = Math.floor(3* Math.random())
 }
 function mostrar_cartas(){
-    associar_carta()
+    
     //mostrar cartas
     cartas.style.display="block"
     card1.style.display="block"

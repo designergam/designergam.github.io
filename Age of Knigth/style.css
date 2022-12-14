@@ -241,6 +241,10 @@ body{
     font-family: monospace;
     position: absolute;
     right: 10px;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
     box-shadow: 2px 2px 7px black;
 }
 #level{
@@ -251,6 +255,7 @@ body{
     position: absolute;
     right: 10px;
     display: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
    
 }
 #comentarios{

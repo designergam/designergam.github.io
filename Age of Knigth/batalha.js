@@ -23,7 +23,7 @@ function jogar(){
         mostrar_atributos_inimigo()
         habilitar_ataque_do_player()
         atualizar_atributos_inimigo()
-    }, 500)
+    }, 200)
     
 }  
 
@@ -125,14 +125,16 @@ function jogar(){
                     adicionar_vitoria()
                     posicao_inicial_inimigo()
                     adicionar_level()
-
+                    associar_carta()
                     
                     
                     setTimeout(function(){
                         Atualizar_atributos_do_player()
                         mostrarlevel()
                         esconder_mensagem()
+                        
                         mostrar_cartas()
+                        
                     }, 2000)
 
                 }) 
