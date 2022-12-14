@@ -48,6 +48,34 @@ body{
     border-radius: 20px;
     
 }
+#mutar_musica{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 3px solid green;
+    z-index: 3;
+    background-image: url(img/som_img.png);
+    background-position: center;
+    background-size: 130%;
+}
+#reset{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 70px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    z-index: 3;
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    color: white;
+    background-color: red;
+}
 
 #player_img{
     width: 300px;
@@ -62,6 +90,7 @@ body{
     background-position-x: center;
     background-repeat: no-repeat;
     background-size: 130%;
+    
     
 }
 #chao{
@@ -106,10 +135,16 @@ body{
     
 }
 #player_img{
-    transition: 500ms;
+    transition:  500ms;
+    background-position: center;
+    background-position-y: 7px;
+    background-repeat: no-repeat;
+    background-size: 130%;
 }
 #inimigo_img{
     transition: 500ms;
+    
+    display: none;
     
     
     
@@ -171,7 +206,7 @@ body{
 
     background-image: url("img/pergaminho.png");
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 .cards{
@@ -189,6 +224,7 @@ body{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    z-index: 4;
     
 }
 
@@ -226,26 +262,31 @@ body{
 
 #controle{
     position: absolute;
-    top: 10%;
+    bottom: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
 
     display: none;
-
     
-    padding: 10px;
-    background-color: rgb(247, 247, 247);
+    padding-left: 20px;
+    padding-right: 20px;
+    
+    background-color: #15436d;
+    border: 3px solid #8b8cb4;
+    box-shadow: 3px 3px 5px black;
+    border-radius: 20px;
  
 }
 #bag{
+    transition: 300ms;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
 
     display: none;
-    width: 550px;
-    height: 400px;
+    width: 40px;
+    height: 40px;
 
     
     border-radius: 15px;
@@ -256,14 +297,38 @@ body{
 }
 
 #bag button{
-border-radius: 50%;
-border: none;
-width: 30px;
-height: 30px;
-font-size: 20px;
-background-color: rgb(80, 48, 33);
-color:rgb(176,111,82) ;
-position: absolute;
-top: 5px;
-right: 5px
+    border-radius: 50%;
+    border: none;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    background-color: rgb(80, 48, 33);
+    color:rgb(176,111,82) ;
+    position: absolute;
+    top: 5px;
+    right: 5px
+}
+#mochila{
+    background-image: url(img/bag_img.png);
+    background-position: center;
+    background-size: cover;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 3px solid black;
+    margin: 10px;
+}
+#atacar{
+    background-image: url(img/icone_ateque_basico.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 3px solid green;
+    margin: 10px;
+}
+#atacar:hover{
+    border: 3px solid blue
+   
 }

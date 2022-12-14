@@ -1,138 +1,152 @@
+//iniciar musica
+ musica_fundo()
 function jogar(){
-    carta()
     
-    if(parseInt(localStorage.xp) == parseInt(localStorage.next_level)){
-        levelup()
-        
-    }
-    
-     
-    
-    localStorage.inimigo = Math.floor(6* Math.random()) //INIMIGO ALEATORIO
 
-    mostrar_controles()
+    esconder_btn_play()
     
-    //atribuir aleatoriamente incremento no inimigo
-        adicional_aleatorio()
-
-    //ocutar botão de play  
-        esconder_btn_play()
+    inimigo_aleatorio()
+    inimigo_mais_forte()
     
-    //trazer inimigo pro cenario
-        trazer_inimigo_pro_cenario()
+    atualizar_atributos_inimigo()
+    posicao_inicial_inimigo()
+    mostrar_inimigo()
+    
 
-    //escolher inimigo
-        escolher_inimigo()     
+    setTimeout(function(){
+        mostrar_inimigo_escolhido()
+        mostrar_controles()
+        mostrar_atributos_inimigo()
+        habilitar_ataque_do_player()
+        atualizar_atributos_inimigo()
+    }, 500)
     
 }  
 
-    //==============================ataque do jogador==============================
-        
-    function atacar(){
 
-        
-        dano_do_player()
+    function ataque_player(){
+        //ataque do player======================================================================== 
+        if(localStorage.HP_player > 0 ){
+            avancar_player()
+            cartas_aleatorias()
+            trocar_img_player_golpe()
+            som_golpe_1()
+            desabilitar_ataque_do_player()
 
-
-        
-        desabilitar_ataque_do_player()
-        
-
-        //atacar
+            //Golpe Final do player
+            let golpe_Final_player =   Number(localStorage.HP_inimigo)  + Number(localStorage.DEF_inimigo )- Number(localStorage.ATK_player)
             setTimeout(function(){
-                trocar_img_player_golpe()
-                som_golpe_espada()
-                player.style.left="35%"
-
-                //se ganhar======================
-                if(localStorage.HP_inimigo <= 0){           
-                     vitoria()  
-                     
-                } 
-
-                
-
-            },500)
-    
-        //recuar
-            setTimeout(function(){
-                player_parado()
-                player.style.left="15%"
-                trocar_cor_inimigo() 
-                atualizar_atributos_inimigo()
-            },1000)
-
-
-
-            if(localStorage.HP_inimigo > 0){
-                setTimeout(function(){
-                    inimigo_ataca()
-                },1000)
-        
-            }
-
-        
-
-                      
-    }  
-
-
-    
-        
-            
-            
-        
-
-        function se_perder(){
-            if(localStorage.HP_player <= 0){
-                
-                //mostrar mensagem de derrota
-                    mensagem_derrota()
-
-                //resetar game over
+                if(golpe_Final_player <= 0){
+                    morte_inimigo()
                     setTimeout(function(){
-                        resetar()
-                    }, 3000)
-        
-            }
-        }
-  
-        function inimigo_ataca(){
-            //evitar dano negativo
+                    esconder_inimigo()
+                    }, 200)
+                }
+            }, 300)
 
-                dano_inimigo = (localStorage.ATK_inimigo - localStorage.DEF_player)
-                if(dano_inimigo<=0){dano_inimigo = 1}
-
-                
+            setTimeout(function(){
+                recuar_player()
+                piscar_inimigo()
+                player_parado()
+                dano_do_player()
+                atualizar_atributos_inimigo()
+            },500)
             
-            //atacar
+        }
+
+
+
+
+
+
+        setTimeout(function(){
+            //ataque do inimigo========================================================================       
+            if(localStorage.HP_inimigo > 0 ){
                 setTimeout(function(){
-                    som_golpe_espada()
+                    avancar_inimigo()
                     
-                    inimigo.style.right="35%"
-                    localStorage.HP_player = (localStorage.HP_player - dano_inimigo)
+                    som_golpe_1()
 
-                    //atributos de batalha do player
+                    // Se perder - Golpe final do inimigo
+                    let golpe_Final_inimigo = Number(localStorage.HP_player)  + Number(localStorage.DEF_player )- Number(localStorage.ATK_inimigo)
+                    setTimeout(function(){
+                        if(golpe_Final_inimigo <= 0){
+                            morte_player()
+                            setTimeout(function(){
+                                esconder_player()
+                            }, 200)
 
-                    atributos_do_player()
-                    function atributos_do_player(){
-                        atributos_player.innerHTML =`<span>XP: ${parseInt(localStorage.xp)}/${parseInt(localStorage.next_level)}<br> HP: ${parseInt(localStorage.HP_player)}<br>DEF: ${parseInt(localStorage.DEF_player)}<br>ATK: ${parseInt(localStorage.ATK_player)}</span>`
-                    }
+                            
+                            
+                            setTimeout(function(){
+                                esconder_controle()
+                                mensagem_derrota()
+                            }, 300)
+
+                            setTimeout(function(){
+                                resetar()
+                            },2500)
+
+                            
+                            
+                        }
+                    }, 300)
+
                     
-                },500)
-
-                
-
-            //recuar
-                setTimeout(function(){
-                    inimigo.style.right="15%"
-                    trocar_cor_player()
-                    se_perder()
-
-            //LIBERA BTN ATK DO PLAYER
-                    button_atk.setAttribute('onclick', "atacar()");
                 },1000)
+                
+                setTimeout(function(){
+                    dano_do_inimigo()
+                    Atualizar_atributos_do_player()
+                    recuar_inimigo()
+                    piscar_player()
+                }, 1500)
 
+                setTimeout(function(){
+                    habilitar_ataque_do_player()
+                }, 2000)
+
+            }else(
+                //se ganhar
+                setTimeout(function(){
+                    
+                    if(localStorage.xp == localStorage.next_level){
+                        mensagem_de_levelup()
+                        levelup()
+                    }else(mensagem_vitoria())
+
+                    esconder_atributos_do_inimigo()
+                    vitoria_som()
+                    esconder_controle()
+                    adicionar_vitoria()
+                    posicao_inicial_inimigo()
+                    adicionar_level()
+
+                    
+                    
+                    setTimeout(function(){
+                        Atualizar_atributos_do_player()
+                        mostrarlevel()
+                        esconder_mensagem()
+                        mostrar_cartas()
+                    }, 2000)
+
+                }) 
+
+                
+
+                
+            )
+
+        },500)
+    }
+    
+
+
+    
+        
             
+            
+        
 
-        }
+        
