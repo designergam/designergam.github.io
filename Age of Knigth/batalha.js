@@ -1,13 +1,14 @@
 //iniciar musica
  musica_fundo()
 function jogar(){
+    inimigo_mais_forte()
     mostrar_chao()
     
 
     esconder_btn_play()
     
     inimigo_aleatorio()
-    inimigo_mais_forte()
+    
     
     atualizar_atributos_inimigo()
     posicao_inicial_inimigo()

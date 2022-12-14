@@ -28,9 +28,7 @@ if(!localStorage.next_level){
 
 
 //atributos iniciais do inimigo
-    if(!localStorage.HP_inimigo){localStorage.HP_inimigo = 10}
-    if(!localStorage.ATK_inimigo){localStorage.ATK_inimigo = 5}
-    if(!localStorage.DEF_inimigo){localStorage.DEF_inimigo = 2}
+   
 
 
 //cartas aleatorias iniciais

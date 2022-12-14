@@ -239,20 +239,20 @@ function trazer_inimigo(){
     document.getElementById("inimigo_img").style.right="15%"
 }
 function inimigo_mais_forte(){     
-    let incremento_ATK = Math.floor(4* Math.random())
-    if(incremento_ATK <= 0){incremento_ATK = 1}
+    //incremento aleatorio
+        let incremento_ATK = Number(Math.floor(6* Math.random()))
+        let incremento_DEF = Number(Math.floor(6* Math.random()))
+        let incremento_HP = Number(Math.floor(6* Math.random()))
+        console.log(incremento_HP)
+        if(incremento_ATK <= 0){incremento_ATK = 1}
+        if(incremento_DEF <= 0){incremento_DEF = 1}
+        if(incremento_HP <= 0){incremento_HP = 1}
 
-    let incremento_DEF = Math.floor(3* Math.random())
-    if(incremento_DEF <= 0){incremento_DEF = 1}
-
-    let incremento_HP = Math.floor(6* Math.random())
-    if(incremento_HP <= 0){incremento_HP = 1}
     
-   
-        // + incrimento = vitorias         +incremento rando +0 a +3
-        localStorage.HP_inimigo = 10 + Number( localStorage.vitorias *  incremento_HP)
-        localStorage.ATK_inimigo = 5 + Number( localStorage.vitorias *  incremento_ATK)
-        localStorage.DEF_inimigo = 2 + Number( localStorage.vitorias *  incremento_DEF)
+     //  vida do inimigo
+     localStorage.HP_inimigo =  parseInt( (Number(localStorage.HP_player) *0.1) + (Number(incremento_HP) * Number(localStorage.vitorias)) ) 
+     localStorage.ATK_inimigo = parseInt( (Number(localStorage.ATK_player)*0.1) + (Number(incremento_ATK) * Number(localStorage.vitorias)) )
+     localStorage.DEF_inimigo = parseInt( (Number(localStorage.DEF_player)*0.1) + (Number(incremento_DEF) * Number(localStorage.vitorias)) )
    
     
 }
@@ -282,11 +282,6 @@ function mostrar_inimigo_escolhido(){
         inimigo.style.backgroundPositionY="120%"
     }
     if(localStorage.inimigo == 3){
-        //Caracteristica Pessoal
-        localStorage.DEF_inimigo =  parseInt( Number(localStorage.DEF_inimigo) + 2)
-        localStorage.HP_inimigo =  parseInt( Number(localStorage.HP_inimigo) + 1)
-        localStorage.ATK_inimigo =  parseInt( Number(localStorage.ATK_inimigo) + 2)
-
         inimigo.style.transform="scaleX(-1)"
         inimigo.style.background=`url(${inimigo_4})`
         inimigo.style.backgroundSize="95%"
@@ -294,12 +289,6 @@ function mostrar_inimigo_escolhido(){
         inimigo.style.backgroundRepeat="no-repeat"
     }
     if(localStorage.inimigo == 4){
-        
-        //Caracteristica Pessoal
-        localStorage.DEF_inimigo =  parseInt( Number(localStorage.DEF_inimigo) + 1)
-        localStorage.HP_inimigo =  parseInt( Number(localStorage.HP_inimigo) + 2)
-        localStorage.ATK_inimigo =  parseInt( Number(localStorage.ATK_inimigo) + 1)
-
         inimigo.style.transform="scaleX(-1)"
         inimigo.style.background=`url(${inimigo_9})`
         inimigo.style.backgroundSize="95%"
@@ -309,11 +298,6 @@ function mostrar_inimigo_escolhido(){
     }
     if(localStorage.inimigo == 5){
         
-        //Caracteristica Pessoal
-        localStorage.DEF_inimigo =  parseInt( Number(localStorage.DEF_inimigo) + 1)
-        localStorage.HP_inimigo =  parseInt( Number(localStorage.HP_inimigo) + 2)
-        localStorage.ATK_inimigo =  parseInt( Number(localStorage.ATK_inimigo) + 3)
-
         inimigo.style.transform="scaleX(-1)"
         inimigo.style.background=`url(${inimigo_13})`
         inimigo.style.backgroundSize="95%"
@@ -322,12 +306,6 @@ function mostrar_inimigo_escolhido(){
         inimigo.style.backgroundPositionY="300%"
     }
     if(localStorage.vitorias == 10){
-        
-        //Caracteristica Pessoal
-        localStorage.DEF_inimigo =  parseInt( Number(localStorage.DEF_inimigo) + 5)
-        localStorage.HP_inimigo =  parseInt( Number(localStorage.HP_inimigo) + 5)
-        localStorage.ATK_inimigo =  parseInt( Number(localStorage.ATK_inimigo) + 5)
-
         inimigo.style.transform="scaleX(1)"
         inimigo.style.background=`url(${inimigo_5})`
         inimigo.style.backgroundSize="95%"
