@@ -54,22 +54,22 @@ let musica = document.getElementById("audio_fundo")
 
 //===CARTAS===
 //Cartas de ATK
-    let carta_ATK_1 = "https://img.freepik.com/vetores-premium/espada-de-ferro-com-estilo-pixel-art_475147-440.jpg"
-    let carta_ATK_2 = "https://static.vecteezy.com/system/resources/previews/007/816/861/original/pixel-art-iron-broadsword-vector.jpg"
-    let carta_ATK_3 = "https://img.freepik.com/vetores-premium/espada-pirata-com-estilo-pixel-art_475147-456.jpg"
-    let carta_ATK_4 = "https://img.freepik.com/vetores-premium/grande-espada-em-estilo-pixel-art_475147-1940.jpg"
-    let carta_ATK_5 = "https://img.freepik.com/vetores-premium/shuriken-em-estilo-pixel-art_475147-1411.jpg"
+    let carta_ATK_1 = "img/cartas/atk1-compressed.jpg"
+    let carta_ATK_2 = "img/cartas/atk2-compressed.jpg"
+    let carta_ATK_3 = "img/cartas/atk3-compressed.jpg"
+    let carta_ATK_4 = "img/cartas/atk4-compressed.jpg"
+    let carta_ATK_5 = "img/cartas/atk5-compressed.jpg"
 
 //Cartas de DEF
-    let carta_DEF_1 = "https://img.freepik.com/vetores-premium/escudo-de-ferro-com-estilo-pixel-art_475147-439.jpg"
-    let carta_DEF_2 = "https://img.freepik.com/vetores-premium/escudo-de-madeira-em-estilo-pixel_475147-1861.jpg"
-    let carta_DEF_3 = "https://img.freepik.com/vetores-premium/escudo-branco-vermelho-com-estilo-pixel-art_475147-494.jpg"
-    let carta_DEF_4 = "https://img.myloview.com.br/quadros/pixel-art-game-item-icon-and-objects-for-the-design-vector-illustration-fantasy-world-old-game-console-700-179505573.jpg"
+    let carta_DEF_1 = "img/cartas/def1-compressed.jpg"
+    let carta_DEF_2 = "img/cartas/def2-compressed.jpg"
+    let carta_DEF_3 = "img/cartas/def3-compressed.jpg"
+    let carta_DEF_4 = "img/cartas/def4-compressed.jpg"
 
 //Cartas de HP
-    let carta_HP_1 = "https://static.vecteezy.com/ti/vetor-gratis/p3/5644880-vermelho-coracao-em-pixel-estilo-arte-icone-de-8-bit-simbolo-dia-dos-namorados-gratis-vetor.jpg"
-    let carta_HP_2 = "https://img.freepik.com/vetores-premium/caixao-com-estilo-pixel-art_475147-670.jpg"
-    let carta_HP_3 = "https://img.freepik.com/vetores-premium/frasco-de-pocao-mini-vermelho-com-estilo-pixel-art_475147-230.jpg"
+    let carta_HP_1 = "img/cartas/hp1-compressed.jpg"
+    let carta_HP_2 = "img/cartas/hp2-compressed.jpg"
+    let carta_HP_3 = "img/cartas/hp3-compressed.jpg"
 
 
 //Cenarios
