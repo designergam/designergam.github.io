@@ -1,6 +1,7 @@
 //iniciar musica
  musica_fundo()
 function jogar(){
+    mostrar_chao()
     
 
     esconder_btn_play()
@@ -12,9 +13,12 @@ function jogar(){
     posicao_inicial_inimigo()
     mostrar_inimigo()
     
-
+    
     setTimeout(function(){
         mostrar_inimigo_escolhido()
+        trazer_player()
+        mostrar_level()
+        habilitar_atributos_player()
         mostrar_controles()
         mostrar_atributos_inimigo()
         habilitar_ataque_do_player()
@@ -141,12 +145,3 @@ function jogar(){
         },500)
     }
     
-
-
-    
-        
-            
-            
-        
-
-        

@@ -59,12 +59,11 @@ function desmutar(){
     musica.volume = 0.1;
     musica.play()
 }
-
 function abrir_bag(){
     document.getElementById("bag").style.display="block"
     setTimeout(function(){
-        document.getElementById("bag").style.width ="550px"
-        document.getElementById("bag").style.height ="400px"
+        document.getElementById("bag").style.width ="90%"
+        document.getElementById("bag").style.height ="90%"
     }, 30)
     
 }
@@ -163,6 +162,26 @@ function piscar_player(){
     }, 800)
 
 }
+function mostrar_chao(){
+    document.getElementById("chao").style.transition = "700ms"
+    document.getElementById("chao").style.display="block"
+
+    setTimeout(function(){
+        document.getElementById("chao").style.height="50%"
+    },50)
+    
+}
+function mostrar_level(){
+    document.getElementById("level").style.display="block"
+}
+
+
+//
+//
+//
+//
+//
+//===Funções inimigo=======================================================
 function piscar_inimigo(){
 
     let piscar_inimigo = setInterval(function(){
@@ -181,13 +200,6 @@ function piscar_inimigo(){
     }, 800)
 
 }
-
-//
-//
-//
-//
-//
-//===Funções inimigo=======================================================
 function mostrar_inimigo(){
     document.getElementById("inimigo_img").style.display="block"
 }
@@ -251,7 +263,7 @@ function mostrar_inimigo_escolhido(){
         inimigo.style.backgroundSize="60%"
         inimigo.style.backgroundPosition="center"
         inimigo.style.backgroundRepeat="no-repeat"
-        inimigo.style.backgroundPositionY="100px"
+        inimigo.style.backgroundPositionY="100%"
     }
     if(localStorage.inimigo == 1){
         inimigo.style.transform="scaleX(1)"
@@ -259,7 +271,7 @@ function mostrar_inimigo_escolhido(){
         inimigo.style.backgroundSize="95%"
         inimigo.style.backgroundPosition="center"
         inimigo.style.backgroundRepeat="no-repeat"
-        inimigo.style.backgroundPositionY="18px"
+        inimigo.style.backgroundPositionY="140%"
     }
     if(localStorage.inimigo == 2){
         inimigo.style.transform="scaleX(-1)"
@@ -267,7 +279,7 @@ function mostrar_inimigo_escolhido(){
         inimigo.style.backgroundSize="95%"
         inimigo.style.backgroundPosition="center"
         inimigo.style.backgroundRepeat="no-repeat"
-        inimigo.style.backgroundPositionY="10px"
+        inimigo.style.backgroundPositionY="120%"
     }
     if(localStorage.inimigo == 3){
         //Caracteristica Pessoal
@@ -293,7 +305,7 @@ function mostrar_inimigo_escolhido(){
         inimigo.style.backgroundSize="95%"
         inimigo.style.backgroundPosition="center"
         inimigo.style.backgroundRepeat="no-repeat"
-        inimigo.style.backgroundPositionY="40px"
+        inimigo.style.backgroundPositionY="300%"
     }
     if(localStorage.inimigo == 5){
         
@@ -307,14 +319,13 @@ function mostrar_inimigo_escolhido(){
         inimigo.style.backgroundSize="95%"
         inimigo.style.backgroundPosition="center"
         inimigo.style.backgroundRepeat="no-repeat"
-        inimigo.style.backgroundPositionY="40px"
+        inimigo.style.backgroundPositionY="300%"
     }
-    //BOSS
     if(localStorage.vitorias == 10){
         
         //Caracteristica Pessoal
         localStorage.DEF_inimigo =  parseInt( Number(localStorage.DEF_inimigo) + 5)
-        localStorage.HP_inimigo =  parseInt( Number(localStorage.HP_inimigo) + 10)
+        localStorage.HP_inimigo =  parseInt( Number(localStorage.HP_inimigo) + 5)
         localStorage.ATK_inimigo =  parseInt( Number(localStorage.ATK_inimigo) + 5)
 
         inimigo.style.transform="scaleX(1)"
@@ -322,9 +333,9 @@ function mostrar_inimigo_escolhido(){
         inimigo.style.backgroundSize="95%"
         inimigo.style.backgroundPosition="center"
         inimigo.style.backgroundRepeat="no-repeat"
-        inimigo.style.backgroundPositionY="70px"
-
+        inimigo.style.backgroundPositionY="100%"
     }
+    
 }
 function avancar_inimigo(){
     inimigo.style.right = "60%"
@@ -351,6 +362,7 @@ function morte_inimigo(){
     inimigo.style.transform = "translateY(-120%) translateX(120%)"
     
 }
+
 //
 //
 //
@@ -389,6 +401,9 @@ function habilitar_ataque_do_player(){
 function Atualizar_atributos_do_player(){
     atributos_player.innerHTML =`<span>XP: ${parseInt(localStorage.xp)}/${parseInt(localStorage.next_level)}<br> HP: ${parseInt(localStorage.HP_player)}<br>DEF: ${parseInt(localStorage.DEF_player)}<br>ATK: ${parseInt(localStorage.ATK_player)}</span>`
 }
+function habilitar_atributos_player(){
+    atributos_player.style.display="block"
+}
 function avancar_player(){
     player.style.left = "60%"
     player.style.zIndex = 3
@@ -402,4 +417,12 @@ function esconder_player(){
 }
 function mostrar_player(){
     document.getElementById("player_img").style.display="block"
+}
+function trazer_player(){
+    document.getElementById("player_img").style.display = "block"
+    setTimeout(function(){
+        document.getElementById("player_img").style.left="15%"
+    },50)
+    
+    
 }

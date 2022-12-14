@@ -1,0 +1,379 @@
+@media (max-width:768px){
+    #cenario{
+
+        width: 98%;
+        height: 300px;
+        position: relative;
+        margin: auto;
+        margin-top: 50px;
+        
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 20px;
+        
+        
+    }
+    
+    body{
+        background-color: black;
+    }
+    
+    
+    #play{
+        display: block;
+        transition: 200ms;
+        background-image: url(img/btn_play.png);
+        background-position: center;
+        background-size: cover;
+        width: 150px;
+        height: 65px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 3;
+    }
+    #play:hover{
+        transform: translate(-50%, -40%);
+        
+    }
+    
+    
+    
+    #mutar_musica{
+        position: absolute;
+        top: 5px;
+        left: 25%;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 3px solid green;
+        z-index: 3;
+        background-image: url(img/som_img.png);
+        background-position: center;
+        background-size: 130%;
+    }
+    #reset{
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        width: 70px;
+        height: 30px;
+        border-radius: 10px;
+        border: none;
+        z-index: 3;
+        font-size: 16px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: bold;
+        color: white;
+        background-color: red;
+    }
+    
+    #player_img{
+        width: 300px;
+        height: 250px;
+        position: absolute;
+        bottom: 37%;
+        left: 15%;
+        z-index: 1;
+        /* border: 2px solid red; */
+        background-image: url("https://cdn.domestika.org/c_limit,dpr_1.0,f_auto,q_auto,w_820/v1586415165/content-items/004/129/278/personaje-parada-original.gif?1586415165");
+        background-position-y: 7px;
+        background-position-x: center;
+        background-repeat: no-repeat;
+        background-size: 130%;
+        left: -10%;
+        
+        
+    }
+    
+    
+    #chao{
+        transition: 400ms;
+        display: none;
+        width: 100%;
+        height: 0%;
+        position: absolute;
+        bottom: 0%;
+        border-radius: 0px 0px 20px 20px;
+        background-size: cover;
+        
+        background-image: url("https://static.vecteezy.com/ti/fotos-gratis/p2/5628385-parede-tijolo-textura-parede-pedra-textura-parede-pedra-foto.jpg");
+    }
+    
+    
+    #mensagem{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: yellow;
+        top: 15%;
+        font-size: 16px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background-color: rgba(0, 0, 0, 0.821);
+        border-radius: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        text-align: center;
+        width: 50%;
+
+        
+    }
+    #player_img{
+        display: none;
+        transition:  500ms;
+        background-position: center;
+        background-position-y: 11px;
+        background-repeat: no-repeat;
+        background-size: 140%;
+        /* border: 2px solid red; */
+        width: 80px;
+        height: 80px;
+        bottom: 50%;
+    }
+   
+    #inimigo_img{
+        transition: 500ms;
+        display: none;
+        /* border: 2px solid rgb(9, 255, 0); */
+        width: 80px;
+        height: 80px;
+        bottom: 50%;
+
+
+        
+        position: absolute;
+        
+        right: -15%;
+        display: none;
+        background-size: 50%;
+        /* border: 2px solid red; */
+        
+        background-position-x: center;
+
+        
+    
+    }
+    
+    #atributos_player{
+        display: none;
+        color: rgb(123,62,18);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 10px;
+        font-weight: bold;
+        padding: 30px;
+        padding-left: 32px;
+        
+    
+        position: relative;
+        text-align: center;
+        line-height: 10px;
+       
+        
+        margin: auto;
+        
+    
+        position: absolute;
+        left: 0px;
+        bottom: -5px;
+    
+        height:40px;
+        width: 40px;
+
+        
+    
+        background-image: url("img/pergaminho.png");
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    
+    #atributos_inimigo{
+        color: rgb(123,62,18);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 10px;
+        font-weight: bold;
+        padding: 30px;
+        padding-left: 32px;
+        
+    
+        position: relative;
+        text-align: center;
+        line-height: 10px;
+       
+        
+        margin: auto;
+        
+    
+        position: absolute;
+        right: 0px;
+        bottom: -5px;
+    
+        height:40px;
+        width: 40px;
+
+        
+    
+        background-image: url("img/pergaminho.png");
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+
+    .cards{
+        transition:all 150ms;
+        display: block;
+        position: absolute;
+        top: -70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80px;
+        height: 80px;
+        background-color: rebeccapurple;
+        z-index: 2;
+        border-radius: 20px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 4;
+        
+    }
+    
+    
+    .cards:hover{
+        border: 4px solid white;
+    }
+    .cards h1{
+        color: rgb(0, 0, 0);
+        background-color: white;
+        display: inline-block;
+        padding: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 15px;
+        font-family: monospace;
+        position: absolute;
+        bottom: 100%;
+        text-align: center;
+        font-size: 10px;
+        box-shadow: 2px 2px 7px black;
+    }
+    #level{
+        display: none;
+        color: yellow;
+        font-size: 18px;
+        text-shadow: 1px 1px 3px rgb(2, 1, 1);
+        font-weight: bold;
+        position: absolute;
+        right: 10px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+       
+    }
+    #comentarios{
+        width: 80%;
+        margin: auto;
+        margin-top: 50px;
+    }
+    
+    
+    #bag{
+        /* border: 2px solid red; */
+        transition: 300ms;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    
+        
+        display: none;
+        width: 40px;
+        height: 40px;
+        
+    
+        
+        border-radius: 15px;
+        background-color: rgb(176,111,82);
+        border: 3px solid rgb(80, 48, 33);
+        border: 2px solid red;
+        z-index: 4;
+    }
+    
+    #bag button{
+        border-radius: 50%;
+        border: none;
+        width: 30px;
+        height: 30px;
+        font-size: 20px;
+        background-color: rgb(80, 48, 33);
+        color:rgb(176,111,82) ;
+        position: absolute;
+        top: 5px;
+        right: 5px
+    }
+    #controle{
+        
+        position: absolute;
+        bottom: 48%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    
+        
+        
+        display: none ;
+        padding: 3px;
+        padding-left: 20px;
+        padding-right: 20px;
+        
+        
+        background-color: #15436d;
+        border: 3px solid #8b8cb4;
+        box-shadow: 3px 3px 5px black;
+        border-radius: 20px;
+        
+     
+    }
+    #mochila{
+        
+
+        background-image: url(img/bag_img.png);
+        background-position: center;
+        background-size: cover;
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        border-radius: 50%;
+        border: 3px solid black;
+        margin: 0;
+        padding: 0;
+        margin-left: 5px;
+        margin-right: 5px;
+        
+        
+    }
+    #atacar{
+        
+
+        background-image: url(img/icone_ateque_basico.jpg);
+        background-position: center;
+        background-size: cover;
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        border-radius: 50%;
+        border: 3px solid green;
+        margin: 0;
+        padding: 0;
+        margin-left: 5px;
+        margin-right: 5px;
+        
+        
+    }
+    #atacar:hover{
+        border: 3px solid blue
+       
+    }
+}
