@@ -317,7 +317,7 @@
     #controle{
         
         position: absolute;
-        bottom: 48%;
+        bottom: 40%;
         left: 50%;
         transform: translate(-50%, -50%);
     
@@ -342,15 +342,15 @@
         background-image: url(img/bag_img.png);
         background-position: center;
         background-size: cover;
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
         display: inline-block;
         border-radius: 50%;
         border: 3px solid black;
         margin: 0;
         padding: 0;
-        margin-left: 5px;
-        margin-right: 5px;
+        margin-left: 7px;
+        margin-right: 7px;
         
         
     }
@@ -360,15 +360,15 @@
         background-image: url(img/icone_ateque_basico.jpg);
         background-position: center;
         background-size: cover;
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
         display: inline-block;
         border-radius: 50%;
         border: 3px solid green;
         margin: 0;
         padding: 0;
-        margin-left: 5px;
-        margin-right: 5px;
+        margin-left: 7px;
+        margin-right: 7px;
         
         
     }
