@@ -35,11 +35,11 @@ function som_golpe_1(){
 }
 function vitoria_som(){
     som.src="audios/vitoria.wav"
-    som.volume = 0.09;
+    som.volume = 0.15;
     som.play()
 }
 function musica_fundo(){
-    musica.src="audios/Proerdem8Bits.mp3"
+    musica.src="audios/musica_de_fundo.mp3"
     musica.volume = 0.1;
     musica.play()
 }
