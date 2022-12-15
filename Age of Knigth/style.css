@@ -243,8 +243,6 @@ body{
     right: 10px;
     text-align: center;
     font-size: 14px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
     box-shadow: 2px 2px 7px black;
 }
 #level{
@@ -255,7 +253,6 @@ body{
     position: absolute;
     right: 10px;
     display: none;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
    
 }
 #comentarios{
@@ -335,4 +332,55 @@ body{
 #atacar:hover{
     border: 3px solid blue
    
+}
+
+#mostrar_dano_player{
+    position: absolute;
+    top: 8%;
+    right: 15%;
+
+    z-index: 9;
+    border-radius: 50%;
+    display:none;
+    align-items: center;
+    text-align: center;
+
+    
+    
+    
+}
+#mostrar_dano_inimigo{
+    position: absolute;
+    top: 8%;
+    left: 15%;
+
+    z-index: 9;
+    border-radius: 50%;
+    display:none;
+    align-items: center;
+    text-align: center;
+    
+    
+    
+}
+.mostrar_dano{
+    
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    padding-top: 5px;
+   
+    background-image: url(img/POW.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    padding: 3%;
+
+    
+    
+
+    
+
 }

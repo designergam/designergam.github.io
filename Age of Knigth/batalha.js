@@ -36,6 +36,7 @@ function jogar(){
             cartas_aleatorias()
             trocar_img_player_golpe()
             som_golpe_1()
+            mostrar_dano_player()
             desabilitar_ataque_do_player()
 
             //Golpe Final do player
@@ -71,6 +72,7 @@ function jogar(){
                     avancar_inimigo()
                     
                     som_golpe_1()
+                    mostrar_dano_inimigo()
 
                     // Se perder - Golpe final do inimigo
                     let golpe_Final_inimigo = Number(localStorage.HP_player)  + Number(localStorage.DEF_player )- Number(localStorage.ATK_inimigo)

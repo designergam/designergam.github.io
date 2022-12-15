@@ -176,6 +176,7 @@ function mostrar_level(){
 }
 
 
+
 //
 //
 //
@@ -403,4 +404,31 @@ function trazer_player(){
     },50)
     
     
+}
+function mostrar_dano_player(){
+    let dano_pa = localStorage.ATK_player - localStorage.DEF_inimigo
+    if(dano_pa<=0){dano_pa = 1}
+    let dano_p = document.getElementById("mostrar_dano_player")
+    dano_p.style.display="flex"
+    
+    dano_p.innerText=`${dano_pa}`
+
+    setTimeout(function(){
+        dano_p.innerText=""
+        dano_p.style.display="none"
+
+    }, 500)
+}
+
+function mostrar_dano_inimigo(){
+    let dano_in = localStorage.ATK_inimigo - localStorage.DEF_player
+    if(dano_in<=0){dano_in = 1}
+    let dano_i = document.getElementById("mostrar_dano_inimigo")
+    dano_i.style.display="flex"
+    dano_i.innerText=`${dano_in}`
+
+    setTimeout(function(){
+        dano_i.innerText=""
+        dano_i.style.display="none"
+    }, 500)
 }

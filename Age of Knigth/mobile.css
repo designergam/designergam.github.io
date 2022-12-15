@@ -254,10 +254,12 @@
         box-shadow: 2px 2px 7px black;
         display: inline-block;
         text-align: center;
-        font-size: 10px;
+        font-size: 8px;
 
-        padding: 5px;
+        padding: 2px;
         width: 80px;
+        margin-bottom: 10px;
+        
         
 
         border-radius: 13px;
@@ -386,4 +388,56 @@
         border: 3px solid blue
        
     }
+}
+
+.mostrar_dano{
+    
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    padding-top: 5px;
+   
+    background-image: url(img/POW.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    padding: 3%;
+    
+
+    
+    
+
+    
+
+}
+#mostrar_dano_player{
+    position: absolute;
+    top: 30%;
+    right: 15%;
+
+    z-index: 9;
+    border-radius: 50%;
+    display:none;
+    align-items: center;
+    text-align: center;
+
+    
+    
+    
+}
+#mostrar_dano_inimigo{
+    position: absolute;
+    top: 30%;
+    left: 15%;
+
+    z-index: 9;
+    border-radius: 50%;
+    display:none;
+    align-items: center;
+    text-align: center;
+    
+    
+    
 }
