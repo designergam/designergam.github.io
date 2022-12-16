@@ -21,6 +21,7 @@ body{
     background-image: url(../img/btn_play.png);
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
     width: 150px;
     height: 65px;
     position: absolute;
@@ -28,7 +29,7 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 3;
-    border-radius: 17px;
+    border-radius: 18px;
 }
 @media (max-width:768px){
     #play{
