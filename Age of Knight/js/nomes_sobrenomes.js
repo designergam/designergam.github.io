@@ -1,0 +1,41 @@
+const nomes = [
+    {
+        "nome":"Amdarilho",
+    },
+    {
+        "nome":"Penetra",
+    },
+    {
+        "nome":"Covarde", 
+    },
+    {
+        "nome":"Padre", 
+    },
+    {
+        "nome":"Suspeito", 
+    },
+    {
+        "nome":"Amante", 
+    },
+]
+
+const sobrenomes = [
+    {
+        "sobrenome":"Errante"
+    },
+    {
+        "sobrenome":"Comedor"
+    },
+    {
+        "sobrenome":"Guloso"
+    },
+    {
+        "sobrenome":"Religioso"
+    },
+    {
+        "sobrenome":"Funkeiro"
+    },
+    {
+        "sobrenome":"Covarde"
+    },
+]

@@ -1,0 +1,879 @@
+/* 🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽 CONFIGURAÇÕES DA PAGINA 🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽 */
+html{
+    padding: 0;
+    margin: 0;
+    overflow-x:hidden; 
+}
+body{
+    background-color: black;
+    padding: 0;
+    margin: 0;    
+}
+
+
+
+
+
+/* 🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽 BTN PLAY 🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽 */
+#play{
+    display: block;
+    transition: 200ms;
+    background-image: url(../img/btn_play.png);
+    background-position: center;
+    background-size: cover;
+    width: 150px;
+    height: 65px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    border-radius: 17px;
+}
+@media (max-width:768px){
+    #play{
+        top: 40%; 
+    }
+}
+#play:hover{
+    transform: translate(-50%, -40%);
+}
+
+
+
+
+
+/* 🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽 CENARIO 🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽 */
+#cenario{
+    width: 1000px;
+    height: 500px;
+    position: relative;
+    margin: auto;
+    margin-top: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    
+}
+@media (max-width:768px){
+    #cenario{
+        width: 100%;
+        height: 300px;
+        margin-top: 0px;
+        border-radius: 0px;
+        height: 100vh;
+        margin: 0;
+        top: 0;
+    }
+}
+
+
+
+
+
+/* 🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽 BTN MUSICA 🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽 */
+#mutar_musica{
+    position: absolute;
+    top: 20px;
+    left: 10%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 3px solid green;
+    z-index: 3;
+    background-image: url(../img/som_img.png);
+    background-position: center;
+    background-size: 130%;
+}
+@media (max-width:768px){
+    #mutar_musica{
+        top: 15px;
+        left: 25%;
+    }
+}
+
+
+
+
+
+/* 🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽 BTN RESET 🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽 */
+#reset{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 70px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    z-index: 3;
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    color: white;
+    background-color: red;
+}
+@media (max-width:768px){
+    #reset{
+        top: 15px;
+        left: 10px;
+    }
+}
+
+
+
+
+
+/* 🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽 JOGADOR 🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽 */
+#player_img{
+    display: none;
+    transition:  500ms  ;
+    width: 300px;
+    height: 250px;
+    position: absolute;
+    bottom: 185px;
+    left: 15%;
+    z-index: 1;
+    left: -10%;
+    /* border: 2px solid red; */
+    background-image: url("https://cdn.domestika.org/c_limit,dpr_1.0,f_auto,q_auto,w_820/v1586415165/content-items/004/129/278/personaje-parada-original.gif?1586415165");
+    background-position-y: -59px;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: 130%;
+    
+    
+}
+@media (max-width:768px){
+    #player_img{
+        background-position: center;
+        background-size: 140%;
+        background-position-y: 13px;
+        background-position-x: -27px;
+        width: 100px;
+        height: 100px;
+        bottom: 50%;
+    }
+}
+
+
+
+
+
+/* 🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽 INIMIGO 🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽 */
+#inimigo_img{
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    transition: 500ms;
+    bottom: 50%;
+    right: -15%;
+    display: none;
+    background-size: 50%;
+    /* border: 2px solid red; */
+    background-position-y: 47px;
+    background-position-x: center;
+
+}
+@media (max-width:768px){
+    #inimigo_img{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+
+
+
+
+/* 🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽 CHAO 🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽 */
+#chao{
+    transition: 400ms;
+    display: none;
+    transition: 300ms;
+    width: 100%;
+    height: 0%;
+    position: absolute;
+    bottom: 0%;
+    border-radius: 0px 0px 20px 20px;
+    background-size: cover;
+    background-image: url(../img/chao.jpg)
+}
+@media (max-width:768px){
+    #chao{
+        border-radius: 0px ;
+    }
+}
+
+
+
+
+
+/* 🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽 MENSAGEM 🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽 */
+#mensagem{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: yellow;
+    top: 15%;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgba(0, 0, 0, 0.821);
+    border-radius: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    text-align: center;
+    
+}
+
+
+
+
+
+/* 🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽 ATRIBUTOS DO JOGADOR 🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽 */
+#atributos_player{
+    display: none;
+    color: rgb(123,62,18);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 50px;
+    padding-top: 60px;
+    padding-left: 55px;
+    text-align: center;
+    line-height: 15px;
+    margin: auto;
+    position: absolute;
+    left: 0px;
+    bottom: -5px;
+    height: 85px;
+    width: 85px;
+    background-image: url(../img/pergaminho.png);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+@media (max-width:768px){
+    #atributos_player{
+        font-size: 16px;
+        padding: 30px;
+        padding-top: 90px;
+        padding-left: 32px;
+        line-height: 18px;
+        height:150px;
+        width: 150px;
+    }
+}
+
+
+
+
+
+/* 🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽 ATRIBUTOS DO INIMIGO 🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽 */
+#atributos_inimigo{
+    color: rgb(123,62,18);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 50px;
+    padding-top: 70px;
+    display: none;
+    text-align: center;
+    line-height: 20px;
+    margin: auto;
+    position: absolute;
+    right: 0px;
+    bottom: -10px;
+    height: 85px;
+    width: 85px;
+    background-image: url(../img/pergaminho.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+@media (max-width:768px){
+    #atributos_inimigo{
+        
+       
+        
+        
+        
+        bottom: -5px;
+        
+        
+        background-size: 100%;
+        
+        font-size: 16px;
+        padding: 30px;
+        padding-top: 90px;
+        padding-left: 32px;
+        line-height: 18px;
+        height:150px;
+        width: 150px;
+        
+    }
+}
+
+
+
+
+
+/* 🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽 CARTAS 🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽 */
+.cards{
+    transition:all 150ms;
+    display: block;
+    position: absolute;
+    top: -70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    background-color: rebeccapurple;
+    z-index: 2;
+    border-radius: 20px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 4;
+    
+}
+@media (max-width:768px){
+    
+    .cards{
+        width: 100px;
+        height: 100px;
+    }
+}
+.cards:hover{
+    border: 4px solid white;
+}
+.cards h1{
+    color: rgb(0, 0, 0);
+    background-color: white;
+    display: inline-block;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 15px;
+    font-family: monospace;
+    position: absolute;
+    right: 10px;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 2px 2px 7px black;
+}
+@media (max-width:768px){
+    .cards h1{
+        font-size: 8px;
+        padding: 2px;
+        width: 100px;
+        margin-bottom: 20px;
+        border-radius: 13px;
+        bottom: 85%;
+        left: 50%;
+        transform: translate(-50%, -50%);   
+    }
+}
+
+
+
+
+
+/* 🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽 INDICADOR LEVEL 🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽 */
+#level{
+    color: yellow;
+    font-size: 18px;
+    text-shadow: 1px 1px 3px rgb(2, 1, 1);
+    font-weight: bold;
+    position: absolute;
+    right: 20px;
+    display: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
+}
+@media (max-width:768px){
+    #level{
+        top: 20px;
+        right: 50px;
+    }
+}
+
+
+
+
+
+/* 🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽 INDICADOR GOLD 🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽 */
+#gold{
+    color: yellow;
+    font-size: 18px;
+    text-shadow: 1px 1px 3px rgb(2, 1, 1);
+    font-weight: bold;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    display: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
+}
+@media (max-width:768px){
+    #gold{
+        top: 50px;
+        right: 50px;
+       
+    }
+}
+
+
+
+
+
+/* 🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽 BCOMENTARIOS 🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽 */
+#comentarios{
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+@media (max-width:768px){
+
+}
+
+
+
+
+
+/* 🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽 BARRA DE CONTROLE 🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽 */
+#controle{
+    position: absolute;
+    bottom: 45%;
+    left: 50%;
+    border-radius: 40px;
+    padding: 10px;
+    transform: translate(-50%, -50%);
+    display: none;
+    background-color: #15436d;
+    border: 3px solid #8b8cb4;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 30%;
+    z-index: 9;
+ 
+}
+@media (max-width:768px){
+    #controle{
+        bottom: 60%;
+        width: 70%;  
+      
+    }
+}
+
+
+
+
+
+/* 🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽 BTN ATACAR 🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽 */
+#atacar{
+    background-image: url(../img/icone_ateque_basico.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 3px solid green;
+    margin: auto;
+    
+}
+#atacar:hover{
+    border: 3px solid blue
+   
+}
+@media (max-width:768px){
+    #atacar{
+        width: 50px;
+        height: 50px;
+    } 
+}
+
+
+
+
+
+/* 🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽 LOJA 🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽 */
+#loja_container{
+    transition: 300ms;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    align-items: center;
+    line-height: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: rgb(1, 104, 15);
+    border: 3px solid rgb(33, 80, 35);
+    z-index: 10;
+}
+@media (max-width:768px){
+    #loja_container{
+        border-radius: 0px;
+    }
+}
+#loja_container button{
+    border-radius: 50%;
+    border: none;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    background-color: rgb(0, 85, 0);
+    color:rgb(41, 150, 41) ;
+    position: absolute;
+    top: 5px;
+    right: 5px
+}
+@media (max-width:768px){
+    
+}
+#loja{
+    background-image: url(../img/loja.png);
+    background-position: center;
+    background-size: cover;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 3px solid green;
+    margin: auto;
+    
+}
+@media (max-width:768px){
+    #loja{
+        width: 50px;
+        height: 50px;
+    }
+}
+.container_loja{
+    width: 90%;
+    height: 95%;
+    margin: auto;
+    display: grid;
+    background-color: rgb(41, 150, 41);
+    border-radius: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr ;
+
+}
+@media (max-width:768px){
+    .container_loja{
+        width: 90%;
+        height: 95%;
+        margin: auto;
+        display: grid;
+        background-color: rgb(41, 150, 41);
+        border-radius: 20px;
+        grid-template-columns: 1fr 1fr 1fr  ;
+        grid-template-rows: 1fr 1fr;
+    
+    }
+}
+.item_loja{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    border: 2px solid green;
+    border-radius: 20px;
+    
+}
+@media (max-width:768px){
+    .item_loja{
+        height: 80px;
+        width: 80px;
+        margin: auto;
+        border: 2px solid green;
+        border-radius: 20px;
+    }
+}
+
+
+
+
+
+/* 🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽 MOCHILA 🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽 */
+#bag_container{
+    transition: 300ms;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    align-items: center;
+    line-height: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: rgb(176,111,82);
+    border: 3px solid rgb(80, 48, 33);
+    z-index: 10;
+   
+}
+@media (max-width:768px){
+    #bag_container{
+        border-radius: 0px;
+    }
+
+
+}
+#bag_container button{
+    border-radius: 50%;
+    border: none;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    background-color: rgb(80, 48, 33);
+    color:rgb(176,111,82) ;
+    position: absolute;
+    top: 5px;
+    right: 5px
+}
+
+
+.container_bag{
+    width: 95%;
+    height: 95%;
+    margin: auto;
+    display: grid;
+    background-color: #b8856e;
+    border-radius: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr  ;
+    grid-template-rows: 1fr ;
+}
+@media (max-width:768px){
+    .container_bag{
+        width: 95%;
+        height: 95%;
+        margin: auto;
+        display: grid;
+        background-color: #b8856e;
+        border-radius: 20px;
+        grid-template-columns: 1fr 1fr 1fr  ;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+.item_bag{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    background-color: #b8856e;
+    border: 2px solid #9c644a;
+    border-radius: 20px;
+
+    
+}
+@media (max-width:768px){
+    .item_bag{
+        width: 80px;
+        height: 80px;
+        margin: auto;
+        background-color: #b8856e;
+        border: 2px solid #9c644a;
+        border-radius: 20px;
+    
+        
+    }
+}
+
+
+
+#mochila{
+    background-image: url(../img/bag_img.png);
+    background-position: center;
+    background-size: cover;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 3px solid black;
+    border: 3px solid green;
+    margin: auto;
+   
+    
+}
+@media (max-width:768px){
+    #mochila{
+        width: 50px;
+        height: 50px;
+    }
+}
+
+
+
+
+
+
+
+/* 🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽 INDICADOR DANO 🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽 */
+#mostrar_dano_player{
+    position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        border-radius: 50%;
+        font-size: 25px;
+        color: yellow;
+        font-weight: bold;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        background-image: url(../img/POW.png);
+        background-position: center;
+        background-size: 80%;
+        background-repeat: no-repeat;
+        
+        
+        padding: 50px;
+        display: none;
+        text-align: center;
+
+}
+@media (max-width:768px){
+    #mostrar_dano_player{
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        border-radius: 50%;
+        font-size: 25px;
+        color: yellow;
+        font-weight: bold;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        background-image: url(../img/POW.png);
+        background-position: center;
+        background-size: 80%;
+        background-repeat: no-repeat;
+        
+        
+        padding: 50px;
+        display: none;
+        text-align: center;
+        
+    }
+}
+#mostrar_dano_inimigo{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border-radius: 50%;
+    font-size: 25px;
+    color: yellow;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    background-image: url(../img/POW.png);
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    
+    
+    padding: 50px;
+    display: none;
+    text-align: center;
+}
+@media (max-width:768px){
+    #mostrar_dano_inimigo{
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        border-radius: 50%;
+        font-size: 25px;
+        color: yellow;
+        font-weight: bold;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        background-image: url(../img/POW.png);
+        background-position: center;
+        background-size: 80%;
+        background-repeat: no-repeat;
+        
+        
+        padding: 50px;
+        display: none;
+        text-align: center;
+        
+    }
+}
+
+
+
+
+
+
+/* 🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽 NOME DO JOGADOR🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽 */
+#container_nome{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+   
+    display: grid;
+    gap: 7px;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    
+    
+    margin: auto;
+   
+}
+#container_nome button{
+    margin: auto;
+    width: 100px;
+    height: 40px;
+    font-weight: 400;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    border-radius: 7px;
+    border: 2px solid rgb(221, 48, 48);
+    background-color: rgb(255, 255, 255);
+    
+
+}
+@media (max-width:768px){
+    #container_nome button{
+        margin: auto;
+        width: 100px;
+        height: 40px;
+        font-weight: 400;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 18px;
+        border-radius: 7px;
+        border: 2px solid rgb(221, 48, 48);
+        background-color: rgb(255, 255, 255);
+    
+    } 
+}
+#nome_personagem{
+    color: yellow;
+    text-shadow: 1px 1px 3px rgb(2, 1, 1);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20PX;
+    position: absolute;
+    top: 1%;
+    left:50%;
+    transform: translate(-50%, 0%);
+  
+    
+}
+@media (max-width:768px){
+    #nome_personagem{
+        top: 60px;
+        left: 20px;
+        transform: translate(0%, -50%);
+    }
+}
