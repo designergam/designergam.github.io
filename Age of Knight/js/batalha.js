@@ -21,12 +21,13 @@ function jogar(){
         mostrar_level()
         mostrar_gold()
         habilitar_atributos_player()
-        mostrar_controles()
+        
         mostrar_atributos_inimigo()
         habilitar_ataque_do_player()
         atualizar_atributos_inimigo()
         mostrar_nome_do_jogador()
-    }, 200)
+        mostrar_controles()
+    }, 300)
     
 }  
 
@@ -131,6 +132,7 @@ function jogar(){
 
                         setTimeout(function(){
                             mostrar_cartas()
+                            esconder_controle()
                         }, 1000)
                         
 

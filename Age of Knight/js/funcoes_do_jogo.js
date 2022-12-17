@@ -406,7 +406,7 @@ function morte_player(){
 }
 function recuperar_vida_player(){
     localStorage.HP_player = (Number(localStorage.HP_player) - Number(localStorage.HP_player)) //zerar ho do player
-    localStorage.HP_player = (Number(localStorage.vitorias) * 25)
+    localStorage.HP_player = (Number(localStorage.vitorias) * 30)
     Atualizar_atributos_do_player()
 }
 function posicao_inicial_player(){

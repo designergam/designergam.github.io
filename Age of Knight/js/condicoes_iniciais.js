@@ -28,9 +28,9 @@ if(!localStorage.mana){
     localStorage.mana = 30
 }
 //atributo iniciais do player
-    if(!localStorage.HP_player){localStorage.HP_player = 50}
-    if(!localStorage.DEF_player){localStorage.DEF_player = 5}
-    if(!localStorage.ATK_player){localStorage.ATK_player = 10}
+    if(!localStorage.HP_player){localStorage.HP_player = 60}
+    if(!localStorage.DEF_player){localStorage.DEF_player = 7}
+    if(!localStorage.ATK_player){localStorage.ATK_player = 15}
     
     
 
