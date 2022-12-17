@@ -137,7 +137,7 @@ function cartas_aleatorias(){
     localStorage.card_HP = Math.floor(3* Math.random())
 }
 function mostrar_cartas(){
-    
+    esconder_controle()
     //mostrar cartas
     cartas.style.display="block"
     card1.style.display="block"
@@ -306,8 +306,8 @@ function inimigo_mais_forte(){
     
      //  vida do inimigo
      localStorage.HP_inimigo =  parseInt( (Number(localStorage.ATK_player) *2) + (Number(incremento_HP) * Number(localStorage.vitorias)) ) 
-     localStorage.ATK_inimigo = parseInt( (Number(localStorage.DEF_player)*0.5) + (Number(incremento_ATK) * Number(localStorage.vitorias)) )
-     localStorage.DEF_inimigo = parseInt( (Number(localStorage.DEF_player)*0.5) + (Number(incremento_DEF) * Number(localStorage.vitorias)) )
+     localStorage.ATK_inimigo = parseInt( (Number(localStorage.DEF_player)*0.9) + (Number(incremento_ATK) * Number(localStorage.vitorias)) )
+     localStorage.DEF_inimigo = parseInt( (Number(localStorage.ATK_player)*0.3) + (Number(incremento_DEF) * Number(localStorage.vitorias)) )
    
     
 }
@@ -430,6 +430,17 @@ function dano_do_player(){
 function desabilitar_ataque_do_player(){
     button_atk.setAttribute('onclick', "");
     document.getElementById("atacar").style.border="3px solid red"
+}
+function desabilitar_batalha_rapida(){
+    let br = document.getElementById("batalha_rapida")
+    br.setAttribute('onclick', "");
+    document.getElementById("batalha_rapida").style.border="3px solid red"
+}
+function habilitar_batalha_rapida(){
+    let br = document.getElementById("batalha_rapida")
+    
+    br.setAttribute('onclick', "batalha_rapida()");
+    br.style.border="3px solid green"
 }
 function habilitar_ataque_do_player(){
     button_atk.setAttribute('onclick', "ataque_player()");

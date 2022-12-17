@@ -578,7 +578,7 @@ body{
     display: none;
     background-color: #15436d;
     border: 3px solid #8b8cb4;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     width: 30%;
     z-index: 9;
  
@@ -607,9 +607,22 @@ body{
     margin: auto;
     
 }
+#batalha_rapida{
+    background-image: url(../img/batalha_rapida.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid green;
+    margin: auto;
+    
+}
+#batalha_rapida:hover{
+    border: 3px solid blue 
+}
 #atacar:hover{
-    border: 3px solid blue
-   
+    border: 3px solid blue 
 }
 @media (max-width:768px){
     #atacar{
@@ -858,6 +871,8 @@ body{
     border-radius: 20px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr  ;
     grid-template-rows: 1fr ;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 @media (max-width:768px){
     .container_bag{
@@ -868,7 +883,7 @@ body{
         background-color: #b8856e;
         border-radius: 20px;
         grid-template-columns: 1fr 1fr 1fr  ;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
     }
 }
 
