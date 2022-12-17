@@ -58,14 +58,58 @@ const itens_da_loja = [
     },
     {
         "id": 6,
-        "nome": "Elixir de Energia Misteriosa",
-        "img": `img/loja/Elixir de Energia Misteriosa.jpg`,
+        "nome": "Elixir de Energia",
+        "img": `img/loja/ElixirdeEnergiaMisteriosa.jpg`,
         "custo": 100,
         "efeito": "DEF +50",
         "incremento_atk": 0,
         "incremento_def": 30,
         "incremento_hp": 0,
         "tipo": "def"
+    },
+    {
+        "id": 7,
+        "nome": "Espada de Bronze",
+        "img": `img/loja/EspadaMédiadeBronze.png`,
+        "custo": 100,
+        "efeito": "ATK +50",
+        "incremento_atk": 50,
+        "incremento_def": 0,
+        "incremento_hp": 0,
+        "tipo": "atk"
+    },
+    {
+        "id": 8,
+        "nome": "Escudo de Ouro",
+        "img": `img/loja/EscudodeOuro.png`,
+        "custo": 50,
+        "efeito": "DEF +50",
+        "incremento_atk": 0,
+        "incremento_def": 50,
+        "incremento_hp": 0,
+        "tipo": "def"
+    },
+    {
+        "id": 9,
+        "nome": "Medalhão de Vigor",
+        "img": `img/loja/MedalhãodeVigor.png`,
+        "custo": 10,
+        "efeito": "HP +5",
+        "incremento_atk": 0,
+        "incremento_def": 50,
+        "incremento_hp": 5,
+        "tipo": "hp"
+    },
+    {
+        "id": 10,
+        "nome": "Grugumelo",
+        "img": `img/loja/GrugumelodaCabeçona.png`,
+        "custo": 40,
+        "efeito": "HP +40",
+        "incremento_atk": -15,
+        "incremento_def": 0,
+        "incremento_hp": 10,
+        "tipo": "hp"
     }
 
 ]
@@ -90,6 +134,7 @@ const itens_da_loja = [
         document.getElementById("alerta_loja").style.display="grid" 
         item_selecionado = itens_da_loja.filter(i => (i.id == x));
         document.getElementById("gold_atual").innerText =`GOLD $${localStorage.gold}`
+        document.getElementById("nome_item_loja").innerText =`${item_selecionado[0].nome}`
         document.getElementById("custo").innerText =`Custo: $${item_selecionado[0].custo}`
         document.getElementById("efeito").innerText =`Efeito:  ${item_selecionado[0].efeito}`
         document.getElementById("img_item_loja").style.backgroundImage=`url(${item_selecionado[0].img})`
@@ -168,7 +213,7 @@ function carrecar_itens_loja_container(){
     //itens de hp
         let container_1 = document.getElementById("container_loja_1")
         let hp_randon = itens_hp
-        hp_randon.slice(0,3)//limitador
+        hp_randon.slice(0,6)//limitador
 
         //Randomizar 
         function shuffleArray(itens_hp){
@@ -185,7 +230,7 @@ function carrecar_itens_loja_container(){
     //itens de atk
         let container_2 = document.getElementById("container_loja_2")
         let atk_randon = itens_atk
-        atk_randon.slice(0,3)//limitador
+        atk_randon.slice(0,6)//limitador
 
         //Randomizar 
         function shuffleArray(itens_atk){
@@ -202,7 +247,7 @@ function carrecar_itens_loja_container(){
     //itens de def
         let container_3 = document.getElementById("container_loja_3")
         let def_randon = itens_def
-        def_randon.slice(0,3)//limitador
+        def_randon.slice(0,6)//limitador
 
         //Randomizar 
         function shuffleArray(itens_def){

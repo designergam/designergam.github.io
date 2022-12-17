@@ -473,10 +473,12 @@ body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
     font-weight: bold;
-    margin: 2px;
+    margin: 0;
+    line-height: 7px;
     margin-left: 120px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
+    
 }
 #gold_atual{
     text-align: left;
@@ -486,17 +488,42 @@ body{
     font-weight: bold;
    
     margin-left: 120px;
+    padding-top: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
    color: rgb(143, 143, 1);
 }
+#nome_item_loja{
+    text-align: left;
+    line-height: 2px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+
+   
+    margin-left: 120px;
+    margin-top: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+}
 #comprar_item{
     background-color: blue;
     color: rgb(235, 235, 235);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 5px;
+    margin-top: 20px;
 }
 #sair_para_loja{
     background-color: red;
     color: rgb(235, 235, 235);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 5px;
+    
 }
 
 

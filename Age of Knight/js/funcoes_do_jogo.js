@@ -109,6 +109,7 @@ function fechar_loja(){
         document.getElementById("loja_container").style.height ="40px"
     setTimeout(function(){
         document.getElementById("loja_container").style.display="none"
+        document.getElementById("alerta_loja").style.display="none"
       
         
     }, 100)
