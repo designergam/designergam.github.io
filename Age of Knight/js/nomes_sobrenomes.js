@@ -1,22 +1,53 @@
 const nomes = [
     {
-        "nome":"Amdarilho",
+        "nome":"Andarilho",
     },
     {
         "nome":"Penetra",
     },
     {
-        "nome":"Covarde", 
-    },
-    {
         "nome":"Padre", 
     },
     {
-        "nome":"Suspeito", 
+        "nome":"Cara", 
     },
     {
-        "nome":"Amante", 
+        "nome":"Enorme", 
     },
+    {
+        "nome":"Jeba", 
+    },
+    {
+        "nome":"Jogador", 
+    },
+    {
+        "nome":"Surfista", 
+    },
+    {
+        "nome":"Cavaleiro", 
+    },
+    {
+        "nome":"Senhor", 
+    },
+    {
+        "nome":"Gentil", 
+    },
+    {
+        "nome":"Pedro", 
+    },
+    {
+        "nome":"Gigante", 
+    },
+    {
+        "nome":"Anão", 
+    },
+    {
+        "nome":"Insignificante", 
+    },
+    {
+        "nome":"Esplêndido", 
+    },
+    
 ]
 
 const sobrenomes = [
@@ -37,5 +68,56 @@ const sobrenomes = [
     },
     {
         "sobrenome":"Covarde"
+    },
+    {
+        "sobrenome":"Vascaino"
+    },
+    {
+        "sobrenome":"Ladrão"
+    },
+    {
+        "sobrenome":"Maluco"
+    },
+    {
+        "sobrenome":"Fresco"
+    },
+    {
+        "sobrenome":"Inocente"
+    },
+    {
+        "sobrenome":"Covarde"
+    },
+    {
+        "sobrenome":"Burro"
+    },
+    {
+        "sobrenome":"Inteligente"
+    },
+    {
+        "sobrenome":"Galopante"
+    },
+    {
+        "sobrenome":"Bonito"
+    },
+    {
+        "sobrenome":"Feio"
+    },
+    {
+        "sobrenome":"Nerd"
+    },
+    {
+        "sobrenome":"CDF"
+    },
+    {
+        "sobrenome":"LOL"
+    },
+    {
+        "sobrenome":"Familiar"
+    },
+    {
+        "sobrenome":"Solitario"
+    },
+    {
+        "sobrenome":"Cagado"
     },
 ]

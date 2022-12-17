@@ -13,10 +13,10 @@
         localStorage.gold = 0
         
     }
-
-
     
-
+    if(!localStorage.bag){
+        localStorage.bag = []
+    }
 //xp inicial
 if(!localStorage.xp){
     localStorage.xp = 0

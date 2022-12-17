@@ -406,6 +406,83 @@ body{
 
 
 
+/* 🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽 ALERTA LOJA 🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽 */
+
+#alerta_loja{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: white;
+    border: 2px solid gray;
+    z-index: 13;
+    display: none;
+    gap: 5px;
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+#alerta_loja_stts{
+    width: 300px;
+    height: 90px;
+    background-color: blue;
+    display: block;
+    z-index: 20;
+    position: absolute;
+    border-radius: 50px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+#alerta_loja_stts h1{
+    text-align: center;
+    line-height: 45px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#alerta_loja_ERRO{
+    width: 300px;
+    height: 90px;
+    background-color: RED;
+    display: block;
+    z-index: 20;
+    position: absolute;
+    border-radius: 50px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+#alerta_loja_ERRO h1{
+    text-align: center;
+    line-height: 45px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#alerta_loja h2{
+    text-align: left;
+    line-height: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+#comprar_item{
+    background-color: blue;
+    color: rgb(235, 235, 235);
+}
+#sair_para_loja{
+    background-color: red;
+    color: rgb(235, 235, 235);
+}
+
+
+
 /* 🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽 INDICADOR GOLD 🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽 */
 #gold{
     color: yellow;
@@ -522,7 +599,7 @@ body{
         border-radius: 0px;
     }
 }
-#loja_container button{
+#fechar_loja{
     border-radius: 50%;
     border: none;
     width: 30px;
@@ -564,6 +641,8 @@ body{
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
     grid-template-rows: 1fr ;
 
+    
+
 }
 @media (max-width:768px){
     .container_loja{
@@ -584,7 +663,15 @@ body{
     margin: auto;
     border: 2px solid green;
     border-radius: 20px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     
+    
+    
+}
+.item_loja:hover{
+    border: 3px solid red;
 }
 @media (max-width:768px){
     .item_loja{
@@ -625,7 +712,7 @@ body{
 
 
 }
-#bag_container button{
+#close_bag{
     border-radius: 50%;
     border: none;
     width: 30px;
@@ -637,7 +724,74 @@ body{
     top: 5px;
     right: 5px
 }
+#alerta_bag{
+    width: 70%;
+    height: 180px;
+    border-radius: 20px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    padding: 20px;
+}
 
+#close_alerta_bag{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    color: black;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    border: none;
+    background-color: orange;
+}
+#nome_item_bag{
+    margin: 0;
+    margin-left: 100px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+}
+#efeito_item_bag{
+    margin: 0;
+    margin-left: 100px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+}
+#img_item{
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    border: 2px solid red;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+#usar_item{
+    background-color: blue;
+    color: rgb(235, 235, 235);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+#descartar_item{
+    background-color: red;
+    color: rgb(235, 235, 235);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-weight: 600;
+    font-size: 20px;
+}
 
 .container_bag{
     width: 95%;
@@ -669,8 +823,15 @@ body{
     background-color: #b8856e;
     border: 2px solid #9c644a;
     border-radius: 20px;
+    background-repeat: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
     
+}
+.item_bag:hover{
+    border: 2px solid red;
 }
 @media (max-width:768px){
     .item_bag{
@@ -707,6 +868,48 @@ body{
     }
 }
 
+
+/* alerta de uso e descarte */
+#alerta_item_usado{
+    width: 300px;
+    height: 90px;
+    background-color: blue;
+    display: block;
+    z-index: 30;
+    position: absolute;
+    border-radius: 50px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+#alerta_item_usado h1{
+    text-align: center;
+    line-height: 45px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#alerta_item_descartado{
+    width: 300px;
+    height: 90px;
+    background-color: RED;
+    display: block;
+    z-index: 20;
+    position: absolute;
+    border-radius: 50px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+#alerta_item_descartado h1{
+    text-align: center;
+    line-height: 45px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
 
 

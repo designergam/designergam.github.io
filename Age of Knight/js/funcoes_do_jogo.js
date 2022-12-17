@@ -9,6 +9,20 @@ function resetar(){
     localStorage.clear();
     window.location.reload()
 }
+function derrota(){
+    recuperar_vida_player()
+    inimigo_mais_forte()
+    atualizar_atributos_inimigo()
+    
+    posicao_inicial_player()
+    trazer_player()
+    esconder_mensagem()
+    habilitar_loja()
+    mostrar_controles()
+    player.style.left = "-15%"
+    habilitar_ataque_do_player()
+    
+}
 function adicionar_vitoria(){
     localStorage.vitorias ++
 }
@@ -61,6 +75,8 @@ function desmutar(){
     musica.play()
 }
 function abrir_bag(){
+    atualizar_bag()
+    
     document.getElementById("bag_container").style.display="grid"
     setTimeout(function(){
         document.getElementById("bag_container").style.width ="100%"
@@ -77,6 +93,10 @@ setTimeout(function(){
 }, 100)
 }
 function abrir_loja(){
+    
+    carrecar_itens_loja_container()
+   
+
     document.getElementById("loja_container").style.display="grid"
     setTimeout(function(){
         document.getElementById("loja_container").style.width ="100%"
@@ -89,8 +109,15 @@ function fechar_loja(){
         document.getElementById("loja_container").style.height ="40px"
     setTimeout(function(){
         document.getElementById("loja_container").style.display="none"
+      
         
     }, 100)
+    zerar_loja()
+}
+function zerar_loja(){
+    document.getElementById("container_loja_1").innerHTML=""
+    document.getElementById("container_loja_2").innerHTML=""
+    document.getElementById("container_loja_3").innerHTML=""
 }
 function mostrar_controles(){
     document.getElementById("controle").style.display= "grid"
@@ -131,12 +158,6 @@ function mostrar_cartas(){
 }
 function esconder_cartas(){
     cartas.style.display="none"
-    setTimeout(function(){
-        jogar()
-    },500)
-
-    
-
 
 }
 function mensagem_de_levelup(){
@@ -192,10 +213,6 @@ function mostrar_level(){
     document.getElementById("level").style.display="block"
     document.getElementById("level").innerText = `LEVEL:  ${localStorage.vitorias}`
 }
-function mostrar_gold(){
-    document.getElementById("gold").style.display="block"
-    document.getElementById("gold").innerText = `GOLD:  ${localStorage.gold}`
-}
 function esconder_nomes(){
     document.getElementById("container_nome").style.display="none"
 }
@@ -205,9 +222,14 @@ function mostrar_nome_do_jogador(){
 function esconder_nome_do_jogador(){
     document.getElementById("nome_personagem").display="none"
 }
-
-
-
+function desabilitar_loja(){
+    document.getElementById("loja").setAttribute('onclick', "");
+    document.getElementById("loja").style.border="3px solid red"
+}
+function habilitar_loja(){
+    document.getElementById("loja").setAttribute('onclick', "abrir_loja()");
+    document.getElementById("loja").style.border="3px solid green"
+}
 //
 //
 //
@@ -272,19 +294,19 @@ function trazer_inimigo(){
 }
 function inimigo_mais_forte(){     
     //incremento aleatorio
-        let incremento_ATK = Number(Math.floor(6* Math.random()))
-        let incremento_DEF = Number(Math.floor(6* Math.random()))
-        let incremento_HP = Number(Math.floor(6* Math.random()))
-        console.log(incremento_HP)
+        let incremento_ATK = Number(Math.floor(4* Math.random()))
+        let incremento_DEF = Number(Math.floor(4* Math.random()))
+        let incremento_HP = Number(Math.floor(4* Math.random()))
+        
         if(incremento_ATK <= 0){incremento_ATK = 1}
         if(incremento_DEF <= 0){incremento_DEF = 1}
         if(incremento_HP <= 0){incremento_HP = 1}
 
     
      //  vida do inimigo
-     localStorage.HP_inimigo =  parseInt( (Number(localStorage.HP_player) *0.1) + (Number(incremento_HP) * Number(localStorage.vitorias)) ) 
-     localStorage.ATK_inimigo = parseInt( (Number(localStorage.ATK_player)*0.1) + (Number(incremento_ATK) * Number(localStorage.vitorias)) )
-     localStorage.DEF_inimigo = parseInt( (Number(localStorage.DEF_player)*0.1) + (Number(incremento_DEF) * Number(localStorage.vitorias)) )
+     localStorage.HP_inimigo =  parseInt( (Number(localStorage.ATK_player) *2) + (Number(incremento_HP) * Number(localStorage.vitorias)) ) 
+     localStorage.ATK_inimigo = parseInt( (Number(localStorage.DEF_player)*0.5) + (Number(incremento_ATK) * Number(localStorage.vitorias)) )
+     localStorage.DEF_inimigo = parseInt( (Number(localStorage.DEF_player)*0.5) + (Number(incremento_DEF) * Number(localStorage.vitorias)) )
    
     
 }
@@ -372,7 +394,6 @@ function morte_inimigo(){
     inimigo.style.transform = "translateY(-120%) translateX(120%)"
     
 }
-
 //
 //
 //
@@ -383,8 +404,13 @@ function morte_player(){
     player.style.transform = "translate(-120%, -120%)"
     
 }
+function recuperar_vida_player(){
+    localStorage.HP_player = (Number(localStorage.HP_player) - Number(localStorage.HP_player)) //zerar ho do player
+    localStorage.HP_player = (Number(localStorage.vitorias) * 25)
+    Atualizar_atributos_do_player()
+}
 function posicao_inicial_player(){
-    player.style.transform = "translate(0%, 20%)"
+    player.style.transform = "translate(0%, 0%)"
     
 }
 async function player_parado(){

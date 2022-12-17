@@ -24,14 +24,25 @@
 
         <!-- mochila -->
         <div id="bag_container">
-            <button onclick="fechar_bag()">x</button>
+            <div id="alerta_item_usado"><h1>ITEM USADO!</h1></div>
+                <div id="alerta_item_descartado"><h1>DESCARTADO!</h1></div>
+            <div id="alerta_bag">
+                
+
+                <h1 id="nome_item_bag" class="alert_h1"></h1>
+                <h2 id="efeito_item_bag" class="alert_h1"></h2>
+                <div id="img_item"></div>
+                
+                
+                <button id="close_alerta_bag" onclick="fechar_alerta_bag()" >X</button>
+                <button id="usar_item" onclick="usar_item()" >USAR</button>
+                <button id="descartar_item" onclick="descartar_item()">DESCARTAR</button>
+            </div>
+
+            <button onclick="fechar_bag()" id="close_bag">x</button>
             <div id="container_bag_1" class="container_bag">
-                <div class="item_bag"></div>
-                <div class="item_bag"></div>
-                <div class="item_bag"></div>
-                <div class="item_bag"></div>
-                <div class="item_bag"></div>
-                <div class="item_bag"></div>
+                
+                
                 
             </div>
             <div id="container_bag_2"class="container_bag">
@@ -54,38 +65,25 @@
 
         <!-- loja -->
         <div id="loja_container">
-            <button onclick="fechar_loja()">x</button>
-            <div id="container_loja_1" class="container_loja">
-                <div class="item_loja"></div>
-                <div class="item_loja"></div>
-                <div class="item_loja"></div>
-                <div class="item_loja"></div>
-                <div class="item_loja"></div>
-                <div class="item_loja"></div>
+            <div id="alerta_loja_stts"><h1>ITEM COMPRADO!</h1></div>
+            <div id="alerta_loja_ERRO"><h1>SEM GOLD!</h1></div>
+            <div id="alerta_loja">
                 
-                
+                <h2 id="custo"></h2>
+                <h2 id="efeito"></h2>
+                <button id="comprar_item" onclick="comprar_item()" >COMPRAR</button>
+                <button id="sair_para_loja" onclick="sair_para_loja()">SAIR</button>
             </div>
-            <div id="container_loja_2"class="container_loja">
-                <div class="item_loja"></div>
-                <div class="item_loja"></div>
-                <div class="item_loja"></div>
-                <div class="item_loja"></div>
-                <div class="item_loja"></div>
-                <div class="item_loja"></div>
-            </div>
-            <div id="container_loja_3"class="container_loja">
-                <div class="item_loja"></div>
-                <div class="item_loja"></div>
-                <div class="item_loja"></div>
-                <div class="item_loja"></div>
-                <div class="item_loja"></div>
-                <div class="item_loja"></div>
-            </div>
-        </div>
 
+            <button onclick="fechar_loja()" id="fechar_loja">x</button>
+            <div id="container_loja_1" class="container_loja"></div>
+            <div id="container_loja_2"class="container_loja"></div>
+            <div id="container_loja_3"class="container_loja"></div>
+        </div>
 
         <h1 id="level"></h1>
         <h1 id="gold"></h1>
+
         <div id="container_cards">
             <div id="card1" class="cards" onclick="atribuir_card1()"><h1 id="h1_atk"></h1></div>
             <div id="card2" class="cards" onclick="atribuir_card2()"><h1 id="h1_def"></h1></div>
@@ -124,7 +122,7 @@
     </section>
 
     <!-- Comentarios -->
-    <div id="comentarios">
+    <!-- <div id="comentarios">
         <div async id="disqus_thread"></div>
         <script async>
             (function() { // DON'T EDIT BELOW THIS LINE
@@ -136,7 +134,7 @@
         </script>
         <noscript async>Please enable JavaScript to view the <a async href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
         <script async id="dsq-count-scr" src="//capitaotorrent.disqus.com/count.js" ></script>
-    </div>
+    </div> -->
     
 </body>
 </html>
@@ -148,3 +146,6 @@
 <script src="js/batalha.js"></script>
 <script src="js/nomes_sobrenomes.js"></script>
 <script src="js/nomes.js"></script>
+<script src="js/gold.js"></script>
+<script src="js/loja.js"></script>
+<script src="js/mochila.js"></script>

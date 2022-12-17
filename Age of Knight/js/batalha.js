@@ -2,17 +2,13 @@
 setTimeout(function(){
     musica_fundo()
 },100)
+
 function jogar(){
     esconder_nomes()
     inimigo_mais_forte()
     mostrar_chao()
-    
-
     esconder_btn_play()
-    
     inimigo_aleatorio()
-    
-    
     atualizar_atributos_inimigo()
     posicao_inicial_inimigo()
     mostrar_inimigo()
@@ -44,6 +40,7 @@ function jogar(){
             som_golpe_1()
             mostrar_dano_player()
             desabilitar_ataque_do_player()
+            desabilitar_loja()
 
             //Golpe Final do player
             let golpe_Final_player =   Number(localStorage.HP_inimigo)  + Number(localStorage.DEF_inimigo )- Number(localStorage.ATK_player)
@@ -98,8 +95,10 @@ function jogar(){
                             }, 300)
 
                             setTimeout(function(){
-                                resetar()
-                            },2500)
+                               // resetar()
+                                habilitar_loja()
+                                derrota()
+                            },3500)
 
                             
                             
@@ -128,11 +127,21 @@ function jogar(){
                         mensagem_de_levelup()
                         esconder_nome_do_jogador()
                         levelup()
+
+
+                        setTimeout(function(){
+                            mostrar_cartas()
+                        }, 1000)
+                        
+
+                        
                     }
                     else{
                         mensagem_vitoria()
                         esconder_nome_do_jogador()
                     }
+                    ganhar_gold()
+                    mostrar_gold()
 
                     esconder_atributos_do_inimigo()
                     vitoria_som()
@@ -147,8 +156,9 @@ function jogar(){
                         Atualizar_atributos_do_player()
                         mostrarlevel()
                         esconder_mensagem()
+                        jogar()
                         
-                        mostrar_cartas()
+                       
                         
                     }, 2000)
 
