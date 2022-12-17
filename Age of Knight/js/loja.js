@@ -89,8 +89,10 @@ const itens_da_loja = [
     function item(x){
         document.getElementById("alerta_loja").style.display="grid" 
         item_selecionado = itens_da_loja.filter(i => (i.id == x));
-        document.getElementById("custo").innerText =`Este item custa: $${item_selecionado[0].custo} de GOLD`
+        document.getElementById("gold_atual").innerText =`GOLD $${localStorage.gold}`
+        document.getElementById("custo").innerText =`Custo: $${item_selecionado[0].custo}`
         document.getElementById("efeito").innerText =`Efeito:  ${item_selecionado[0].efeito}`
+        document.getElementById("img_item_loja").style.backgroundImage=`url(${item_selecionado[0].img})`
     }
 //fechar popup
     function sair_para_loja(){
