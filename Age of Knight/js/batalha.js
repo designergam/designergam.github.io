@@ -1,10 +1,8 @@
 //iniciar musica
 
-setTimeout(function(){
-    musica_fundo()
-},500)
 
 function jogar(){
+    document.getElementById("play").setAttribute('onclick', "jogar()");
     cartas_aleatorias()
     mostrar_controles()
     esconder_nomes()

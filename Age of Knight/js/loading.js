@@ -173,6 +173,7 @@ let arryImg = [
 ]
 
     function loading(){
+        
         let i=0
         let loop = setInterval(() => {
             loaling.style.backgroundImage = `url(${arryImg[i].img})`
@@ -183,13 +184,14 @@ let arryImg = [
                 loaling.style.display="none"
                 mensagem_load.innerText="COMPLETO!"
 
-                setTimeout(() => {
-                    esconder_loading.style.display="none"
-                }, 500);
+                setTimeout(() => {abrir_bag()}, 1);
+                setTimeout(() => {fechar_bag()}, 500);
+                setTimeout(() => {abrir_loja()}, 1000);
+                setTimeout(() => {fechar_loja()}, 1500);
+                setTimeout(() => {esconder_loading.style.display="none"}, 2000);
                 
             }
-
-
+            
             let cemporcento = arryImg.length
             let atual = i*100
             let p = atual/cemporcento
@@ -197,5 +199,7 @@ let arryImg = [
             progresso_barra.style.width = `${p}%`
             
 
-        }, 150);
+        }, 100);
+
+       
     }loading()

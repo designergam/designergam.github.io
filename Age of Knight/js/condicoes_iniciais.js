@@ -42,7 +42,7 @@ if(!localStorage.mana){
 
 //cartas aleatorias iniciais
 if(!localStorage.card_ATK){
-    localStorage.card_ATK =  Math.floor(5* Math.random())
+    localStorage.card_ATK =  Math.floor(500* Math.random())
     localStorage.card_DEF = Math.floor(4* Math.random())
     localStorage.card_HP = Math.floor(5* Math.random())
 }

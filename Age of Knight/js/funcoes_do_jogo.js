@@ -30,20 +30,20 @@ function adicionar_level(){
     localStorage.xp = Number(localStorage.xp) + 2
 }
 async function mensagem_vitoria(){
+    mensagem.style.backgroundImage = "url(img/victory.png)"
     mensagem.style.display="block"
-    mensagem.innerHTML=`
-    <h2 style=" line-height: 150px;">VICTORY!</h2> 
-    `
+    
    
    
 }
 function mensagem_derrota(){
+    mensagem.style.backgroundImage = "url(img/defeat.png)"
     mensagem.style.display="block"
-    mensagem.innerHTML=`
-    <h2 style=" line-height: 150px;">YOU LOST!</h2> 
-    `
+   
+    
 } 
 function esconder_mensagem(){
+    mensagem.style.backgroundImage = "url()"
     mensagem.style.display="none"
     mensagem.innerHTML=""
 }
@@ -167,10 +167,16 @@ function esconder_cartas(){
 
 }
 function mensagem_de_levelup(){
+
+    document.querySelector(".atributos_player").style.color="green"
+    
+    
+
+    mensagem.style.backgroundImage = "url(img/levelup.png)"
     mensagem.style.display="block"
     mensagem.innerHTML=`
-    <h2>LEVEL UP!</h2> 
-    <p style="font-size: 18px; text-align: center;">HP: +${parseInt(Number(localStorage.HP_player) *0.3) } &nbsp;&nbsp;&nbsp; DEF:+ ${parseInt(Number(localStorage.DEF_player) *0.3)} &nbsp;&nbsp;&nbsp; ATK: +${parseInt(Number(localStorage.ATK_player) *0.3)} </p>
+    
+    <p style="text-align: center;">HP: +${parseInt(Number(localStorage.HP_player) *0.3) } &nbsp;&nbsp;&nbsp; DEF:+ ${parseInt(Number(localStorage.DEF_player) *0.3)} &nbsp;&nbsp;&nbsp; ATK: +${parseInt(Number(localStorage.ATK_player) *0.3)} </p>
     `
 }
 function levelup(){
@@ -305,7 +311,7 @@ function inimigo_aleatorio(){
 }
 function atualizar_atributos_inimigo(){
         document.getElementById("atributos_inimigo").style.backgroundImage = "url(img/pergaminho.png)"
-        atributos_inimigo.innerHTML =`<span> HP: ${ parseInt(localStorage.HP_inimigo) }<br>DEF: ${parseInt(localStorage.DEF_inimigo)}<br>ATK: ${parseInt(localStorage.ATK_inimigo)}</span>`
+        atributos_inimigo.innerHTML =`<span> <span class="atributoInimigoHp">HP: ${ parseInt(localStorage.HP_inimigo) }</span><br>DEF: ${parseInt(localStorage.DEF_inimigo)}<br>ATK: ${parseInt(localStorage.ATK_inimigo)}</span>`
 
 }
 function mostrar_atributos_inimigo(){
@@ -413,15 +419,20 @@ function avancar_inimigo(){
     inimigo.style.right = "60%"
     player.style.zIndex = 1
     inimigo.style.zIndex = 3
+
+    document.querySelector(".atributoPlayerHp").style.color="red"
+   
 }
 function recuar_inimigo(){
     inimigo.style.right = "15%"
 }
 function dano_do_inimigo(){
-    dano_inimigo = (localStorage.ATK_inimigo - localStorage.DEF_player)
+    let dano_inimigo = (localStorage.ATK_inimigo - localStorage.DEF_player)
     if(dano_inimigo<=0){dano_inimigo = 1}
 
     localStorage.HP_player = parseInt(Number(localStorage.HP_player - dano_inimigo))
+
+    
  
 }
 function posicao_inicial_inimigo(){
@@ -486,7 +497,7 @@ function habilitar_ataque_do_player(){
     document.getElementById("atacar").style.border="3px solid green"
 }
 function Atualizar_atributos_do_player(){
-    atributos_player.innerHTML =`<span>XP: ${parseInt(localStorage.xp)}/${parseInt(localStorage.next_level)}<br> MANA: ${parseInt(localStorage.mana)}<br>HP: ${parseInt(localStorage.HP_player)}<br>DEF: ${parseInt(localStorage.DEF_player)}<br>ATK: ${parseInt(localStorage.ATK_player)}</span>`
+    atributos_player.innerHTML =`<span class="atributos_player">XP: ${parseInt(localStorage.xp)}/${parseInt(localStorage.next_level)}<br> MANA: ${parseInt(localStorage.mana)}<br> <span class="atributoPlayerHp">HP: ${parseInt(localStorage.HP_player)}</span><br>DEF: ${parseInt(localStorage.DEF_player)}<br>ATK: ${parseInt(localStorage.ATK_player)}</span>`
 }
 function habilitar_atributos_player(){
     atributos_player.style.display="block"
@@ -495,6 +506,8 @@ function avancar_player(){
     player.style.left = "60%"
     player.style.zIndex = 3
     inimigo.style.zIndex = 1
+
+    document.querySelector(".atributoInimigoHp").style.color="red"
 }
 function recuar_player(){
     player.style.left = "15%"
