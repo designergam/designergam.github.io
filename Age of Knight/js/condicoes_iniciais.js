@@ -48,8 +48,25 @@ if(!localStorage.card_ATK){
 }
 
 //cenario inicial
-if(localStorage.vitorias>=1 & localStorage.vitorias<=10 ){
-    cenario.style.backgroundImage =`url(${cenario_1})`
-
+function verificarCenario(){
+    if(localStorage.vitorias>=1 & localStorage.vitorias<=10 ){
+        cenario.style.backgroundImage =`url(img/cenarios/backgroud.gif)`
+    }
+    if(localStorage.vitorias>=10 & localStorage.vitorias<=20 ){
+        cenario.style.backgroundImage =`url(img/cenarios/cenario2.gif)`
+    }
+    if(localStorage.vitorias>=30 & localStorage.vitorias<=200 ){
+        cenario.style.backgroundImage =`url(img/cenarios/cenario3.gif)`
+    }
+    
 }
 
+if(localStorage.vitorias>=1 & localStorage.vitorias<=10 ){
+    cenario.style.backgroundImage =`url(img/cenarios/backgroud.gif)`
+}
+if(localStorage.vitorias>=10 & localStorage.vitorias<=20 ){
+    cenario.style.backgroundImage =`url(img/cenarios/cenario2.gif)`
+}
+if(localStorage.vitorias>=30 & localStorage.vitorias<=200 ){
+    cenario.style.backgroundImage =`url(img/cenarios/cenario3.gif)`
+}

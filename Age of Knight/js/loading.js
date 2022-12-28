@@ -157,10 +157,19 @@ let arryImg = [
     {
         "img": "img/loja/GrugumelodaCabeçona.png"
     },
-    
     {
         "img": "img/loja/MedalhãodeVigor.png"
     },
+    {
+        "img": "img/personaje-parada-original.webp"
+    },
+    {
+        "img": "img/personaje_Ataque-original.webp"
+    },
+    {
+        "img": "img/iconechat.png"
+    },
+    
 ]
 
     function loading(){
@@ -188,5 +197,5 @@ let arryImg = [
             progresso_barra.style.width = `${p}%`
             
 
-        }, 200);
+        }, 150);
     }loading()

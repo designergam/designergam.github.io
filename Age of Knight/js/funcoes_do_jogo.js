@@ -257,6 +257,19 @@ if ((document.fullScreenElement && document.fullScreenElement !== null) ||
     }  
 }  
 } 
+function sairchat(){
+    let chat = document.getElementById("chat")
+    chat.style.transition="500ms"
+    chat.style.left="-200%"
+    chat.style.display="none"
+}
+function chamarchat(){
+   
+    let chat = document.getElementById("chat")
+    chat.style.display="block"
+    chat.style.left="0%"
+   
+}
 //
 //
 //
@@ -441,10 +454,10 @@ function posicao_inicial_player(){
     
 }
 async function player_parado(){
-    player.style.backgroundImage="url(https://cdn.domestika.org/c_limit,dpr_1.0,f_auto,q_auto,w_820/v1586415165/content-items/004/129/278/personaje-parada-original.gif?1586415165)"
+    player.style.backgroundImage="url(img/personaje-parada-original.webp)"
 } 
 async function trocar_img_player_golpe(){
-    player.style.backgroundImage ="url(https://cdn.domestika.org/c_limit,dpr_1.0,f_auto,q_auto,w_820/v1586415892/content-items/004/129/334/personaje_Ataque-original.gif?1586415892"   
+    player.style.backgroundImage ="url(img/personaje_Ataque-original.webp)" 
 }  
 function dano_do_player(){
     dano_player = (localStorage.ATK_player - localStorage.DEF_inimigo)

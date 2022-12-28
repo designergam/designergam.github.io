@@ -1,4 +1,5 @@
 //iniciar musica
+
 setTimeout(function(){
     musica_fundo()
 },500)
@@ -84,7 +85,7 @@ function ataque_player(){
         }else(
             //se ganhar
             setTimeout(function(){
-                
+                verificarCenario()
                 passar_de_level()
                
             })  
@@ -126,7 +127,7 @@ desabilitar_batalha_rapida()
                     //se ganhar
                     setTimeout(function(){
                         passar_de_level()
-                        
+                        verificarCenario()
                         
                         setTimeout(function(){
                             
