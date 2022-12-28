@@ -11,7 +11,7 @@
     }
 //gold inicial
     if(!localStorage.gold){
-        localStorage.gold = 1000
+        localStorage.gold = 10
         
     }
    
@@ -21,7 +21,7 @@
     }
 //xp inicial
 if(!localStorage.xp){
-    localStorage.xp = 10
+    localStorage.xp = 0
 }
 if(!localStorage.next_level){
     localStorage.next_level = 10
