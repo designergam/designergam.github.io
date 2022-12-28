@@ -188,5 +188,5 @@ let arryImg = [
             progresso_barra.style.width = `${p}%`
             
 
-        }, 50);
+        }, 200);
     }loading()
