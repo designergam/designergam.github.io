@@ -349,20 +349,15 @@ function trazer_inimigo(){
     document.getElementById("inimigo_img").style.right="15%"
 }
 function inimigo_mais_forte(){     
-    //incremento aleatorio
-        let incremento_ATK = Number(Math.floor(4* Math.random()))
-        let incremento_DEF = Number(Math.floor(4* Math.random()))
-        let incremento_HP = Number(Math.floor(4* Math.random()))
-        
-        if(incremento_ATK <= 0){incremento_ATK = 1}
-        if(incremento_DEF <= 0){incremento_DEF = 1}
-        if(incremento_HP <= 0){incremento_HP = 1}
-
-    
-     //  vida do inimigo
-     localStorage.HP_inimigo =  parseInt( (Number(localStorage.ATK_player) *2) + (Number(incremento_HP) * Number(localStorage.vitorias)) ) 
-     localStorage.ATK_inimigo = parseInt( (Number(localStorage.DEF_player)*0.9) + (Number(incremento_ATK) * Number(localStorage.vitorias)) )
-     localStorage.DEF_inimigo = parseInt( (Number(localStorage.ATK_player)*0.3) + (Number(incremento_DEF) * Number(localStorage.vitorias)) )
+    // incremento aleatorio
+        let incremento_ATK = Number(Math.random() * (1.2 - 0.7) + 0.7) // -30% a 20%
+        let incremento_DEF = Number(Math.random() * (1.3 - 0.7) + 0.7) // -30% a 10%
+        let incremento_HP = Number(Math.random() * (1.2 - 0.7) + 0.7) // -30% a 10%
+ 
+    //  vida do inimigo
+        localStorage.HP_inimigo = parseInt((Number(localStorage.HP_player) * Number(incremento_ATK))) 
+        localStorage.ATK_inimigo = parseInt((Number(localStorage.ATK_player) * Number(incremento_DEF)))
+        localStorage.DEF_inimigo = parseInt((Number(localStorage.DEF_player) * Number(incremento_HP)))
    
     
 }
