@@ -1,6 +1,9 @@
 function mostrar_gold(){
     document.getElementById("gold").style.display="block"
     document.getElementById("gold").innerText = `GOLD:  ${localStorage.gold}`
+
+    document.getElementById("gold").style.color="green"
+    setTimeout(() => {document.getElementById("gold").style.color="yellow"}, 700);
 }
 
 function ganhar_gold(){

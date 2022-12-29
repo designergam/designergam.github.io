@@ -1,4 +1,14 @@
 //===Funções de gameplay=======================================================
+function dropar_moeda_inimigo(){
+    let moeda = document.getElementById("drop_moeda_inimigo")
+    moeda.style.display="block"
+    moeda.style.transform="translate(-50%, -50%)"
+
+    setTimeout(() => {
+        moeda.style.display="none"
+        moeda.style.transform="translate(300%, -400%)"
+    }, 1000);
+}
 function esconder_btn_play(){
     play.style.display="none" 
 }

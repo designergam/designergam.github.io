@@ -9,7 +9,22 @@ body{
     padding: 0;
     margin: 0;    
 }
-
+#drop_moeda_inimigo{
+    display: none;
+    transition: 500ms;
+    position: absolute;
+    top: 48%;
+    left: 72%;
+    transform: translate(300%, -400%);
+    width: 30px;
+    height: 30px;
+ 
+    background-image: url(../img/moeda.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
 /* 🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽 LOADING 🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽 */
 #loaling{
     position: absolute;

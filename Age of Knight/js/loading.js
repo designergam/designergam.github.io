@@ -5,6 +5,15 @@ let esconder_loading = document.getElementById("esconder_loading")
 
 let arryImg = [
     {
+        "img": "img/defeat.png"
+    },
+    {
+        "img": "img/victory.png"
+    },
+    {
+        "img": "img/levelup.png"
+    },
+    {
         "img": "img/loja/CuraMedia.png"
     },
     {

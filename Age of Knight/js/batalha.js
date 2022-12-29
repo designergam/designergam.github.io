@@ -120,7 +120,9 @@ desabilitar_batalha_rapida()
                     morte_inimigo()
                     setTimeout(function(){
                     esconder_inimigo()
+                    dropar_moeda_inimigo()
                     }, 200)
+                    
 
                     //se ganhar
                     setTimeout(function(){
